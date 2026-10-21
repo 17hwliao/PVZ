@@ -144,7 +144,7 @@ function menu(){
   const levels=text('div','','menu-levels');for(let n=0;n<PVZ.LEVELS.length;n++){const b=text('button',`${PVZ.LEVELS[n].tag.split('·')[1].trim()} ${PVZ.LEVELS[n].name}`);b.disabled=n>progress.highest;b.onclick=()=>resetPrompt(n);levels.append(b);}body.append(levels);
   for(const [label,caption,fn]of [['声音',soundOn?'开':'关',()=>{soundOn=!soundOn;syncSound();if(soundOn)tone(330);menu();}],['柔和转场',progress.soft?'开':'关',()=>{progress.soft=!progress.soft;save();menu();}]]){const r=text('div','','settings-row');r.append(text('span',label));const b=text('button',caption);b.onclick=fn;r.append(b);body.append(r);}
   body.append(text('p','每行小车只发动一次。进门或耗尽两行小车即可获胜；防守碑全部破碎才会战败。','aside'));
- },[['返回',returnToGame],['重新选卡',()=>resetPrompt(battle.level),true],['作战来信',()=>openLetter(phase==='prepare'?pendingLevel:battle.level,menu,phase==='prepare'),true],['重看序章',()=>startCinema(false),true],['故事与漫画',()=>book(0),true]]);dialog.classList.add('menu-dialog');
+ },[['返回',returnToGame],['重新选卡',()=>resetPrompt(battle.level),true],['作战来信',()=>openLetter(phase==='prepare'?pendingLevel:battle.level,menu,phase==='prepare'),true],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['故事与漫画',()=>book(0),true]]);dialog.classList.add('menu-dialog');
 }
 function resetPrompt(index){show('重新集结？','战前编组',body=>body.append(text('p','本场战斗将重置。已解救的僵尸卡和关卡进度都会保留。')),[['前往选卡',()=>prepare(index)],['返回菜单',menu,true]]);}
 const cinema=PVZ_CINEMA.createPrologue({data:PVZ_PROLOGUE,elements:{root:$('prologue'),frame:$('prologueFrame'),speaker:$('prologueSpeaker'),text:$('prologueText'),count:$('prologueCount'),play:$('prologuePlay'),back:$('prologueBack'),next:$('prologueNext'),progress:$('prologueProgress'),flash:$('prologueFlash'),skip:$('prologueSkip'),reduce:$('prologueReduce'),error:$('prologueImageError')},onSound:sceneSound,onExit:result=>{
@@ -157,6 +157,7 @@ function startCinema(startup){
 $('prologueSound').onclick=()=>{soundOn=!soundOn;syncSound();if(soundOn)sceneSound('static');};
 $('prologueReduce').addEventListener('click',()=>{progress.soft=$('prologueReduce').getAttribute('aria-pressed')==='true';save();});
 function sync(){
+ $('arena').dataset.phase=phase;$('arena').dataset.mechanics=String(!!(battle.hazards.length||battle.supplies.length||battle.reinforcements.some(r=>!r.arrived)));
  $('energy').textContent=Math.floor(battle.energy);$('tombCount').textContent=`${battle.tombs.filter(t=>t.hp>0).length} / 5`;
  const reinforcements=battle.reinforcements.filter(r=>!r.arrived),supplies=battle.supplies;
  $('modeStatus').textContent=battle.hazards.length?battle.hazards.map(h=>`第${h.row+1}行${h.state==='active'?'通电':h.state==='warning'?'预警':'电网休眠'}`).join(' · '):supplies.length?`口粮 ${supplies.filter(s=>s.collected).length} / ${supplies.length}`:reinforcements.length?`植物增援 ${Math.max(0,Math.ceil(reinforcements[0].at-battle.time))}秒`:'进门或两路小车离场获胜';

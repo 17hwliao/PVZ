@@ -116,15 +116,14 @@ function createRenderer(assets,pictures,tombImage){
   if(progress>0)ctx.drawImage(meter,meter.width*(1-progress),frame,meter.width*progress,frame,x+w*(1-progress),y,w*progress,h);
   for(let i=1;i<=2;i++)ctx.drawImage(parts,part*2,0,part,parts.height,x+w*(1-i/2)-5,y-18,28,28);
   ctx.drawImage(parts,0,0,part,parts.height,x+w*(1-progress)-13,y+1,30,30);
-  label(ctx,b.status==='won'?(b.winReason==='door'?'已进门 · 突破成功':'突破成功'):`突破进度 · 小车 ${Math.min(2,b.clearedRows)} / 2`,1095,660,11,'#fff0bd');
+  label(ctx,b.status==='won'?(b.winReason==='door'?'已进门 · 突破成功':'突破成功'):`突破进度 · 小车 ${Math.min(2,b.clearedRows)} / 2`,1095,665,13,'#fff0bd');
  }
  function draw(ctx,b,{hoverRow=-1,selectedRow=2,reducedMotion=false}={}){
   ctx.clearRect(0,0,1200,720);
   const bg=pictures[b.config.night?'ui:background2.jpg':'ui:background1.jpg'];
-  // Reflow the complete scene, including fence and pavement, along the same seams.
-  // Keeping the existing grass border avoids a rectangular pasted-on turf edge.
-  if(bg){ctx.drawImage(bg,100,0,150,600,0,100,150,600);ctx.drawImage(bg,250,0,750,600,150,100,850,600);ctx.drawImage(bg,1000,0,300,600,1000,100,300,600);}
-  ctx.fillStyle=b.config.night?'#263549':'#a6cce5';ctx.fillRect(0,0,1200,100);
+  // Reflow the original roof/fence, five lawn rows and foreground together.
+  // Preserve the field hit coordinates while removing the synthetic sky toolbar.
+  if(bg){for(const [sx,sw,dx,dw] of [[100,150,0,150],[250,750,150,850],[1000,300,1000,300]]){for(const [sy,sh,dy,dh] of [[0,100,0,172],[100,472,172,480],[572,28,652,68]])ctx.drawImage(bg,sx,sy,sw,sh,dx,dy,dw,dh);}}
   const hi=hoverRow>=0?hoverRow:selectedRow;
   if(hi>=0&&b.status==='playing'){ctx.fillStyle='#e9dd6b18';ctx.fillRect(150,172+hi*96,830,96);ctx.strokeStyle='#fff2a975';ctx.setLineDash([7,9]);ctx.strokeRect(995,183+hi*96,61,75);ctx.setLineDash([]);}
   for(const h of b.hazards||[]){const y=220+h.row*96;ctx.save();ctx.fillStyle=h.state==='active'?'#8ddbe055':h.state==='warning'?'#f9d47855':'#273b373b';ctx.fillRect(h.x-h.width/2,y-43,h.width,83);ctx.strokeStyle=h.state==='active'?'#9fedff':h.state==='warning'?'#ffe28d':'#647d65';ctx.lineWidth=2;ctx.strokeRect(h.x-h.width/2,y-43,h.width,83);if(h.state==='active'&&!reducedMotion){ctx.beginPath();ctx.moveTo(h.x-12,y-38);ctx.lineTo(h.x+11,y-8);ctx.lineTo(h.x-9,y+10);ctx.lineTo(h.x+10,y+32);ctx.stroke();}label(ctx,h.state==='active'?'通电':h.state==='warning'?'预警':'电网',h.x,y+53,10);ctx.restore();}
@@ -140,10 +139,9 @@ function createRenderer(assets,pictures,tombImage){
   for(const t of b.tombs){const y=220+t.row*96;const x=940;
    shadow(ctx,x,y+35,35);
    if(tombImage){const damage=t.hp<=0?3:t.hp<t.maxHp*.35?2:t.hp<t.maxHp*.7?1:0;const w=tombImage.width/5,h=tombImage.height/4;ctx.drawImage(tombImage,0,damage*h,w,h,x-37,y-48,74,84);}
-   if(t.hp>0){bar(ctx,x,y+45,t.hp,t.maxHp,68);label(ctx,`${Math.ceil(t.hp)} / ${t.maxHp}`,x,y+66,10,'#e4e6c9');}else label(ctx,'已失守 · 0 / 1000',x,y+58,10,'#d8bb92');
+   if(t.hp>0){bar(ctx,x,y+45,t.hp,t.maxHp,68);label(ctx,`${Math.ceil(t.hp)}`,x-41,y+49,11,'#f4e8be','right');}else label(ctx,'已失守 · 0 / 1000',x,y+58,10,'#d8bb92');
   }
-  label(ctx,`进门获胜，或耗掉两行小车     已耗掉 ${b.clearedRows} / 2 行`,210,704,14,'#fff3c4','left');
-  label(ctx,b.config.tag,820,704,13,'#fff3c4','right');drawProgress(ctx,b);
+  drawProgress(ctx,b);
  }
  return {draw,actor,drawZombie,drawEffect,drawPlant};
 }

@@ -1,5 +1,5 @@
 {
-  "version": "0.4.1",
+  "version": "0.4.2",
   "source": "User-provided classic base, resource version 1.2.0.1073",
   "unchanged": [
     {
@@ -93,6 +93,22 @@
     {
       "file": "assets/images/dialog_bottomright.png",
       "sha256": "7561df9f0fb80e423bdac347bf165309af0a780b48412b786531356119cbc8ba"
+    },
+    {
+      "file": "assets/images/Almanac_ZombieCard.png",
+      "sha256": "e79ad6b49f2c1f59a9894956177639ee4ebc6cf358bf0285074660b6d4a19647"
+    },
+    {
+      "file": "assets/images/SeedChooser_Button_Disabled.png",
+      "sha256": "c797dd32850ca8fbba069b28eb976a0bfdae2b9643e5183ce0dde6035f427e53"
+    },
+    {
+      "file": "assets/images/SeedPacketSilhouette.png",
+      "sha256": "c5b47c05019a43c9f209ed20c74f6da8b135f44f0953d58d06bfb8829b2be31a"
+    },
+    {
+      "file": "assets/images/Almanac_GroundNight.jpg",
+      "sha256": "e20df9f8cd625b601f46a8ff6bc1bbbf9c72c2141988c5d00fcd8c08c8301acc"
     }
   ],
   "derived": [
@@ -104,5 +120,15 @@
       "file": "assets/ui/options-original.png",
       "method": "original options_menuback.jpg with its original options_menuback_.png alpha mask"
     }
-  ]
+  ],
+  "dossier": {
+    "file": "assets/ui/dossier-original.png",
+    "source": "Almanac_ZombieCard.png",
+    "method": "Original card frame and almanac night ground; extend blank lower text area 80px using original row 414."
+  },
+  "zombiePacket": {
+    "file": "assets/ui/zombie-packet.png",
+    "source": "SeedPacket_Larger.png",
+    "method": "Cover baked BLOOM & DOOM SEED CO lettering with the original blank paper footer, leaving the original frame and illustration area intact. Unit names are live Chinese text."
+  }
 }
