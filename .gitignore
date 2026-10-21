@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build*/
+.private/
+private-keys/
+*.p12
+*.jks
+*.keystore
+*password*
+*.apk
+*.zip
+*.log
+.env*
+.DS_Store

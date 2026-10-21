@@ -1,0 +1,20 @@
+window.PVZ_PROLOGUE={version:2,nativePrison:true,title:'序章 · 门外的声音',beats:[
+ {shot:'prison',panel:0,duration:9,speaker:'旁白',text:'乔治·埃德加被捕，已经很多天了。密闭的囚室里，潮气沿着墙壁往下渗。'},
+ {shot:'prison',panel:0,duration:8,speaker:'旁白',text:'粗铁链扣住四肢，电极贴在额头与胸前。观察窗外，坚果与寒冰射手守着唯一的门。'},
+ {shot:'prison',panel:1,duration:11,speaker:'植物长老',text:'乔治·埃德加，你不断煽动地下不死者，破坏地表秩序。'},
+ {shot:'prison',panel:1,duration:12,speaker:'植物长老',text:'我们将反复施加净化电击，直到你放弃反抗的念头。'},
+ {shot:'prison',panel:0,duration:8,speaker:'乔治',text:'他们只是想活下去……那些饭盒里，装的只是普通食物。'},
+ {shot:'prison',panel:1,duration:12,speaker:'戴夫（低声）',text:'小心，他的大脑在不死病毒影响下，很容易构建封闭幻想世界。'},
+ {shot:'prison',panel:2,duration:6,speaker:'旁白',text:'没有人回答乔治。观察窗后，一只手按下了开关。',sound:'switch'},
+ {shot:'prison',panel:3,duration:9,speaker:'旁白',text:'电流涌入躯体。剧痛炸开，视野大片发白，所有声音都被耳鸣淹没。',effect:'shock',sound:'electric'},
+ {shot:'prison',panel:3,duration:7,speaker:'乔治',text:'……不能……一直困在这里……',effect:'shock',sound:'electric'},
+ {shot:'escape',panel:0,duration:7,speaker:'旁白',text:'白光之中，手腕上的铁链忽然松了。乔治猛地抬起头。',effect:'white',sound:'chain'},
+ {shot:'escape',panel:0,duration:7,speaker:'乔治',text:'断了……？我的手，能动了。'},
+ {shot:'escape',panel:1,duration:7,speaker:'旁白',text:'他抓起地上的金属配件。门边的坚果守卫还没来得及呼喊，就被击倒在地。',sound:'impact'},
+ {shot:'escape',panel:2,duration:7,speaker:'普通僵尸',text:'博士！是我们。快离开这里！',sound:'door'},
+ {shot:'escape',panel:2,duration:8,speaker:'营救队铁桶·阿铆',text:'别看后面。扶着我，走！',sound:'static'},
+ {shot:'escape',panel:2,duration:7,speaker:'乔治',text:'你们……怎么找到这里的？'},
+ {shot:'escape',panel:3,duration:9,speaker:'普通僵尸',text:'等到了安全的地方再说。地下还有很多同胞，他们都在等你。',sound:'steps'},
+ {shot:'escape',panel:3,duration:9,speaker:'旁白',text:'他们冲进黑暗通道。画面边缘一丝蓝光掠过，呼唤声里仍混着细碎的滋响。',sound:'static'},
+ {shot:'escape',panel:3,duration:9,speaker:'乔治',text:'带我去见他们。先把还被关着的人，救出来。'}
+]};
