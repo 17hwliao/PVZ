@@ -5,8 +5,8 @@ function createPrologue({data,elements,onSound,onExit}){
  const e=elements;
  function render(){
   const b=data.beats[index],shot=b.shot+':'+b.panel;
-  if(shot!==lastShot){e.frame.hidden=!!(data.nativePrison&&b.shot==='prison');e.error.hidden=true;if(!e.frame.hidden)e.frame.src=`prologue/${b.shot}.png`;e.frame.style.setProperty('--panel-x',b.panel%2?'100%':'0%');e.frame.style.setProperty('--panel-y',b.panel>1?'100%':'0%');e.frame.dataset.panel=String(b.panel);lastShot=shot;}
-  e.frame.alt=`序章画面：${index<9?'囚室与观察窗':'逃生通道'}`;
+  if(shot!==lastShot){e.frame.hidden=false;e.error.hidden=true;e.frame.src=`prologue/${b.shot}.png`;e.frame.style.setProperty('--panel-col',String(b.panel%2));e.frame.style.setProperty('--panel-row',String(Math.floor(b.panel/2)));e.frame.style.setProperty('--focus-x',b.panel%2?'75%':'25%');e.frame.style.setProperty('--focus-y',b.panel>1?'75%':'25%');e.frame.dataset.panel=String(b.panel);e.frame.parentElement.classList.remove('motion-drift','motion-jolt','motion-fall');void e.frame.offsetWidth;e.frame.parentElement.classList.add('motion-'+(b.motion||'drift'));lastShot=shot;}
+  e.frame.alt=b.artDescription||`序章漫画：${b.shot.startsWith('escape')?'逃生通道':'囚室与观察窗'}`;
   e.root.dataset.tone=b.shot;e.root.dataset.effect=reduce?'soft':(b.effect||'none');e.root.classList.toggle('reduce-flash',reduce);
   e.speaker.textContent=b.speaker;e.text.textContent=b.text;e.count.textContent=`${index+1} / ${data.beats.length}`;
   e.play.textContent=playing?'暂停播放':'自动播放';e.play.setAttribute('aria-pressed',String(playing));
@@ -19,7 +19,7 @@ function createPrologue({data,elements,onSound,onExit}){
  e.next.onclick=next;e.back.onclick=()=>{if(active&&index>0){index--;elapsed=0;render();}};
  e.play.onclick=()=>{playing=!playing;e.play.textContent=playing?'暂停播放':'自动播放';e.play.setAttribute('aria-pressed',String(playing));};
  e.skip.onclick=()=>finish(true);e.reduce.onclick=()=>{reduce=!reduce;e.reduce.textContent=reduce?'柔和转场：开':'柔和转场：关';e.reduce.setAttribute('aria-pressed',String(reduce));e.root.classList.toggle('reduce-flash',reduce);};
- e.frame.onerror=()=>{e.error.hidden=false;e.error.textContent=data.beats[index].shot==='prison'?'插画未能读取，已切换经典角色场景演出。':'画面未能读取，仍可继续阅读完整剧情。';e.frame.style.opacity='0';};e.frame.onload=()=>{e.error.hidden=true;e.frame.style.opacity='1';};
+ e.frame.onerror=()=>{e.error.hidden=false;e.error.textContent='漫画未能读取，完整对白仍可继续；请确认已解压整个游戏文件夹。';e.frame.style.opacity='0';};e.frame.onload=()=>{e.error.hidden=true;e.frame.style.opacity='1';};
  return {
   get active(){return active;},get index(){return index;},get completed(){return completed;},
   start({soft=false}={}){active=true;index=0;elapsed=0;playing=true;reduce=soft;lastShot='';completed=false;e.root.hidden=false;e.reduce.textContent=reduce?'柔和转场：开':'柔和转场：关';e.reduce.setAttribute('aria-pressed',String(reduce));render();e.next.focus();},

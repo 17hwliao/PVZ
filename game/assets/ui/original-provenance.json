@@ -1,0 +1,108 @@
+{
+  "version": "0.4.1",
+  "source": "User-provided classic base, resource version 1.2.0.1073",
+  "unchanged": [
+    {
+      "file": "assets/images/SeedBank.png",
+      "sha256": "6313852cc2b66226a3f112f3077639a75b3714a4f6a6da9c2d4c45a4b55e7fdc"
+    },
+    {
+      "file": "assets/images/SunBank.png",
+      "sha256": "70583cea48ee223c6846944327cfea22332ecb340990452e837bd9398817000b"
+    },
+    {
+      "file": "assets/images/SeedPacket_Larger.png",
+      "sha256": "b7363c278458446477fe2cd68e6da8aec5fc79daac0d99db0053b028cf68675c"
+    },
+    {
+      "file": "assets/images/SeedChooser_Background.png",
+      "sha256": "283b1ca0a6d7e3fe28b2d9aa0a60ea6c2440a28abd60e525f54410022a57f464"
+    },
+    {
+      "file": "assets/images/Almanac_ZombieBack.jpg",
+      "sha256": "70a31b7ada4c80e0eeb3f23272b3eb74e041358bd3746e490f39608c5ffdb802"
+    },
+    {
+      "file": "assets/images/Almanac_ZombieWindow2.png",
+      "sha256": "22a87a199950f87d765961b5df1d4bf86e851f248f1151ef6246aea259cf03ff"
+    },
+    {
+      "file": "assets/images/options_menuback.jpg",
+      "sha256": "f3acf6611ea0cf12c2980d0922587371c4b29f038feb6b2186926fd7c3f65e02"
+    },
+    {
+      "file": "assets/images/options_menuback_.png",
+      "sha256": "c5cee9bb56420d087fb17fb3ffaf10ed246faa6fb5302cd3745beb4825dbd1ad"
+    },
+    {
+      "file": "assets/images/button_left.png",
+      "sha256": "4bbc52c480ad97c8a611c5e76f93898ed567f7c603965f389fb69a40b6f3490c"
+    },
+    {
+      "file": "assets/images/button_middle.png",
+      "sha256": "4a78caf163579cf9baac8db6581dde177a0a635002c852efedbbe17ce81d89c3"
+    },
+    {
+      "file": "assets/images/button_right.png",
+      "sha256": "18f7690e01f84c4e543b4b7a20fcfea9dac80df1c4833d621a345eb55d77d26b"
+    },
+    {
+      "file": "assets/images/button_down_left.png",
+      "sha256": "dc2b4151a73b0637e1929876043678564c589b0bceb5963c3b03de109c154950"
+    },
+    {
+      "file": "assets/images/button_down_middle.png",
+      "sha256": "d845b42f1c57a36df7e91cbfbe4b3b4d3d478e559ad896896d7d766009f9d368"
+    },
+    {
+      "file": "assets/images/button_down_right.png",
+      "sha256": "567184bdc3064188c10b9e12d8a9bce7b1b1458944645f4c4c0299742b604788"
+    },
+    {
+      "file": "assets/images/dialog_topleft.png",
+      "sha256": "4860437be14e2d87686b117ae8c925754696e179a176dff4ac0f20b480a9f7aa"
+    },
+    {
+      "file": "assets/images/dialog_topmiddle.png",
+      "sha256": "530e9288724ca72bd2fb4ec628fbebea35c388b2da0380a8656daeb2c5ca8ab5"
+    },
+    {
+      "file": "assets/images/dialog_topright.png",
+      "sha256": "fc69f02366520f5e77576593cf5dc1f037c2853d331c53ba88c47ce255ec1685"
+    },
+    {
+      "file": "assets/images/dialog_centerleft.png",
+      "sha256": "15ef3b9badc0cbb6b6ef0ecc9ddb6f5a3a540543f785a53b57cd5698c7fe0e88"
+    },
+    {
+      "file": "assets/images/dialog_centermiddle.png",
+      "sha256": "5e339ba4b104f1c9660351668ed5cfb11176e18671f11536f624ecf93d95b7d3"
+    },
+    {
+      "file": "assets/images/dialog_centerright.png",
+      "sha256": "ef5fdc74936870b1460cd89f5a048cfedd7ca5dffe73f578b7822e794c05eadc"
+    },
+    {
+      "file": "assets/images/dialog_bottomleft.png",
+      "sha256": "d92dfe7c3e8467e589232c10c05239abdcaf0e553a5477f4f95286f8f0d1976e"
+    },
+    {
+      "file": "assets/images/dialog_bottommiddle.png",
+      "sha256": "4139a4d023a3c39427be4f3ce72061f047253285c5354bce343348306af7c92c"
+    },
+    {
+      "file": "assets/images/dialog_bottomright.png",
+      "sha256": "7561df9f0fb80e423bdac347bf165309af0a780b48412b786531356119cbc8ba"
+    }
+  ],
+  "derived": [
+    {
+      "file": "assets/ui/dialog-original.png",
+      "method": "nine original dialog pieces placed in the source nine-slice layout; no repaint"
+    },
+    {
+      "file": "assets/ui/options-original.png",
+      "method": "original options_menuback.jpg with its original options_menuback_.png alpha mask"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ let progress=PVZ_CAMPAIGN.normalize(null,PVZ.UNITS,PVZ.LEVELS,matchMedia('(prefe
 try{const raw=localStorage.getItem(KEY);if(raw)progress=PVZ_CAMPAIGN.normalize(JSON.parse(raw),PVZ.UNITS,PVZ.LEVELS,progress.soft);}
 catch{saveWarning='本机进度无法读取；本次暂存于窗口，不会覆盖已有存档';allowSave=false;}
 function save(){if(!allowSave){$('saveStatus').textContent=saveWarning;return;}try{localStorage.setItem(KEY,JSON.stringify(progress));$('saveStatus').textContent='同胞与关卡进度已保存到本机';}catch{$('saveStatus').textContent='浏览器存储不可用；进度仅保留本次窗口';}}
-let battle=new PVZ.Battle(0,progress.unlocked),phase='loading',pendingLevel=0,draft=[...progress.deck],inspected='normal',selected='normal',row=2,hover=-1,ready=false,renderer,prisonRenderer,pictures={},last=0,manualPause=false,soundOn=false,audio=null,noticeUntil=0,cinemaReturn=null,damagePreview=null,dialogReturnFocus=null,dialogCancelAction=null;
+let battle=new PVZ.Battle(0,progress.unlocked),phase='loading',pendingLevel=0,draft=[...progress.deck],inspected='normal',selected='normal',row=2,hover=-1,ready=false,renderer,pictures={},last=0,manualPause=false,soundOn=false,audio=null,noticeUntil=0,cinemaReturn=null,damagePreview=null,dialogReturnFocus=null,dialogCancelAction=null;
 const ctx=$('battle').getContext('2d'),rows=[...document.querySelectorAll('[data-row]')];
 function text(tag,content,cls){const e=document.createElement(tag);e.textContent=content;if(cls)e.className=cls;return e;}
 function notify(s,seconds=4){$('notice').textContent=s;$('notice').style.opacity='1';noticeUntil=performance.now()+seconds*1000;}
@@ -144,7 +144,7 @@ function menu(){
   const levels=text('div','','menu-levels');for(let n=0;n<PVZ.LEVELS.length;n++){const b=text('button',`${PVZ.LEVELS[n].tag.split('·')[1].trim()} ${PVZ.LEVELS[n].name}`);b.disabled=n>progress.highest;b.onclick=()=>resetPrompt(n);levels.append(b);}body.append(levels);
   for(const [label,caption,fn]of [['声音',soundOn?'开':'关',()=>{soundOn=!soundOn;syncSound();if(soundOn)tone(330);menu();}],['柔和转场',progress.soft?'开':'关',()=>{progress.soft=!progress.soft;save();menu();}]]){const r=text('div','','settings-row');r.append(text('span',label));const b=text('button',caption);b.onclick=fn;r.append(b);body.append(r);}
   body.append(text('p','每行小车只发动一次。进门或耗尽两行小车即可获胜；防守碑全部破碎才会战败。','aside'));
- },[['返回',returnToGame],['重新选卡',()=>resetPrompt(battle.level),true],['作战来信',()=>openLetter(phase==='prepare'?pendingLevel:battle.level,menu,phase==='prepare'),true],['重看序章',()=>startCinema(false),true],['故事与漫画',()=>book(0),true]]);
+ },[['返回',returnToGame],['重新选卡',()=>resetPrompt(battle.level),true],['作战来信',()=>openLetter(phase==='prepare'?pendingLevel:battle.level,menu,phase==='prepare'),true],['重看序章',()=>startCinema(false),true],['故事与漫画',()=>book(0),true]]);dialog.classList.add('menu-dialog');
 }
 function resetPrompt(index){show('重新集结？','战前编组',body=>body.append(text('p','本场战斗将重置。已解救的僵尸卡和关卡进度都会保留。')),[['前往选卡',()=>prepare(index)],['返回菜单',menu,true]]);}
 const cinema=PVZ_CINEMA.createPrologue({data:PVZ_PROLOGUE,elements:{root:$('prologue'),frame:$('prologueFrame'),speaker:$('prologueSpeaker'),text:$('prologueText'),count:$('prologueCount'),play:$('prologuePlay'),back:$('prologueBack'),next:$('prologueNext'),progress:$('prologueProgress'),flash:$('prologueFlash'),skip:$('prologueSkip'),reduce:$('prologueReduce'),error:$('prologueImageError')},onSound:sceneSound,onExit:result=>{
@@ -165,7 +165,7 @@ function sync(){
  if($('selectedPortrait').getAttribute('src')!==portrait(unit))$('selectedPortrait').src=portrait(unit);$('selectedName').textContent=stats.name;
  const cooldown=battle.cooldowns[unit],short=Math.max(0,Math.ceil(stats.cost-battle.energy));
  const canDeploy=phase==='battle'&&!battle.paused&&cooldown===0&&!short;
- $('selectedState').textContent=phase==='prepare'?`${stats.cost} 能量 · ${stats.cooldown}秒冷却`:phase==='ended'?'行动结束':manualPause?'战斗已暂停':cooldown>0?`冷却 ${cooldown.toFixed(1)} 秒`:short?`还需 ${short} 能量`:`${stats.cost} 能量 · 点击右侧入口召唤`;
+ $('selectedState').textContent=phase==='prepare'?`${stats.cost} 能量 · ${stats.cooldown}秒冷却`:phase==='ended'?'行动结束':manualPause?'战斗已暂停':cooldown>0?`冷却 ${cooldown.toFixed(1)} 秒`:short?`还需 ${short} 能量`:`${stats.cost} 能量 · 右侧召唤`;
  $('selectedLane').textContent=phase==='prepare'?'战前编组':`第 ${row+1} 行`;$('deploymentReadout').classList.toggle('ready',canDeploy);
  rows.forEach(b=>{b.classList.toggle('active',phase==='battle'&&+b.dataset.row===row);b.classList.toggle('deploy-ready',canDeploy);b.disabled=phase!=='battle';b.setAttribute('aria-label',`第 ${+b.dataset.row+1} 行召唤${stats.name}`);});$('pause').disabled=phase!=='battle';$('letterTool').disabled=!ready||phase==='prologue';$('damageTool').disabled=!ready||phase==='prologue';
 }
@@ -193,9 +193,9 @@ const load=src=>new Promise((resolve,reject)=>{const im=new Image(),timer=setTim
 try{
  const jobs=[...Object.entries(assets.images).map(([id,v])=>[id,v.path]),...Object.entries(assets.ui).map(([name,url])=>['ui:'+name,url]),['tomb-alpha','assets/tombstones-alpha.png']];let loaded=0;
  await Promise.all(jobs.map(async([id,url])=>{pictures[id]=await load(url);$('loadingText').textContent=`读取原版素材 ${++loaded} / ${jobs.length}`;}));
- renderer=PVZ_RENDER.createRenderer(assets,pictures,pictures['tomb-alpha']);prisonRenderer=PVZ_PRISON.createPrisonRenderer(renderer,pictures);ready=true;$('loading').hidden=true;if(saveWarning)$('saveStatus').textContent=saveWarning;
+ renderer=PVZ_RENDER.createRenderer(assets,pictures,pictures['tomb-alpha']);ready=true;$('loading').hidden=true;if(saveWarning)$('saveStatus').textContent=saveWarning;
  if(progress.prologue?.version===PVZ_PROLOGUE.version){if(progress.pendingAfter)resumeAfter();else prepare(progress.currentLevel);}else startCinema(true);
- function frame(now){const dt=last?Math.min((now-last)/1000,.05):0;last=now;applyPause();if(phase==='prologue'){cinema.step(dt);const beat=PVZ_PROLOGUE.beats[cinema.index];if(beat.shot==='prison')prisonRenderer.draw($('nativePrison').getContext('2d'),{panel:beat.panel,time:progress.soft?0:now/1000,soft:progress.soft});}else battle.step(dt);
+ function frame(now){const dt=last?Math.min((now-last)/1000,.05):0;last=now;applyPause();if(phase==='prologue')cinema.step(dt);else battle.step(dt);
   const events=battle.drainEvents();let rescue=null;for(const e of events){if(e.type==='tombBroken'){notify(`第 ${e.row+1} 行防守碑失守，僵尸能量 +500！`,5);tone(90,.2);}else if(e.type==='mowerTriggered'){notify(`第 ${e.row+1} 行小车发动！它会清掉同行僵尸，离场后这条路不再有小车。`,6);tone(100,.25,'sawtooth',.02);}else if(e.type==='mowerSpent')notify(`第 ${e.row+1} 行小车已驶离。已耗掉 ${battle.clearedRows} / 2 行。`,5);else if(e.type==='balloonPopped')notify(`第 ${e.row+1} 行气球被仙人掌击破，同胞落地推进。`,4);else if(e.type==='diggerEmerged')notify(`第 ${e.row+1} 行矿工正在出土，地下阶段不会保护墓碑。`,4);else if(e.type==='reinforcement')notify(`第 ${e.row+1} 行植物增援到达。`,4);else if(e.type==='supplyCollected')notify(`取回第 ${e.row+1} 行口粮，能量 +${e.energy}。`,4);else if(e.type==='rescue')rescue=e;else if(e.type==='end')finish(e.status,rescue);}
   renderer.draw(ctx,battle,{hoverRow:phase==='battle'?hover:-1,selectedRow:phase==='battle'?row:-1,reducedMotion:progress.soft});drawDamagePreview(dt);sync();if(performance.now()>noticeUntil)$('notice').style.opacity='.12';requestAnimationFrame(frame);
  }requestAnimationFrame(frame);
