@@ -1,7 +1,7 @@
 {
   "name": "zomboss-rise",
   "productName": "僵王崛起",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "僵王崛起：前两章离线单机版",
   "main": "main.cjs",
   "private": true,

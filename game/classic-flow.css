@@ -3,7 +3,21 @@
 .home-screen{position:absolute;inset:0;z-index:60;background:#204930 url('assets/ui/home-scene.jpg') center/cover no-repeat;color:#fff0c2}
 .home-title{position:absolute;left:3%;top:4%;width:57%;height:15%;text-align:center;background:url('assets/ui/title-original.png') center/100% 100% no-repeat;text-shadow:2px 3px #321c10}
 .home-title h1{font:bold 3cqw "KaiTi","STKaiti",serif;margin:1.3cqw 0 0}.home-title p{font-size:1.1cqw;margin:.25cqw 0;color:#d6bc80}
-.home-actions{position:absolute;right:5%;top:28%;width:30%;display:grid;gap:1.2cqw}.home-actions .stone-button{font-size:2cqw;min-height:5.6cqw;padding:.6cqw 1cqw}.home-actions .stone-button:first-child{font-size:2.5cqw;min-height:7cqw;color:#fff4b4}
+/* The selector keeps its original adventure stone, paper almanac and lettered options. */
+.home-actions{position:absolute;right:4%;top:20%;width:36cqw;height:36cqw;display:block}
+.home-actions .stone-button{position:absolute;margin:0;border:0;min-width:0;min-height:0;padding:0;filter:none}
+.home-actions #homeContinue{left:0;top:0;width:36cqw;height:19cqw;background:transparent url('assets/ui/adventure-original.png') center top/100% auto no-repeat;color:#fff0b9;text-shadow:1px 2px #25341c}
+.home-actions #homeContinue:hover,.home-actions #homeContinue:focus-visible{background-image:url('assets/ui/adventure-highlight.png')}
+.home-action-caption{position:absolute;left:8%;right:8%;bottom:.1cqw;font:bold 1.5cqw "KaiTi","STKaiti",serif;line-height:1.5;text-align:center}
+.native-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.home-actions #homeChapters{left:4cqw;top:20cqw;width:28cqw;height:7.8cqw;transform:rotate(-3deg);font:bold 2.4cqw "KaiTi","STKaiti",serif;letter-spacing:.2cqw;color:#282438;text-shadow:0 1px #c6bcd8}
+.home-actions #homeChapters:hover,.home-actions #homeChapters:focus-visible{color:#e1f18d;text-shadow:1px 2px #333047}
+.home-actions #homeArchives{left:2cqw;top:29cqw;width:11cqw;height:10.5cqw;background:transparent url('assets/ui/almanac-original.png') center top/8.5cqw 8.5cqw no-repeat}
+.home-actions #homeArchives:hover,.home-actions #homeArchives:focus-visible{background-image:url('assets/ui/almanac-highlight.png')}
+.home-actions #homeArchives span{position:absolute;left:-1cqw;right:-1cqw;bottom:0;font:bold 1.4cqw "KaiTi","STKaiti",serif;color:#fff0b9;text-shadow:1px 2px #25341c;white-space:nowrap}
+.home-actions #homeSettings{right:2cqw;top:32cqw;width:13cqw;height:6cqw;background:transparent url('assets/ui/options-label.png') center/9cqw auto no-repeat;filter:brightness(3.3) drop-shadow(1px 2px #142212)}
+.home-actions #homeSettings:hover,.home-actions #homeSettings:focus-visible{background-image:url('assets/ui/options-label-highlight.png');filter:drop-shadow(1px 2px #142212)}
+.home-actions #homeContinue:active,.home-actions #homeArchives:active,.home-actions #homeSettings:active{translate:0 2px}
 .home-progress{position:absolute;left:5%;bottom:8%;font-size:1.35cqw;text-shadow:1px 2px 3px #151b13;background:#142615c9;padding:.7cqw 1.2cqw;margin:0}
 .home-status{position:absolute;left:5%;bottom:3%;font-size:1cqw;text-shadow:1px 2px #172311;margin:0;max-width:72%}.home-version{position:absolute;right:4%;bottom:3%;font-size:1cqw;text-shadow:1px 2px #172311}
 .arena[data-phase=home]>.bank,.arena[data-phase=home]>.classic-controls,.arena[data-phase=home]>.objective-note,.arena[data-phase=home]>.mode-note,.arena[data-phase=home]>.deployment-readout,.arena[data-phase=home]>.tomb-summary,.arena[data-phase=home]>.entrances,.arena[data-phase=home]>#notice{visibility:hidden}
@@ -41,3 +55,19 @@
 .chapter-dialog #dialogBody{flex:1;min-height:0;max-height:none}.chapter-dialog h2{font-size:clamp(18px,3.5cqw,28px);margin-bottom:4cqw}.chapter-grid button{font-size:clamp(11px,1.7cqw,14px);min-height:35px}.chapter-dialog .dialog-actions button{font-size:clamp(11px,1.7cqw,14px);min-height:32px}
 .card-flight{position:absolute;z-index:70;pointer-events:none;transform-origin:top left;opacity:.95!important;filter:none!important;background:url('assets/ui/zombie-packet.png') center/100% 100%;border:0}
 .card-flight img{position:absolute;left:5%;top:10%;width:90%;height:69%;object-fit:contain}.card-flight .roster-status{display:none}.card-flight .card-name{font-size:10px}.card-flight .cost{font-size:16px;background:none;border:0}
+
+/* Smaller controls remain distinct from the large selector plaques. */
+.classic-controls .stone-button{min-width:0;color:#e3ed9a;text-shadow:1px 2px #363347}
+.dialog-actions button,.book-tabs button,.damage-unit-tabs button,.damage-stage-tabs button,.damage-kind-tabs button,.chapter-grid button,.preview-tools button{font-family:"KaiTi","STKaiti","Microsoft YaHei",serif}
+.dialog-actions button{flex:0 1 auto}.preview-tools button{min-width:11cqw;min-height:3.8cqw;color:#e6df99;text-shadow:1px 2px #363347}
+.compact-menu .dialog-actions button{width:88%;align-self:center;min-height:4.5cqw;color:#ded78d;text-shadow:1px 2px #363347}
+.compact-menu .dialog-actions button:first-child{width:100%;color:#e1f18d;min-height:6cqw}
+.chapter-grid{justify-items:center;gap:1cqw}.chapter-grid button{width:94%;height:8cqw;min-height:0;color:#282438;font-size:clamp(11px,1.9cqw,16px);text-shadow:0 1px #c6bcd8}
+.chapter-grid button:disabled{opacity:1;filter:grayscale(1) brightness(.8);color:#eee5cc;text-shadow:1px 1px #33313b}
+.chapter-grid button:not(:disabled):hover,.chapter-grid button:not(:disabled):focus-visible{color:#eef0a0;text-shadow:1px 2px #333047}
+.dossier-close{background:transparent url('assets/images/options_backtogamebutton0.png') center/100% 100% no-repeat;color:#352e43;min-width:0}
+.settings-row button{min-width:5.5em;min-height:36px;padding:6px 8px 6px 38px;text-align:right;background:transparent url('assets/images/options_checkbox0.png') left center/32px auto no-repeat;color:#e4e7a3;text-shadow:1px 2px #363347}
+.settings-row button[aria-pressed=true]{background-image:url('assets/images/options_checkbox1.png');color:#e1f18d}
+.chooser-window .start-button:not(:disabled):hover,.chooser-window .start-button:focus-visible{background-image:url('assets/images/SeedChooser_Button_Glow.png');color:#fff1ad}
+.entrances button,.entrances button:hover,.entrances button.active,.entrances button.deploy-ready.active{border:0;background:none;box-shadow:none}.entrances button.active{color:#ffef94;text-shadow:1px 2px #2b3421}.entrances button:focus-visible{outline:2px dotted #e9dfa4;outline-offset:-8px}
+@media(max-height:500px){.home-action-caption{font-size:clamp(11px,1.5cqw,18px)}.home-actions #homeArchives span{font-size:clamp(10px,1.4cqw,16px)}.compact-menu .dialog-actions button{min-height:29px}.compact-menu .dialog-actions button:first-child{min-height:36px}.preview-tools button{min-height:28px}.chapter-grid button{min-height:32px}}

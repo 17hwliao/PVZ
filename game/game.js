@@ -239,7 +239,7 @@ function flyEnergy(r,amount=500){const e=$('energyFlight');e.textContent='+'+amo
 $('energyFlight').addEventListener('animationend',()=>{$('energyFlight').hidden=true;});
 function goHome(){
  stopEffects();$('battle').tabIndex=-1;hide();phase='home';manualPause=false;armed=false;closeDossier(false);$('preparation').hidden=true;$('home').hidden=false;
- $('homeContinue').textContent=progress.pendingAfter?'继续战后故事':progress.prologue?'继续营救':'开始营救';$('homeProgress').textContent=`${PVZ.LEVELS[progress.currentLevel].tag} · ${PVZ.LEVELS[progress.currentLevel].name}　已解救 ${progress.unlocked.length} / 5`;
+ $('homeActionCaption').textContent=progress.pendingAfter?'继续战后故事':progress.prologue?'继续营救':'开始营救';$('homeProgress').textContent=`${PVZ.LEVELS[progress.currentLevel].tag} · ${PVZ.LEVELS[progress.currentLevel].name}　已解救 ${progress.unlocked.length} / 5`;
  applyPause();sync();$('homeContinue').focus();
 }
 function continueAdventure(){if(!ready)return;$('home').hidden=true;if(progress.pendingAfter)resumeAfter();else if(progress.prologue?.version===PVZ_PROLOGUE.version)prepare(progress.currentLevel);else startCinema(true);}
@@ -249,7 +249,7 @@ function chapters(){
 }
 function archives(){show('同胞与故事','避难所档案',body=>body.append(text('p','回看已经收录的来信、漫画与动作。未解救的同胞不会提前加入队伍。')),[['故事与漫画',()=>book(0)],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['返回',goHome,true]]);}
 function settings(back=returnToGame){
- show('设置与档案','僵王崛起',body=>{for(const [label,on,fn]of [['声音',soundOn,()=>{soundOn=!soundOn;if(!soundOn)stopEffects();progress.sound=soundOn;save();syncSound();if(soundOn)sfx('seedlift');settings(back);}],['柔和转场',progress.soft,()=>{progress.soft=!progress.soft;save();settings(back);}]]){const r=text('div','','settings-row'),b=text('button',on?'开':'关');r.append(text('span',label),b);b.onclick=fn;body.append(r);}},[['返回',back],['作战来信',()=>openLetter(phase==='home'?progress.currentLevel:phase==='prepare'?pendingLevel:battle.level,()=>settings(back),false),true],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['故事与漫画',()=>book(0),true]]);
+ show('设置与档案','僵王崛起',body=>{for(const [label,on,fn]of [['声音',soundOn,()=>{soundOn=!soundOn;if(!soundOn)stopEffects();progress.sound=soundOn;save();syncSound();if(soundOn)sfx('seedlift');settings(back);}],['柔和转场',progress.soft,()=>{progress.soft=!progress.soft;save();settings(back);}]]){const r=text('div','','settings-row'),b=text('button',on?'开':'关');b.setAttribute('aria-pressed',String(on));b.setAttribute('aria-label',label+'：'+(on?'开':'关'));r.append(text('span',label),b);b.onclick=fn;body.append(r);}},[['返回',back],['作战来信',()=>openLetter(phase==='home'?progress.currentLevel:phase==='prepare'?pendingLevel:battle.level,()=>settings(back),false),true],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['故事与漫画',()=>book(0),true]]);
 }
 $('homeContinue').onclick=continueAdventure;$('homeChapters').onclick=chapters;$('homeArchives').onclick=archives;$('homeSettings').onclick=()=>settings(goHome);
 function attachRewardScene(body,unit){

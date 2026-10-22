@@ -1,6 +1,6 @@
 {
   "name": "zomboss-rise",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "private": true,
   "description": "Classic-asset reverse tower defense, chapters 1 and 2",
   "engines": {

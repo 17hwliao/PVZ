@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "source": "User-provided classic base, resource version 1.2.0.1073",
   "unchanged": [
     {
@@ -129,6 +129,46 @@
       "file": "assets/ui/rescue-door.png",
       "source": "reanim/Zombie_screendoor1.png",
       "sha256": "11f5654042c1c39f9b5182f6c9d84ee5d1b54321cc3ecd25219daf6147ec0941"
+    },
+    {
+      "file": "assets/ui/adventure-original.png",
+      "sha256": "7f5231369975f0a1d80051b1ea8f0756f984b5eb2f6faa89ecfb099325df7d44",
+      "source": "reanim/SelectorScreen_StartAdventure_Button1.png"
+    },
+    {
+      "file": "assets/ui/adventure-highlight.png",
+      "sha256": "2ca70f580ffff1993486b45176f1bd5377b00da1c516aa3d53c81c7b4647168a",
+      "source": "reanim/SelectorScreen_StartAdventure_Highlight.png"
+    },
+    {
+      "file": "assets/ui/almanac-original.png",
+      "sha256": "3bffac5b985ac985a9eef502c9f59fbdd6993f8d5d60ec827cb65bec1b442790",
+      "source": "images/SelectorScreen_Almanac.png"
+    },
+    {
+      "file": "assets/ui/almanac-highlight.png",
+      "sha256": "55faee5f4b4455aa626838166e16e51726b95550f108c50926c675d5d707f9dd",
+      "source": "images/SelectorScreen_AlmanacHighlight.png"
+    },
+    {
+      "file": "assets/ui/options-label.png",
+      "sha256": "143632518431b3c18def8e4ec0871017807ce12aff01a9510845af3a765cbee4",
+      "source": "images/SelectorScreen_Options1.png"
+    },
+    {
+      "file": "assets/ui/options-label-highlight.png",
+      "sha256": "5495d2b701b0efe55a44dbee62b6babb03870bf20c62077b51d85d706fc5a65e",
+      "source": "images/SelectorScreen_Options2.png"
+    },
+    {
+      "file": "assets/images/options_checkbox0.png",
+      "source": "images/options_checkbox0.png",
+      "sha256": "caceb06c29dec0df5fb9f7350c9044f91b4fe4b0fb00512bab62397f18bdb039"
+    },
+    {
+      "file": "assets/images/options_checkbox1.png",
+      "source": "images/options_checkbox1.png",
+      "sha256": "5302dc3d512921daaab473687157cda4ec5c7633d1271e8cb357f6d6842429d3"
     }
   ],
   "derived": [
