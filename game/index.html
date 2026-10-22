@@ -1,7 +1,7 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'"><title>植物大战僵尸：僵王崛起</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="original-ui.css"></head><body>
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'"><title>植物大战僵尸：僵王崛起</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="original-ui.css"><link rel="stylesheet" href="classic-flow.css"></head><body>
 <main class="classic-app">
  <section class="arena" id="arena" aria-label="经典草坪对战">
-  <canvas id="battle" width="1200" height="720" aria-label="五行草坪。选择僵尸卡，点击草坪右侧对应行召唤；方向键选行，回车召唤。"></canvas>
+  <canvas tabindex="0" id="battle" width="1200" height="720" aria-label="五行草坪。选择僵尸卡，点击草坪右侧对应行召唤；方向键选行，回车召唤。"></canvas>
   <div class="bank" id="bank" aria-label="本关僵尸卡组"><div class="energy" title="僵尸能量：召唤单位消耗；每失去一座防守碑获得500"><img src="assets/portraits/zomboss-head.png" alt="僵王" class="energy-head"><span class="energy-caption">僵尸能量</span><strong id="energy">—</strong></div><div class="cards" id="cards"></div><div class="bank-caption">同胞卡组 · <span>1—5 选卡</span></div></div>
   <div class="classic-controls" id="classicControls" aria-label="作战工具"><span class="tool-heading">僵王指挥台</span><div class="tool-buttons"><button id="pause" class="stone-button" aria-label="暂停战斗" aria-pressed="false">暂停</button><button id="letterTool" class="stone-button" title="查看本关作战来信" tabindex="-1">来信</button><button id="damageTool" class="stone-button" title="查看僵尸不同受击阶段的动作" tabindex="-1">动作</button><button id="menu" class="stone-button">菜单</button></div></div>
   <div class="deployment-readout" id="deploymentReadout"><img id="selectedPortrait" src="assets/portraits/normal.png" alt=""><div><strong id="selectedName">普通僵尸</strong><span id="selectedState">选择同胞后出发</span></div><span class="deployment-row" id="selectedLane">第 3 行</span></div>
@@ -11,9 +11,18 @@
   <div class="entrances" id="entrances" aria-label="右侧召唤入口"><button data-row="0" aria-label="第一行召唤">‹</button><button data-row="1" aria-label="第二行召唤">‹</button><button data-row="2" aria-label="第三行召唤">‹</button><button data-row="3" aria-label="第四行召唤">‹</button><button data-row="4" aria-label="第五行召唤">‹</button></div>
   <div id="notice" role="status" aria-live="polite">正在载入草坪……</div>
   <div id="pausedStamp" class="paused-stamp" hidden>暂停<small>空格或点击“继续”返回战场</small></div>
+
+  <section id="home" class="home-screen" aria-label="僵王崛起主菜单" hidden>
+   <div class="home-title"><h1>PVZ：僵王崛起</h1><p>属于同胞的归途</p></div>
+   <nav class="home-actions" aria-label="主菜单"><button id="homeContinue" class="stone-button">开始营救</button><button id="homeChapters" class="stone-button">章节选择</button><button id="homeArchives" class="stone-button">同胞与故事</button><button id="homeSettings" class="stone-button">设置</button></nav>
+   <p id="homeProgress" class="home-progress"></p><p id="homeStatus" class="home-status" role="status"></p><span class="home-version">前两章 · 0.5.0</span>
+  </section>
+  <div id="deployGhost" class="deploy-ghost" aria-hidden="true" hidden><img id="ghostPortrait" src="assets/portraits/normal.png" alt=""><span id="ghostLabel"></span></div>
+  <div id="energyFlight" class="energy-flight" aria-hidden="true" hidden>+500</div>
   <section id="preparation" class="preparation" role="dialog" aria-modal="true" aria-labelledby="chooserTitle" hidden>
    <div class="chooser-window"><h1 id="chooserTitle">选择你的僵尸</h1><div class="chooser-sub"><span id="rosterCount">已解救 1 / 5</span><span id="deckCount">已选择 1 / 5</span></div><div id="rosterCards" class="roster-cards"></div><div class="rescue-list" id="rescueList"></div><p class="chooser-tip" id="chooserHint">点击已解救的卡片编组；未解救的卡片可查看获得方式。</p><button id="startBattle" class="start-button">开始战斗</button></div>
-   <aside class="dossier"><div class="dossier-title">同胞档案</div><img id="dossierPortrait" src="assets/portraits/normal.png" alt="普通僵尸"><div class="dossier-copy" tabindex="0" role="region" aria-label="同胞资料，可滚动阅读"><h2 id="dossierName">普通僵尸</h2><p id="dossierState" class="dossier-state"></p><dl><dt>定位</dt><dd id="dossierRole"></dd><dt>召唤</dt><dd id="dossierCost"></dd><dt>获得方式</dt><dd id="dossierOrigin"></dd></dl><p id="dossierDescription"></p></div><button id="dossierToggle" class="stone-button">移出卡组</button></aside>
+   <aside class="defense-preview"><h2>本关植物防线</h2><canvas id="defenseCanvas" width="520" height="380" aria-label="本关五行植物阵型预览"></canvas><p id="defenseSummary"></p><div class="preview-tools"><button id="openDossier" class="stone-button">同胞图鉴</button><button id="previewLetter" class="stone-button">本关来信</button></div><p class="preview-hint">下方卡片加入队伍，上方卡片移除。右键或长按查看详情。</p></aside>
+   <aside class="dossier" id="unitDossier" aria-label="同胞详情" hidden><button id="dossierClose" class="dossier-close" aria-label="关闭同胞详情">×</button><div class="dossier-title">同胞档案</div><img id="dossierPortrait" src="assets/portraits/normal.png" alt="普通僵尸"><div class="dossier-copy" tabindex="0" role="region" aria-label="同胞资料，可滚动阅读"><h2 id="dossierName">普通僵尸</h2><p id="dossierState" class="dossier-state"></p><dl><dt>定位</dt><dd id="dossierRole"></dd><dt>召唤</dt><dd id="dossierCost"></dd><dt>获得方式</dt><dd id="dossierOrigin"></dd></dl><p id="dossierDescription"></p></div><button id="dossierToggle" class="stone-button">移出卡组</button></aside>
   </section>
   <section id="prologue" class="prologue" role="region" aria-label="序章动态漫画" hidden>
    <div class="cinema-view"><img id="prologueFrame" class="cinema-frame" alt=""><div class="cinema-vignette"></div><div class="electric-fringe"></div><div id="prologueFlash" class="cinema-flash"></div></div>
@@ -23,7 +32,7 @@
   </section>
   <div id="loading" class="loading"><strong>载入中……</strong><span id="loadingText">正在读取原版素材</span><button id="reload" hidden>重新载入</button></div>
  </section>
- <footer class="app-footer"><span>僵王崛起 · 前两章 0.4.2</span><span id="saveStatus">进度保存在本机浏览器</span><a href="comics.html">故事漫画</a></footer>
+ <footer class="app-footer"><span>僵王崛起 · 前两章 0.5.0</span><span id="saveStatus">进度保存在本机浏览器</span><a href="comics.html">故事漫画</a></footer>
 </main>
 <dialog id="dialog"><div class="dialog-paper"><span id="dialogKicker" class="dialog-kicker"></span><h2 id="dialogTitle"></h2><div id="dialogBody"></div><div id="dialogActions" class="dialog-actions"></div></div></dialog>
 <script src="assets-data.js"></script><script src="story-data.js"></script><script src="prologue-data.js"></script><script src="engine.js"></script><script src="campaign.js"></script><script src="renderer.js"></script><script src="prologue.js"></script><script src="game.js"></script></body></html>

@@ -1,5 +1,5 @@
 const {app,BrowserWindow,protocol,net,session}=require('electron'),path=require('node:path'),{pathToFileURL}=require('node:url'),fs=require('node:fs');
-protocol.registerSchemesAsPrivileged([{scheme:'pvz',privileges:{standard:true,secure:true,supportFetchAPI:true}}]);
+protocol.registerSchemesAsPrivileged([{scheme:'pvz',privileges:{standard:true,secure:true,supportFetchAPI:true,stream:true}}]);
 app.setName('僵王崛起');app.setPath('userData',path.join(app.getPath('appData'),'ZombossRise'));app.setAppUserModelId('cn.zombossrise.desktop');
 if(!app.requestSingleInstanceLock()){app.quit();}else{
  let win;
@@ -13,7 +13,7 @@ if(!app.requestSingleInstanceLock()){app.quit();}else{
   win=new BrowserWindow({title:'僵王崛起 · 前两章',width:1280,height:850,minWidth:880,minHeight:570,backgroundColor:'#18251b',icon:path.join(root,'assets/portraits/zomboss-head.png'),autoHideMenuBar:true,webPreferences:{nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true,devTools:false}});
   win.removeMenu();win.webContents.setWindowOpenHandler(()=>({action:'deny'}));
   win.webContents.on('will-navigate',(event,url)=>{if(!url.startsWith('pvz://game/'))event.preventDefault();});
-  win.webContents.on('before-input-event',(event,input)=>{if(input.type==='keyDown'&&input.key==='F11'){event.preventDefault();win.setFullScreen(!win.isFullScreen());}if(input.type==='keyDown'&&input.key==='Escape'&&win.isFullScreen()){event.preventDefault();win.setFullScreen(false);}});
+  win.webContents.on('before-input-event',(event,input)=>{if(input.type==='keyDown'&&input.key==='F11'){event.preventDefault();win.setFullScreen(!win.isFullScreen());}if(input.type==='keyDown'&&input.key==='Escape'&&win.isFullScreen()){win.setFullScreen(false);}});
   win.on('blur',()=>{if(win&&!win.webContents.isDestroyed())win.webContents.executeJavaScript("window.dispatchEvent(new Event('pvz-native-pause'))").catch(()=>{});});
   win.loadURL('pvz://game/index.html');win.on('closed',()=>win=null);
  });

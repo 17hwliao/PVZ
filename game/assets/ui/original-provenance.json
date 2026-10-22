@@ -1,5 +1,5 @@
 {
-  "version": "0.4.2",
+  "version": "0.5.0",
   "source": "User-provided classic base, resource version 1.2.0.1073",
   "unchanged": [
     {
@@ -109,6 +109,26 @@
     {
       "file": "assets/images/Almanac_GroundNight.jpg",
       "sha256": "e20df9f8cd625b601f46a8ff6bc1bbbf9c72c2141988c5d00fcd8c08c8301acc"
+    },
+    {
+      "file": "assets/ui/home-scene.jpg",
+      "source": "images/titlescreen.jpg",
+      "sha256": "8bb6eed27b335cd7ad4284f78ac89877f42d7cbfc87d1c745a034e230cb91652"
+    },
+    {
+      "file": "assets/ui/award-original.jpg",
+      "source": "images/AwardScreen_Back.jpg",
+      "sha256": "ed2d37f88601b9968e870d518f22f69b14639937a5b497313fe26e35ee2ca8cf"
+    },
+    {
+      "file": "assets/ui/chapters-original.jpg",
+      "source": "images/Challenge_Background.jpg",
+      "sha256": "a45a64f87df3bb41be5cd8da4d838c6e0b83ab6161d5bca1acca9c57b25913bb"
+    },
+    {
+      "file": "assets/ui/rescue-door.png",
+      "source": "reanim/Zombie_screendoor1.png",
+      "sha256": "11f5654042c1c39f9b5182f6c9d84ee5d1b54321cc3ecd25219daf6147ec0941"
     }
   ],
   "derived": [
@@ -129,6 +149,16 @@
   "zombiePacket": {
     "file": "assets/ui/zombie-packet.png",
     "source": "SeedPacket_Larger.png",
-    "method": "Cover baked BLOOM & DOOM SEED CO lettering with the original blank paper footer, leaving the original frame and illustration area intact. Unit names are live Chinese text."
+    "method": "Cover baked BLOOM & DOOM SEED CO lettering with the original blank paper footer, leaving the original frame and illustration area intact. Unit names are live Chinese text. Replace the sun cost badge with the existing Zomboss head, using the same original paper patch."
+  },
+  "titleBoard": {
+    "source": "AwardScreen_Back.jpg",
+    "file": "assets/ui/title-original.png",
+    "crop": [
+      125,
+      14,
+      550,
+      70
+    ]
   }
 }

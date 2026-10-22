@@ -114,9 +114,9 @@ function createRenderer(assets,pictures,tombImage){
   const x=988,y=686,w=190,h=32.5,frame=meter.height/2,part=parts.width/3;
   ctx.drawImage(meter,0,0,meter.width,frame,x,y,w,h);
   if(progress>0)ctx.drawImage(meter,meter.width*(1-progress),frame,meter.width*progress,frame,x+w*(1-progress),y,w*progress,h);
-  for(let i=1;i<=2;i++)ctx.drawImage(parts,part*2,0,part,parts.height,x+w*(1-i/2)-5,y-18,28,28);
+  for(let i=1;i<=2;i++){ctx.save();ctx.globalAlpha=b.clearedRows>=i?1:.4;actor(ctx,'mower','normal',0,x+w*(1-i/2)+5,y-1,.38);ctx.restore();}
   ctx.drawImage(parts,0,0,part,parts.height,x+w*(1-progress)-13,y+1,30,30);
-  label(ctx,b.status==='won'?(b.winReason==='door'?'已进门 · 突破成功':'突破成功'):`突破进度 · 小车 ${Math.min(2,b.clearedRows)} / 2`,1095,665,13,'#fff0bd');
+  label(ctx,b.status==='won'?(b.winReason==='door'?'已进门 · 突破成功':'突破成功'):`小车 ${Math.min(2,b.clearedRows)} / 2 · 或直接进门`,1095,665,13,'#fff0bd');
  }
  function draw(ctx,b,{hoverRow=-1,selectedRow=2,reducedMotion=false}={}){
   ctx.clearRect(0,0,1200,720);
@@ -139,7 +139,7 @@ function createRenderer(assets,pictures,tombImage){
   for(const t of b.tombs){const y=220+t.row*96;const x=940;
    shadow(ctx,x,y+35,35);
    if(tombImage){const damage=t.hp<=0?3:t.hp<t.maxHp*.35?2:t.hp<t.maxHp*.7?1:0;const w=tombImage.width/5,h=tombImage.height/4;ctx.drawImage(tombImage,0,damage*h,w,h,x-37,y-48,74,84);}
-   if(t.hp>0){bar(ctx,x,y+45,t.hp,t.maxHp,68);label(ctx,`${Math.ceil(t.hp)}`,x-41,y+49,11,'#f4e8be','right');}else label(ctx,'已失守 · 0 / 1000',x,y+58,10,'#d8bb92');
+   if(t.hp>0){bar(ctx,x,y+45,t.hp,t.maxHp,68);if(t.hp<t.maxHp||hi===t.row)label(ctx,`${Math.ceil(t.hp)}`,x-41,y+49,11,'#f4e8be','right');}else label(ctx,'已失守 · 0 / 1000',x,y+58,10,'#d8bb92');
   }
   drawProgress(ctx,b);
  }
