@@ -6,7 +6,10 @@ const portrait=u=>`assets/portraits/${u}.png`,KEY='pvz-rise-slice-progress-v1';
 let progress=PVZ_CAMPAIGN.normalize(null,PVZ.UNITS,PVZ.LEVELS,matchMedia('(prefers-reduced-motion: reduce)').matches),saveWarning='',allowSave=true;
 try{const raw=localStorage.getItem(KEY);if(raw)progress=PVZ_CAMPAIGN.normalize(JSON.parse(raw),PVZ.UNITS,PVZ.LEVELS,progress.soft);}
 catch{saveWarning='本机进度无法读取；本次暂存于窗口，不会覆盖已有存档';allowSave=false;}
-function save(){if(!allowSave){$('saveStatus').textContent=saveWarning;return;}try{localStorage.setItem(KEY,JSON.stringify(progress));$('saveStatus').textContent='同胞与关卡进度已保存到本机';}catch{$('saveStatus').textContent='浏览器存储不可用；进度仅保留本次窗口';}}
+let homeStatusTimer=null;
+function homeMessage(message,error=false){clearTimeout(homeStatusTimer);const el=$('homeStatus');el.textContent=message;el.hidden=false;el.classList.toggle('save-error',error);if(!error)homeStatusTimer=setTimeout(()=>{el.hidden=true;},2200);}
+function save(){if(!allowSave){$('saveStatus').textContent=saveWarning;homeMessage(saveWarning,true);return false;}try{localStorage.setItem(KEY,JSON.stringify(progress));$('saveStatus').textContent='同胞与关卡进度已保存到本机';homeMessage('旅途已记下');return true;}catch{$('saveStatus').textContent='本机暂时无法保存，进度仅保留本次窗口';homeMessage($('saveStatus').textContent,true);return false;}}
+window.PVZ_UI?.init(progress.uiTheme);
 let battle=new PVZ.Battle(0,progress.unlocked),phase='loading',pendingLevel=0,draft=[...progress.deck],inspected='normal',selected='normal',row=2,hover=-1,ready=false,renderer,pictures={},last=0,manualPause=false,soundOn=progress.sound||false,audio=null,noticeUntil=0,cinemaReturn=null,damagePreview=null,dialogReturnFocus=null,dialogCancelAction=null,rewardPreview=null,armed=false,pointerX=1030,pointerY=412,detailsFocus=null;
 const ctx=$('battle').getContext('2d'),rows=[...document.querySelectorAll('[data-row]')];
 function text(tag,content,cls){const e=document.createElement(tag);e.textContent=content;if(cls)e.className=cls;return e;}
@@ -20,7 +23,7 @@ function show(title,kicker,build,buttons){
  dialog.className='';
  $('dialogTitle').textContent=title;$('dialogKicker').textContent=kicker;$('dialogBody').replaceChildren();$('dialogActions').replaceChildren();build($('dialogBody'));$('dialogBody').scrollTop=0;
  dialogCancelAction=buttons.find(([label])=>['返回','返回战场','返回菜单','合上信件'].includes(label))?.[1]||null;
- for(const [label,action,secondary]of buttons){const b=text('button',label,secondary?'secondary':'');b.onclick=action;$('dialogActions').append(b);}if(!dialog.open)dialog.showModal();applyPause();
+ for(const [label,action,secondary]of buttons){const b=text('button',label,secondary?'secondary':'');b.onclick=action;$('dialogActions').append(b);}if(!dialog.open)dialog.showModal();applyPause();window.PVZ_UI?.refresh(dialog);
 }
 function hide(){damagePreview=null;rewardPreview=null;dialogCancelAction=null;dialog.close();applyPause();if(dialogReturnFocus?.isConnected)dialogReturnFocus.focus();}
 function lines(body,entries){for(const [speaker,line]of entries){const p=text('div','','line');p.append(text('span',speaker,'speaker'),document.createTextNode(line));body.append(p);}}
@@ -175,7 +178,7 @@ function sync(){
  const canDeploy=phase==='battle'&&armed&&!battle.paused&&cooldown===0&&!short;
  $('selectedState').textContent=phase==='prepare'?`${stats.cost} 能量 · ${stats.cooldown}秒冷却`:phase==='ended'?'行动结束':manualPause?'战斗已暂停':cooldown>0?`冷却 ${cooldown.toFixed(1)} 秒`:short?`还需 ${short} 能量`:`${stats.cost} 能量 · 右侧召唤`;
  $('selectedLane').textContent=phase==='prepare'?'战前编组':`第 ${row+1} 行`;$('deploymentReadout').classList.toggle('ready',canDeploy);
- updateGhost();const statusText=saveWarning||$('saveStatus').textContent;if($('homeStatus').textContent!==statusText)$('homeStatus').textContent=statusText;
+ updateGhost();
  rows.forEach(b=>{b.classList.toggle('active',phase==='battle'&&+b.dataset.row===row);b.classList.toggle('deploy-ready',canDeploy);b.disabled=phase!=='battle';b.setAttribute('aria-label',`第 ${+b.dataset.row+1} 行召唤${stats.name}`);});$('pause').disabled=phase!=='battle';$('letterTool').disabled=!ready||phase==='prologue';$('damageTool').disabled=!ready||phase==='prologue';
 }
 function deploy(r){if(!ready||phase!=='battle'||dialog.open)return;row=r;if(!armed){notify('先选择一张僵尸卡。');return;}const result=battle.deploy(selected,r);if(result.ok){armed=false;sfx('plant');notify(`${PVZ.UNITS[selected].name}进入第 ${r+1} 行。`,2);}else notify(result.reason);sync();}
@@ -240,7 +243,7 @@ $('energyFlight').addEventListener('animationend',()=>{$('energyFlight').hidden=
 function goHome(){
  stopEffects();$('battle').tabIndex=-1;hide();phase='home';manualPause=false;armed=false;closeDossier(false);$('preparation').hidden=true;$('home').hidden=false;
  $('homeActionCaption').textContent=progress.pendingAfter?'继续战后故事':progress.prologue?'继续营救':'开始营救';$('homeProgress').textContent=`${PVZ.LEVELS[progress.currentLevel].tag} · ${PVZ.LEVELS[progress.currentLevel].name}　已解救 ${progress.unlocked.length} / 5`;
- applyPause();sync();$('homeContinue').focus();
+ window.PVZ_UI?.updateRecord(PVZ.LEVELS[progress.currentLevel].tag.split('·')[1].trim(),progress.unlocked.length,$('homeProgress').textContent);if(saveWarning)homeMessage(saveWarning,true);applyPause();sync();$('homeContinue').focus();
 }
 function continueAdventure(){if(!ready)return;$('home').hidden=true;if(progress.pendingAfter)resumeAfter();else if(progress.prologue?.version===PVZ_PROLOGUE.version)prepare(progress.currentLevel);else startCinema(true);}
 function leaveHomePrompt(){if(phase==='battle')show('返回主菜单？','进度已保留',body=>body.append(text('p','本场战斗会从本关开局重新开始。已解救同胞与章节进度保留。')),[['返回主菜单',goHome],['返回战场',hide,true]]);else goHome();}
@@ -249,8 +252,15 @@ function chapters(){
 }
 function archives(){show('同胞与故事','避难所档案',body=>body.append(text('p','回看已经收录的来信、漫画与动作。未解救的同胞不会提前加入队伍。')),[['故事与漫画',()=>book(0)],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['返回',goHome,true]]);}
 function settings(back=returnToGame){
- show('设置与档案','僵王崛起',body=>{for(const [label,on,fn]of [['声音',soundOn,()=>{soundOn=!soundOn;if(!soundOn)stopEffects();progress.sound=soundOn;save();syncSound();if(soundOn)sfx('seedlift');settings(back);}],['柔和转场',progress.soft,()=>{progress.soft=!progress.soft;save();settings(back);}]]){const r=text('div','','settings-row'),b=text('button',on?'开':'关');b.setAttribute('aria-pressed',String(on));b.setAttribute('aria-label',label+'：'+(on?'开':'关'));r.append(text('span',label),b);b.onclick=fn;body.append(r);}},[['返回',back],['作战来信',()=>openLetter(phase==='home'?progress.currentLevel:phase==='prepare'?pendingLevel:battle.level,()=>settings(back),false),true],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['故事与漫画',()=>book(0),true]]);
+ show('设置与档案','僵王崛起',body=>{
+  for(const [label,on,fn]of [['声音',soundOn,()=>{soundOn=!soundOn;if(!soundOn)stopEffects();progress.sound=soundOn;save();syncSound();if(soundOn)sfx('seedlift');settings(back);}],['柔和转场',progress.soft,()=>{progress.soft=!progress.soft;save();settings(back);}]]){const r=text('div','','settings-row'),b=text('button',on?'开':'关');b.setAttribute('aria-pressed',String(on));b.setAttribute('aria-label',label+'：'+(on?'开':'关'));r.append(text('span',label),b);b.onclick=fn;body.append(r);}
+  const field=text('fieldset','','theme-settings'),legend=text('legend','界面风格'),choices=text('div','','theme-choices'),status=text('p','当前：'+(window.PVZ_UI?.names[progress.uiTheme]||'经典木牌'),'theme-setting-status');status.id='themeSettingsStatus';field.append(legend,choices,status);
+  for(const [key,label,family]of [['wood','经典木牌','cartoon'],['stone','僵族石刻','cutpaper'],['paper','旧纸来信','ink']]){const button=text('button','','theme-choice'),icon=text('span','','theme-choice-icon'),name=text('span',label);icon.setAttribute('aria-hidden','true');name.dataset.nativeFont='';name.dataset.fontFamily=family;button.dataset.theme=key;button.setAttribute('aria-pressed',String(progress.uiTheme===key));button.append(icon,name);button.onclick=()=>{progress.uiTheme=key;const saved=save();for(const b of choices.children)b.setAttribute('aria-pressed',String(b.dataset.theme===key));status.textContent='当前：'+label+(saved?' · 已保存':' · 仅本次窗口生效，未保存');window.PVZ_UI?.setTheme(key);};choices.append(button);}
+  const fonts=text('p','','theme-setting-status');fonts.id='uiFontStatus';field.append(fonts);body.append(field);
+ },[['返回',back],['作战来信',()=>openLetter(phase==='home'?progress.currentLevel:phase==='prepare'?pendingLevel:battle.level,()=>settings(back),false),true],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['故事与漫画',()=>book(0),true]]);
+ window.PVZ_UI?.setTheme(progress.uiTheme);
 }
+for(const el of document.querySelectorAll('.home-record'))el.onclick=chapters;
 $('homeContinue').onclick=continueAdventure;$('homeChapters').onclick=chapters;$('homeArchives').onclick=archives;$('homeSettings').onclick=()=>settings(goHome);
 function attachRewardScene(body,unit){
  const c=document.createElement('canvas');c.width=300;c.height=220;c.className='reward-canvas';c.setAttribute('aria-label',unit?'囚门打开，同胞走出':'同胞通过已打开的通道');body.prepend(c);rewardPreview={canvas:c,unit,time:0};

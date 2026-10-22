@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'"><title>植物大战僵尸：僵王崛起</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="original-ui.css"><link rel="stylesheet" href="classic-flow.css"></head><body>
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'"><title>植物大战僵尸：僵王崛起</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="original-ui.css"><link rel="stylesheet" href="classic-flow.css"><link rel="stylesheet" href="ui-themes.css"></head><body data-ui-theme="wood">
 <main class="classic-app">
  <section class="arena" id="arena" aria-label="经典草坪对战">
   <canvas tabindex="0" id="battle" width="1200" height="720" aria-label="五行草坪。选择僵尸卡，点击草坪右侧对应行召唤；方向键选行，回车召唤。"></canvas>
@@ -13,9 +13,13 @@
   <div id="pausedStamp" class="paused-stamp" hidden>暂停<small>空格或点击“继续”返回战场</small></div>
 
   <section id="home" class="home-screen" aria-label="僵王崛起主菜单" hidden>
-   <div class="home-title"><h1>PVZ：僵王崛起</h1><p>属于同胞的归途</p></div>
-   <nav class="home-actions" aria-label="主菜单"><button id="homeContinue" class="stone-button"><span class="native-label">开始冒险模式</span><span id="homeActionCaption" class="home-action-caption">开始营救</span></button><button id="homeChapters" class="stone-button">章节选择</button><button id="homeArchives" class="stone-button"><span>同胞与故事</span></button><button id="homeSettings" class="stone-button"><span class="native-label">选项</span></button></nav>
-   <p id="homeProgress" class="home-progress"></p><p id="homeStatus" class="home-status" role="status"></p><span class="home-version">前两章 · 0.5.1</span>
+   <div class="home-title"><h1><span data-native-font>PVZ：僵王崛起</span></h1><p><span data-native-font>属于同胞的归途</span></p></div>
+   <nav class="home-actions" aria-label="主菜单"><button id="homeContinue" class="stone-button"><span class="native-label">开始冒险模式</span><span id="homeActionCaption" class="home-action-caption" data-native-font>开始营救</span></button><button id="homeChapters" class="stone-button"><span data-native-font>章节选择</span></button><button id="homeArchives" class="stone-button"><span data-native-font>同胞与故事</span></button><button id="homeSettings" class="stone-button"><span class="native-label">选项</span></button></nav>
+   <p id="homeProgress" class="native-label"></p>
+   <button id="homeRecordWood" class="home-record record-wood" title="查看营救记录"><span class="wood-progress" data-record-progress data-native-font data-font-family="cartoon"></span></button>
+   <button id="homeRecordStone" class="home-record record-stone" title="查看营救记录" hidden><img class="record-head" src="assets/portraits/zomboss-head.png" alt=""><span class="stone-heading" data-native-font data-font-family="cutpaper">营救记录</span><span class="stone-count" data-record-progress data-native-font data-font-family="cutpaper"></span></button>
+   <button id="homeRecordPaper" class="home-record record-paper" title="查看营救记录" hidden><span class="paper-sheet" aria-hidden="true"></span><span class="paper-dear" data-native-font data-font-family="ink">乔治：</span><span class="paper-message" data-native-font data-font-family="ink">同胞们在等你。</span><span class="paper-count" data-record-progress data-native-font data-font-family="ink"></span><span class="paper-sign" data-native-font data-font-family="ink">老地方见！</span></button>
+   <p id="homeStatus" class="home-status" role="status" hidden></p><p id="uiFontNotice" class="ui-font-notice" role="status" hidden></p>
   </section>
   <div id="deployGhost" class="deploy-ghost" aria-hidden="true" hidden><img id="ghostPortrait" src="assets/portraits/normal.png" alt=""><span id="ghostLabel"></span></div>
   <div id="energyFlight" class="energy-flight" aria-hidden="true" hidden>+500</div>
@@ -32,7 +36,7 @@
   </section>
   <div id="loading" class="loading"><strong>载入中……</strong><span id="loadingText">正在读取原版素材</span><button id="reload" hidden>重新载入</button></div>
  </section>
- <footer class="app-footer"><span>僵王崛起 · 前两章 0.5.1</span><span id="saveStatus">进度保存在本机浏览器</span><a href="comics.html">故事漫画</a></footer>
+ <footer class="app-footer"><span>僵王崛起 · 前两章 0.5.2</span><span id="saveStatus">进度保存在本机浏览器</span><a href="comics.html">故事漫画</a></footer>
 </main>
 <dialog id="dialog"><div class="dialog-paper"><span id="dialogKicker" class="dialog-kicker"></span><h2 id="dialogTitle"></h2><div id="dialogBody"></div><div id="dialogActions" class="dialog-actions"></div></div></dialog>
-<script src="assets-data.js"></script><script src="story-data.js"></script><script src="prologue-data.js"></script><script src="engine.js"></script><script src="campaign.js"></script><script src="renderer.js"></script><script src="prologue.js"></script><script src="game.js"></script></body></html>
+<script src="assets-data.js"></script><script src="story-data.js"></script><script src="prologue-data.js"></script><script src="engine.js"></script><script src="campaign.js"></script><script src="renderer.js"></script><script src="prologue.js"></script><script src="ui-font-data.js"></script><script src="ui-themes.js"></script><script src="game.js"></script></body></html>

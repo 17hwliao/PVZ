@@ -1,5 +1,5 @@
 {
-  "version": "0.5.1",
+  "version": "0.5.2",
   "source": "User-provided classic base, resource version 1.2.0.1073",
   "unchanged": [
     {
@@ -169,6 +169,21 @@
       "file": "assets/images/options_checkbox1.png",
       "source": "images/options_checkbox1.png",
       "sha256": "5302dc3d512921daaab473687157cda4ec5c7633d1271e8cb357f6d6842429d3"
+    },
+    {
+      "file": "assets/ui/welcome-original.png",
+      "source": "reanim/SelectorScreen_WoodSign1.png",
+      "sha256": "1d4cb9800ca72c68630f5f45368f593ef39a1e09d1ddc755098b9a781678d5db"
+    },
+    {
+      "file": "assets/ui/record-note.jpg",
+      "source": "images/ZombieNote.jpg",
+      "sha256": "37b61172cd83e582e5d9d77f47bbf1dd3e43ed500b7b7785927091638175424e"
+    },
+    {
+      "file": "assets/ui/record-note-mask.png",
+      "source": "images/ZombieNote_.png",
+      "sha256": "de1d63e5574ddb257902d9bc21b016c47ee8425f8891d33e72fc0e3c8505198f"
     }
   ],
   "derived": [

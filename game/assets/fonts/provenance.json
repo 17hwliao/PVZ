@@ -1,0 +1,35 @@
+{
+  "source": "User-provided classic 1.2.0.1073 resources/data",
+  "fontFamilies": {
+    "cartoon": {
+      "metadata": "BrianneTod32.txt",
+      "atlas": "_BrianneTod32.png",
+      "face": "FZKaTong-M19S"
+    },
+    "cutpaper": {
+      "metadata": "DwarvenTodcraft24.txt",
+      "atlas": "DwarvenTodcraft24.png",
+      "face": "FZJianZhi-M23S"
+    },
+    "ink": {
+      "metadata": "HouseofTerror28.txt",
+      "atlas": "HouseofTerror28.png",
+      "face": "FZYiHei-M20S"
+    }
+  },
+  "conversion": "Native glyph coverage decoded from RGB/alpha; source advances and offsets retained; not new AI-drawn fonts",
+  "glyphsPerFamily": 1514,
+  "fallbackFont": {
+    "file": "ZCOOLKuaiLe-Regular.ttf",
+    "source": "https://github.com/google/fonts/tree/main/ofl/zcoolkuaile",
+    "upstream": "https://github.com/googlefonts/zcool-kuaile",
+    "license": "SIL OFL 1.1; OFL.txt"
+  },
+  "sha256": {
+    "cartoon.png": "a6e6b2ac64638a6ebf06e2a741018e584b2fdde257bb15c99bbf007deec533b7",
+    "cutpaper.png": "2895c9ea7e0982fab918d3544ec91a7c0d60e63cbc3be5c1c10b3eae20727483",
+    "ink.png": "1f675553ef90ca2dbdea989d33c13554e6d1b488a32bbb87ad1b5a571eb80339",
+    "ZCOOLKuaiLe-Regular.ttf": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+    "OFL.txt": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d"
+  }
+}
