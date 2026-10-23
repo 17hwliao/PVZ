@@ -71,3 +71,12 @@
 .chooser-window .start-button:not(:disabled):hover,.chooser-window .start-button:focus-visible{background-image:url('assets/images/SeedChooser_Button_Glow.png');color:#fff1ad}
 .entrances button,.entrances button:hover,.entrances button.active,.entrances button.deploy-ready.active{border:0;background:none;box-shadow:none}.entrances button.active{color:#ffef94;text-shadow:1px 2px #2b3421}.entrances button:focus-visible{outline:2px dotted #e9dfa4;outline-offset:-8px}
 @media(max-height:500px){.home-action-caption{font-size:clamp(11px,1.5cqw,18px)}.home-actions #homeArchives span{font-size:clamp(10px,1.4cqw,16px)}.compact-menu .dialog-actions button{min-height:29px}.compact-menu .dialog-actions button:first-child{min-height:36px}.preview-tools button{min-height:28px}.chapter-grid button{min-height:32px}}
+
+/* Field orders sit above the lawn, leaving all five routes readable. */
+.mode-note{display:grid;grid-template-columns:auto 1fr;row-gap:.2cqw;width:43%;line-height:1.45}
+.mode-note #fieldStatus{grid-column:1/-1;white-space:normal;color:#fff1bc}
+
+#notice{white-space:normal;text-align:center;line-height:1.55}
+
+.theme-choice .character-art-portrait{position:absolute;left:25%;top:0;width:50%;height:62px;object-fit:contain}
+@media(max-height:500px){.theme-choice .character-art-portrait{height:46px}}

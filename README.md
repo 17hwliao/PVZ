@@ -1,8 +1,9 @@
-# PVZ：僵王崛起 · 0.5.2
+# PVZ：僵王崛起 · 0.6.0
 
 经典素材反向塔防，包含序章与前两章七关。采用木石UI、五种可解救僵尸、六种植物、七种关卡配置、开局信件和Q版漫画。完整离线运行。
 
 - [玩法、关卡与存档](game/README.md)
+- [0.6.0角色统一、动画修复与整体Review](docs/0.6.0-角色统一与Review记录.md)
 - [0.5.2三种风格正式接入](docs/0.5.2-三种风格正式接入.md)
 - [0.5.1经典点击控件调整](docs/0.5.1-经典点击控件调整.md)
 - [0.5.0经典流程开发与验证](docs/0.5.0-经典流程开发与验证.md)
@@ -12,8 +13,10 @@
 - [后续扩展候选（尚未实现）](docs/0.4.0-后续扩展候选.md)
 - [PC与Android本地构建](构建说明.md)
 
-源码目录：game/为完整游戏，desktop/为Electron容器，android/为WebView容器，tests/为自动检查。直接打开game/index.html可运行网页版本。运行npm ci后npm test执行84项行为检查及语法/资源一致性检查。
+源码目录：game/为完整游戏，desktop/为Electron容器，android/为WebView容器，tests/为自动检查。直接打开game/index.html可运行网页版本。运行npm ci后npm test执行99项行为与连续帧检查及语法/资源一致性检查。
 
 PC与APK由Build-Local.ps1使用本地Electron、Android SDK和单独保管的签名密钥构建。签名密钥、密码、运行库、安装包和node_modules不进入仓库。0.5.0已在浏览器实际通过首关，并核对桌面与窄视口流程；Windows游戏窗口与Android设备体验仍未验证。
 
 当前为独立实现，非原版EXE补丁；巨人、机甲、最终梦醒等后续内容尚未制作。
+
+0.6.0统一六种植物、五种僵尸的形象与表情，修复植物攻击丢失茎叶、面部重影和空闲冻结。新素材的提示词与哈希包含在game/assets/story-art/provenance.json；保留原版角色与三套界面风格。

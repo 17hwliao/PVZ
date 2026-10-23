@@ -2,7 +2,7 @@
 'use strict';
 const $=id=>document.getElementById(id),story=PVZ_STORY,assets=PVZ_ASSETS,dialog=$('dialog');
 const roster=story.roster,MAX_CARDS=5,LAST_LEVEL=PVZ.LEVELS.length-1;
-const portrait=u=>`assets/portraits/${u}.png`,KEY='pvz-rise-slice-progress-v1';
+const trialPortraits={},artUnavailable=[],portrait=u=>progress.characterArt==='story'&&trialPortraits[u]||`assets/portraits/${u}.png`,KEY='pvz-rise-slice-progress-v1';
 let progress=PVZ_CAMPAIGN.normalize(null,PVZ.UNITS,PVZ.LEVELS,matchMedia('(prefers-reduced-motion: reduce)').matches),saveWarning='',allowSave=true;
 try{const raw=localStorage.getItem(KEY);if(raw)progress=PVZ_CAMPAIGN.normalize(JSON.parse(raw),PVZ.UNITS,PVZ.LEVELS,progress.soft);}
 catch{saveWarning='本机进度无法读取；本次暂存于窗口，不会覆盖已有存档';allowSave=false;}
@@ -37,6 +37,18 @@ function bank(){
  units.forEach((u,i)=>{const b=card(u);b.append(text('span',String(i+1),'card-key'));b.title=`${i+1} · ${PVZ.UNITS[u].name} · ${PVZ.UNITS[u].cost}能量 / 冷却${PVZ.UNITS[u].cooldown}秒`;b.onclick=()=>{if(dialog.open||phase==='prologue')return;if(phase==='prepare'){toggleDraft(u);return;}if(phase!=='battle')return;selected=u;armed=true;hover=row;pointerX=PVZ.FIELD.spawnX;pointerY=220+row*96;sfx('seedlift');sync();};$('cards').append(b);});
  for(let i=units.length;i<MAX_CARDS;i++)$('cards').append(text('span','—','slot-empty'));sync();
 }
+function refreshCharacterPortraits(){
+ for(const im of document.querySelectorAll('.unit-card img,.roster-card img'))im.src=portrait(im.closest('[data-unit]').dataset.unit);
+}
+function buildCharacterPortraits(){
+ const families={normal:'civilian-head-v2',cone:'civilian-head-v2',bucket:'civilian-head-v2',balloon:'balloon-head-v2',digger:'digger-head-v2'};
+ if(!Object.values(families).some(name=>pictures['story:'+name]))return;
+ const c=document.createElement('canvas');c.width=256;c.height=256;const paint=c.getContext('2d');
+ if(!(paint?.measureText('同胞')?.width>0))return;
+ renderer.setArtStyle?.('story');
+ for(const type of Object.keys(PVZ.UNITS)){if(!pictures['story:'+families[type]])continue;paint.clearRect(0,0,256,256);renderer.drawZombie(paint,{type,maxHp:PVZ.UNITS[type].hp,hp:PVZ.UNITS[type].hp,age:0,slow:0,hit:0},{x:136,foot:250,scale:1.9,reducedMotion:true});trialPortraits[type]=c.toDataURL('image/png');}
+ renderer.setArtStyle?.(progress.characterArt);refreshCharacterPortraits();
+}
 function toggleDraft(unit){
  if(!progress.unlocked.includes(unit))return;const adding=!draft.includes(unit),from=adding?rosterButtons[unit]?.getBoundingClientRect():null;
  if(draft.includes(unit))draft=draft.filter(u=>u!==unit);else if(draft.length<MAX_CARDS)draft.push(unit);else $('chooserHint').textContent='卡槽已满，先从上方移除一张卡。';
@@ -66,6 +78,7 @@ $('previewLetter').onclick=()=>openLetter(pendingLevel,hide,false);
 function titles(index){$('levelTag').textContent=PVZ.LEVELS[index].tag;$('levelName').textContent=PVZ.LEVELS[index].name;$('objective').textContent='任一僵尸进门，或耗掉至少两行小车';$('modeName').textContent=PVZ.MODES[PVZ.LEVELS[index].mode].name;}
 function encounterBrief(body,index){
  const level=PVZ.LEVELS[index],mode=PVZ.MODES[level.mode],panel=text('section','','encounter-brief');panel.append(text('h3',mode.name),text('p',mode.brief));
+ for(const action of PVZ.STORY_ACTIONS[index])panel.append(text('p',`战地行动：第 ${action.row+1} 行${action.title}。地面同胞走到目标附近、没有交战时累计接应2秒，获得${action.energy}能量，每局一次。${action.kind==='cell'?'同胞在本关获胜后正式加入卡组。':''}`));
  const types=[...new Set([...level.plants.map(p=>p[0]),...(level.reinforcements||[]).map(p=>p.type)])];
  const list=text('div','','plant-intel');for(const type of types){const stats=PVZ.PLANTS[type],item=text('div','');item.append(text('strong',stats.name+' · '+stats.role),text('span',stats.description));list.append(item);}panel.append(list);body.append(panel);
 }
@@ -167,7 +180,8 @@ function startCinema(startup){
 $('prologueSound').onclick=()=>{soundOn=!soundOn;syncSound();if(soundOn)sceneSound('static');};
 $('prologueReduce').addEventListener('click',()=>{progress.soft=$('prologueReduce').getAttribute('aria-pressed')==='true';save();});
 function sync(){
- $('arena').dataset.phase=phase;$('arena').dataset.mechanics=String(!!(battle.hazards.length||battle.supplies.length||battle.reinforcements.some(r=>!r.arrived)));
+ $('arena').dataset.phase=phase;$('arena').dataset.mechanics=String(!!(battle.storyActions.length||battle.hazards.length||battle.supplies.length||battle.reinforcements.some(r=>!r.arrived)));
+ const fieldAction=battle.storyActions.find(a=>!a.completed)||battle.storyActions[0];$('fieldStatus').textContent=fieldAction?(fieldAction.completed?'战地行动已完成':`第${fieldAction.row+1}行 · ${fieldAction.title} · 地面接应2秒`):'口粮是面包和米饭，带回工坊';
  $('energy').textContent=Math.floor(battle.energy);$('tombCount').textContent=`${battle.tombs.filter(t=>t.hp>0).length} / 5`;
  const reinforcements=battle.reinforcements.filter(r=>!r.arrived),supplies=battle.supplies;
  $('modeStatus').textContent=battle.hazards.length?battle.hazards.map(h=>`第${h.row+1}行${h.state==='active'?'通电':h.state==='warning'?'预警':'电网休眠'}`).join(' · '):supplies.length?`口粮 ${supplies.filter(s=>s.collected).length} / ${supplies.length}`:reinforcements.length?`植物增援 ${Math.max(0,Math.ceil(reinforcements[0].at-battle.time))}秒`:'进门或两路小车离场获胜';
@@ -254,6 +268,9 @@ function archives(){show('同胞与故事','避难所档案',body=>body.append(t
 function settings(back=returnToGame){
  show('设置与档案','僵王崛起',body=>{
   for(const [label,on,fn]of [['声音',soundOn,()=>{soundOn=!soundOn;if(!soundOn)stopEffects();progress.sound=soundOn;save();syncSound();if(soundOn)sfx('seedlift');settings(back);}],['柔和转场',progress.soft,()=>{progress.soft=!progress.soft;save();settings(back);}]]){const r=text('div','','settings-row'),b=text('button',on?'开':'关');b.setAttribute('aria-pressed',String(on));b.setAttribute('aria-label',label+'：'+(on?'开':'关'));r.append(text('span',label),b);b.onclick=fn;body.append(r);}
+  const art=text('fieldset','','theme-settings'),artLegend=text('legend','角色形象'),artChoices=text('div','','theme-choices');art.append(artLegend,artChoices,text('p','剧情画风：六种植物与五种僵尸统一形象；面孔、攻击与受击动作适配，保留经典护具和骨骼。','theme-setting-status'));
+  if(artUnavailable.length)art.append(text('p','部分角色素材未载入，相关画面已回退到原版或文字。重新载入游戏可重试。','theme-setting-status'));
+  for(const [key,label]of [['story','剧情画风'],['classic','原版角色']]){const button=text('button','','theme-choice'),preview=document.createElement('img'),caption=text('span',label);preview.className='character-art-portrait';preview.src=key==='story'?(trialPortraits.normal||'assets/portraits/normal.png'):'assets/portraits/normal.png';preview.alt='';caption.dataset.nativeFont='';button.append(preview,caption);button.dataset.characterArt=key;button.setAttribute('aria-pressed',String(progress.characterArt===key));button.onclick=()=>{progress.characterArt=key;const saved=save();renderer?.setArtStyle?.(key);refreshCharacterPortraits();for(const b of artChoices.children)b.setAttribute('aria-pressed',String(b.dataset.characterArt===key));art.querySelector('p').textContent=saved?'角色形象已保存；可随时切回另一版。':'角色形象仅本窗口生效，未保存。';};artChoices.append(button);}body.append(art);
   const field=text('fieldset','','theme-settings'),legend=text('legend','界面风格'),choices=text('div','','theme-choices'),status=text('p','当前：'+(window.PVZ_UI?.names[progress.uiTheme]||'经典木牌'),'theme-setting-status');status.id='themeSettingsStatus';field.append(legend,choices,status);
   for(const [key,label,family]of [['wood','经典木牌','cartoon'],['stone','僵族石刻','cutpaper'],['paper','旧纸来信','ink']]){const button=text('button','','theme-choice'),icon=text('span','','theme-choice-icon'),name=text('span',label);icon.setAttribute('aria-hidden','true');name.dataset.nativeFont='';name.dataset.fontFamily=family;button.dataset.theme=key;button.setAttribute('aria-pressed',String(progress.uiTheme===key));button.append(icon,name);button.onclick=()=>{progress.uiTheme=key;const saved=save();for(const b of choices.children)b.setAttribute('aria-pressed',String(b.dataset.theme===key));status.textContent='当前：'+label+(saved?' · 已保存':' · 仅本次窗口生效，未保存');window.PVZ_UI?.setTheme(key);};choices.append(button);}
   const fonts=text('p','','theme-setting-status');fonts.id='uiFontStatus';field.append(fonts);body.append(field);
@@ -275,11 +292,12 @@ function drawReward(dt){
 const load=src=>new Promise((resolve,reject)=>{const im=new Image(),timer=setTimeout(()=>reject(Error('读取素材超时：'+src)),15000);im.onload=()=>{clearTimeout(timer);resolve(im);};im.onerror=()=>{clearTimeout(timer);reject(Error('无法读取素材：'+src));};im.src=src;});
 try{
  const jobs=[...Object.entries(assets.images).map(([id,v])=>[id,v.path]),...Object.entries(assets.ui).map(([name,url])=>['ui:'+name,url]),['tomb-alpha','assets/tombstones-alpha.png']];let loaded=0;
- await Promise.all(jobs.map(async([id,url])=>{pictures[id]=await load(url);$('loadingText').textContent=`读取原版素材 ${++loaded} / ${jobs.length}`;}));
- renderer=PVZ_RENDER.createRenderer(assets,pictures,pictures['tomb-alpha']);ready=true;$('loading').hidden=true;if(saveWarning)$('saveStatus').textContent=saveWarning;
+ const artJobs=Object.entries(assets.storyArt||{}).map(async([id,entry])=>{try{pictures['story:'+id]=await load(entry.file);}catch{artUnavailable.push(id);}});
+ await Promise.all([...jobs.map(async([id,url])=>{pictures[id]=await load(url);$('loadingText').textContent=`读取原版素材 ${++loaded} / ${jobs.length}`;}),...artJobs]);
+ renderer=PVZ_RENDER.createRenderer(assets,pictures,pictures['tomb-alpha']);renderer.setArtStyle?.(progress.characterArt);buildCharacterPortraits();ready=true;$('loading').hidden=true;if(saveWarning)$('saveStatus').textContent=saveWarning;
  goHome();
  function frame(now){const dt=last?Math.min((now-last)/1000,.05):0;last=now;applyPause();if(phase==='prologue')cinema.step(dt);else battle.step(dt);
-  const events=battle.drainEvents();let rescue=null,brokenRows=[];for(const e of events){if(e.type==='tombBroken'){notify(`第 ${e.row+1} 行防守碑失守，僵尸能量 +500！`,5);brokenRows.push(e.row);sfx('gravestone_rumble');}else if(e.type==='mowerTriggered'){notify(`第 ${e.row+1} 行小车发动！它会清掉同行僵尸，离场后这条路不再有小车。`,6);sfx('lawnmower');}else if(e.type==='mowerSpent')notify(`第 ${e.row+1} 行小车已驶离。已耗掉 ${battle.clearedRows} / 2 行。`,5);else if(e.type==='balloonPopped')notify(`第 ${e.row+1} 行气球被仙人掌击破，同胞落地推进。`,4);else if(e.type==='diggerEmerged')notify(`第 ${e.row+1} 行矿工正在出土，地下阶段不会保护墓碑。`,4);else if(e.type==='reinforcement')notify(`第 ${e.row+1} 行植物增援到达。`,4);else if(e.type==='supplyCollected')notify(`取回第 ${e.row+1} 行口粮，能量 +${e.energy}。`,4);else if(e.type==='rescue')rescue=e;else if(e.type==='end')finish(e.status,rescue);}
+  const events=battle.drainEvents();let rescue=null,brokenRows=[];for(const e of events){if(e.type==='tombBroken'){notify(`第 ${e.row+1} 行防守碑失守，僵尸能量 +500！`,5);brokenRows.push(e.row);sfx('gravestone_rumble');}else if(e.type==='mowerTriggered'){notify(`第 ${e.row+1} 行小车发动！它会清掉同行僵尸，离场后这条路不再有小车。`,6);sfx('lawnmower');}else if(e.type==='mowerSpent')notify(`第 ${e.row+1} 行小车已驶离。已耗掉 ${battle.clearedRows} / 2 行。`,5);else if(e.type==='balloonPopped')notify(`第 ${e.row+1} 行气球被仙人掌击破，同胞落地推进。`,4);else if(e.type==='diggerEmerged')notify(`第 ${e.row+1} 行矿工正在出土，地下阶段不会保护墓碑。`,4);else if(e.type==='reinforcement')notify(`第 ${e.row+1} 行植物增援到达。`,4);else if(e.type==='storyAction'){notify(e.line+' 能量 +'+e.energy,9);sfx('seedlift');}else if(e.type==='supplyCollected')notify(`阿朴：第 ${e.row+1} 行的面包和米袋取回来了。能量 +${e.energy}。`,4);else if(e.type==='rescue')rescue=e;else if(e.type==='end')finish(e.status,rescue);}
   if(brokenRows.length)flyEnergy(brokenRows.at(-1),brokenRows.length*500);
   if(phase!=='home')renderer.draw(ctx,battle,{hoverRow:phase==='battle'&&armed?hover:-1,selectedRow:phase==='battle'&&armed?row:-1,reducedMotion:progress.soft});if(phase==='prepare')drawDefensePreview(now/1000);drawReward(dt);drawDamagePreview(dt);sync();if(performance.now()>noticeUntil)$('notice').style.opacity='.12';requestAnimationFrame(frame);
  }requestAnimationFrame(frame);

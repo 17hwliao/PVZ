@@ -1,0 +1,134 @@
+{
+  "mode": "built-in image_gen",
+  "use": "Local story art trial; original game assets remain unchanged",
+  "assets": [
+    {
+      "file": "assets/story-art/guard-heads-v1.png",
+      "sha256": "9959c8625e7ec44e0f59bd5fd980c297cd6e20b946b460282251cefd001e84a0",
+      "prompt": "Use case: stylized-concept. Production game sprite atlas, exactly TWO equal square cells in ONE horizontal row, transparent background, no captions or lettering. Reference images are style and silhouette references for original classic Plants vs Zombies head sprites. Redesign these heads as hostile prison sentries: cell1 green pea shooter head facing RIGHT, cell2 ice blue snow pea head facing RIGHT with ice spikes. Thick uneven dark green ink contours, simple hand painted smooth 2D gouache shading, comic Q cartoon, chunky readable silhouette and low detail like classic 2009 PC casual game. Angry sharply lowered eyebrows, narrowed alert eyes, small scars, deliberate fierce expression; not cute smiling. HEADS ONLY, no body, stem, feet, clothing, no shadow. Keep muzzle and skull proportions and attached rear leaf/ice ornaments close to reference to fit an existing skeletal head pivot. One complete head in each equal cell with 8 percent clear margin, centered, both same visual size. True alpha transparency, no checkerboard.",
+      "referenceFiles": [
+        "assets/reanim/PeaShooter_Head.png",
+        "assets/reanim/SnowPea_head.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/civilian-head-v1.png",
+      "sha256": "ecacd3dfa61e51b81a1102d32ce2b5e2cf6ab1d40d8c0a0d884e6137e47fe61d",
+      "prompt": "Use case: precise-object-edit. Redesign this classic 2D zombie head sprite for a sympathetic civilized zombie wearing an existing brown business suit. Keep the reference exact head silhouette, left facing 3/4 angle, bald asymmetrical skull, olive gray green skin, bulging eyes and ear position, ink outline and simple 2009 hand painted cartoon game shading. Change expression to alert and weary yet determined, thoughtful eyes, no crazed stare; neatly combed tiny dark hair tuft, one small round wire reading lens perched over far eye, muted bandage on temple. Mouth upper edge reserved for separate animated jaw beneath, do not add a lower jaw or neck or clothes. No gore. Transparent PNG cutout head, fill canvas closely like source with minimal margin, maintain classic chunky shading not realistic/3D, no text.",
+      "referenceFiles": [
+        "assets/reanim/Zombie_head.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/guard-wallnut-v1.png",
+      "sha256": "197cad4b5e8c2e84462716a27400f55f67edcbae3b9e2b292b7f8c675e490fed",
+      "prompt": "Use case: stylized-concept. Make one production game sprite atlas: THREE equal square cells in ONE horizontal row, true transparent background, no writing. References show intact, damaged, critical stages of a classic cartoon wallnut body. Redesign as same character a fierce plant prison guard, 2D classic 2009 casual game thick irregular dark outlines, warm golden ochre hand painted shading, asymmetrical lumpy nutshell oval silhouette. Sharp frowning eyebrows, stern narrowed white eyes, tight downturned mouth, suspicious intimidating expression. Cell1 intact; cell2 same pose, first large cracks and lost edge shell pieces, pained but fierce; cell3 same pose, heavily chipped top and deep cracks, exhausted face. No blood, no armor, no arms/legs, no hats. Body oval only. Each centered equal cell, same size, 8 percent clear margins. No checkerboard, no ground shadows, no realistic detail, no glossy 3D.",
+      "referenceFiles": [
+        "assets/reanim/Wallnut_body.png",
+        "assets/reanim/Wallnut_cracked1.png",
+        "assets/reanim/Wallnut_cracked2.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/refuge-strip-v1.png",
+      "sha256": "ff600798049897ef5de73fd38242d1cd16d58545be981ae7b56146bf3f06264a",
+      "prompt": "Use case: stylized-concept. Production environment cutout for classic 2009 Plants vs Zombies style 2D hand-painted cartoon lawn game. A tall narrow vertical mossy graveyard border strip, ratio 1:4, top down oblique 2D lawn game perspective, five evenly spaced shallow stone grave bases in one vertical column. Five bases aligned at same x, from top to bottom, all same size, no standing tombstones because gameplay draws those separately. Connect bases with crooked buried slate paving, sparse moss, gray green grass tufts, tiny pebbles, worn soil, dangling ivy. At far right a low crooked old iron cemetery fence, and two tiny warm amber lanterns, along the strip. Friendly melancholy underground refuge mood rather than horror. Thick irregular ink outlines, bold simple shapes, muted sage stone, warm dirt, coherent original casual game painted material style. Strip edges feather into grass with irregular transparent alpha edges. No rectangular panel, no black background, no UI, no words, no letters, no skulls, no people, no graves outside the five bases. Transparent backdrop. This is actual environment game art, not a UI mockup.",
+      "referenceFiles": [],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/story-props-v1.png",
+      "sha256": "3bc444a18a31410cf76e0be260ec11312d544809be9c5ff86fe8346cb8abb82f",
+      "prompt": "Use case: stylized-concept. Single production sprite atlas, exactly FOUR equal square cells in ONE horizontal row with strict equal cells, all on real transparent background. Classic 2009 Plants vs Zombies 2D hand painted chunky comic Q cartoon game style, thick irregular ink outlines, soft flat color shading, three quarter lawn game view. Cell1 small locked prison door of crooked timber and iron bars, green ivy, tiny brass padlock, NO captive visible. Cell2 the EXACT same door in same scale now open, bars swung aside and broken lock on ground, warm light inside. Cell3 an opened wooden provisions crate with an unmistakable loaf of bread, one cloth rice sack and metal lunch box, no brains/no skulls. Cell4 small brown dossier tied in red string with paper sticking out and a simple red cancellation stamp shape (no actual writing). All four separate complete objects centered in equal cells with ten percent clear margin. No labels, no text, no scenery, no frame, no floor or shadow outside each sprite, no gradient backdrop or checkerboard.",
+      "referenceFiles": [],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/sunflower-face-v2.png",
+      "sha256": "f94bfb388c14cd667e37f591534ffd0d647acfb6a262aadd1a917992aa7ed061",
+      "prompt": "Production transparent PNG game sprite atlas. Classic 2009 Plants vs Zombies hand painted 2D cartoon, thick irregular dark outlines, chunky simple shapes, muted organic colors, Q cartoon; no 3D, no photoreal, no text, no grids, no shadows, true alpha transparency. Exactly THREE equal square cells in ONE horizontal row. Each cell is ONLY the golden brown oval central face disk of the same sunflower guard, no petals, no stem, no leaves (those are separate game rig parts). Preserve reference disk silhouette, slight three quarter RIGHTward oval, thick outline. Cell1 stern suspicious lowered eyebrows and small downturned mouth, plant prison quartermaster; cell2 forceful focused expression ordering supplies, eyebrows furrowed; cell3 exhausted pained frown, small scuff but no gore. All heads same size and placement within equal cells, 10 percent margin. Restrain visual detail to match classic game.",
+      "referenceFiles": [
+        "assets/reanim/Sunflower_head.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/cactus-face-v2.png",
+      "sha256": "1d386965d2808952ecd39c8c6a9895e20118ef174609feffcdc77f625b5eb9ba",
+      "prompt": "Production transparent PNG game sprite atlas. Classic 2009 Plants vs Zombies hand painted 2D cartoon, thick irregular dark outlines, chunky simple shapes, muted organic colors, Q cartoon; no 3D, no photoreal, no text, no grids, no shadows, true alpha transparency. Exactly THREE equal square cells in ONE horizontal row. Reference is a tall green cactus upper body/head skeletal sprite with straight cut bottom edge. Redesign this SAME upper body only as a fierce sentry, preserve original right-facing silhouette, narrow upright proportions, cut bottom edge and attachment positions. Do not add arms, roots, feet, flower or scenery; these are separate rig layers. Narrow suspicious eyes, sharp dark brows, small integrated tubular muzzle pointing RIGHT; include muzzle so no extra face layer is needed. Cell1 stern guard, cell2 firing with compressed cheeks and fierce eyes, cell3 hurt tired expression with shallow chipped spine grooves. Same size/position in each cell, 10 percent clear margin. Simple ribbed olive green paint, crisp classic casual game shapes.",
+      "referenceFiles": [
+        "assets/reanim/Cactus_body1.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/chomper-jaws-v2.png",
+      "sha256": "2eb0d9ac88fca8cbfebd70afe57c0aa951bc0d68b8ccdcfc50308af05d48941d",
+      "prompt": "Production transparent PNG game sprite atlas. Classic 2009 Plants vs Zombies hand painted 2D cartoon, thick irregular dark outlines, chunky simple shapes, muted organic colors, Q cartoon; no 3D, no photoreal, no text, no grids, no shadows, true alpha transparency. Exactly TWO equal square cells in ONE horizontal row. This is a segmented animation sprite, not a complete creature: cell1 replace reference1 upper jaw piece only, low arched deep violet outer shell with thorny pale green gum rim and small chunky downward ivory teeth, intimidating guard beast, same right-facing view and same shape as reference1. NO eyes, no lower jaw. Cell2 replace reference2 lower jaw and mouth bowl piece only, curved violet crescent rising at back left and open toward RIGHT, darker violet mouth inside with small chunky teeth along inner rim, same silhouette and tall proportions as reference2. NO top cap, no eyes, no stem, no foliage, no extra tongue (separate animation track supplies tongue). The two pieces must stay separate within equal cells, clear 10 percent margin, no overlap, no labels. Muted plum purple matching classic 2D game, avoid shiny gradients and excessive realistic sharp teeth.",
+      "referenceFiles": [
+        "assets/reanim/Chomper_topjaw.png",
+        "assets/reanim/Chomper_underjaw.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/civilian-head-v2.png",
+      "sha256": "df6fac839ffaf214f5e507d54e1987f6dc95a3adbcd918e968b1578e3e3ee68b",
+      "prompt": "Production transparent PNG game sprite atlas. Classic 2009 Plants vs Zombies hand painted 2D cartoon, thick irregular dark outlines, chunky simple shapes, muted organic colors, Q cartoon; no 3D, no photoreal, no text, no grids, no shadows, true alpha transparency. Exactly THREE equal square cells in ONE horizontal row, one same character HEAD ONLY centered per cell, aligned same position and same scale, 8 percent clear margins. Full face with integrated lower jaw and closed mouth; no separate floating pieces. Cell1 calm determined, cell2 exerting effort while pushing an obstacle (mouth slightly open, no tongue protruding), cell3 winces in pain with one eye squinted, no gore. Civilized sympathetic zombie, weary yet thoughtful, no crazed threatening grin. Do not include clothes, hats, helmets or accessories outside the head; hats are separate game rig layers. Preserve original reference upper skull silhouette and LEFT-facing 3/4 view so it fits the original body and hat joints. This is the ordinary civilian zombie shared by normal, cone and bucket units. Olive gray green skin, combed small dark hair tuft, one modest small wire reading lens over the far eye, a small beige bandage on temple. All features INCLUDED inside the full head, no external hair piece. Keep upper skull short and broad like reference; lower jaw modest and tucked under face, not a long neck. Friendly serious everyday scholar, not a monster.",
+      "referenceFiles": [
+        "assets/reanim/Zombie_head.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/balloon-head-v2.png",
+      "sha256": "407837836aad9ef9efa34c74e342550092a19c6aba8dd11112f6012fb6de1837",
+      "prompt": "Production transparent PNG game sprite atlas. Classic 2009 Plants vs Zombies hand painted 2D cartoon, thick irregular dark outlines, chunky simple shapes, muted organic colors, Q cartoon; no 3D, no photoreal, no text, no grids, no shadows, true alpha transparency. Exactly THREE equal square cells in ONE horizontal row, one same character HEAD ONLY centered per cell, aligned same position and same scale, 8 percent clear margins. Full face with integrated lower jaw and closed mouth; no separate floating pieces. Cell1 calm determined, cell2 exerting effort while pushing an obstacle (mouth slightly open, no tongue protruding), cell3 winces in pain with one eye squinted, no gore. Civilized sympathetic zombie, weary yet thoughtful, no crazed threatening grin. Do not include clothes, hats, helmets or accessories outside the head; hats are separate game rig layers. Preserve original reference upper skull silhouette and LEFT-facing 3/4 view so it fits the original body and hat joints. Balloon messenger civilian, muted gray sage skin, tidy short windswept brown hair, a small dark green pilot neck kerchief edge just at chin, no hats. Slightly rounded skull matches reference, discreet small round wire reading lens on far eye, forehead small old bandage. Don't elongate neck. Keep character closely related in style to a civilized zombie in a brown suit.",
+      "referenceFiles": [
+        "assets/reanim/Zombie_balloon_head.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/digger-head-v2.png",
+      "sha256": "28fc6d32c5d251b0d7d1de3bf0bf55e206db6c8d72a0dcd0d1e283b089b094b9",
+      "prompt": "Production transparent PNG game sprite atlas. Classic 2009 Plants vs Zombies hand painted 2D cartoon, thick irregular dark outlines, chunky simple shapes, muted organic colors, Q cartoon; no 3D, no photoreal, no text, no grids, no shadows, true alpha transparency. Exactly THREE equal square cells in ONE horizontal row, one same character HEAD ONLY centered per cell, aligned same position and same scale, 8 percent clear margins. Full face with integrated lower jaw and closed mouth; no separate floating pieces. Cell1 calm determined, cell2 exerting effort while pushing an obstacle (mouth slightly open, no tongue protruding), cell3 winces in pain with one eye squinted, no gore. Civilized sympathetic zombie, weary yet thoughtful, no crazed threatening grin. Do not include clothes, hats, helmets or accessories outside the head; hats are separate game rig layers. Preserve original reference upper skull silhouette and LEFT-facing 3/4 view so it fits the original body and hat joints. Digger rescue worker, muted gray sage skin, tidy short dark hair, two small soot smudges and a tiny beige plaster on cheek, small round wire spectacles just over eyes, no helmet (original hardhat is a separate layer). Top skull matches reference helmet line; omit round floating eye from reference and integrate both eyes naturally into ONE coherent face, no disconnected eye. Keep lower jaw modest and tucked under face.",
+      "referenceFiles": [
+        "assets/reanim/Zombie_digger_head.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/pea-head-v2.png",
+      "sha256": "1d092d9382e5835d16d05a6d9efb4e32cfef54d6de81e79ef699dc4d3fe0a72e",
+      "prompt": "Production sprite atlas, exactly THREE equal square cells in ONE horizontal row, transparent alpha PNG with no background, no text, no frame, no grid. Classic 2009 Plants vs Zombies 2D hand painted Q cartoon, thick irregular dark outlines, bold simple shaded forms. Same character in exactly same position and scale across the three cells, centered with 8 percent transparent margin. HEAD ONLY, no stem, no ground leaves. Reference provides silhouette and attachment template. Fierce green pea shooter prison guard, facing RIGHT, lowered dark brows and narrowed alert eyes, one small old cheek scar, small rear leaf INCLUDED in the head, complete cylindrical muzzle INCLUDED so no other face layers are needed. Cell1 stern guard idle, cell2 firing with slightly puffed cheeks and expanded muzzle rim, cell3 winces after a hit with one eye squinted and a small shallow scuff. Keep same skull proportions/muzzle direction, no extra eyes or mouths. Simple olive/lime green flat game shading, no glossy 3D, no gore.",
+      "referenceFiles": [
+        "assets/reanim/PeaShooter_Head.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/snow-head-v2.png",
+      "sha256": "4c2c1d966bed67ef0e9487ba9700932785edd43aaed19cce7f3b1b6a61a48a37",
+      "prompt": "Production sprite atlas, exactly THREE equal square cells in ONE horizontal row, transparent alpha PNG with no background, no text, no frame, no grid. Classic 2009 Plants vs Zombies 2D hand painted Q cartoon, thick irregular dark outlines, bold simple shaded forms. Same character in exactly same position and scale across the three cells, centered with 8 percent transparent margin. HEAD ONLY, no stem, no ground leaves. Reference provides silhouette and attachment template. Fierce ice blue snow pea shooter prison guard, facing RIGHT, lowered dark blue brows and narrowed alert eyes, angular rear ice crystals INCLUDED in the head, complete cylindrical muzzle INCLUDED so no other face layers are needed. Cell1 cold stern guard idle, cell2 firing with slightly puffed cheeks and expanded muzzle rim, cell3 winces after a hit with one eye squinted, small frost cracks near cheek. Keep same skull proportions/muzzle direction, no extra eyes or mouths. Simple icy cyan blue hand painted game shading, no glossy 3D, no gore.",
+      "referenceFiles": [
+        "assets/reanim/SnowPea_head.png"
+      ],
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/story-art/chomper-interior-v2.png",
+      "sha256": "4d1aa8d28573ef130bc8b3d15418a79d04de6c7538b9142a8a6bf2ae427f95ed",
+      "prompt": "Production sprite atlas with exactly TWO equal square cells in one horizontal row, true alpha transparency. Classic 2D hand painted Plants vs Zombies 2009 cartoon dark ink contour. This is segmented animation art. Cell1: internal mouth lining ONLY, matching reference1 left rising concave purple shape, deep dark plum cavity shading with subtle curved folds. Absolutely NO teeth, no pale green gum rim, no external shell; upper and lower jaws are separate pieces. Keep reference silhouette and angle, dark hollow mouth filling, purple irregular inner left side tapering toward lower right. Cell2: tongue ONLY, matching reference2 small curved rightward pink magenta tongue, darker base, lighter tip, no teeth, no jaw, no gums. Both pieces isolated and whole inside their own equal cells, do not overlap, no text, no full monster, no eyes, no additional objects.",
+      "referenceFiles": [
+        "assets/reanim/Chomper_insidemouth.png",
+        "assets/reanim/Chomper_tongue.png"
+      ],
+      "transparentBackground": true
+    }
+  ],
+  "version": "0.6.0"
+}

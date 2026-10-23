@@ -3,7 +3,7 @@ const out=path.resolve(__dirname,'../game'),box={window:{}};let count=0;
 for(const f of fs.readdirSync(out).filter(f=>f.endsWith('.js'))){new vm.Script(fs.readFileSync(path.join(out,f),'utf8'),{filename:f});count++;}
 for(const f of ['assets-data.js','prologue-data.js','story-data.js','ui-font-data.js'])vm.runInNewContext(fs.readFileSync(path.join(out,f),'utf8'),box);
 const engine=require('../game/engine.js'),story=box.window.PVZ_STORY;
-const assets=box.window.PVZ_ASSETS,refs=[...Object.values(assets.images).map(x=>x.path),...Object.values(assets.ui),...Object.values(assets.sounds||{}),'assets/tombstones-alpha.png',...[...Object.keys(engine.UNITS),'zomboss-head'].map(x=>'assets/portraits/'+x+'.png'),...story.comics.map(c=>c.file)];
+const assets=box.window.PVZ_ASSETS,refs=[...Object.values(assets.images).map(x=>x.path),...Object.values(assets.ui),...Object.values(assets.storyArt||{}).map(x=>x.file),...Object.values(assets.sounds||{}),'assets/tombstones-alpha.png',...[...Object.keys(engine.UNITS),'zomboss-head'].map(x=>'assets/portraits/'+x+'.png'),...story.comics.map(c=>c.file)];
 for(const type of Object.keys(engine.PLANTS))assert(assets.actors[type],'Missing plant actor '+type);
 for(const [name,actor]of Object.entries(assets.actors)){assert(actor.fps>0);for(const track of actor.tracks)for(const f of track.frames){if(f.i)assert(assets.images[f.i],'Missing animation binding '+name+':'+f.i);for(const key of ['x','y','kx','ky','sx','sy','a','f'])assert(Number.isFinite(f[key]),'Nonfinite animation transform');}}
 for(const name of ['CONE2','CONE3','BUCKET2','BUCKET3'])assert(assets.images['IMAGE_REANIM_ZOMBIE_'+name]);

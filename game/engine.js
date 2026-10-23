@@ -41,6 +41,16 @@ const ENCOUNTERS=[
 LEVELS.forEach((level,i)=>{Object.assign(level,ENCOUNTERS[i]);if(level.extra)level.plants.push(...level.extra);});
 const ROW_Y=r=>220+r*96;
 const FIELD={rows:5,columns:10,columnWidth:80,gridLeft:180,lawnLeft:150,lawnRight:980,tombX:940,spawnX:1030,entryLeft:990,entryRight:1080};
+// Optional field actions connect the letters to movement; victory still extracts every captive.
+const STORY_ACTIONS=[
+ [{kind:'food',row:2,x:740,energy:40,title:'取回饭盒',line:'阿朴：饭盒里只有面包和米饭。把口粮带回避难所。'}],
+ [{kind:'cell',row:1,x:730,energy:50,title:'接应囚室',line:'门后传来敲击声：饭还热着吗？接应已完成，胜利后带同胞回家。'}],
+ [{kind:'cell',row:2,x:750,energy:50,title:'接应幸存者',line:'老周：孩子先走。留一条路，等看守撤退我们就跟上。'}],
+ [],
+ [{kind:'cell',row:2,x:760,energy:50,title:'松开屋顶绳索',line:'囚室里的声音：绳扣松了！先打开通道，获胜后我就能离开。'}],
+ [{kind:'cell',row:3,x:720,energy:50,title:'打开工具间',line:'囚室里的声音：镐和工具都还在。胜利后带我去地下救人。'}],
+ [{kind:'evidence',row:2,x:810,energy:40,title:'取回造谣档案',line:'乔治：告发信上的“证据”，竟然是被改写的口粮转运单。把原件带走。'}]
+];
 class Battle{
  constructor(level=0,unlocked=['normal'],deck,options={}){
   this.level=level;this.config=LEVELS[level];if(!this.config)throw Error('Unknown level');
@@ -50,6 +60,7 @@ class Battle{
   this.route=options.route==='assault'?'assault':'peace';
   this.energy=this.config.energy+(this.config.branch&&this.route==='assault'?75:0);this.cooldowns=Object.fromEntries(Object.keys(UNITS).map(k=>[k,0]));this.time=0;this.entered=0;this.casualties=0;this.status='playing';this.paused=false;this.events=[];this.nextId=1;this.zombies=[];this.bullets=[];this.rescued=false;this.winReason=null;
   this.corpses=[];this.effects=[];this.plantRemains=[];
+  this.storyActions=STORY_ACTIONS[level].map((s,id)=>({...s,id,progress:0,completed:false,early:false}));
   this.supplies=(this.config.supplies||[]).map((s,id)=>({...s,id,collected:false}));
   this.reinforcements=(this.config.reinforcements||[]).map(r=>({...r,arrived:false}));
   this.hazards=(this.config.hazards||[]).map(h=>({...h,state:'off'}));this.nextPlantId=0;
@@ -99,6 +110,7 @@ class Battle{
   if(this.tombs.every(t=>t.hp<=0)){this.status='lost';this.emit('end',{status:'lost'});return;}
   if(this.entered<1&&this.clearedRows<2)return;
   this.winReason=this.entered>0?'door':'mowers';this.status='won';
+  for(const action of this.storyActions)if(action.kind==='cell')action.completed=true;
   if(this.config.rescue&&!this.rescued){this.rescued=true;const unit=this.config.rescue,fresh=!this.unlocked.has(unit);this.unlocked.add(unit);this.emit('rescue',{unit,fresh});}
   this.emit('end',{status:'won',reason:this.winReason});
  }
@@ -135,6 +147,12 @@ class Battle{
    if(z.attacking)this.damagePlant(target,UNITS[z.type].damage*dt);
    else z.x-=UNITS[z.type].speed*(z.slow>0?COMBAT.slowFactor:1)*dt;
   }
+  for(const action of this.storyActions){
+   if(action.completed)continue;
+   const helper=this.zombies.some(z=>z.hp>0&&!z.airborne&&!z.underground&&!(z.emerging>0)&&!z.attacking&&z.row===action.row&&Math.abs(z.x-action.x)<=48);
+   if(helper)action.progress=Math.min(2,action.progress+dt);
+   if(action.progress>=2){action.completed=true;action.early=true;this.energy+=action.energy;this.emit('storyAction',{id:action.id,kind:action.kind,row:action.row,energy:action.energy,line:action.line});}
+  }
   for(const supply of this.supplies)if(!supply.collected&&this.zombies.some(z=>z.hp>0&&!z.airborne&&!z.underground&&z.row===supply.row&&z.x<=supply.x&&z.x>=supply.x-80)){supply.collected=true;this.energy+=supply.energy;this.emit('supplyCollected',{row:supply.row,energy:supply.energy});}
   for(const h of this.hazards){const t=(this.time+h.offset)%h.period;h.state=t>=7&&t<8?'warning':t>=8?'active':'off';if(h.state==='active')for(const z of this.zombies)if(z.hp>0&&!z.airborne&&!z.underground&&z.row===h.row&&Math.abs(z.x-h.x)<=h.width/2)this.damageZombie(z,28*dt,{source:'electric'});}
   for(const m of this.mowers){
@@ -154,5 +172,5 @@ class Battle{
   this.zombies=this.zombies.filter(z=>z.hp>0);this.bullets=this.bullets.filter(b=>!b.dead);this.evaluate();
  }
 }
-const api={Battle,UNITS,LEVELS,PLANTS,MODES,COMBAT,BALANCE_VERSION,ROW_Y,FIELD};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.PVZ=api;
+const api={Battle,UNITS,LEVELS,PLANTS,MODES,COMBAT,BALANCE_VERSION,ROW_Y,FIELD,STORY_ACTIONS};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.PVZ=api;
 })(typeof window!=='undefined'?window:globalThis);

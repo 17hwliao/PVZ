@@ -1,13 +1,13 @@
 {
   "name": "zomboss-rise",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "private": true,
   "description": "Classic-asset reverse tower defense, chapters 1 and 2",
   "engines": {
     "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
   },
   "scripts": {
-    "test": "node tests/test-classic-engine.cjs && node tests/test-campaign-engine.cjs && node tests/test-campaign-ui.cjs && node tests/test-damage-effects.cjs && node tests/test-tools-ui.cjs && node tests/test-encounters.cjs && node tests/test-plant-gallery.cjs && node tests/test-review-regressions.cjs && node tests/test-art-restoration.cjs && node tests/test-classic-flow.cjs && node tests/test-ui-themes.cjs && node tests/check-slice-assets.cjs"
+    "test": "node tests/test-classic-engine.cjs && node tests/test-campaign-engine.cjs && node tests/test-campaign-ui.cjs && node tests/test-damage-effects.cjs && node tests/test-tools-ui.cjs && node tests/test-encounters.cjs && node tests/test-plant-gallery.cjs && node tests/test-review-regressions.cjs && node tests/test-art-restoration.cjs && node tests/test-classic-flow.cjs && node tests/test-ui-themes.cjs && node tests/test-story-actions.cjs && node tests/test-animation-layers.cjs && node tests/check-slice-assets.cjs"
   },
   "devDependencies": {
     "jsdom": "30.1.3"
