@@ -1,0 +1,122 @@
+[
+  {
+    "file": "terrain-campaign.html",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "rescue-design.html",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "battle-atlas.html",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "assets/terrain-plants/Blover_head.png",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "assets-data.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "engine.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "renderer.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "rescue-plant-assets.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "rescue-design-data.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "rescue-story-data.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "battle-map-land.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "battle-map-water-roof.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "battle-map-data.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "terrain-unit-data.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "terrain-campaign-data.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "terrain-plant-assets.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "terrain-rules.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "terrain-campaign-setup.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "terrain-progress.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "rescue-story-ui.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "rescue-design-model.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "battle-environment.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "rescue-design-renderer.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  },
+  {
+    "file": "rescue-design.js?v=terrain-mechanics-20261026b",
+    "status": 200,
+    "shaMatch": true
+  }
+]

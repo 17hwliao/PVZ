@@ -1,0 +1,76 @@
+{
+  "revision": "story-continuation-20261025b",
+  "stage": "rescue-combat-20261024",
+  "stageStatus": "active",
+  "date": "2026-10-25",
+  "implemented": {
+    "playableMissions": 7,
+    "letters": 7,
+    "doorDialogues": 7,
+    "campResponses": 7,
+    "designOnlyFutureEncounters": 6,
+    "friendlySunflowerWitness": true,
+    "cumulativeCasualtyLedger": true,
+    "pauseSafeReading": true,
+    "lastMissionLoopsToFirst": false
+  },
+  "fullSuite": {
+    "scripts": 22,
+    "passed": 173,
+    "syntaxFiles": 20,
+    "localReferences": 438,
+    "missingReferences": 0
+  },
+  "followupAfterTextAndNavigationChanges": {
+    "script": "tests/test-rescue-story.cjs",
+    "passed": 9,
+    "resourceCheckPassed": true
+  },
+  "visual": {
+    "type": "actual browser screenshots",
+    "desktop": {
+      "width": 1265,
+      "height": 712,
+      "files": [
+        "letter-desktop.png",
+        "future-desktop.png",
+        "deployment-desktop.png"
+      ]
+    },
+    "mobile": {
+      "width": 375,
+      "height": 844,
+      "files": [
+        "letter-mobile.png",
+        "future-mobile.png"
+      ]
+    },
+    "deploymentFrameHeight": 603,
+    "deploymentSidebarHeight": 603,
+    "fixes": [
+      "native paper crop preserves legibility",
+      "selected book button text contrast",
+      "future navigation focus and scroll retention",
+      "desktop sidebar follows battlefield height"
+    ],
+    "futureDesignsPlayable": false,
+    "realPlayerDifficultyAccepted": false,
+    "allCharacterAnimationsAcceptedThisTurn": false,
+    "nativeDeviceAccepted": false
+  },
+  "reviewPerformed": false,
+  "packaged": false,
+  "remoteActions": false,
+  "liveMirrorEqual": true,
+  "sourceFiles": {
+    "rescue-design-data.js": "1bf13379196af72b8264d6283d50aec1ae1249313b2f45a34bba930c4bc6e72f",
+    "rescue-design-model.js": "d62bfb86dc81e0d912c3d1fe2e9822784a5aab214665d38c8db1c9d5845bed67",
+    "rescue-design-renderer.js": "4cba70011aba2af0b1d96115d92e2c2c945be7aa82a6d282eacb8e47b98b141e",
+    "rescue-design.js": "ff1647e787591b90a39520f89ad9135cdcf0ec9dfde29f9e5d3f2bb322ffb2da",
+    "rescue-design.css": "f82cad5312b8622b2168c2c867f507db21272df3864ca5a147a29bfbe66d50d0",
+    "rescue-design.html": "3b6c961df92fdddbac1078e95b880a8e907d136d13f83485cd52e2af313c0aab",
+    "rescue-story-data.js": "f9e84843dd82e955b31d138a6901d556acaed7c5dbd2b74c1e8e203b8669f053",
+    "rescue-story-ui.js": "84db5c3a07c0f73d1449da52509365ceacc642def34dd89c6a889e3131245d52",
+    "README.md": "c039f02f90f03675a1a8cf327bad075af00f655de267ee9fd7758b1f1a5eff89"
+  }
+}

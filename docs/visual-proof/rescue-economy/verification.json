@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-24",
+  "suiteScripts": 19,
+  "suitePasses": 140,
+  "rescueChecks": 20,
+  "browserVisual": "blocked: local browser use disabled in Work settings",
+  "fieldVisual": "production renderer exports inspected; not browser screenshots",
+  "packaged": false,
+  "sourceHashes": {
+    "rescue-design-data.js": "e6183a53be24ee68dfebb098e33f5d5960f325b5005f16b4e971ad7c192b9694",
+    "rescue-design-model.js": "d24ea67becd21ab1e5fb1114094046d8c6805e8b2ff125f931bba7a95c033515",
+    "rescue-design-renderer.js": "8a82d831afa3d80ba186ec071c38583c752417bc07e2616181484ba0fb0cf235",
+    "rescue-design.js": "cdaec7d7c57f0a9ed52763f1a2efbb84f9f2b4e618f5e1d6342a188a77ebd639",
+    "rescue-design.css": "e36b94f6b26da77f331c186193ebd5b145fac986ab1cd67fb786cc7acc75f1a2",
+    "rescue-design.html": "49d193f984d299048223a3f59d0f8213f88de437107883792d318bf0a6e9d321"
+  }
+}

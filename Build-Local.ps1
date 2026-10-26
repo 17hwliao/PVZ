@@ -12,8 +12,13 @@ if (!$Destination -or !$ElectronZip -or !$SigningKey -or !$SigningPassFile) { th
 if (Test-Path -LiteralPath $Destination) { throw 'Use a fresh destination; existing deliverables are never overwritten.' }
 $GameRoot=(Resolve-Path -LiteralPath $GameRoot).Path
 $appVersion=(Get-Content -LiteralPath (Join-Path $PSScriptRoot 'desktop/package.json') -Encoding UTF8 -Raw | ConvertFrom-Json).version
+$releaseVersion=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'release/version.json') -Encoding UTF8 -Raw | ConvertFrom-Json
+$desktopVersion=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'desktop/package.json') -Encoding UTF8 -Raw | ConvertFrom-Json
+if ($releaseVersion.version -ne $appVersion -or $releaseVersion.build -ne $desktopVersion.build) { throw 'Run node tools/sync-version.cjs before building.' }
 $manifestSource=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'android/AndroidManifest.xml') -Encoding UTF8 -Raw
 if ($manifestSource -notmatch ('android:versionName="'+[regex]::Escape($appVersion)+'"')) { throw 'Desktop and Android versions differ.' }
+if ($manifestSource -notmatch ('android:versionCode="'+$releaseVersion.build+'"')) { throw 'Android build code differs.' }
+if (!(Test-Path -LiteralPath (Join-Path $GameRoot 'build-info.js'))) { throw 'Missing packaged build metadata.' }
 $buildTools=Join-Path $AndroidSdk 'build-tools/36.1.0'
 $androidJar=Join-Path $AndroidSdk 'platforms/android-36.1/android.jar'
 foreach ($required in @($ElectronZip,$SigningKey,$SigningPassFile,$androidJar,(Join-Path $JdkHome 'bin/javac.exe'),(Join-Path $buildTools 'aapt2.exe'))) { if (!(Test-Path -LiteralPath $required)) { throw "Missing build input: $required" } }
@@ -24,7 +29,7 @@ Expand-Archive -LiteralPath $ElectronZip -DestinationPath $win
 Rename-Item -LiteralPath (Join-Path $win 'electron.exe') -NewName 'ZombossRise.exe'
 $app=Join-Path $win 'resources/app'
 New-Item -ItemType Directory -Path $app -Force | Out-Null
-Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'desktop/main.cjs'),(Join-Path $PSScriptRoot 'desktop/package.json') -Destination $app
+Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'desktop') -File | Where-Object { $_.Extension -eq '.cjs' -or $_.Name -eq 'package.json' } | Copy-Item -Destination $app
 Copy-Item -LiteralPath $GameRoot -Destination (Join-Path $app 'game') -Recurse
 $build=Join-Path $Destination 'android-build'
 foreach ($dir in @('assets','res/drawable','classes','dex','generated')) { New-Item -ItemType Directory -Path (Join-Path $build $dir) -Force | Out-Null }

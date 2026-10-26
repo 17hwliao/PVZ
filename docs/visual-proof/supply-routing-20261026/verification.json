@@ -1,0 +1,54 @@
+{
+  "revision": "supply-routing-20261026b",
+  "sourceFiles": 548,
+  "copiedFiles": [
+    "rescue-design-data.js",
+    "rescue-design-model.js",
+    "rescue-design.css",
+    "rescue-design.html",
+    "rescue-design.js",
+    "terrain-campaign-setup.js",
+    "terrain-campaign.html"
+  ],
+  "mirrorAllMatched": true,
+  "httpMatched": [
+    {
+      "file": "terrain-campaign.html",
+      "status": 200,
+      "sha256": "1db0b31150dd1716b3d70ebd38caffbd0413696a102fb8fb10768161b471a077"
+    },
+    {
+      "file": "rescue-design.html",
+      "status": 200,
+      "sha256": "f528fe344244ce6f217968cfb7d730e96d02849bbe6f6649060f0b0cb6ef59ad"
+    },
+    {
+      "file": "rescue-design-model.js",
+      "status": 200,
+      "sha256": "c5bd0b17678f37f69d799bc06532fdbab8add385d798d92707fc70c320d92911"
+    },
+    {
+      "file": "rescue-design.js",
+      "status": 200,
+      "sha256": "8aa49e32409aa359d16726f325b2c50ff1667a5910ee3c01ad825aa49df6d42f"
+    },
+    {
+      "file": "rescue-design.css",
+      "status": 200,
+      "sha256": "91e8ad99102df2adc4cea314b2aac5a32b5d936f89dc6fe9fa148ad7040f4267"
+    },
+    {
+      "file": "rescue-design-data.js",
+      "status": 200,
+      "sha256": "4e996fcdc4eefbda3569f16791a64c5b4ea028be9b2d5ada2374f9ed15f78977"
+    },
+    {
+      "file": "terrain-campaign-setup.js",
+      "status": 200,
+      "sha256": "110e7752a11d8869912110d500d04b811fec5717c71cc7f317a9c435d11a57c6"
+    }
+  ],
+  "browser": "Local browser use is disabled in Work settings; no real full-page visual acceptance",
+  "packaged": false,
+  "remoteChanges": false
+}

@@ -1,0 +1,1 @@
+(function(root){'use strict';const info={"version":"0.7.0","build":700,"channel":"stable","repository":"17hwliao/PVZ"};if(typeof module!=='undefined'&&module.exports)module.exports=info;else root.PVZ_BUILD=Object.freeze(info);})(typeof window!=='undefined'?window:globalThis);

@@ -1,0 +1,638 @@
+{
+  "description": "Native classic plant animation tracks and unchanged PNG parts from locally supplied 1.2.0.1073 resources; support images are native transparent parts, not almanac portraits. Existing almanac pictures remain UI-only.",
+  "animations": [
+    {
+      "actor": "puff",
+      "source": "reanim/PuffShroom.reanim",
+      "sha256": "aa00565d277e8d4e8e39ebbe7725b4ab086fba647ce77df3f9e4868bc6fe16de",
+      "clips": {
+        "sleep": {
+          "start": 34,
+          "end": 50
+        },
+        "shooting": {
+          "start": 21,
+          "end": 33
+        },
+        "idle": {
+          "start": 4,
+          "end": 20
+        },
+        "attack": {
+          "start": 21,
+          "end": 33
+        }
+      }
+    },
+    {
+      "actor": "sunshroom",
+      "source": "reanim/SunShroom.reanim",
+      "sha256": "a9666179011709cab255c41e0f257e7ec1006238d14c521689a2bd5e7ecc85c8",
+      "clips": {
+        "bigsleep": {
+          "start": 51,
+          "end": 62
+        },
+        "bigidle": {
+          "start": 39,
+          "end": 50
+        },
+        "grow": {
+          "start": 27,
+          "end": 38
+        },
+        "sleep": {
+          "start": 17,
+          "end": 26
+        },
+        "idle": {
+          "start": 5,
+          "end": 16
+        }
+      }
+    },
+    {
+      "actor": "fumeshroom",
+      "source": "reanim/FumeShroom.reanim",
+      "sha256": "8db26b1b2aba313917167552fd290e338211debdeb5d6dd652b0920fd1a8bad8",
+      "clips": {
+        "sleep": {
+          "start": 51,
+          "end": 67
+        },
+        "shooting": {
+          "start": 21,
+          "end": 50
+        },
+        "idle": {
+          "start": 4,
+          "end": 20
+        },
+        "attack": {
+          "start": 21,
+          "end": 50
+        }
+      }
+    },
+    {
+      "actor": "plantern",
+      "source": "reanim/Plantern.reanim",
+      "sha256": "f4d87c7907a2e140a350787b57c00fded036a52a5dac5afbe3afe580b0d88be2",
+      "clips": {
+        "idle": {
+          "start": 5,
+          "end": 24
+        },
+        "blink": {
+          "start": 0,
+          "end": 4
+        }
+      }
+    },
+    {
+      "actor": "blover",
+      "source": "reanim/Blover.reanim",
+      "sha256": "d28935c2b4d7c0e9f4283aeb0cc5e7b54216e79c9ff162bef5d43f0e54a7121f",
+      "clips": {
+        "idle": {
+          "start": 0,
+          "end": 32
+        },
+        "loop": {
+          "start": 52,
+          "end": 61
+        },
+        "blow": {
+          "start": 33,
+          "end": 52
+        },
+        "attack": {
+          "start": 33,
+          "end": 52
+        },
+        "shooting": {
+          "start": 33,
+          "end": 52
+        }
+      }
+    },
+    {
+      "actor": "coffee",
+      "source": "reanim/Coffeebean.reanim",
+      "sha256": "18b6620daf5ccd1a5da48e46bb4216c0738d7abeb1d9343079c2de4490f9a8b7",
+      "clips": {
+        "idle": {
+          "start": 0,
+          "end": 8
+        },
+        "twitch": {
+          "start": 9,
+          "end": 13
+        },
+        "crumble": {
+          "start": 14,
+          "end": 28
+        },
+        "attack": {
+          "start": 14,
+          "end": 28
+        },
+        "shooting": {
+          "start": 14,
+          "end": 28
+        }
+      }
+    },
+    {
+      "actor": "cabbagepult",
+      "source": "reanim/Cabbagepult.reanim",
+      "sha256": "0e61f02a6b70b449ef4938ebfdf6b424728f78b66bfb55015cf19d0890ed2b2c",
+      "clips": {
+        "blink": {
+          "start": 0,
+          "end": 4
+        },
+        "idle": {
+          "start": 5,
+          "end": 35
+        },
+        "shooting": {
+          "start": 36,
+          "end": 73
+        },
+        "attack": {
+          "start": 36,
+          "end": 73
+        }
+      }
+    },
+    {
+      "actor": "flowerpot",
+      "source": "reanim/Pot.reanim",
+      "sha256": "811199fb1932f829335bcc408f7bc05b26ce6ed6963521de4b96af3f31a8911f",
+      "clips": {
+        "idle": {
+          "start": 0,
+          "end": 12
+        },
+        "zengarden": {
+          "start": 13,
+          "end": 25
+        },
+        "waterplants": {
+          "start": 26,
+          "end": 38
+        }
+      }
+    },
+    {
+      "actor": "lily",
+      "source": "reanim/LilyPad.reanim",
+      "sha256": "55da5bf5b5adb6f4fdf0c04a544fe4a25206f12fd8419484872b2ad2346d2647",
+      "clips": {
+        "idle": {
+          "start": 0,
+          "end": 0
+        },
+        "blink": {
+          "start": 1,
+          "end": 3
+        }
+      }
+    }
+  ],
+  "entries": [
+    {
+      "file": "assets/terrain-plants/PuffShroom_body.png",
+      "source": "reanim/PuffShroom_body.png",
+      "sha256": "245a9a9e8d3ac3bae7d5bab08fcc99f883cd93bb658f23e08f6847689353c584",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/PuffShroom_stem.png",
+      "source": "reanim/PuffShroom_stem.png",
+      "sha256": "83ee68c7f7562ff20ffdf7d488f8f4955a7a4b78ad3fb6b2221ff0d885eaeb5c",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/PuffShroom_tip.png",
+      "source": "reanim/PuffShroom_tip.png",
+      "sha256": "0f7e69daaec03f8af85fcd173708aa453a5af4d7d550827eab8cc292e301475b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/PuffShroom_head.png",
+      "source": "reanim/PuffShroom_head.png",
+      "sha256": "5f8071f541bd510fb2e2e7ab4e364dd597ac6b107981317f5609f6d7453fcf46",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/PuffShroom_blink1.png",
+      "source": "reanim/PuffShroom_blink1.png",
+      "sha256": "3664f03a04398c8de3f06f8a84464309e812b139f50409b36123be5f5814e48d",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/PuffShroom_blink2.png",
+      "source": "reanim/PuffShroom_blink2.png",
+      "sha256": "f083ee0b688e9b257ddc47286dd2b3894f791e78c50d46485a53417a9659b705",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/SunShroom_body.png",
+      "source": "reanim/SunShroom_body.png",
+      "sha256": "ea006e755ddcddc0bae1f0ee6eabe3a085c345b5853f0af1bf655cfb2687db78",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/SunShroom_sleep.png",
+      "source": "reanim/SunShroom_sleep.png",
+      "sha256": "1baf74670050a894bee1d0f95ca965b0b4c9d7fd5908454006779380dfa7afe3",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/SunShroom_blink1.png",
+      "source": "reanim/SunShroom_blink1.png",
+      "sha256": "9070e173df813368e2d7a3446a3f48fcf50e5fac892dbe4071987cf7382fc445",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/SunShroom_blink2.png",
+      "source": "reanim/SunShroom_blink2.png",
+      "sha256": "ee47e9d6c5858ff5129c4ef5c548c4723358488aec27e6a8b517f6082dbdd70f",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/SunShroom_head.png",
+      "source": "reanim/SunShroom_head.png",
+      "sha256": "551dfc5e509961f1eac1bb79b35da7827a1544034ed90a96d6d539c9425b7e64",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/FumeShroom_body.png",
+      "source": "reanim/FumeShroom_body.png",
+      "sha256": "37f431bbc886b20d383b610a1fdb9f4260fabc93f5fc93a8eb8e9dfac5351452",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/FumeShroom_blink2.png",
+      "source": "reanim/FumeShroom_blink2.png",
+      "sha256": "2a7ee2643d1070038e93d199f22a7a5c3e89d8999afe21d5a891d743e750287d",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/FumeShroom_blink1.png",
+      "source": "reanim/FumeShroom_blink1.png",
+      "sha256": "5050248cef859247386255875346b3a80eb5ca2b3ccc1aa4960dfded680c968b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/FumeShroom_head.png",
+      "source": "reanim/FumeShroom_head.png",
+      "sha256": "9221cbdbe7e5713cefdba58e5a09e39f13a3d893272263c81b38c5e853ef197e",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/FumeShroom_spout.png",
+      "source": "reanim/FumeShroom_spout.png",
+      "sha256": "5cc410b11f4cb8ff8e6315cd7695abe47525b2b3a04b3b70213921891c80f62e",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/FumeShroom_tip.png",
+      "source": "reanim/FumeShroom_tip.png",
+      "sha256": "7100d5fc8f1eaac123b326a01f6f65b8c5c4ef5408ef56a1357b5d7bdae47c61",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_stem.png",
+      "source": "reanim/Plantern_stem.png",
+      "sha256": "b20db47f37db3bc12e5bc748afe6199fa675b017f113a5f4a3c7cf85f9ed2c46",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_body.png",
+      "source": "reanim/Plantern_body.png",
+      "sha256": "824c1ff06edf4b78726282a327e8616d42138f94068e6afd859d5321fe3376c4",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_eyes.png",
+      "source": "reanim/Plantern_eyes.png",
+      "sha256": "1785bb008bf659ff0b7bf347a6e94163d75d015046308fb542d236172c25e09e",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_eyes2.png",
+      "source": "reanim/Plantern_eyes2.png",
+      "sha256": "454c9800caafafa99077ebf1ed141f9075c627421e9612e3a08fb1a4ddc1e6d4",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_leaf1.png",
+      "source": "reanim/Plantern_leaf1.png",
+      "sha256": "7e274df3116d7a6ae20e33d0a67c49e43732b1b86716fd93c36955341433d0ba",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_leaf2.png",
+      "source": "reanim/Plantern_leaf2.png",
+      "sha256": "2845949da6a8d78ce750db16fd12648ea90a50676f00d366fe1ff3d1b8dc2e1c",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_leaf3.png",
+      "source": "reanim/Plantern_leaf3.png",
+      "sha256": "2cdbfdd34c0444d1bce77e029494ca6dc8b8f99e7fd8921e687a94ef54d2fd41",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_leaf4.png",
+      "source": "reanim/Plantern_leaf4.png",
+      "sha256": "6ece1672088b879a859cc5247040c2b2cdde593c815c16a0e3eaffc96f77e42f",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Plantern_leaf5.png",
+      "source": "reanim/Plantern_leaf5.png",
+      "sha256": "cedccafde1b555323716b2dc78fa50411fa982057385045e3e8e4175633ba50b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Blover_dirt_back.png",
+      "source": "reanim/Blover_dirt_back.png",
+      "sha256": "34e8b344b4ab5133d1e8fce862c45534a7c7c97de86bc3551cd47db04035b159",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Blover_stem2.png",
+      "source": "reanim/Blover_stem2.png",
+      "sha256": "63dc77ec9b6c378de7c05138bb7c936a50d484a09d32b0f00dbd2da6521476f1",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Blover_stem1.png",
+      "source": "reanim/Blover_stem1.png",
+      "sha256": "07e0db604e761f04c4e9c30e54ba2ecc73e88b82fb40e4f5bed73df293887f09",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Blover_dirt_front.png",
+      "source": "reanim/Blover_dirt_front.png",
+      "sha256": "f58458da1f2b6b60bcafed46a5045899e768d3c91f05fc7c0e9678f723217e89",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Blover_petal.png",
+      "source": "reanim/Blover_petal.png",
+      "sha256": "3fe020328888b35feaca7f85a02765ff7563805241d671b6f1e015b10607ad24",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Blover_head.png",
+      "source": "reanim/Blover_head.png",
+      "sha256": "87ab938b8ba00944f94ca207a8a094728e3952c42e6b49f073e84725efbf9de9",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Blover_head2.png",
+      "source": "reanim/Blover_head2.png",
+      "sha256": "01f039787503847975dc7e495f9314beaaa27bc16acd373e3a57d40d6e96e9f8",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_leaf.png",
+      "source": "reanim/Coffeebean_leaf.png",
+      "sha256": "b47227bf0fc1b7d334f87868f9e83f2b797e2aefd23f246c898f69003bf4f55a",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head1.png",
+      "source": "reanim/Coffeebean_head1.png",
+      "sha256": "6f34701e7eba7c9d0207d1fff08e5c85bb1bf0b26a9e786c06aa73e68da83f6f",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head2.png",
+      "source": "reanim/Coffeebean_head2.png",
+      "sha256": "190df3ba7b75fdd6bc75eba4713db9eb749a5f3757019bfe212849bd9c8e95b4",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head3.png",
+      "source": "reanim/Coffeebean_head3.png",
+      "sha256": "0608e6365edaea39b1fe7055e3210fb51873548064dd06454144412097645ee8",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head4.png",
+      "source": "reanim/Coffeebean_head4.png",
+      "sha256": "07f4cde8b264adde8505fa70afb1e0a5e76e8fd76bfef39b6a6ece12de2a8de4",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head5.png",
+      "source": "reanim/Coffeebean_head5.png",
+      "sha256": "27f2c61ce36aba3ec2a84d742bc4bafa5b2b71326b260953bcfb9a7874026ace",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head6.png",
+      "source": "reanim/Coffeebean_head6.png",
+      "sha256": "8af8a439237d7b13e2c3d044d8002b6a4857b98a1abf4255914f2a1f47d293c4",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head7.png",
+      "source": "reanim/Coffeebean_head7.png",
+      "sha256": "b2bab6aab8c2218624d4ae7fdb958fd5f77cc1ab163af5b6c3ca1526e9145787",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head8.png",
+      "source": "reanim/Coffeebean_head8.png",
+      "sha256": "0219cfa633a4d60bac930febe358e0d371a964fde23f2cce76f8cb9dca27ebec",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head9.png",
+      "source": "reanim/Coffeebean_head9.png",
+      "sha256": "ebdc1a3b66a4c1fa9dea1a708ad110acaf8ed54404ac8456682bf3d52df8be81",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head10.png",
+      "source": "reanim/Coffeebean_head10.png",
+      "sha256": "99a6644c9add2b6b943ca95538a9d1bae7375eae6e120aa33f91cbc632d1ec0d",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head11.png",
+      "source": "reanim/Coffeebean_head11.png",
+      "sha256": "7ef6cfdb802d7319533e14522ce53698b3ec8790f572cd69c8284fb650d0799e",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Coffeebean_head12.png",
+      "source": "reanim/Coffeebean_head12.png",
+      "sha256": "93d1bb7f253b28179a54fe6bafdb202786fa752e390a924beab8a51a5097fcae",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/PeaShooter_frontleaf_lefttip.png",
+      "source": "reanim/PeaShooter_frontleaf_lefttip.png",
+      "sha256": "fac7ced98626e9a9f91aa9746025e3713496cde453c1999ab89bdad6ed966f4d",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/PeaShooter_frontleaf_righttip.png",
+      "source": "reanim/PeaShooter_frontleaf_righttip.png",
+      "sha256": "a5a5245bd884c6cc90ff13666f147b9ece85c6e6453dbeb56857c5d50caf785d",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_basket.png",
+      "source": "reanim/Cabbagepult_basket.png",
+      "sha256": "810c88635e5437bfee09c900c1ce5762813ceb67ee1bd223866d8fdb32cab9d4",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_cabbage.png",
+      "source": "reanim/Cabbagepult_cabbage.png",
+      "sha256": "00c52b18f2f7d9673ed586792ba7cc9f89afe881957116a2b234ff3aec49f06b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_basket_overlay.png",
+      "source": "reanim/Cabbagepult_basket_overlay.png",
+      "sha256": "c0388259b9e8bca88d0d287d3d3ec766233c2eb27e9935aded62fc42a462248c",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_stalk4.png",
+      "source": "reanim/Cabbagepult_stalk4.png",
+      "sha256": "afabf0dd3771bd7d464a977e5e29ef935d5fa387970b7230e32838cf05f457e9",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_stalk3.png",
+      "source": "reanim/Cabbagepult_stalk3.png",
+      "sha256": "046cf21a4a3a23bf6c68f21291798ec1ec9034bdfbcbd89b5d8727d6dcbccea3",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_stalk2.png",
+      "source": "reanim/Cabbagepult_stalk2.png",
+      "sha256": "501b573ac445bf216b07563cff0886985d05f2ac2a7812bc476a3ac99d956ab0",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_stalk1.png",
+      "source": "reanim/Cabbagepult_stalk1.png",
+      "sha256": "424b063f86ae766386c37729e095e9f65385109cb417004a851695d5707e52eb",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_leaf.png",
+      "source": "reanim/Cabbagepult_leaf.png",
+      "sha256": "75401aba102a9bae8764ec2fa523a6a3e90fb84c187155768bcaf4bb5ab24ff5",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_head.png",
+      "source": "reanim/Cabbagepult_head.png",
+      "sha256": "64d86754d625e74377b0521babe6ca75276bb87eb539476c40f43c2e63943b8f",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_blink1.png",
+      "source": "reanim/Cabbagepult_blink1.png",
+      "sha256": "751c2fbc610bdd54701ec8696d21f06029a1a44bf640e4a7ab1274cd1ca20682",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_blink2.png",
+      "source": "reanim/Cabbagepult_blink2.png",
+      "sha256": "7b362f35b31b8b189c1e8e540f463025a61ab0d5edaa95bfd9971f775e2aed30",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Cabbagepult_eyebrow.png",
+      "source": "reanim/Cabbagepult_eyebrow.png",
+      "sha256": "fa5d4c9964b8c883edb14dea96f202386621ea8bbcb1692bafcacd84ca75ef22",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/PeaShooter_frontleaf.png",
+      "source": "reanim/PeaShooter_frontleaf.png",
+      "sha256": "26ce3afa0788a624d8a1747dab2ba51223489a04aed61f08a453c0d073bfbddd",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Pot_bottom.png",
+      "source": "reanim/Pot_bottom.png",
+      "sha256": "6c7917ad4b6f696a239bb19c2bdcc7bfd1fa800951bc1ff7ffb2ed89aed2353b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Pot_bottom2.png",
+      "source": "reanim/Pot_bottom2.png",
+      "sha256": "7b5739158ff4fb71e4eded0701edd2b0e0f7ffa801e41b1d8eac8637b22908f0",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Pot_water_base.png",
+      "source": "reanim/Pot_water_base.png",
+      "sha256": "dd524bb6be9c4b5c8af734a997fcea82225d8201d44418dd97ebed4a122f8147",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Pot_stem.png",
+      "source": "reanim/Pot_stem.png",
+      "sha256": "76c325e90cf2f5dc595408caf7a5d982b534a0a608c3be423714917521a00770",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Pot_leaf1.png",
+      "source": "reanim/Pot_leaf1.png",
+      "sha256": "f12e300aa333b848a444cf7e77cfc21074a1982a60a3029e8fd6b44767e84703",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Pot_leaf2.png",
+      "source": "reanim/Pot_leaf2.png",
+      "sha256": "33fb823da398a4c3e0f82610b5e8f6abdb94c878a90b31095e814cad20e088e0",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Pot_top.png",
+      "source": "reanim/Pot_top.png",
+      "sha256": "342cf3f1e2d0543128f201f5637bf1449cbe89c50f18c8e536cb01e6e7a91c84",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/Pot_water_top.png",
+      "source": "reanim/Pot_water_top.png",
+      "sha256": "42ff31078eb868c6e027df7c5e56f26f3f28bad9576d920259a4e40ce39b933b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/LilyPad_body.png",
+      "source": "reanim/LilyPad_body.png",
+      "sha256": "f1f5a0542828e8e02babced913958a003fe6161ea713b5804b7eff6f6a710af6",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/LilyPad_blink1.png",
+      "source": "reanim/LilyPad_blink1.png",
+      "sha256": "4b09857348cb686dde64d68a7916db0f44b56de2f9c19403059537ec9275976e",
+      "unchanged": true
+    },
+    {
+      "file": "assets/terrain-plants/LilyPad_blink2.png",
+      "source": "reanim/LilyPad_blink2.png",
+      "sha256": "454794c4dd051a7e3e8d0cf054a1ef208a2b8bd6273c95acfd29dcce1c6dfa3e",
+      "unchanged": true
+    }
+  ]
+}

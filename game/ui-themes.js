@@ -9,7 +9,7 @@ function render(el){
  const value=el.textContent,family=el.dataset.fontFamily||families[theme],font=fonts[family],image=images[family];
  if(!value||!font||!image)return;
  const ink=getComputedStyle(el).color,signature=family+'|'+ink+'|'+value;
- if(cache.get(el)===signature)return;
+ if(cache.get(el)===signature&&el.querySelector(':scope > .native-type'))return;
  const canvas=document.createElement('canvas'),c=canvas.getContext('2d');if(!c)return;
  c.font='28px PVZChinese';let pen=0,minX=0,minY=0,maxX=0,maxY=0;const entries=[];
  for(const ch of value){

@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('node:assert/strict');
+const {Battle,ROW_FOOT,FIELD}=require('../game/engine.js'),{createRenderer}=require('../game/renderer.js');
+const root=path.resolve(__dirname,'../game'),box={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'assets-data.js'),'utf8'),box);const assets=box.window.PVZ_ASSETS,pictures={};
+for(const[id,v]of Object.entries(assets.images)){const bytes=fs.readFileSync(path.join(root,v.path));pictures[id]={id,width:bytes.readUInt32BE(16),height:bytes.readUInt32BE(20)};}
+for(const[id,v]of Object.entries(assets.storyArt)){const bytes=fs.readFileSync(path.join(root,v.file));pictures['story:'+id]={id,width:bytes.readUInt32BE(16),height:bytes.readUInt32BE(20)};}
+const timeline=[],ctx=new Proxy({globalAlpha:1,drawImage(...args){timeline.push({kind:'image',args});},fillRect(...args){timeline.push({kind:'fill',args});},translate(...args){timeline.push({kind:'translate',args});}},{get:(o,k)=>k in o?o[k]:()=>{}}),tomb={id:'tomb',width:435,height:364};
+const r=createRenderer(assets,pictures,tomb),b=new Battle();b.plants=[b.createPlant('pea',0,220)];b.zombies=[{type:'normal',row:0,x:FIELD.tombX,hp:210,maxHp:210,age:.6,hit:0,airborne:false},{type:'cone',row:1,x:FIELD.tombX,hp:430,maxHp:430,age:.6,hit:0,airborne:false}];r.draw(ctx,b,{selectedRow:-1});
+const tombCalls=timeline.filter(e=>e.kind==='image'&&e.args[0]===tomb);assert.equal(tombCalls.length,5);for(let row=0;row<5;row++){const a=tombCalls[row].args;assert(a[7]<=66&&a[8]<=76);assert.equal(a[5]+a[7]/2,FIELD.tombX);assert.equal(a[6]+a[8],ROW_FOOT(row));}
+console.log('PASS 五种墓碑裁掉透明边缘、按比例收进第十列，碑底统一落脚线');
+const firstTomb=timeline.indexOf(tombCalls[0]),zombie=timeline.findIndex(e=>e.kind==='image'&&e.args[0].id==='civilian-head-v2'),bars=timeline.map((e,i)=>e.kind==='fill'&&e.args[2]===60&&e.args[3]===5?i:-1).filter(i=>i>=0);assert(firstTomb>=0&&zombie>firstTomb);assert.equal(bars.length,5);assert(bars[0]>zombie);assert(timeline.some(e=>e.kind==='translate'&&e.args[0]===220&&e.args[1]===ROW_FOOT(0)));assert(timeline.some(e=>e.kind==='translate'&&e.args[0]===FIELD.tombX&&e.args[1]===ROW_FOOT(0)));
+const nextHead=timeline.map((e,i)=>e.kind==='image'&&e.args[0].id==='civilian-head-v2'?i:-1).filter(i=>i>=0)[1];assert(bars[0]<nextHead,'previous lane HP must not cut through the next lane hat');
+console.log('PASS 同行僵尸位于碑身前方，碑条不盖住下一行高帽，植物僵尸共用落脚点');

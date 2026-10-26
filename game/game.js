@@ -3,15 +3,20 @@
 const $=id=>document.getElementById(id),story=PVZ_STORY,assets=PVZ_ASSETS,dialog=$('dialog');
 const roster=story.roster,MAX_CARDS=5,LAST_LEVEL=PVZ.LEVELS.length-1;
 const trialPortraits={},artUnavailable=[],portrait=u=>progress.characterArt==='story'&&trialPortraits[u]||`assets/portraits/${u}.png`,KEY='pvz-rise-slice-progress-v1';
-let progress=PVZ_CAMPAIGN.normalize(null,PVZ.UNITS,PVZ.LEVELS,matchMedia('(prefers-reduced-motion: reduce)').matches),saveWarning='',allowSave=true;
-try{const raw=localStorage.getItem(KEY);if(raw)progress=PVZ_CAMPAIGN.normalize(JSON.parse(raw),PVZ.UNITS,PVZ.LEVELS,progress.soft);}
+let progress=PVZ_CAMPAIGN.normalize(null,PVZ.UNITS,PVZ.LEVELS,matchMedia('(prefers-reduced-motion: reduce)').matches,PVZ.STORY_ACTIONS),saveWarning='',allowSave=true;
+try{const raw=localStorage.getItem(KEY);if(raw)progress=PVZ_CAMPAIGN.normalize(JSON.parse(raw),PVZ.UNITS,PVZ.LEVELS,progress.soft,PVZ.STORY_ACTIONS);}
 catch{saveWarning='本机进度无法读取；本次暂存于窗口，不会覆盖已有存档';allowSave=false;}
 let homeStatusTimer=null;
 function homeMessage(message,error=false){clearTimeout(homeStatusTimer);const el=$('homeStatus');el.textContent=message;el.hidden=false;el.classList.toggle('save-error',error);if(!error)homeStatusTimer=setTimeout(()=>{el.hidden=true;},2200);}
 function save(){if(!allowSave){$('saveStatus').textContent=saveWarning;homeMessage(saveWarning,true);return false;}try{localStorage.setItem(KEY,JSON.stringify(progress));$('saveStatus').textContent='同胞与关卡进度已保存到本机';homeMessage('旅途已记下');return true;}catch{$('saveStatus').textContent='本机暂时无法保存，进度仅保留本次窗口';homeMessage($('saveStatus').textContent,true);return false;}}
 window.PVZ_UI?.init(progress.uiTheme);
 let battle=new PVZ.Battle(0,progress.unlocked),phase='loading',pendingLevel=0,draft=[...progress.deck],inspected='normal',selected='normal',row=2,hover=-1,ready=false,renderer,pictures={},last=0,manualPause=false,soundOn=progress.sound||false,audio=null,noticeUntil=0,cinemaReturn=null,damagePreview=null,dialogReturnFocus=null,dialogCancelAction=null,rewardPreview=null,armed=false,pointerX=1030,pointerY=412,detailsFocus=null;
+// Keep the 1200×720 field and pointer coordinates, but sample the painted scene
+// at 960×576 before the browser enlarges it. Native UI text stays outside this
+// canvas, so the classic soft sprite edges do not blur buttons or instructions.
+$('battle').width=960;$('battle').height=576;
 const ctx=$('battle').getContext('2d'),rows=[...document.querySelectorAll('[data-row]')];
+ctx.setTransform(.8,0,0,.8,0,0);ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='medium';
 function text(tag,content,cls){const e=document.createElement(tag);e.textContent=content;if(cls)e.className=cls;return e;}
 function notify(s,seconds=4){$('notice').textContent=s;$('notice').style.opacity='1';noticeUntil=performance.now()+seconds*1000;}
 function tone(freq=220,d=.08,type='triangle',gain=.035){if(!soundOn)return;try{audio??=new AudioContext();audio.resume();const o=audio.createOscillator(),g=audio.createGain();o.type=type;o.frequency.value=freq;g.gain.setValueAtTime(gain,audio.currentTime);g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+d);o.connect(g).connect(audio.destination);o.start();o.stop(audio.currentTime+d);}catch{soundOn=false;syncSound();}}
@@ -46,7 +51,7 @@ function buildCharacterPortraits(){
  const c=document.createElement('canvas');c.width=256;c.height=256;const paint=c.getContext('2d');
  if(!(paint?.measureText('同胞')?.width>0))return;
  renderer.setArtStyle?.('story');
- for(const type of Object.keys(PVZ.UNITS)){if(!pictures['story:'+families[type]])continue;paint.clearRect(0,0,256,256);renderer.drawZombie(paint,{type,maxHp:PVZ.UNITS[type].hp,hp:PVZ.UNITS[type].hp,age:0,slow:0,hit:0},{x:136,foot:250,scale:1.9,reducedMotion:true});trialPortraits[type]=c.toDataURL('image/png');}
+ for(const type of Object.keys(PVZ.UNITS)){if(!pictures['story:'+families[type]])continue;paint.clearRect(0,0,256,256);const scale=Math.min(1.9,232/({normal:126,cone:144,bucket:140,balloon:112,digger:136}[type]));renderer.drawZombie(paint,{type,maxHp:PVZ.UNITS[type].hp,hp:PVZ.UNITS[type].hp,age:0,slow:0,hit:0},{x:136,foot:250,scale,reducedMotion:true});trialPortraits[type]=c.toDataURL('image/png');}
  renderer.setArtStyle?.(progress.characterArt);refreshCharacterPortraits();
 }
 function toggleDraft(unit){
@@ -75,9 +80,12 @@ function renderRoster(){
 $('dossierToggle').onclick=()=>{toggleDraft(inspected);closeDossier();};
 $('openDossier').onclick=()=>openDossier(inspected);$('dossierClose').onclick=closeDossier;
 $('previewLetter').onclick=()=>openLetter(pendingLevel,hide,false);
-function titles(index){$('levelTag').textContent=PVZ.LEVELS[index].tag;$('levelName').textContent=PVZ.LEVELS[index].name;$('objective').textContent='任一僵尸进门，或耗掉至少两行小车';$('modeName').textContent=PVZ.MODES[PVZ.LEVELS[index].mode].name;}
+function titles(index){$('levelTag').textContent=PVZ.LEVELS[index].tag;$('levelName').textContent=PVZ.LEVELS[index].name;$('objective').textContent='任一僵尸进门，或耗掉至少两行小车';$('modeName').textContent=PVZ.MODES[PVZ.LEVELS[index].mode].name;window.PVZ_UI?.refresh(document.querySelector('.objective-note'));window.PVZ_UI?.refresh($('modeName'));}
 function encounterBrief(body,index){
  const level=PVZ.LEVELS[index],mode=PVZ.MODES[level.mode],panel=text('section','','encounter-brief');panel.append(text('h3',mode.name),text('p',mode.brief));
+ const deployment=story.levels[index].deployment;
+ if(deployment){panel.append(text('p','这次要带回什么：'+deployment.purpose));const note=text('details','','deployment-note');note.append(text('summary','展开部署笔记'));const names=deployment.cards.map(id=>PVZ.UNITS[id].name).join('、');for(const [label,line]of [['首次推进可用',names],['部署思路',deployment.plan],['需要留意',deployment.risk],['门后的人',deployment.people]]){const p=text('p','');p.append(text('strong',label+'：'),document.createTextNode(line));note.append(p);}panel.append(note);}
+ if(index===0)panel.append(text('p',story.rulesNote,'aside'));
  for(const action of PVZ.STORY_ACTIONS[index])panel.append(text('p',`战地行动：第 ${action.row+1} 行${action.title}。地面同胞走到目标附近、没有交战时累计接应2秒，获得${action.energy}能量，每局一次。${action.kind==='cell'?'同胞在本关获胜后正式加入卡组。':''}`));
  const types=[...new Set([...level.plants.map(p=>p[0]),...(level.reinforcements||[]).map(p=>p.type)])];
  const list=text('div','','plant-intel');for(const type of types){const stats=PVZ.PLANTS[type],item=text('div','');item.append(text('strong',stats.name+' · '+stats.role),text('span',stats.description));list.append(item);}panel.append(list);body.append(panel);
@@ -151,14 +159,22 @@ function drawDamagePreview(dt){
  if(t<.32&&p.sample.zombie.hit)renderer.drawEffect(c,{kind:p.sample.zombie.hitKind,row:0,x:200,airborne:z.airborne,age:t,duration:.32},progress.soft);
 }
 function comic(index){const c=story.comics[index];show(c.title,'章节插页',body=>{if(!progress.completed.includes(index===0?2:LAST_LEVEL)){body.append(text('p','章节完成后收录整页漫画。推进中会在对应故事节点展示分镜。'));return;}const im=document.createElement('img');im.src=c.file;im.alt=c.title;im.className='comic-page';im.onerror=()=>{im.hidden=true;body.prepend(text('p','画面未能读取，以下分镜文字仍可阅读。','aside'));};body.append(im);const captions=text('div','','comic-caption');for(const [title,line]of c.captions){const e=text('div','');e.append(text('b',title),document.createTextNode(line));captions.append(e);}body.append(captions);},[['返回故事',()=>book(index)],['返回战场',returnToGame,true]]);}
+function campAftermath(body,q){
+ const copy=story.aftermath,panel=text('section','','camp-aftermath');panel.append(text('h3','回到灯下'));
+ panel.append(text('p',copy[q.reason==='mowers'?'mowers':'door']));
+ panel.append(text('p',q.casualties?copy.loss.replace('{count}',q.casualties):copy.noLoss));
+ const rows=q.tombs.flatMap((hp,index)=>hp<=0?[index+1]:[]);panel.append(text('p',rows.length?copy.broken.replace('{rows}',rows.join('、')):copy.intact));
+ for(const id of q.earlyActions||[]){const note=copy.actionNotes[q.level]?.[id];if(note)panel.append(text('p',note));}
+ body.append(panel);
+}
 function finish(status,rescue){
  phase='ended';manualPause=false;applyPause();
  if(status!=='won'){show('最后一座防守碑倒下了','行动受挫',body=>{body.append(text('p','只有全部防守碑被击碎才会战败。已解救的同胞、来信与已完成关卡保留。'));body.append(text('p','飞行和潜行单位不能替墓碑挡住地面火力；给地面路线也留一些同胞。','aside'));},[['重新选卡',()=>prepare(battle.level)],['菜单',menu,true]]);return;}
  if(!progress.completed.includes(battle.level))progress.completed.push(battle.level);progress.highest=Math.max(progress.highest,Math.min(LAST_LEVEL,battle.level+1));
  if(rescue&&!progress.unlocked.includes(rescue.unit)){progress.unlocked.push(rescue.unit);if(progress.deck.length<MAX_CARDS)progress.deck.push(rescue.unit);}
- if(!progress.pendingAfter)progress.pendingAfter={level:battle.level,time:battle.time,casualties:battle.casualties,reason:battle.winReason,tombs:battle.tombs.map(t=>t.hp),rescue:rescue?.unit||null,stage:'rescue',panelIndex:0};save();
+ if(!progress.pendingAfter)progress.pendingAfter={level:battle.level,time:battle.time,casualties:battle.casualties,reason:battle.winReason,tombs:battle.tombs.map(t=>t.hp),earlyActions:battle.storyActions.filter(a=>a.early).map(a=>a.id),rescue:rescue?.unit||null,stage:'rescue',panelIndex:0};save();
  const q=progress.pendingAfter,s=story.levels[battle.level];
- const ending=()=>{q.stage='result';save();show(battle.level===LAST_LEVEL?'门的另一边 · 前两章完':battle.level===2?'灯下的饭桌':'通道已打开',battle.winReason==='door'?'进门成功':'两行小车已经耗尽',body=>{if(s.branch)lines(body,s.branch[progress.route].after);lines(body,s.after);body.append(text('p',`防守碑剩余 ${q.tombs.filter(h=>h>0).length} 座 · 战损 ${q.casualties} · 用时 ${Math.floor(q.time)} 秒`,'aside'));if(battle.level===LAST_LEVEL)body.append(text('p','前两章已完成。已救同胞、分支和来信已保存，可回到章节选择重玩。后续城镇、机甲与最终结局不在本版范围。','aside'));},battle.level<LAST_LEVEL?[[`前往 ${PVZ.LEVELS[battle.level+1].tag.split('·')[1].trim()} 选卡`,()=>prepare(battle.level+1)],['重新选卡',()=>prepare(battle.level),true]]:[['返回章节选择',()=>{delete progress.pendingAfter;save();goHome();chapters();}],['重玩本关',()=>prepare(battle.level),true],['故事与漫画',()=>book(1),true]]);};
+ const ending=()=>{q.stage='result';save();show(battle.level===LAST_LEVEL?'门的另一边 · 前两章完':battle.level===2?'灯下的饭桌':'通道已打开',battle.winReason==='door'?'进门成功':'两行小车已经耗尽',body=>{if(s.branch)lines(body,s.branch[progress.route].after);lines(body,s.after);campAftermath(body,q);body.append(text('p',`防守碑剩余 ${q.tombs.filter(h=>h>0).length} 座 · 战损 ${q.casualties} · 用时 ${Math.floor(q.time)} 秒`,'aside'));if(battle.level===LAST_LEVEL)body.append(text('p','前两章已完成。已救同胞、分支和来信已保存，可回到章节选择重玩。后续城镇、机甲与最终结局不在本版范围。','aside'));},battle.level<LAST_LEVEL?[[`前往 ${PVZ.LEVELS[battle.level+1].tag.split('·')[1].trim()} 选卡`,()=>prepare(battle.level+1)],['重新选卡',()=>prepare(battle.level),true]]:[['返回章节选择',()=>{delete progress.pendingAfter;save();goHome();chapters();}],['重玩本关',()=>prepare(battle.level),true],['故事与漫画',()=>book(1),true]]);};
  const panels=()=>{q.stage='panels';save();playPanels(s.afterPanels||[],ending,true,q.panelIndex);};
  if(q.stage==='result'){ending();return;}if(q.stage==='panels'){panels();return;}
  const u=q.rescue;if(u){show(`解救成功：${PVZ.UNITS[u].name}`,'植物看守撤退 · 打开囚室',body=>{const panel=text('div','','rescue-reveal'),im=document.createElement('img');im.src=portrait(u);im.alt=PVZ.UNITS[u].name;const d=text('div','');d.append(text('strong',PVZ.UNITS[u].name),text('p',roster[u].role),text('p',roster[u].origin));panel.append(im,d);body.append(panel);attachRewardScene(body,u);lines(body,[[PVZ.UNITS[u].name,({cone:'饭盒里只有米饭……他们却说我是怪物。',bucket:'面包还在吗？我想回去看看那个孩子。',balloon:'绳索松开了。我能看见地窖入口。',digger:'把镐还给我。地下还有人需要空气。'})[u]],['乔治','欢迎回来。我们一起走。']]);body.append(text('p','已永久加入同胞名册，下一次编组可用。','aside'));},[['带同胞回去',panels]]);dialog.classList.add('rescue-dialog');}else{show('通道已打开',q.reason==='door'?'大门突破':'两路小车已离场',body=>{attachRewardScene(body,null);body.append(text('p','同胞已安全通过，避难所的路接通了。','award-message'),text('p',battle.level===0?'路障同胞将在 1-2 解救。':'本关行动已记录，继续查看战后故事。','aside'));},[['收好通行信',panels]]);dialog.classList.add('award-dialog');}
@@ -244,8 +260,8 @@ function updateDefenseSummary(){
  $('defenseSummary').textContent=Object.entries(counts).map(([k,n])=>`${PVZ.PLANTS[k].name} ×${n}`).join('　');
 }
 function drawDefensePreview(time){
- const c=$('defenseCanvas').getContext('2d'),bg=pictures[battle.config.night?'ui:background2.jpg':'ui:background1.jpg'];c.clearRect(0,0,520,380);if(bg)c.drawImage(bg,250,72,750,500,0,0,520,380);
- for(const p of battle.plants)renderer.drawPlant(c,p,{x:38+(p.x-210)*.86,foot:70+p.row*72,time:progress.soft?0:time,scale:.57,reducedMotion:progress.soft});
+ const c=$('defenseCanvas').getContext('2d');c.clearRect(0,0,520,380);c.save();c.scale(.65,.65);c.translate(-PVZ.FIELD.gridLeft,-120);renderer.drawBackground?.(c,battle.config.night);
+ for(const p of battle.plants)renderer.drawPlant(c,p,{time:progress.soft?0:time,reducedMotion:progress.soft});c.restore();
 }
 function updateGhost(){
  const e=$('deployGhost');e.hidden=phase!=='battle'||dialog.open||manualPause||!armed||hover<0;
@@ -264,7 +280,8 @@ function leaveHomePrompt(){if(phase==='battle')show('返回主菜单？','进度
 function chapters(){
  show('营救行动','章节选择',body=>{const list=text('div','','menu-levels chapter-grid');for(let n=0;n<PVZ.LEVELS.length;n++){const b=text('button',`${PVZ.LEVELS[n].tag.split('·')[1].trim()} ${PVZ.LEVELS[n].name}`,'stone-button');b.disabled=n>progress.highest;b.onclick=()=>{hide();if(progress.prologue?.version!==PVZ_PROLOGUE.version){progress.currentLevel=n;save();startCinema(true);}else if(progress.pendingAfter){show('切换行动？','战后故事尚未读完',body=>body.append(text('p','继续当前战后故事，或切换到所选关卡。已解救同胞和完成进度保留。')),[['继续战后故事',()=>{hide();resumeAfter();}],['前往选卡',()=>prepare(n),true]]);}else prepare(n);};list.append(b);}body.append(list);},[['返回',()=>{if(phase==='home')goHome();else returnToGame();}],['故事与漫画',()=>book(0),true]]);dialog.classList.add('chapter-dialog');
 }
-function archives(){show('同胞与故事','避难所档案',body=>body.append(text('p','回看已经收录的来信、漫画与动作。未解救的同胞不会提前加入队伍。')),[['故事与漫画',()=>book(0)],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['返回',goHome,true]]);}
+function characterAlmanac(back=archives){show('植物与僵尸图鉴','乔治的战地手记',body=>window.PVZ_ALMANAC_UI.mount(body,{unlocked:progress.unlocked}),[['返回',back],['动作图鉴',damageGallery,true]]);dialog.classList.add('almanac-dialog');}
+function archives(){show('同胞与故事','避难所档案',body=>body.append(text('p','查阅乔治的角色手记，或回看已经收录的来信、漫画与动作。未解救的同胞不会提前加入队伍。')),[['八境营救·四十关',()=>{location.href='terrain-campaign.html';}],['营救攻防·小队行动',()=>{location.href='rescue-design.html';}],['地图与完整战役',()=>{location.href='battle-atlas.html';},true],['植物与僵尸图鉴',()=>characterAlmanac(archives),true],['故事与漫画',()=>book(0),true],['动作图鉴',damageGallery,true],['重看序章',()=>startCinema(false),true],['返回',goHome,true]]);}
 function settings(back=returnToGame){
  show('设置与档案','僵王崛起',body=>{
   for(const [label,on,fn]of [['声音',soundOn,()=>{soundOn=!soundOn;if(!soundOn)stopEffects();progress.sound=soundOn;save();syncSound();if(soundOn)sfx('seedlift');settings(back);}],['柔和转场',progress.soft,()=>{progress.soft=!progress.soft;save();settings(back);}]]){const r=text('div','','settings-row'),b=text('button',on?'开':'关');b.setAttribute('aria-pressed',String(on));b.setAttribute('aria-label',label+'：'+(on?'开':'关'));r.append(text('span',label),b);b.onclick=fn;body.append(r);}

@@ -39,8 +39,17 @@ const ENCOUNTERS=[
  {mode:'citadel',extra:[['sunflower',1,260],['chomper',3,660]],supplies:[{row:2,x:730,energy:50}]}
 ];
 LEVELS.forEach((level,i)=>{Object.assign(level,ENCOUNTERS[i]);if(level.extra)level.plants.push(...level.extra);});
-const ROW_Y=r=>220+r*96;
-const FIELD={rows:5,columns:10,columnWidth:80,gridLeft:180,lawnLeft:150,lawnRight:980,tombX:940,spawnX:1030,entryLeft:990,entryRight:1080};
+const FIELD={rows:5,columns:10,columnWidth:80,gridLeft:180,rowTop:172,rowHeight:96,footInset:16,lawnLeft:150,lawnRight:980,tombX:940,spawnX:1030,entryLeft:990,entryRight:1080};
+const ROW_Y=r=>FIELD.rowTop+(r+.5)*FIELD.rowHeight;
+const ROW_FOOT=r=>FIELD.rowTop+(r+1)*FIELD.rowHeight-FIELD.footInset;
+const COLUMN_X=column=>FIELD.gridLeft+(column+.5)*FIELD.columnWidth;
+const snapPlantX=x=>COLUMN_X(Math.max(0,Math.min(FIELD.columns-2,Math.round((x-COLUMN_X(0))/FIELD.columnWidth))));
+// Static formations use real cell centers; walking units keep continuous x.
+// Normalize the authored positions, rather than shifting art away from hitboxes.
+for(const level of LEVELS){
+ const occupied=new Set(),place=(row,x)=>{let aligned=snapPlantX(x);if(occupied.has(row+':'+aligned)){aligned=Array.from({length:FIELD.columns-1},(_,c)=>COLUMN_X(c)).filter(cx=>!occupied.has(row+':'+cx)).sort((a,b)=>Math.abs(a-x)-Math.abs(b-x)||b-a)[0];if(aligned===undefined)throw Error('Plant formation exceeds nine columns');}occupied.add(row+':'+aligned);return aligned;};
+ level.plants=level.plants.map(([type,row,x])=>[type,row,place(row,x)]);if(level.reinforcements)level.reinforcements=level.reinforcements.map(p=>({...p,x:place(p.row,p.x)}));
+}
 // Optional field actions connect the letters to movement; victory still extracts every captive.
 const STORY_ACTIONS=[
  [{kind:'food',row:2,x:740,energy:40,title:'取回饭盒',line:'阿朴：饭盒里只有面包和米饭。把口粮带回避难所。'}],
@@ -87,7 +96,7 @@ class Battle{
  damageTomb(row,damage){const t=this.tombs[row];if(!t||t.hp<=0)return;t.hp=Math.max(0,t.hp-damage);if(t.hp===0&&!t.rewarded){t.rewarded=true;this.energy+=COMBAT.tombReward;this.emit('tombBroken',{row,energy:COMBAT.tombReward});}}
  damagePlant(p,damage){
   if(p.hp<=0)return;p.hp=Math.max(0,p.hp-damage);if(p.hit<=0)p.hit=.14;
-  if(p.hp===0){this.plantRemains.push({...p,age:0,duration:.65});this.emit('plantDefeated',{plant:p.type,row:p.row});}
+  if(p.hp===0){this.plantRemains.push({...p,poseSource:p,age:0,duration:.65});this.emit('plantDefeated',{plant:p.type,row:p.row});}
  }
  damageZombie(z,damage,{snow=false,antiAir=false,source='projectile'}={}){
   if(z.hp<=0)return;
@@ -102,7 +111,7 @@ class Battle{
  killZombie(z,source){
   if(z.deathRecorded||z.exited)return;
   z.hp=0;z.deathRecorded=true;this.casualties++;
-  this.corpses.push({...z,age:0,source,duration:source==='mower'?.55:3.8,attacking:false});
+  this.corpses.push({...z,poseSource:z,age:0,source,duration:source==='mower'?.55:3.8,attacking:false});
   this.emit('casualty',{row:z.row,source});
  }
  evaluate(){
@@ -172,5 +181,5 @@ class Battle{
   this.zombies=this.zombies.filter(z=>z.hp>0);this.bullets=this.bullets.filter(b=>!b.dead);this.evaluate();
  }
 }
-const api={Battle,UNITS,LEVELS,PLANTS,MODES,COMBAT,BALANCE_VERSION,ROW_Y,FIELD,STORY_ACTIONS};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.PVZ=api;
+const api={Battle,UNITS,LEVELS,PLANTS,MODES,COMBAT,BALANCE_VERSION,ROW_Y,ROW_FOOT,COLUMN_X,FIELD,STORY_ACTIONS};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.PVZ=api;
 })(typeof window!=='undefined'?window:globalThis);

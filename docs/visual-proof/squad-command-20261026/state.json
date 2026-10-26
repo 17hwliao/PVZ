@@ -1,0 +1,833 @@
+[
+  {
+    "name": "linked-squads-canvas.png",
+    "note": "Real model linked movement with default squads. Canvas only; HTML control overlay verified by DOM tests and not present in this image.",
+    "teams": [
+      {
+        "id": 0,
+        "row": 2,
+        "col": 7.359999999999999,
+        "group": "linked-0",
+        "path": [
+          {
+            "row": 2,
+            "col": 7
+          },
+          {
+            "row": 2,
+            "col": 6
+          }
+        ],
+        "members": 3
+      },
+      {
+        "id": 1,
+        "row": 2,
+        "col": 7.359999999999999,
+        "group": "linked-0",
+        "path": [
+          {
+            "row": 2,
+            "col": 7
+          },
+          {
+            "row": 2,
+            "col": 6
+          }
+        ],
+        "members": 3
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "group": null,
+        "path": [],
+        "members": 3
+      }
+    ]
+  },
+  {
+    "name": "actual-first-doctor-hit.png",
+    "note": "Natural paid AI, no manual damage/fence edits, production renderer at first actual projectile collision.",
+    "time": 160.55000000000226,
+    "hits": 9,
+    "fences": [
+      {
+        "id": "fence-0",
+        "row": 0,
+        "col": 9,
+        "hp": 0,
+        "maxHp": 600,
+        "hit": 0,
+        "breachedAt": 158.45000000000178
+      },
+      {
+        "id": "fence-1",
+        "row": 1,
+        "col": 9,
+        "hp": 0,
+        "maxHp": 600,
+        "hit": 0,
+        "breachedAt": 95.44999999999672
+      },
+      {
+        "id": "fence-2",
+        "row": 2,
+        "col": 9,
+        "hp": 180,
+        "maxHp": 600,
+        "hit": 0
+      },
+      {
+        "id": "fence-3",
+        "row": 3,
+        "col": 9,
+        "hp": 0,
+        "maxHp": 600,
+        "hit": 0,
+        "breachedAt": 95.44999999999672
+      },
+      {
+        "id": "fence-4",
+        "row": 4,
+        "col": 9,
+        "hp": 0,
+        "maxHp": 600,
+        "hit": 0,
+        "breachedAt": 94.79999999999676
+      }
+    ],
+    "fire": {
+      "launched": 319,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceHits": 141,
+      "fenceDamage": 2820,
+      "doctorHits": 1,
+      "events": [
+        {
+          "time": 136.64999999999682,
+          "kind": "launched",
+          "id": "shot-272",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 136.84999999999687,
+          "kind": "launched",
+          "id": "shot-273",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 137.449999999997,
+          "kind": "fence",
+          "id": "shot-272",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 137.49999999999702,
+          "kind": "launched",
+          "id": "shot-274",
+          "row": 3,
+          "type": "pea",
+          "col": 4,
+          "amount": 0
+        },
+        {
+          "time": 137.64999999999705,
+          "kind": "fence",
+          "id": "shot-273",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 138.14999999999716,
+          "kind": "launched",
+          "id": "shot-275",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 138.3499999999972,
+          "kind": "launched",
+          "id": "shot-276",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 138.94999999999735,
+          "kind": "fence",
+          "id": "shot-275",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 138.99999999999736,
+          "kind": "launched",
+          "id": "shot-277",
+          "row": 3,
+          "type": "pea",
+          "col": 4,
+          "amount": 0
+        },
+        {
+          "time": 139.1499999999974,
+          "kind": "fence",
+          "id": "shot-276",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 139.6499999999975,
+          "kind": "launched",
+          "id": "shot-278",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 139.84999999999755,
+          "kind": "launched",
+          "id": "shot-279",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 140.4499999999977,
+          "kind": "fence",
+          "id": "shot-278",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 140.4999999999977,
+          "kind": "launched",
+          "id": "shot-280",
+          "row": 3,
+          "type": "pea",
+          "col": 4,
+          "amount": 0
+        },
+        {
+          "time": 140.64999999999773,
+          "kind": "fence",
+          "id": "shot-279",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 141.14999999999785,
+          "kind": "launched",
+          "id": "shot-281",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 141.3499999999979,
+          "kind": "launched",
+          "id": "shot-282",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 141.94999999999803,
+          "kind": "fence",
+          "id": "shot-281",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 141.99999999999804,
+          "kind": "launched",
+          "id": "shot-283",
+          "row": 3,
+          "type": "pea",
+          "col": 4,
+          "amount": 0
+        },
+        {
+          "time": 142.14999999999807,
+          "kind": "fence",
+          "id": "shot-282",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 142.6499999999982,
+          "kind": "launched",
+          "id": "shot-284",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 142.84999999999823,
+          "kind": "launched",
+          "id": "shot-285",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 143.44999999999837,
+          "kind": "fence",
+          "id": "shot-284",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 143.49999999999838,
+          "kind": "launched",
+          "id": "shot-286",
+          "row": 3,
+          "type": "pea",
+          "col": 4,
+          "amount": 0
+        },
+        {
+          "time": 143.6499999999984,
+          "kind": "fence",
+          "id": "shot-285",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 144.14999999999853,
+          "kind": "launched",
+          "id": "shot-287",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 144.34999999999857,
+          "kind": "launched",
+          "id": "shot-288",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 144.54999999999862,
+          "kind": "launched",
+          "id": "shot-289",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 144.9499999999987,
+          "kind": "fence",
+          "id": "shot-287",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 145.14999999999876,
+          "kind": "fence",
+          "id": "shot-288",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 145.64999999999887,
+          "kind": "launched",
+          "id": "shot-290",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 145.84999999999891,
+          "kind": "launched",
+          "id": "shot-291",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 146.04999999999896,
+          "kind": "launched",
+          "id": "shot-292",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 146.44999999999905,
+          "kind": "fence",
+          "id": "shot-290",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 146.6499999999991,
+          "kind": "fence",
+          "id": "shot-291",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 147.1499999999992,
+          "kind": "launched",
+          "id": "shot-293",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 147.34999999999926,
+          "kind": "launched",
+          "id": "shot-294",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 147.5499999999993,
+          "kind": "launched",
+          "id": "shot-295",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 147.9499999999994,
+          "kind": "fence",
+          "id": "shot-293",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 148.14999999999944,
+          "kind": "fence",
+          "id": "shot-294",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 148.64999999999955,
+          "kind": "launched",
+          "id": "shot-296",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 148.8499999999996,
+          "kind": "launched",
+          "id": "shot-297",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 149.04999999999964,
+          "kind": "launched",
+          "id": "shot-298",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 149.44999999999973,
+          "kind": "fence",
+          "id": "shot-296",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 149.64999999999978,
+          "kind": "fence",
+          "id": "shot-297",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 150.1499999999999,
+          "kind": "launched",
+          "id": "shot-299",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 150.34999999999994,
+          "kind": "launched",
+          "id": "shot-300",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 150.54999999999998,
+          "kind": "launched",
+          "id": "shot-301",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 150.95000000000007,
+          "kind": "fence",
+          "id": "shot-299",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 151.15000000000012,
+          "kind": "fence",
+          "id": "shot-300",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 151.65000000000023,
+          "kind": "launched",
+          "id": "shot-302",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 151.85000000000028,
+          "kind": "launched",
+          "id": "shot-303",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 152.05000000000032,
+          "kind": "launched",
+          "id": "shot-304",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 152.45000000000041,
+          "kind": "fence",
+          "id": "shot-302",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 152.65000000000046,
+          "kind": "fence",
+          "id": "shot-303",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 153.15000000000057,
+          "kind": "launched",
+          "id": "shot-305",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 153.35000000000062,
+          "kind": "launched",
+          "id": "shot-306",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 153.55000000000067,
+          "kind": "launched",
+          "id": "shot-307",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 153.95000000000076,
+          "kind": "fence",
+          "id": "shot-305",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 154.1500000000008,
+          "kind": "fence",
+          "id": "shot-306",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 154.65000000000092,
+          "kind": "launched",
+          "id": "shot-308",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 154.85000000000096,
+          "kind": "launched",
+          "id": "shot-309",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 155.050000000001,
+          "kind": "launched",
+          "id": "shot-310",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 155.4500000000011,
+          "kind": "fence",
+          "id": "shot-308",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 155.65000000000114,
+          "kind": "fence",
+          "id": "shot-309",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 156.15000000000126,
+          "kind": "launched",
+          "id": "shot-311",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 156.3500000000013,
+          "kind": "launched",
+          "id": "shot-312",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 156.55000000000135,
+          "kind": "launched",
+          "id": "shot-313",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 156.95000000000144,
+          "kind": "fence",
+          "id": "shot-311",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 157.15000000000148,
+          "kind": "fence",
+          "id": "shot-312",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 157.6500000000016,
+          "kind": "launched",
+          "id": "shot-314",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 157.85000000000164,
+          "kind": "launched",
+          "id": "shot-315",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 158.0500000000017,
+          "kind": "launched",
+          "id": "shot-316",
+          "row": 1,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 158.45000000000178,
+          "kind": "fence",
+          "id": "shot-314",
+          "row": 0,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 158.65000000000182,
+          "kind": "fence",
+          "id": "shot-315",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 159.15000000000194,
+          "kind": "launched",
+          "id": "shot-317",
+          "row": 0,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 159.35000000000198,
+          "kind": "launched",
+          "id": "shot-318",
+          "row": 2,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 159.75000000000207,
+          "kind": "launched",
+          "id": "shot-319",
+          "row": 3,
+          "type": "pea",
+          "col": 6,
+          "amount": 0
+        },
+        {
+          "time": 160.15000000000217,
+          "kind": "fence",
+          "id": "shot-318",
+          "row": 2,
+          "type": "pea",
+          "col": 8.720000000000002,
+          "amount": 20
+        },
+        {
+          "time": 160.55000000000226,
+          "kind": "doctor",
+          "id": "shot-317",
+          "row": 0,
+          "type": "pea",
+          "col": 10.640000000000004,
+          "amount": 1
+        }
+      ]
+    }
+  }
+]

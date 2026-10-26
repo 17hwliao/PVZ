@@ -1,0 +1,66 @@
+{
+  "source": "User-provided classic base, resource version 1.2.0.1073",
+  "purpose": "Battle atlas environment previews; terrain mechanics remain design-only",
+  "files": [
+    {
+      "file": "background3.jpg",
+      "sourceEntry": "images/background3.jpg",
+      "sha256": "0548a126e25426889bd2ffcc7ffe5e2d0bf5e275fc65e57814e02e3cf83b9a27",
+      "unchanged": true
+    },
+    {
+      "file": "background4.jpg",
+      "sourceEntry": "images/background4.jpg",
+      "sha256": "856edc0843c58b2d62fd6bbb7ae79145b8aea999fe1ad1a41e2619de3009d3cd",
+      "unchanged": true
+    },
+    {
+      "file": "background5.jpg",
+      "sourceEntry": "images/background5.jpg",
+      "sha256": "5769edf7b52077600ace6a90591babd22219f0ae9ca9cea7f554b367927a43b4",
+      "unchanged": true
+    },
+    {
+      "file": "background6boss.jpg",
+      "sourceEntry": "images/background6boss.jpg",
+      "sha256": "90726dfd15ab7ca1917e110b3909574a29d6a7b71323d6a94c9b0f1e1f5df61f",
+      "unchanged": true
+    },
+    {
+      "file": "background1unsodded.jpg",
+      "sourceEntry": "images/background1unsodded.jpg",
+      "sha256": "a2b6433be7e2b62f152d7413f05ea58d67fe8d182c0015a824754e9b63d8d286",
+      "unchanged": true
+    },
+    {
+      "file": "Background_MushroomGarden.jpg",
+      "sourceEntry": "images/Background_MushroomGarden.jpg",
+      "sha256": "694def2aa89f658de5c36971eaea0ce1bbdc6393ddd035faa4e76f845f77d147",
+      "unchanged": true
+    },
+    {
+      "file": "pool.jpg",
+      "sourceEntry": "images/pool.jpg",
+      "sha256": "a2752e90ac9f7c81291c6a61725d7eb56bf413abc2348c475d79382dc0f60cbf",
+      "unchanged": true
+    },
+    {
+      "file": "pool_night.jpg",
+      "sourceEntry": "images/pool_night.jpg",
+      "sha256": "6e6db61d7f7cc7be535981fcd96eb00a6b7f6aa63eea6634e086cad5bccf8087",
+      "unchanged": true
+    },
+    {
+      "file": "fog_software.png",
+      "sourceEntry": "images/fog_software.png",
+      "sha256": "5b4b4bf53ed8bc80f5b133f26206094b6acfd3bfda51a1ca3ebf580893aba618",
+      "unchanged": true
+    },
+    {
+      "file": "Zombie_ladder_1.png",
+      "sourceEntry": "reanim/Zombie_ladder_1.png",
+      "sha256": "349de391af1d5f483d5e7b1c4252e372512194ec2c2f75b87e0f97e53c0c51fe",
+      "unchanged": true
+    }
+  ]
+}

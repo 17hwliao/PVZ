@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-24",
+  "scope": "On-foot commander, roadside supply cache and impassable garden terrain used by rescue combat",
+  "entries": [
+    {
+      "id": "doctor-command",
+      "file": "assets/rescue-design/doctor-command.webp",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Production game character asset for a classic 2009 Plants vs Zombies-style story game. Input 1 is the IDENTITY and painting reference for Dr Zomboss only: preserve his giant exposed rounded brain dome, small olive-grey green zombie face, cream round eyes, sparse square teeth, white lab coat. Make ONE full body ON FOOT Dr George Edgar BEFORE he builds the mech. Slim short chibi scientist, brown waistcoat and tie under a slightly worn white lab coat, dark trousers, sturdy brown shoes, a small crossbody leather map satchel. Civilized, tired but determined, compassionate field commander, not a conqueror; no gore or maniacal grin. Match hand-painted 2D casual-game art with dark organic outlines, broad softly painted color shadows, restrained warm colors and gentle nostalgic softness. Three-quarter facing LEFT, whole silhouette and large brain contained, 10 percent genuine transparent padding on all sides. Actual transparent RGBA background, no checkerboard, no scene, ground plane, cast shadow, text, watermark, UI border or mech. Pose: Standing with slightly bent knees, leaning forward with concern. One hand holds a folded parchment field map low beside his torso, the other extends LEFT in a clear open-palmed instruction gesture, exactly two arms and two hands. Brain silhouette unobstructed, both shoes visible.",
+      "generatedFile": "exec-fb124332-5870-46e0-8a76-0949c1d02014.png",
+      "sourceSha256": "d3b8404ad86681b8585371bbbced3565436fe0b0a895de3cef4a2631357319e7",
+      "sha256": "d518e6ea611a4f036a23a2da71acf1bf8cad1f98be4a527eb9c33326dd429e80",
+      "size": [
+        512,
+        512
+      ],
+      "sourceBounds": {
+        "l": 137,
+        "t": 77,
+        "w": 908,
+        "h": 1117
+      },
+      "visualReviewed": true
+    },
+    {
+      "id": "doctor-walk",
+      "file": "assets/rescue-design/doctor-walk.webp",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Production game character asset for a classic 2009 Plants vs Zombies-style story game. Input 1 is the IDENTITY and painting reference for Dr Zomboss only: preserve his giant exposed rounded brain dome, small olive-grey green zombie face, cream round eyes, sparse square teeth, white lab coat. Make ONE full body ON FOOT Dr George Edgar BEFORE he builds the mech. Slim short chibi scientist, brown waistcoat and tie under a slightly worn white lab coat, dark trousers, sturdy brown shoes, a small crossbody leather map satchel. Civilized, tired but determined, compassionate field commander, not a conqueror; no gore or maniacal grin. Match hand-painted 2D casual-game art with dark organic outlines, broad softly painted color shadows, restrained warm colors and gentle nostalgic softness. Three-quarter facing LEFT, whole silhouette and large brain contained, 10 percent genuine transparent padding on all sides. Actual transparent RGBA background, no checkerboard, no scene, ground plane, cast shadow, text, watermark, UI border or mech. Pose: Careful walking stride toward LEFT while looking ahead. One hand holds a rolled map beside his waist, the other steadies the map satchel strap. Exactly two arms, two hands, two complete legs and both shoes. Clear walking silhouette, no repeated bodies or motion ghost.",
+      "generatedFile": "exec-7785abb4-b716-4738-8fc0-04a81b4804e8.png",
+      "sourceSha256": "2672f5c400e89e7fbaac1cb31bef79aa43fab2f00761f736f48eec10d54520ae",
+      "sha256": "120b0c3326f29bb222b137ee1fa2d33697bc1b67361d57b443c6bb1b1f7ada27",
+      "size": [
+        512,
+        512
+      ],
+      "sourceBounds": {
+        "l": 296,
+        "t": 28,
+        "w": 713,
+        "h": 1191
+      },
+      "visualReviewed": true
+    },
+    {
+      "id": "route-cache",
+      "file": "assets/rescue-design/route-cache.webp",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. ONE production transparent game environment prop: a roadside zombie supply gravestone cache for a classic 2009 Plants vs Zombies hand-painted 2D game. Single compact readable object, three-quarter front view, centered with 10% alpha padding. A squat rounded grey-violet stone grave marker with chipped corners, small moss edges, simple blank inset face (NO writing); in front are a low weathered timber supply chest with iron hinges, a small neatly tied cloth medicine/food parcel, and one warm amber lantern resting on the base. This is a concealed humanitarian supply cache, dignified and handmade, not sinister. Entire stone, base, parcel and lantern fully visible, silhouette wider than tall, not a tall monument. Chunky irregular dark outlines, broad painted shade and mild nostalgic softness, match classic PVZ lawn props. Actual transparent background. No scene, grass rectangle, floor, ground shadow, lettering, glowing halo outside the lantern, skull gore, skeleton hands, card frame or UI.",
+      "generatedFile": "exec-d4427401-0365-40b7-ab62-b8fe8062887d.png",
+      "sourceSha256": "e20341ebb2d2d920d05a2459a614589296397e6dab7cf13c9d0924f9348af3f9",
+      "sha256": "89e6dea072ff85e2b3a52249bb39b9d73509d100a5d59b8e2f1e0d018356f8a9",
+      "size": [
+        512,
+        512
+      ],
+      "sourceBounds": {
+        "l": 129,
+        "t": 13,
+        "w": 1279,
+        "h": 998
+      },
+      "visualReviewed": true
+    },
+    {
+      "id": "route-hedge",
+      "file": "assets/rescue-design/route-hedge.webp",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Create ONE transparent 2D environment sprite for a classic 2009 Plants vs Zombies lawn tactics game: an impassable low dense garden hedge growing inside a squat weathered grey stone planter. Front three-quarter view matching PVZ lawn camera, chunky wavy ink outlines, broad soft painted shading, yellow-green leaf masses with a few individually painted leaves, muted mossy grey-brown stone blocks, nostalgic slightly soft raster edges. Compact footprint, rectangular hedge mass slightly taller than wide, centered, fully visible with generous transparent padding. No character, face, eyes, weapons, symbols, letters, UI/card frame, scene, ground plane or cast shadow. This is physical garden terrain, clearly not a clickable button or living combat plant. Actual transparent background. One object only.\n",
+      "generatedFile": "exec-1f89f946-3b62-427f-abfd-874946e17237.png",
+      "sourceSha256": "4780a8969615131ae0dd8e261a90d43b159cc570a1f1c4ee8b5a41669b40dbd8",
+      "sha256": "f257a99737d80766c748f8328d9f90424e08f401b0e66eee8957329bc0704fa4",
+      "size": [
+        512,
+        512
+      ],
+      "sourceBounds": {
+        "l": 98,
+        "t": 143,
+        "w": 1160,
+        "h": 1003
+      },
+      "visualReviewed": true
+    },
+    {
+      "id": "refuge-fence",
+      "file": "assets/rescue-design/refuge-fence.webp",
+      "tool": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. One transparent production game environment sprite, a short wooden protective fence panel for a classic 2009 Plants vs Zombies lawn game. Two broad irregular weathered tan wooden pickets with rounded pointed tops, two rough dark cross rails, thick organic charcoal-brown outline, painted broad warm shadows, subtle nostalgic soft raster texture. Front three-quarter lawn-camera view, compact upright panel with visible feet, intended to tile vertically along the right edge of a lawn. A protective refuge palisade, slightly worn but sturdy. Keep both posts and rails fully in frame with transparent padding. No characters, plants, faces, skulls, grass rectangle, background, ground plane, UI frame, text, lettering or health bar. Genuine transparent RGBA background. One panel only, no sprite sheet or alternate versions.\n",
+      "generatedFile": "exec-7664b89d-e18b-4bf9-a91d-0bdc16017006.png",
+      "sourceSha256": "f14d7a2fde899da65c718db5bdae250945fdff51d6c6644fa6115e32c548e163",
+      "sha256": "10e00e6549980b6a3b1026716cda93ae0145d850cd97d4cee7c4f39f50b0965d",
+      "size": [
+        512,
+        512
+      ],
+      "sourceBounds": {
+        "l": 176,
+        "t": 72,
+        "w": 875,
+        "h": 1154
+      },
+      "visualReviewed": true
+    }
+  ]
+}

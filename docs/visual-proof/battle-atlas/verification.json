@@ -1,0 +1,91 @@
+{
+  "revision": "battle-atlas-20261026c",
+  "stage": "rescue-combat-20261024",
+  "stageStatus": "active",
+  "date": "2026-10-26",
+  "delegation": [
+    "water_roof_design",
+    "night_fog_design",
+    "campaign_continuity"
+  ],
+  "delivered": {
+    "environmentPreviews": 8,
+    "modeCategories": 12,
+    "campaignNodes": 26,
+    "playableRescueMissions": 7,
+    "designedTerrainRulesPlayable": false,
+    "newCampaignBattlesPlayable": false
+  },
+  "lastFullSuite": {
+    "scripts": 23,
+    "passed": 182
+  },
+  "followupAfterAddedDeepLinkCheck": {
+    "script": "tests/test-battle-atlas.cjs",
+    "passed": 10,
+    "syntaxFiles": 27,
+    "localReferences": 462,
+    "missingReferences": 0
+  },
+  "visual": {
+    "source": "actual browser screenshots",
+    "desktop": [
+      1265,
+      712
+    ],
+    "mobileContent": [
+      375,
+      844
+    ],
+    "eightThemesInspected": true,
+    "spoilerExpandedCount": 26,
+    "spoilerCollapsedCount": 23,
+    "closingSpoilersClearsReveal": true,
+    "fixes": [
+      "flat native-timber bridge surface",
+      "dry native-paving fence bank",
+      "nonshrinking campaign navigation buttons",
+      "selected wooden signs have legible backing"
+    ],
+    "screenshotContactSheet": "eight-maps-browser-contact.png",
+    "contactSheetIsCompositeOfScreenshots": true,
+    "nativePCAndAndroidAccepted": false,
+    "battleDifficultyAccepted": false
+  },
+  "packaged": false,
+  "remoteActions": false,
+  "codeReviewPerformed": false,
+  "liveMirrorEqual": true,
+  "sourceFiles": {
+    "battle-atlas-model.js": "17fd698f60a7188ae772e1441893680e0001431cb92f03b88c62f3c28b2e938f",
+    "battle-atlas.css": "32567a6f70065a1afc996447fb5d4e291e9efdddefd2111a32d1689ad6074ec4",
+    "battle-atlas.html": "842b9eb9a0340836cef9bee4ba96e4b4bd0d62323eabf6b09dd46278df653d32",
+    "battle-atlas.js": "e582e2e8b46aaa1ae10be1e5377ec535a9c576f44b09c8827d7a99ad85460679",
+    "battle-campaign-data.js": "e7246535ba5ccf94c435b3584af466eac1ae8533a372748daef1cb750f7741c2",
+    "battle-environment.js": "64ffed10f3a01c6966066eb6a1257e8420e36dc0e8687f6fc30b93c405ce08c8",
+    "battle-map-data.js": "d76b15f59840c8f7574b534cb2482c952027d3f3a1a654673a0df0167b252976",
+    "battle-map-land.js": "1a03bedad580703961864e6b0c0ff8ad69e1cc21400b615854438c5b96cf5ac8",
+    "battle-map-water-roof.js": "ff91051c57768b9a5fa7e8794f7be6f38791cd516bae871947b71bd5cc2bd397",
+    "rescue-design-renderer.js": "407755a0346b2b5af29cf6a5e07244ff6724e4bf160b8b3e6143a5c540513a35",
+    "rescue-design.js": "29ef65ee61ec965af1847d5ceaacba38c21f39ed7ee72215d703069a1dfeaf07",
+    "rescue-design.html": "5111ecc778b277f0a8d44115f3e2daea4d007f45b6c342737cb933964a110145",
+    "rescue-design.css": "7fc0340d299a824a49eda659a7cf8645aab7e16af7291912a346567732024778",
+    "rescue-story-ui.js": "69a99c415548a362e21296069882bca0329d6fb51482da8ad2b22e2e60d30d39",
+    "game.js": "1536e516f389f2e62a64d957f6ec81f9a14ca16cfdbc280eb29884d130dcacae",
+    "index.html": "36cffd26998e97e10067549844b82a1c6684d6b9e222a2e93d63d6f93fe378c5",
+    "README.md": "c3ed12ba4217b6b8b619b5812a70103d76e4df77ad00bf6806f164d84796b0ad"
+  },
+  "environmentAssets": {
+    "assets/environments/background1unsodded.jpg": "a2b6433be7e2b62f152d7413f05ea58d67fe8d182c0015a824754e9b63d8d286",
+    "assets/environments/background3.jpg": "0548a126e25426889bd2ffcc7ffe5e2d0bf5e275fc65e57814e02e3cf83b9a27",
+    "assets/environments/background4.jpg": "856edc0843c58b2d62fd6bbb7ae79145b8aea999fe1ad1a41e2619de3009d3cd",
+    "assets/environments/background5.jpg": "5769edf7b52077600ace6a90591babd22219f0ae9ca9cea7f554b367927a43b4",
+    "assets/environments/background6boss.jpg": "90726dfd15ab7ca1917e110b3909574a29d6a7b71323d6a94c9b0f1e1f5df61f",
+    "assets/environments/Background_MushroomGarden.jpg": "694def2aa89f658de5c36971eaea0ce1bbdc6393ddd035faa4e76f845f77d147",
+    "assets/environments/fog_software.png": "5b4b4bf53ed8bc80f5b133f26206094b6acfd3bfda51a1ca3ebf580893aba618",
+    "assets/environments/pool.jpg": "a2752e90ac9f7c81291c6a61725d7eb56bf413abc2348c475d79382dc0f60cbf",
+    "assets/environments/pool_night.jpg": "6e6db61d7f7cc7be535981fcd96eb00a6b7f6aa63eea6634e086cad5bccf8087",
+    "assets/environments/provenance.json": "ef9960f9e65c452880e1e8a6bbb4592b7d36d17dbe1c3d108e81061f9cef199d",
+    "assets/environments/Zombie_ladder_1.png": "349de391af1d5f483d5e7b1c4252e372512194ec2c2f75b87e0f97e53c0c51fe"
+  }
+}

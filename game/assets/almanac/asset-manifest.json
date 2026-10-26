@@ -1,0 +1,1432 @@
+{
+  "date": "2026-10-24",
+  "alphaBoundsThreshold": 16,
+  "scope": "49 plants, 26 zombies; almanac portrait UI; not new combat units",
+  "entries": [
+    {
+      "id": "pea",
+      "file": "assets/almanac/pea.webp",
+      "sourceSha256": "7dec85929c1c520e06d7212a5cc7ae791231c82a33c9c5eba8cbebf36e58b4fa",
+      "sha256": "77ca4b9c46e835f16e7db4a2efd503878d12729af2fdfffccded592e35082de8",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 66,
+        "t": 46,
+        "w": 380,
+        "h": 420,
+        "transparent": 165956
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "sunflower",
+      "file": "assets/almanac/sunflower.webp",
+      "sourceSha256": "5f4e6df470396d8d04f8d3c84ea666540e26c98aaa83a39a2a96f96f6f1f5949",
+      "sha256": "20e7992286794cd6b521be570fd64e62dcd1366e29d250254837bc9e82729afb",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 49,
+        "t": 46,
+        "w": 413,
+        "h": 420,
+        "transparent": 134889
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "cherry",
+      "file": "assets/almanac/cherry.webp",
+      "sourceSha256": "4d1bf97cb8015ba0ebae29853159825c062ebdbf9325f318f05cde467778ce56",
+      "sha256": "c43becb76c9c22689e10ed7d77dc37d8ca9a2741855a9bb4a3c38c0783d5a428",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 79,
+        "t": 155,
+        "w": 1109,
+        "h": 987,
+        "transparent": 869969
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "wallnut",
+      "file": "assets/almanac/wallnut.webp",
+      "sourceSha256": "4c2bf204afc37377d70c7b7f427ecb4b4c0ffb8fa2d38b9fa359fb621a49b3ba",
+      "sha256": "3c7f11f049f488cdd1edf787130da00fcf9cbe315bee6b29f17c884d503c7fb1",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 51,
+        "t": 46,
+        "w": 410,
+        "h": 420,
+        "transparent": 128039
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "potato",
+      "file": "assets/almanac/potato.webp",
+      "sourceSha256": "40764c946ff39315aba23605abdb6498d2255c626ff352f906e18dcddd6abfd9",
+      "sha256": "54108385fa5e6c07df1071a8e4df4dcd60fcf0d593e2b3ddecdca91c1f01d6f6",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 64,
+        "t": 108,
+        "w": 1127,
+        "h": 1022,
+        "transparent": 974876
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "snow",
+      "file": "assets/almanac/snow.webp",
+      "sourceSha256": "c31a27c4386e6020423f136370321fdbf3f9942f736b04b63e219f285bb15e3b",
+      "sha256": "b9d37d7cd13753cdf11935261d9669b85c3fc962f35de85aa3ec583752fbe677",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 69,
+        "t": 46,
+        "w": 374,
+        "h": 420,
+        "transparent": 169919
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "chomper",
+      "file": "assets/almanac/chomper.webp",
+      "sourceSha256": "88827476fb9af286ef167de98ba4419885c4500b66c14eb2128c08996b3e31a1",
+      "sha256": "23dc04b374d287cc392da0758f9a0cda539d03afbeec9d98889acc2415262c95",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 90,
+        "t": 46,
+        "w": 332,
+        "h": 420,
+        "transparent": 178453
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "repeater",
+      "file": "assets/almanac/repeater.webp",
+      "sourceSha256": "88db83c3f2e2697df11e21032b51a92d39c187987c1ee2f0d54f06dc60edb1a6",
+      "sha256": "d6c6aa3aa87e4286c0d858caa68c6d9ece6fa6996f6d515809505196318eb224",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 107,
+        "t": 110,
+        "w": 1111,
+        "h": 1074,
+        "transparent": 871990
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "puff",
+      "file": "assets/almanac/puff.webp",
+      "sourceSha256": "9c409bce38228afea52d2adf54a5ee27ca71f88f55db84e7c61df79ae559ba3c",
+      "sha256": "3f1b2c5a681495393d73528adf9b0266c8ce219c40235a171ecd38373a07e232",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 98,
+        "t": 173,
+        "w": 1058,
+        "h": 910,
+        "transparent": 877334
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "sunshroom",
+      "file": "assets/almanac/sunshroom.webp",
+      "sourceSha256": "1369e209eb7c00dbfe2a922cdeb4da7b5a2b721eec3f81143bbd1e6a717fc44a",
+      "sha256": "7eaa4b62be038216cf93baf0fcb3f1e7e94fc5dcf5d57157e720d0fc5363d623",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 125,
+        "t": 167,
+        "w": 1006,
+        "h": 924,
+        "transparent": 945853
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "fume",
+      "file": "assets/almanac/fume.webp",
+      "sourceSha256": "29f68a2f189a94f369020d85ba8b5c03930b30b6a5dadbd81ed8d311366c841b",
+      "sha256": "3ccfb54cf025b40736f14e1a1b9dac22cf51c6d95b06af40cfd788afafffde02",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 117,
+        "t": 132,
+        "w": 1024,
+        "h": 1005,
+        "transparent": 854632
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "gravebuster",
+      "file": "assets/almanac/gravebuster.webp",
+      "sourceSha256": "a0e6b09b6e84b0d1c377209498600300c1c186689ae9199c2abf62603b4f2c75",
+      "sha256": "c9a3be87ec7f4183aa1a323e54baa7eb40d65bc32403700ffc916191c1e8fb83",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 47,
+        "t": 143,
+        "w": 1170,
+        "h": 971,
+        "transparent": 919380
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "hypno",
+      "file": "assets/almanac/hypno.webp",
+      "sourceSha256": "6b0a6d3c78585759cbeca50cd6a96d7a6debceb5679836704b64dce121767c08",
+      "sha256": "e6bbf9b1163913a837b0852241035bffbba15f8775ca1044f14b0925f6fc3d3b",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 51,
+        "t": 147,
+        "w": 1169,
+        "h": 970,
+        "transparent": 816770
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "scaredy",
+      "file": "assets/almanac/scaredy.webp",
+      "sourceSha256": "e20692143f32bcd1431c1090e555d0bc6e22a12e5ea7ee76d1a81432579eff28",
+      "sha256": "90f76ddb0a5f25ba306a7227924eb17893186fd82ffbcba38c836e8824e934fc",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 217,
+        "t": 108,
+        "w": 814,
+        "h": 1062,
+        "transparent": 1047298
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "ice",
+      "file": "assets/almanac/ice.webp",
+      "sourceSha256": "25d9ef2685b8b0b9376f0efa46f2718922ac8143876dde49e93ca0ad5eb21d54",
+      "sha256": "d5d2fa929f646df752a6e4a0cd00986f16a115ee60334f552dc6d2d643d3d027",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 73,
+        "t": 83,
+        "w": 1114,
+        "h": 1094,
+        "transparent": 801375
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "doom",
+      "file": "assets/almanac/doom.webp",
+      "sourceSha256": "72a08cfdfebbc23586043adf8c0214264ba8dd8ca232f4bbfc4836bd501ead2e",
+      "sha256": "ecf7111c34b47f72e8ace01b740dfbf4798d914e999da4cd1a17e5b6c6f67e34",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 56,
+        "t": 184,
+        "w": 1141,
+        "h": 932,
+        "transparent": 838405
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "lily",
+      "file": "assets/almanac/lily.webp",
+      "sourceSha256": "f76de8d62541a8ac73f392e3466dcac41408bfca94434c52d35a4f872b682116",
+      "sha256": "753e5235ac5fb1447a0051a60da04755892a375cc560bf0246a9d95e1a4cb306",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 106,
+        "t": 259,
+        "w": 1050,
+        "h": 761,
+        "transparent": 960323
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "squash",
+      "file": "assets/almanac/squash.webp",
+      "sourceSha256": "b2140c7cc09954a9518650a16ff3748e77ecebb5214a55e141bd5c1d2faa4678",
+      "sha256": "2b10a32e7d8d816383aa3c92b4754684c5dde7d0233ae449f7d48d0faf05e239",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 188,
+        "t": 112,
+        "w": 881,
+        "h": 1048,
+        "transparent": 954270
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "threepeater",
+      "file": "assets/almanac/threepeater.webp",
+      "sourceSha256": "83c06b9894dd235564229baa5898db5c20c5a7289e7c3caf9c7d36f4a9fb20c6",
+      "sha256": "f86326e014d9d311dfb2e985bd1f52b92c88162b3f9e0b44684725a866857df6",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 56,
+        "t": 130,
+        "w": 1171,
+        "h": 1055,
+        "transparent": 927649
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "kelp",
+      "file": "assets/almanac/kelp.webp",
+      "sourceSha256": "795f9a227419bf8c4a62dcb8347952144f1c97a018a55d6c352b2b22faf8161b",
+      "sha256": "f0449148dc46d03d82941e02fd890a10c9a67f277208c9f171543ff2316584f3",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 144,
+        "t": 55,
+        "w": 1008,
+        "h": 1108,
+        "transparent": 963100
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "jalapeno",
+      "file": "assets/almanac/jalapeno.webp",
+      "sourceSha256": "387c73fed57a77988db28cc457c03dabf51bff6a7dfa85e8a54ac182b9a7fea3",
+      "sha256": "44b29691b2515652fbfdf9b49c2d4fb7700709e1d0f4ed3c3687d594fd5d3e8b",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 330,
+        "t": 52,
+        "w": 647,
+        "h": 1133,
+        "transparent": 1128620
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "spikeweed",
+      "file": "assets/almanac/spikeweed.webp",
+      "sourceSha256": "d4001f66fde3fbd0f4e538f5636b3ba70f9db4cd2bd43c072dd67505c8ec56c3",
+      "sha256": "8820e42abe81748d9e14ec5bb76e22d99cdf00ec9a92fb37f0f217526589d057",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 25,
+        "t": 250,
+        "w": 1205,
+        "h": 765,
+        "transparent": 1102586
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "torchwood",
+      "file": "assets/almanac/torchwood.webp",
+      "sourceSha256": "a6d4a27f0d95dd064dabe2038bc031a2ed2b009086bd1ce18fee07c2a257f76e",
+      "sha256": "7f9bbf248b2ac370ca17eb8885fa549f99574d676aeb38f77bd07b79fa35fcb9",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 193,
+        "t": 57,
+        "w": 891,
+        "h": 1122,
+        "transparent": 965068
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "tallnut",
+      "file": "assets/almanac/tallnut.webp",
+      "sourceSha256": "0f1bfcf807ee51a25408ec8809e26e646ee6b102407442b036a3b6997f9e4b6f",
+      "sha256": "615fe946b828b7312ac7931644a493f7f6a8d8826f7783f10ff1d963c1a89537",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 289,
+        "t": 60,
+        "w": 683,
+        "h": 1147,
+        "transparent": 908564
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "sea",
+      "file": "assets/almanac/sea.webp",
+      "sourceSha256": "1b9a8c14d73680fc54d72d2ab7ff8d54ab9dbf0d9ddb42a2520ce4359bd73f00",
+      "sha256": "6573a3d1f32cd8bd1ca0f36d002c116b9146458d62dfcf8e50e4e475049db272",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 131,
+        "t": 170,
+        "w": 977,
+        "h": 949,
+        "transparent": 965781
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "plantern",
+      "file": "assets/almanac/plantern.webp",
+      "sourceSha256": "9f239e3e9cdf0c5cf276f565114121a2ce4acc4eb446410636538f4aae15f9a0",
+      "sha256": "198235931c5502bfec0687295d8133bf1f2e5abb6685dae24235079640c45881",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 158,
+        "t": 80,
+        "w": 890,
+        "h": 1107,
+        "transparent": 1034608
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "cactus",
+      "file": "assets/almanac/cactus.webp",
+      "sourceSha256": "9bf7137b983631a538e413da63b8a742b38800452ebb937003b3a4859910b003",
+      "sha256": "3ed51d407af7a05e5f84f748e661f88f944c79ae217cd0c490d38ad4bebfc628",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 46,
+        "t": 83,
+        "w": 420,
+        "h": 346,
+        "transparent": 178999
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "blover",
+      "file": "assets/almanac/blover.webp",
+      "sourceSha256": "36246a892ff37d4ab64bb38b8a1c399700282f9e32840ec98109cc0ca9f19aca",
+      "sha256": "002cd83e32f2f4510afd3350c6aa3c992471d7c2e68539d03b125f6bea292cdc",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 73,
+        "t": 64,
+        "w": 1108,
+        "h": 1130,
+        "transparent": 882721
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "splitpea",
+      "file": "assets/almanac/splitpea.webp",
+      "sourceSha256": "05df43f38af91338000cd251090009876aeb14c4152abc3dcd4723267af5a887",
+      "sha256": "76b9ab29b5644107718fb654cb1cd62353671d1d91b99cdfb6982e8d45d984f5",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 11,
+        "t": 146,
+        "w": 1239,
+        "h": 1030,
+        "transparent": 859221
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "starfruit",
+      "file": "assets/almanac/starfruit.webp",
+      "sourceSha256": "594b5b3e94b677d849f9c719579e814f889fe29091eb9a49ab3f7e37f70a5560",
+      "sha256": "6925995284344d460308934caa02d7d2850a3a4cdbd2828f01d310a3218588c0",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 103,
+        "t": 53,
+        "w": 1045,
+        "h": 1166,
+        "transparent": 826516
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "pumpkin",
+      "file": "assets/almanac/pumpkin.webp",
+      "sourceSha256": "84f8417b0d6185db4094a1e2a4b97b6f8c69a9892ab91a8a4f7f066bf56a88a1",
+      "sha256": "9e71d1dc3991f3aa3bc2c967ddcf6363dab96624f3e3bc256c3af128d0bf1e07",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 67,
+        "t": 289,
+        "w": 1142,
+        "h": 704,
+        "transparent": 919812
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "magnet",
+      "file": "assets/almanac/magnet.webp",
+      "sourceSha256": "d0ae5f05c2c2717f53095f90dc08dfa3e805f47345b57116f94260c603481466",
+      "sha256": "82a6545d9eba792c73cb818d39610d2b6a6c28167f8041837369fd58e0bc3a88",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 235,
+        "t": 142,
+        "w": 787,
+        "h": 991,
+        "transparent": 1027046
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "cabbage",
+      "file": "assets/almanac/cabbage.webp",
+      "sourceSha256": "51eaa7878d6b4935e449055e54891f98c66d9e042522b5e3c03e590cbf749e09",
+      "sha256": "4125f5d9091a44fdfc34fdc282dc6338160b554ba700317a13f7870bfa35f3db",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 36,
+        "t": 43,
+        "w": 1163,
+        "h": 1169,
+        "transparent": 1013297
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "pot",
+      "file": "assets/almanac/pot.webp",
+      "sourceSha256": "74ad9ca6f5ed8ffb9a760fa57d47cb8b0c36f9c971ab83802db2ec920facbf7f",
+      "sha256": "817ee6fac44ae1accaaaca24652d1bb5c087b89f44885fc8d28867148d06007f",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 143,
+        "t": 201,
+        "w": 969,
+        "h": 874,
+        "transparent": 931129
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "kernel",
+      "file": "assets/almanac/kernel.webp",
+      "sourceSha256": "d9a8ac63af2f48f80ab8dbce10e44ceae3e54c3370992c57b5d3972466a96829",
+      "sha256": "445bb825743652a96aac61942991f1a03dd236ca22e5dedd531a8e1bed1c7c2f",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 149,
+        "t": 211,
+        "w": 946,
+        "h": 843,
+        "transparent": 1141584
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "coffee",
+      "file": "assets/almanac/coffee.webp",
+      "sourceSha256": "33fc69c7b73d4d1f25fb63995997dc4fd1270d0e1468c1e509c760b8d2c4fb7f",
+      "sha256": "63f086bda1ad63b75f656a20d95991cf24712943aaa975cfd6ff268dec922763",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 324,
+        "t": 209,
+        "w": 617,
+        "h": 868,
+        "transparent": 1159899
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "garlic",
+      "file": "assets/almanac/garlic.webp",
+      "sourceSha256": "7c1dcf9ffe2299869d4a0f29a0d45005a80f7e3cef72bbc058dd4f04e9392ab2",
+      "sha256": "448b0c137e6c6a5db7c744bae6b748123f76c6442c64fafa6753ca382e7f2b42",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 220,
+        "t": 212,
+        "w": 815,
+        "h": 920,
+        "transparent": 1135976
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "umbrella",
+      "file": "assets/almanac/umbrella.webp",
+      "sourceSha256": "d7df00415fcdee900777d7afbdaf554708ebf6466edec374437bc4c9f2b811a0",
+      "sha256": "82872c950d646568b1f13a9048f3a187521201411eb20e5194bd051b0c578c57",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 134,
+        "t": 187,
+        "w": 1012,
+        "h": 896,
+        "transparent": 1048596
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "marigold",
+      "file": "assets/almanac/marigold.webp",
+      "sourceSha256": "4a5bcce0f95e064c003c7256180bb06045cf74e614ee7f917a2af34db08c194f",
+      "sha256": "3e837d3f2919a607504cb45d71f875b26fcd665425aff712c9ab2366c8526d4a",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 255,
+        "t": 137,
+        "w": 802,
+        "h": 1018,
+        "transparent": 1019337
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "melon",
+      "file": "assets/almanac/melon.webp",
+      "sourceSha256": "b1adfbe2b8519d201bcbf779df87d44a49f10dd9ff11994c01d424dff5ef2b18",
+      "sha256": "ee55a1357672eae369dac4605f31e21d92039f9d020f0e1464a87e48eb735df5",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 82,
+        "t": 155,
+        "w": 1034,
+        "h": 970,
+        "transparent": 1104407
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "gatling",
+      "file": "assets/almanac/gatling.webp",
+      "sourceSha256": "6fb494efe826d3ba6e70d7795ef8c40ac326897f5091c2faa43a25b9a9a7e3e7",
+      "sha256": "4768c91824d650e2248f23f37a8bbc42b1163cfd59a50826e3a16bdde975d244",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 229,
+        "t": 110,
+        "w": 897,
+        "h": 1049,
+        "transparent": 987380
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "twinsunflower",
+      "file": "assets/almanac/twinsunflower.webp",
+      "sourceSha256": "ff9e3bdd59676d855a4e308e17fb5c1c31bc72b6e3fbea8e797e3a0f22760206",
+      "sha256": "a401c86ce78d40740d30cc446ede6bb127da51a07868357f89e64914be459a81",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 180,
+        "t": 132,
+        "w": 895,
+        "h": 976,
+        "transparent": 1074981
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "gloom",
+      "file": "assets/almanac/gloom.webp",
+      "sourceSha256": "d2abd6575822ed9c8c5d607422c1fa064d28d0f44f153fac15e17883142586bb",
+      "sha256": "4c38f864f99d53cb9893e8c93b06bf4b341f6e64f528105a56d5d44f8ae4e14b",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 185,
+        "t": 210,
+        "w": 889,
+        "h": 867,
+        "transparent": 1050682
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "cattail",
+      "file": "assets/almanac/cattail.webp",
+      "sourceSha256": "727fcec99c803316e77e210585b523af56e1041d93dee152e9e35904944f3b99",
+      "sha256": "7f9c4271b5fec5fbd70dfefd5cb20802537bcbda4f9924e1cdfdc093ac4d139e",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 274,
+        "t": 122,
+        "w": 754,
+        "h": 1010,
+        "transparent": 1147454
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "wintermelon",
+      "file": "assets/almanac/wintermelon.webp",
+      "sourceSha256": "7f1c5d201b1fd291e59ab7d05b0d79405e7645f7c464781bc66070dd26635107",
+      "sha256": "b89541c12171246b58a967a0ac50f0774b12a57d7dbd0ca06b6d3f6d16649ef1",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 88,
+        "t": 163,
+        "w": 1019,
+        "h": 964,
+        "transparent": 1108608
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "goldmagnet",
+      "file": "assets/almanac/goldmagnet.webp",
+      "sourceSha256": "c23edb253ae535862080d4d0acb4cab66d96e76e9267a8e9ea3ac561e66ecc88",
+      "sha256": "d239dcaa581993193a73ff7aa9e8b5051ee3851f783012d0a16a03b88b760c04",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 271,
+        "t": 202,
+        "w": 737,
+        "h": 879,
+        "transparent": 1107926
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "spikerock",
+      "file": "assets/almanac/spikerock.webp",
+      "sourceSha256": "3e5d3e37070acfbd2318ce8d4c828fdee6eb7136455bd4895f4beb73e75c4504",
+      "sha256": "a49a7653366191a7ed472af78f1e4465e1ce803b3f0b43d58c10274307560285",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 10,
+        "t": 484,
+        "w": 1240,
+        "h": 465,
+        "transparent": 1206599
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "cobcannon",
+      "file": "assets/almanac/cobcannon.webp",
+      "sourceSha256": "fcd1e38ee14152c59a31cfba34640ef14205d49e00a91be76ae15d52ecbfa084",
+      "sha256": "cc758ec7c98ae7baf975c3ccbae6d7762a34f64637f1697837aeaf2d219efb08",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "sourceBounds": {
+        "l": 131,
+        "t": 76,
+        "w": 1353,
+        "h": 895,
+        "transparent": 772146
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "imitater",
+      "file": "assets/almanac/imitater.webp",
+      "sourceSha256": "3e8cf1d557dd9db33fd0460529fa3f632bb33df3263ee6fac68245b0733b6574",
+      "sha256": "e453f136c46303726912bb81911228114ff17022ddbe26aaad189d06db9a7334",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 304,
+        "t": 242,
+        "w": 659,
+        "h": 801,
+        "transparent": 1159520
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "normal",
+      "file": "assets/almanac/normal.webp",
+      "sourceSha256": "8ff8acb69c488748c913939ca91117c243b7ed338e18196d4f192c9d8b36d6c9",
+      "sha256": "a9ac224ce4e1550a43112421e9dc25607db036084e45fbf985e4d32d076fc3f1",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 126,
+        "t": 46,
+        "w": 260,
+        "h": 420,
+        "transparent": 205949
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "flag",
+      "file": "assets/almanac/flag.webp",
+      "sourceSha256": "fb2036973e9661adc62c11ef62d5e229f4b5df5c0e091fed822896b3b28a855e",
+      "sha256": "b656599135b54ef9c6d03cd0448122571c4205032e23efb1f3bf614f2329c752",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 296,
+        "t": 12,
+        "w": 705,
+        "h": 1220,
+        "transparent": 1188600
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "cone",
+      "file": "assets/almanac/cone.webp",
+      "sourceSha256": "94f72ccc26f37119e531b0fea5e21a2a273fd961227a84e95964fa964e38ef17",
+      "sha256": "885d097065d57687fd6f302b1aa466831b567c6a3d9755616b85823e5c611a24",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 149,
+        "t": 46,
+        "w": 214,
+        "h": 420,
+        "transparent": 218611
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "pole",
+      "file": "assets/almanac/pole.webp",
+      "sourceSha256": "eaf95f507f959dc4de406d0c74d8237dfb22c6ad815dbdab4419c1e9bf7a3dfc",
+      "sha256": "4b9df9b5bf7d806a71f8ad86289258eb982a9627d5f696a86126a2328f8d53ad",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 44,
+        "t": 88,
+        "w": 1135,
+        "h": 1112,
+        "transparent": 1319445
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "bucket",
+      "file": "assets/almanac/bucket.webp",
+      "sourceSha256": "2dba359d256eb5a443479b51d2a8d263c2d501a891d08ba721831edc534bca52",
+      "sha256": "f782cfc10b9268921c23a3b7c6dded4c521a71517c09b40cbee76d77aa661d31",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 134,
+        "t": 46,
+        "w": 244,
+        "h": 420,
+        "transparent": 211029
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "newspaper",
+      "file": "assets/almanac/newspaper.webp",
+      "sourceSha256": "8160840c9234e74b2ca94d5dfcbaf1f3e4ec6ea3ec7ce251035afbf36aa8b85a",
+      "sha256": "5b7d54907677b6f36b7077bd95895d5f71169bbfdc09784ba6bb646cb77fa9e5",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 270,
+        "t": 211,
+        "w": 668,
+        "h": 890,
+        "transparent": 1272786
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "screen",
+      "file": "assets/almanac/screen.webp",
+      "sourceSha256": "1dd00bd6f1e8fce8863a767e3491c3d8d54a488369e237ad07f3aadf8c13de43",
+      "sha256": "f4f63f25c77979b12d22df6a7f1a33f7cc1fa98f8ae0e43dce7c71eab2e8e4f6",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 358,
+        "t": 189,
+        "w": 572,
+        "h": 872,
+        "transparent": 1271885
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "football",
+      "file": "assets/almanac/football.webp",
+      "sourceSha256": "3b63d5a3900fc1eb980bfdc1c24dba6c8fb8ca87b79fedb1a44adcef0a4fbc91",
+      "sha256": "7df039fcc292e1a2972efcac606ce8f467756e2f0b5217dc2c448d7675d8aa70",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 322,
+        "t": 124,
+        "w": 637,
+        "h": 1032,
+        "transparent": 1185801
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "dancer",
+      "file": "assets/almanac/dancer.webp",
+      "sourceSha256": "a42fcc379120d88856dc9eab448e7e2b604fefd678de47a07084d23c210bd234",
+      "sha256": "7efb8f2ead0984e1f4fc2bdb63bf2cb2d8c13fb39d583063a51f12aa23f35505",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 231,
+        "t": 146,
+        "w": 791,
+        "h": 973,
+        "transparent": 1259564
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "backup",
+      "file": "assets/almanac/backup.webp",
+      "sourceSha256": "b997ce125b2d9fb8b6d46394cedd4d5603673436064cfc3d86e167fab511039b",
+      "sha256": "77ccb266fae6204ff2c5faab11fc6d0d5a76c8b456a56901fdf7a2fcdccf222b",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 323,
+        "t": 244,
+        "w": 613,
+        "h": 836,
+        "transparent": 1350309
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "ducky",
+      "file": "assets/almanac/ducky.webp",
+      "sourceSha256": "f04d3bc872a126dfab129070cdb600fa24aba8f4a6d5a91b84c496d07744d7d4",
+      "sha256": "82385d7d216129f0187c6dd845d3f6f1b244283ee30d77ddfcb727e691bfd489",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 310,
+        "t": 213,
+        "w": 629,
+        "h": 840,
+        "transparent": 1305309
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "snorkel",
+      "file": "assets/almanac/snorkel.webp",
+      "sourceSha256": "736e3750f3e3a01946d058ccd4609abc34c91d2f46badef9214e4fa4c651fbf0",
+      "sha256": "4fec172fc006e5641f87dee6696f87e38a7b1d04359969fc27c6198d3821ab33",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 332,
+        "t": 177,
+        "w": 666,
+        "h": 889,
+        "transparent": 1345747
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "zamboni",
+      "file": "assets/almanac/zamboni.webp",
+      "sourceSha256": "23a2265d34a370af92056362a4a9d43afab2f112e9c522de40e0804593de38ae",
+      "sha256": "85a8e64af5050f8b1b4bb39764a49c8843eaf52c169913cec6055b6222db3ea4",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 80,
+        "t": 209,
+        "w": 1094,
+        "h": 843,
+        "transparent": 1044860
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "bobsled",
+      "file": "assets/almanac/bobsled.webp",
+      "sourceSha256": "b8d14f95bc4dcc2c3b26a22a45eaa41c0110390c7dbd5882a6d2206b68a22c76",
+      "sha256": "ea78c84c93663a215a3e42122107a50103e4631c6beedd8788e3edc52128a6e7",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 89,
+        "t": 245,
+        "w": 1099,
+        "h": 784,
+        "transparent": 1070693
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "dolphin",
+      "file": "assets/almanac/dolphin.webp",
+      "sourceSha256": "eda290d3ce262602e4acba10871efa824664e6496cfe24acf581a5508851031f",
+      "sha256": "c1144f2fce88c86eac683f67f07ead535b5c2d328161d9f470897d93770b1ce8",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 154,
+        "t": 165,
+        "w": 947,
+        "h": 961,
+        "transparent": 1254606
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "jack",
+      "file": "assets/almanac/jack.webp",
+      "sourceSha256": "9a9d5a7efbe27ce7ccbf89bd51df519cec0863f6718121bd73f2411418d10df0",
+      "sha256": "b6acf145fb310aa7f0c31be19e500ea39982b144d67b76f1b6d1c38517786d45",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 372,
+        "t": 180,
+        "w": 549,
+        "h": 909,
+        "transparent": 1289941
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "balloon",
+      "file": "assets/almanac/balloon.webp",
+      "sourceSha256": "caa92e2c85df02327dd1e70328d6cf03c390a23915bb3ed5d895b5edb4372545",
+      "sha256": "bf8b0a416c64f1ab8a1b9f9948aa6474e6d8e6be6121cfa1357631fdf8871fc8",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 128,
+        "t": 46,
+        "w": 256,
+        "h": 420,
+        "transparent": 203889
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "digger",
+      "file": "assets/almanac/digger.webp",
+      "sourceSha256": "eafa1936c645b9900346f82a88def196b90aeb430bccb064c298dc54e80e2251",
+      "sha256": "43ecc92e31ccf1e433aac42c38d45ae401ee03d485d5c6679218b442dbfa60cc",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "sourceBounds": {
+        "l": 102,
+        "t": 46,
+        "w": 307,
+        "h": 420,
+        "transparent": 194737
+      },
+      "current": true,
+      "origin": "Production skeletal renderer / approved story art"
+    },
+    {
+      "id": "pogo",
+      "file": "assets/almanac/pogo.webp",
+      "sourceSha256": "fd5c7d2599437938e26df2034f40a483700b18c83248749e7dbd91b029eaef8d",
+      "sha256": "307495410fd07ac76c9dd29895d01c0cc9b500a76d5409f390bc54a17f11cc69",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 377,
+        "t": 129,
+        "w": 514,
+        "h": 1014,
+        "transparent": 1317170
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "yeti",
+      "file": "assets/almanac/yeti.webp",
+      "sourceSha256": "026c1e019f8a6be908a5eba11cc7be34db7d3e64a2d3430753c2fb704442e940",
+      "sha256": "feadbe6f1612a00a5d7742bf4a558939e2ebafd3993efb780f46b474c5f79f8f",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 288,
+        "t": 167,
+        "w": 710,
+        "h": 962,
+        "transparent": 1114963
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "bungee",
+      "file": "assets/almanac/bungee.webp",
+      "sourceSha256": "ef88eb02a5338c3da1c486ba84d004954a8f7e3c1f80796c25deaaebaf31158f",
+      "sha256": "8ffb44e44c01fe7b0d375f1c0b72cd2980806342d7381666d5f96c5a44cb632c",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 278,
+        "t": 90,
+        "w": 776,
+        "h": 1006,
+        "transparent": 1321520
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "ladder",
+      "file": "assets/almanac/ladder.webp",
+      "sourceSha256": "67fbda3fc97219e52d8e47b0db1d29fe8066f302ad8ab88dc30e5041c86bb0b7",
+      "sha256": "e3f532590fd1bdae5f1d626bf6542046f8aa3a89a4453fd839fca8fb3371b255",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 265,
+        "t": 139,
+        "w": 716,
+        "h": 970,
+        "transparent": 1215345
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "catapult",
+      "file": "assets/almanac/catapult.webp",
+      "sourceSha256": "8a6e7e1dcab9329de8afd876fb5f1b9794e3c3ad76c37669f43f65b937c36778",
+      "sha256": "0f3d6ca4284b80dd2503fd81af98dcde1e31ea1352a2b7c7eb390dcada9b73a4",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 213,
+        "t": 221,
+        "w": 919,
+        "h": 832,
+        "transparent": 1197254
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "gargantuar",
+      "file": "assets/almanac/gargantuar.webp",
+      "sourceSha256": "36f4c50d1dab9df84042365ae2d62df4c45801672ac78055f319afb02961163a",
+      "sha256": "07fa59516d811a41e652e528431fc4f041b1ec270c1d3cb150b644b12d7789c9",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 187,
+        "t": 221,
+        "w": 887,
+        "h": 901,
+        "transparent": 1110793
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "imp",
+      "file": "assets/almanac/imp.webp",
+      "sourceSha256": "559076588d490c119bbec9d8739b1d209b9af569c2275766f1652c76f1b59855",
+      "sha256": "712dc076ffc30e015c4794bf023c22aae6341fa9239ceeef691ae2f3f72c0f80",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 405,
+        "t": 335,
+        "w": 461,
+        "h": 662,
+        "transparent": 1410746
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    },
+    {
+      "id": "boss",
+      "file": "assets/almanac/boss.webp",
+      "sourceSha256": "6a983e9894031db1f13f0fbefe8c5bdc38afa27849db013d0b9c6b5c91dda994",
+      "sha256": "267f5f8486a2a525fd8821be8f7bfdfbe174d08d4226fe068ad44307568a314c",
+      "width": 512,
+      "height": 512,
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "sourceBounds": {
+        "l": 225,
+        "t": 114,
+        "w": 856,
+        "h": 1051,
+        "transparent": 1023480
+      },
+      "current": false,
+      "origin": "image_gen individual transparent portrait"
+    }
+  ]
+}

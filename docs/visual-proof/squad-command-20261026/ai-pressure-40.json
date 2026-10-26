@@ -1,0 +1,2114 @@
+{
+  "description": "Natural paid AI deployment. 500 initial sun, 5 free off-board producers, 60s preparation. Player leaves default squads idle, no doctor relocation, fence/hp tampering, manual plant placement or damage injection. Five selected hideout rows in each representative terrain. Effective fire is separated from actual doctor collisions.",
+  "cases": [
+    {
+      "map": "lawn",
+      "tag": "L1-1",
+      "hideout": 0,
+      "status": "lost",
+      "time": 174.05,
+      "hits": 0,
+      "firstDoctorHit": 161,
+      "lastDoctorHit": 174.05,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 159.0000000000019,
+        "1": 95.99999999999667,
+        "2": 174.00000000000531,
+        "3": 95.99999999999667,
+        "4": 94.99999999999673
+      },
+      "initialSpent": 300,
+      "sun": 725,
+      "spent": 800,
+      "launched": 346,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          0,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ],
+        [
+          "pea",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "lawn",
+      "tag": "L1-1",
+      "hideout": 1,
+      "status": "lost",
+      "time": 111,
+      "hits": 0,
+      "firstDoctorHit": 98,
+      "lastDoctorHit": 111,
+      "brokenRows": [
+        1,
+        3,
+        4
+      ],
+      "breaks": {
+        "1": 95.99999999999667,
+        "3": 95.99999999999667,
+        "4": 94.99999999999673
+      },
+      "initialSpent": 300,
+      "sun": 800,
+      "spent": 300,
+      "launched": 222,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1800,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "lawn",
+      "tag": "L1-1",
+      "hideout": 2,
+      "status": "lost",
+      "time": 189.3,
+      "hits": 0,
+      "firstDoctorHit": 176,
+      "lastDoctorHit": 189.3,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 159.0000000000019,
+        "1": 95.99999999999667,
+        "2": 174.00000000000531,
+        "3": 95.99999999999667,
+        "4": 94.99999999999673
+      },
+      "initialSpent": 300,
+      "sun": 775,
+      "spent": 900,
+      "launched": 377,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          2,
+          6
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "lawn",
+      "tag": "L1-1",
+      "hideout": 3,
+      "status": "lost",
+      "time": 111,
+      "hits": 0,
+      "firstDoctorHit": 98,
+      "lastDoctorHit": 111,
+      "brokenRows": [
+        1,
+        3,
+        4
+      ],
+      "breaks": {
+        "1": 95.99999999999667,
+        "3": 95.99999999999667,
+        "4": 94.99999999999673
+      },
+      "initialSpent": 300,
+      "sun": 800,
+      "spent": 300,
+      "launched": 222,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1800,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "lawn",
+      "tag": "L1-1",
+      "hideout": 4,
+      "status": "lost",
+      "time": 110.4,
+      "hits": 0,
+      "firstDoctorHit": 97,
+      "lastDoctorHit": 110.4,
+      "brokenRows": [
+        1,
+        3,
+        4
+      ],
+      "breaks": {
+        "1": 95.99999999999667,
+        "3": 95.99999999999667,
+        "4": 94.99999999999673
+      },
+      "initialSpent": 300,
+      "sun": 800,
+      "spent": 300,
+      "launched": 219,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1800,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "night",
+      "tag": "L2-1",
+      "hideout": 0,
+      "status": "lost",
+      "time": 91.05,
+      "hits": 0,
+      "firstDoctorHit": 78,
+      "lastDoctorHit": 91.05,
+      "brokenRows": [
+        0
+      ],
+      "breaks": {
+        "0": 75.99999999999781
+      },
+      "initialSpent": 125,
+      "sun": 690,
+      "spent": 325,
+      "launched": 161,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1160,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "pea",
+          0,
+          6
+        ],
+        [
+          "pea",
+          3,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "night",
+      "tag": "L2-1",
+      "hideout": 1,
+      "status": "lost",
+      "time": 111,
+      "hits": 0,
+      "firstDoctorHit": 98,
+      "lastDoctorHit": 111,
+      "brokenRows": [
+        0,
+        1
+      ],
+      "breaks": {
+        "0": 75.99999999999781,
+        "1": 95.99999999999667
+      },
+      "initialSpent": 125,
+      "sun": 590,
+      "spent": 425,
+      "launched": 201,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1620,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "pea",
+          3,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "night",
+      "tag": "L2-1",
+      "hideout": 2,
+      "status": "lost",
+      "time": 153.4,
+      "hits": 0,
+      "firstDoctorHit": 140,
+      "lastDoctorHit": 153.4,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "breaks": {
+        "0": 75.99999999999781,
+        "1": 95.99999999999667,
+        "2": 137.99999999999713,
+        "3": 141.99999999999804
+      },
+      "initialSpent": 125,
+      "sun": 740,
+      "spent": 525,
+      "launched": 285,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 2860,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          3,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ],
+        [
+          "pea",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "night",
+      "tag": "L2-1",
+      "hideout": 3,
+      "status": "lost",
+      "time": 157.4,
+      "hits": 0,
+      "firstDoctorHit": 144,
+      "lastDoctorHit": 157.4,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "breaks": {
+        "0": 75.99999999999781,
+        "1": 95.99999999999667,
+        "2": 137.99999999999713,
+        "3": 141.99999999999804
+      },
+      "initialSpent": 125,
+      "sun": 640,
+      "spent": 625,
+      "launched": 293,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 2900,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          3,
+          6
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "night",
+      "tag": "L2-1",
+      "hideout": 4,
+      "status": "lost",
+      "time": 179.4,
+      "hits": 0,
+      "firstDoctorHit": 166,
+      "lastDoctorHit": 179.4,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 75.99999999999781,
+        "1": 95.99999999999667,
+        "2": 137.99999999999713,
+        "3": 141.99999999999804,
+        "4": 164.00000000000304
+      },
+      "initialSpent": 125,
+      "sun": 665,
+      "spent": 725,
+      "launched": 336,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          0,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "underground",
+      "tag": "L3-1",
+      "hideout": 0,
+      "status": "lost",
+      "time": 136.05,
+      "hits": 0,
+      "firstDoctorHit": 123,
+      "lastDoctorHit": 136.05,
+      "brokenRows": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 120.99999999999525,
+        "1": 92.99999999999685,
+        "3": 92.99999999999685,
+        "4": 45.99999999999951
+      },
+      "initialSpent": 350,
+      "sun": 475,
+      "spent": 650,
+      "launched": 272,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 2780,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          0,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ],
+        [
+          "pea",
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "underground",
+      "tag": "L3-1",
+      "hideout": 1,
+      "status": "lost",
+      "time": 108,
+      "hits": 0,
+      "firstDoctorHit": 95,
+      "lastDoctorHit": 108,
+      "brokenRows": [
+        1,
+        3,
+        4
+      ],
+      "breaks": {
+        "1": 92.99999999999685,
+        "3": 92.99999999999685,
+        "4": 45.99999999999951
+      },
+      "initialSpent": 350,
+      "sun": 550,
+      "spent": 450,
+      "launched": 216,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 2280,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "snow",
+          1,
+          4
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "underground",
+      "tag": "L3-1",
+      "hideout": 2,
+      "status": "lost",
+      "time": 167.2,
+      "hits": 0,
+      "firstDoctorHit": 154,
+      "lastDoctorHit": 167.2,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 120.99999999999525,
+        "1": 92.99999999999685,
+        "2": 152.0000000000003,
+        "3": 92.99999999999685,
+        "4": 45.99999999999951
+      },
+      "initialSpent": 350,
+      "sun": 525,
+      "spent": 850,
+      "launched": 333,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          2,
+          6
+        ],
+        [
+          "pea",
+          3,
+          6
+        ],
+        [
+          "pea",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "underground",
+      "tag": "L3-1",
+      "hideout": 3,
+      "status": "lost",
+      "time": 108,
+      "hits": 0,
+      "firstDoctorHit": 95,
+      "lastDoctorHit": 108,
+      "brokenRows": [
+        1,
+        3,
+        4
+      ],
+      "breaks": {
+        "1": 92.99999999999685,
+        "3": 92.99999999999685,
+        "4": 45.99999999999951
+      },
+      "initialSpent": 350,
+      "sun": 550,
+      "spent": 450,
+      "launched": 216,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 2280,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "snow",
+          1,
+          4
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "underground",
+      "tag": "L3-1",
+      "hideout": 4,
+      "status": "lost",
+      "time": 61.05,
+      "hits": 0,
+      "firstDoctorHit": 48,
+      "lastDoctorHit": 61.05,
+      "brokenRows": [
+        4
+      ],
+      "breaks": {
+        "4": 45.99999999999951
+      },
+      "initialSpent": 350,
+      "sun": 300,
+      "spent": 450,
+      "launched": 122,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 880,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "snow",
+          1,
+          4
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "pool",
+      "tag": "L4-1",
+      "hideout": 0,
+      "status": "lost",
+      "time": 61.5,
+      "hits": 0,
+      "firstDoctorHit": 48,
+      "lastDoctorHit": 61.5,
+      "brokenRows": [
+        0
+      ],
+      "breaks": {
+        "0": 45.99999999999951
+      },
+      "initialSpent": 300,
+      "sun": 500,
+      "spent": 300,
+      "launched": 123,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 860,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          4,
+          4
+        ],
+        [
+          "pea",
+          0,
+          4
+        ],
+        [
+          "pea",
+          3,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "pool",
+      "tag": "L4-1",
+      "hideout": 1,
+      "status": "lost",
+      "time": 120.55,
+      "hits": 0,
+      "firstDoctorHit": 108,
+      "lastDoctorHit": 120.55,
+      "brokenRows": [
+        0,
+        1,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 104.99999999999616,
+        "4": 95.99999999999667
+      },
+      "initialSpent": 300,
+      "sun": 725,
+      "spent": 500,
+      "launched": 240,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 2100,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          3,
+          6
+        ],
+        [
+          "pea",
+          1,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "pool",
+      "tag": "L4-1",
+      "hideout": 2,
+      "status": "lost",
+      "time": 171.9,
+      "hits": 0,
+      "firstDoctorHit": 159,
+      "lastDoctorHit": 171.9,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 104.99999999999616,
+        "2": 157.00000000000145,
+        "3": 152.0000000000003,
+        "4": 95.99999999999667
+      },
+      "initialSpent": 300,
+      "sun": 725,
+      "spent": 800,
+      "launched": 342,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          3,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ],
+        [
+          "pea",
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "pool",
+      "tag": "L4-1",
+      "hideout": 3,
+      "status": "lost",
+      "time": 167.4,
+      "hits": 0,
+      "firstDoctorHit": 154,
+      "lastDoctorHit": 167.4,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 104.99999999999616,
+        "2": 157.00000000000145,
+        "3": 152.0000000000003,
+        "4": 95.99999999999667
+      },
+      "initialSpent": 300,
+      "sun": 725,
+      "spent": 800,
+      "launched": 333,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          3,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ],
+        [
+          "pea",
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "pool",
+      "tag": "L4-1",
+      "hideout": 4,
+      "status": "lost",
+      "time": 111,
+      "hits": 0,
+      "firstDoctorHit": 98,
+      "lastDoctorHit": 111,
+      "brokenRows": [
+        0,
+        1,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 104.99999999999616,
+        "4": 95.99999999999667
+      },
+      "initialSpent": 300,
+      "sun": 700,
+      "spent": 400,
+      "launched": 222,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1880,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          4,
+          4
+        ],
+        [
+          "pea",
+          3,
+          6
+        ],
+        [
+          "pea",
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "fog",
+      "tag": "L5-1",
+      "hideout": 0,
+      "status": "lost",
+      "time": 61.5,
+      "hits": 0,
+      "firstDoctorHit": 48,
+      "lastDoctorHit": 61.5,
+      "brokenRows": [
+        0
+      ],
+      "breaks": {
+        "0": 45.99999999999951
+      },
+      "initialSpent": 300,
+      "sun": 450,
+      "spent": 300,
+      "launched": 82,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 740,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "cactus",
+          3,
+          4
+        ],
+        [
+          "plantern",
+          1,
+          4
+        ],
+        [
+          "squash",
+          4,
+          2
+        ],
+        [
+          "pea",
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "map": "fog",
+      "tag": "L5-1",
+      "hideout": 1,
+      "status": "lost",
+      "time": 174.55,
+      "hits": 0,
+      "firstDoctorHit": 162,
+      "lastDoctorHit": 174.55,
+      "brokenRows": [
+        0,
+        1,
+        3
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 159.0000000000019,
+        "3": 95.99999999999667
+      },
+      "initialSpent": 300,
+      "sun": 850,
+      "spent": 525,
+      "launched": 232,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1900,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "plantern",
+          1,
+          4
+        ],
+        [
+          "squash",
+          4,
+          2
+        ],
+        [
+          "pea",
+          1,
+          6
+        ],
+        [
+          "pea",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "fog",
+      "tag": "L5-1",
+      "hideout": 2,
+      "status": "lost",
+      "time": 233.55,
+      "hits": 0,
+      "firstDoctorHit": 221,
+      "lastDoctorHit": 233.55,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 159.0000000000019,
+        "2": 218.00000000001532,
+        "3": 95.99999999999667,
+        "4": 217.0000000000151
+      },
+      "initialSpent": 300,
+      "sun": 1000,
+      "spent": 625,
+      "launched": 311,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "plantern",
+          1,
+          4
+        ],
+        [
+          "squash",
+          4,
+          2
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "fog",
+      "tag": "L5-1",
+      "hideout": 3,
+      "status": "lost",
+      "time": 111,
+      "hits": 0,
+      "firstDoctorHit": 98,
+      "lastDoctorHit": 111,
+      "brokenRows": [
+        0,
+        3
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "3": 95.99999999999667
+      },
+      "initialSpent": 300,
+      "sun": 600,
+      "spent": 400,
+      "launched": 148,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1200,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "cactus",
+          3,
+          4
+        ],
+        [
+          "plantern",
+          1,
+          4
+        ],
+        [
+          "squash",
+          4,
+          2
+        ],
+        [
+          "pea",
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "fog",
+      "tag": "L5-1",
+      "hideout": 4,
+      "status": "lost",
+      "time": 231.9,
+      "hits": 0,
+      "firstDoctorHit": 219,
+      "lastDoctorHit": 231.9,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 159.0000000000019,
+        "2": 218.00000000001532,
+        "3": 95.99999999999667,
+        "4": 217.0000000000151
+      },
+      "initialSpent": 300,
+      "sun": 1000,
+      "spent": 625,
+      "launched": 308,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "plantern",
+          1,
+          4
+        ],
+        [
+          "squash",
+          4,
+          2
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "canal",
+      "tag": "L6-1",
+      "hideout": 0,
+      "status": "lost",
+      "time": 61.5,
+      "hits": 0,
+      "firstDoctorHit": 48,
+      "lastDoctorHit": 61.5,
+      "brokenRows": [
+        0,
+        2
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "2": 45.99999999999951
+      },
+      "initialSpent": 500,
+      "sun": 300,
+      "spent": 500,
+      "launched": 205,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1620,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          6
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          0,
+          4
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "canal",
+      "tag": "L6-1",
+      "hideout": 1,
+      "status": "lost",
+      "time": 110.4,
+      "hits": 0,
+      "firstDoctorHit": 97,
+      "lastDoctorHit": 110.4,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 94.99999999999673,
+        "2": 45.99999999999951,
+        "3": 95.99999999999667,
+        "4": 94.99999999999673
+      },
+      "initialSpent": 500,
+      "sun": 600,
+      "spent": 500,
+      "launched": 365,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          6
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          0,
+          4
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "canal",
+      "tag": "L6-1",
+      "hideout": 2,
+      "status": "lost",
+      "time": 60.9,
+      "hits": 0,
+      "firstDoctorHit": 48,
+      "lastDoctorHit": 60.9,
+      "brokenRows": [
+        0,
+        2
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "2": 45.99999999999951
+      },
+      "initialSpent": 500,
+      "sun": 300,
+      "spent": 500,
+      "launched": 200,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1600,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          6
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          0,
+          4
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "canal",
+      "tag": "L6-1",
+      "hideout": 3,
+      "status": "lost",
+      "time": 111,
+      "hits": 0,
+      "firstDoctorHit": 98,
+      "lastDoctorHit": 111,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 94.99999999999673,
+        "2": 45.99999999999951,
+        "3": 95.99999999999667,
+        "4": 94.99999999999673
+      },
+      "initialSpent": 500,
+      "sun": 600,
+      "spent": 500,
+      "launched": 370,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          6
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          0,
+          4
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "canal",
+      "tag": "L6-1",
+      "hideout": 4,
+      "status": "lost",
+      "time": 110.4,
+      "hits": 0,
+      "firstDoctorHit": 97,
+      "lastDoctorHit": 110.4,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 94.99999999999673,
+        "2": 45.99999999999951,
+        "3": 95.99999999999667,
+        "4": 94.99999999999673
+      },
+      "initialSpent": 500,
+      "sun": 600,
+      "spent": 500,
+      "launched": 365,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          6
+        ],
+        [
+          "pea",
+          3,
+          4
+        ],
+        [
+          "pea",
+          4,
+          6
+        ],
+        [
+          "pea",
+          0,
+          4
+        ],
+        [
+          "pea",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "roof",
+      "tag": "L7-1",
+      "hideout": 0,
+      "status": "lost",
+      "time": 56.85,
+      "hits": 0,
+      "firstDoctorHit": 44,
+      "lastDoctorHit": 56.85,
+      "brokenRows": [
+        0
+      ],
+      "breaks": {
+        "0": 41.99999999999974
+      },
+      "initialSpent": 500,
+      "sun": 50,
+      "spent": 750,
+      "launched": 119,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1320,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cabbagepult",
+          4,
+          4
+        ],
+        [
+          "cabbagepult",
+          0,
+          4
+        ],
+        [
+          "cabbagepult",
+          2,
+          3
+        ],
+        [
+          "cabbagepult",
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "map": "roof",
+      "tag": "L7-1",
+      "hideout": 1,
+      "status": "lost",
+      "time": 111,
+      "hits": 0,
+      "firstDoctorHit": 98,
+      "lastDoctorHit": 111,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 41.99999999999974,
+        "1": 95.99999999999667,
+        "2": 57.99999999999883,
+        "3": 95.99999999999667,
+        "4": 95.99999999999667
+      },
+      "initialSpent": 500,
+      "sun": 350,
+      "spent": 750,
+      "launched": 247,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cabbagepult",
+          4,
+          4
+        ],
+        [
+          "cabbagepult",
+          0,
+          4
+        ],
+        [
+          "cabbagepult",
+          2,
+          3
+        ],
+        [
+          "cabbagepult",
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "map": "roof",
+      "tag": "L7-1",
+      "hideout": 2,
+      "status": "lost",
+      "time": 86.95,
+      "hits": 0,
+      "firstDoctorHit": 61,
+      "lastDoctorHit": 86.95,
+      "brokenRows": [
+        0,
+        2
+      ],
+      "breaks": {
+        "0": 41.99999999999974,
+        "2": 57.99999999999883
+      },
+      "initialSpent": 500,
+      "sun": 200,
+      "spent": 750,
+      "launched": 190,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 2640,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cabbagepult",
+          4,
+          4
+        ],
+        [
+          "cabbagepult",
+          0,
+          4
+        ],
+        [
+          "cabbagepult",
+          2,
+          3
+        ],
+        [
+          "cabbagepult",
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "map": "roof",
+      "tag": "L7-1",
+      "hideout": 3,
+      "status": "lost",
+      "time": 124.8,
+      "hits": 0,
+      "firstDoctorHit": 99,
+      "lastDoctorHit": 124.8,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 41.99999999999974,
+        "1": 95.99999999999667,
+        "2": 57.99999999999883,
+        "3": 95.99999999999667,
+        "4": 95.99999999999667
+      },
+      "initialSpent": 500,
+      "sun": 475,
+      "spent": 750,
+      "launched": 280,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cabbagepult",
+          4,
+          4
+        ],
+        [
+          "cabbagepult",
+          0,
+          4
+        ],
+        [
+          "cabbagepult",
+          2,
+          3
+        ],
+        [
+          "cabbagepult",
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "map": "roof",
+      "tag": "L7-1",
+      "hideout": 4,
+      "status": "lost",
+      "time": 124.8,
+      "hits": 0,
+      "firstDoctorHit": 99,
+      "lastDoctorHit": 124.8,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 41.99999999999974,
+        "1": 95.99999999999667,
+        "2": 57.99999999999883,
+        "3": 95.99999999999667,
+        "4": 95.99999999999667
+      },
+      "initialSpent": 500,
+      "sun": 475,
+      "spent": 750,
+      "launched": 280,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "pea",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cabbagepult",
+          4,
+          4
+        ],
+        [
+          "cabbagepult",
+          0,
+          4
+        ],
+        [
+          "cabbagepult",
+          2,
+          3
+        ],
+        [
+          "cabbagepult",
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "map": "roof-night",
+      "tag": "L8-1",
+      "hideout": 0,
+      "status": "lost",
+      "time": 61.5,
+      "hits": 0,
+      "firstDoctorHit": 48,
+      "lastDoctorHit": 61.5,
+      "brokenRows": [
+        0
+      ],
+      "breaks": {
+        "0": 45.99999999999951
+      },
+      "initialSpent": 500,
+      "sun": 40,
+      "spent": 725,
+      "launched": 147,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 1780,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "cabbagepult",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cactus",
+          0,
+          4
+        ],
+        [
+          "puff",
+          3,
+          6
+        ],
+        [
+          "cabbagepult",
+          2,
+          6
+        ],
+        [
+          "cabbagepult",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "roof-night",
+      "tag": "L8-1",
+      "hideout": 1,
+      "status": "lost",
+      "time": 124.8,
+      "hits": 0,
+      "firstDoctorHit": 99,
+      "lastDoctorHit": 124.8,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 95.99999999999667,
+        "2": 72.99999999999798,
+        "3": 69.99999999999815,
+        "4": 93.99999999999679
+      },
+      "initialSpent": 500,
+      "sun": 415,
+      "spent": 725,
+      "launched": 277,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "cabbagepult",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cactus",
+          0,
+          4
+        ],
+        [
+          "puff",
+          3,
+          6
+        ],
+        [
+          "cabbagepult",
+          2,
+          6
+        ],
+        [
+          "cabbagepult",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "roof-night",
+      "tag": "L8-1",
+      "hideout": 2,
+      "status": "lost",
+      "time": 102.15,
+      "hits": 0,
+      "firstDoctorHit": 77,
+      "lastDoctorHit": 102.15,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 95.99999999999667,
+        "2": 72.99999999999798,
+        "3": 69.99999999999815,
+        "4": 93.99999999999679
+      },
+      "initialSpent": 500,
+      "sun": 290,
+      "spent": 725,
+      "launched": 230,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "cabbagepult",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cactus",
+          0,
+          4
+        ],
+        [
+          "puff",
+          3,
+          6
+        ],
+        [
+          "cabbagepult",
+          2,
+          6
+        ],
+        [
+          "cabbagepult",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "roof-night",
+      "tag": "L8-1",
+      "hideout": 3,
+      "status": "lost",
+      "time": 98.7,
+      "hits": 0,
+      "firstDoctorHit": 73,
+      "lastDoctorHit": 98.7,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 95.99999999999667,
+        "2": 72.99999999999798,
+        "3": 69.99999999999815,
+        "4": 93.99999999999679
+      },
+      "initialSpent": 500,
+      "sun": 290,
+      "spent": 725,
+      "launched": 224,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "cabbagepult",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cactus",
+          0,
+          4
+        ],
+        [
+          "puff",
+          3,
+          6
+        ],
+        [
+          "cabbagepult",
+          2,
+          6
+        ],
+        [
+          "cabbagepult",
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "map": "roof-night",
+      "tag": "L8-1",
+      "hideout": 4,
+      "status": "lost",
+      "time": 123.3,
+      "hits": 0,
+      "firstDoctorHit": 98,
+      "lastDoctorHit": 123.3,
+      "brokenRows": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "breaks": {
+        "0": 45.99999999999951,
+        "1": 95.99999999999667,
+        "2": 72.99999999999798,
+        "3": 69.99999999999815,
+        "4": 93.99999999999679
+      },
+      "initialSpent": 500,
+      "sun": 415,
+      "spent": 725,
+      "launched": 274,
+      "prevented": 0,
+      "barrierImpacts": 0,
+      "ridgeImpacts": 0,
+      "fenceDamage": 3000,
+      "actualDoctorHits": 10,
+      "plants": [
+        [
+          "cabbagepult",
+          1,
+          4
+        ],
+        [
+          "cabbagepult",
+          3,
+          4
+        ],
+        [
+          "cactus",
+          0,
+          4
+        ],
+        [
+          "puff",
+          3,
+          6
+        ],
+        [
+          "cabbagepult",
+          2,
+          6
+        ],
+        [
+          "cabbagepult",
+          4,
+          6
+        ]
+      ]
+    }
+  ]
+}

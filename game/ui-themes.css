@@ -17,3 +17,29 @@ button:focus-visible .native-type{border-bottom:2px solid currentColor}button:ho
 .letter-dialog{mask:url('assets/ui/record-note-mask.png') center/100% 100% no-repeat;mask-mode:luminance}.letter-dialog .dialog-paper{padding:7% 8% 6%}.letter-dialog .dialog-paper h2{color:#4e3925;text-shadow:none}.letter-dialog .dialog-kicker{color:#6a5437}
 
 body[data-ui-theme] [data-native-font],body[data-ui-theme] .settings-row button,body[data-ui-theme] .book-tabs button,body[data-ui-theme] .damage-kind-tabs button,body[data-ui-theme] .damage-unit-tabs button,body[data-ui-theme] .damage-stage-tabs button{font-family:PVZChinese,'Microsoft YaHei',sans-serif}
+
+/* Match the hand-lettered native plaques without blurring live text. */
+body[data-ui-theme] .objective-note,body[data-ui-theme] .mode-note,
+body[data-ui-theme] .tomb-summary,body[data-ui-theme] .deployment-readout,
+body[data-ui-theme] #notice,body[data-ui-theme] .chooser-sub,
+body[data-ui-theme] .chooser-tip,body[data-ui-theme] .preview-hint,
+body[data-ui-theme] #defenseSummary,body[data-ui-theme] .card-name,
+body[data-ui-theme] .roster-status,body[data-ui-theme] .damage-stage-note{
+ font-family:PVZChinese,'Microsoft YaHei',sans-serif;font-weight:400;letter-spacing:0;
+}
+.native-type canvas,.unit-card img,.roster-card img,.theme-choice-icon{image-rendering:auto}
+body[data-ui-theme] .card-name{font-size:.72cqw;line-height:1.35;color:#2e4127}
+body[data-ui-theme] .roster-card .card-name{font-size:.92cqw;line-height:1.4}
+body[data-ui-theme] .objective-note,body[data-ui-theme] .mode-note,
+body[data-ui-theme] .tomb-summary,body[data-ui-theme] .deployment-readout,
+body[data-ui-theme] #notice{color:#f2e6ba;text-shadow:1px 1px 1px #354027}
+body[data-ui-theme] .objective-note #levelTag{color:#dfd6b0}
+body[data-ui-theme] .objective-note strong{font-weight:400;color:#fff0b9}
+body[data-ui-theme] .mode-note strong{font-weight:400;color:#ebd79a}
+body[data-ui-theme] .mode-note #fieldStatus{color:#e9deb5}
+body[data-ui-theme] .deployment-readout #selectedState,
+body[data-ui-theme] .deployment-row{color:#e8ddb4}
+/* The deployment legend lies on the pale deck, so it reads like ink on wood. */
+body[data-ui-theme] .deployment-readout,
+body[data-ui-theme] .deployment-readout #selectedState,
+body[data-ui-theme] .deployment-row{color:#463721;text-shadow:0 1px 1px #efe2be}

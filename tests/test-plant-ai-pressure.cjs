@@ -1,0 +1,19 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),game=path.join(__dirname,'../game');
+const base=require(path.join(game,'rescue-design-data.js')),engine=require(path.join(game,'engine.js')),rules=require(path.join(game,'terrain-rules.js')),setup=require(path.join(game,'terrain-campaign-setup.js')).create(base,require(path.join(game,'rescue-story-data.js')),engine,require(path.join(game,'battle-map-data.js')),require(path.join(game,'terrain-campaign-data.js')),require(path.join(game,'terrain-unit-data.js'))),factory=require(path.join(game,'rescue-design-model.js')),model=factory.createModel(setup.design,setup.stats,rules);
+const result=[];
+for(const id of (process.argv.includes('--debug')?['lawn']:['lawn','night','underground','pool','fog','canal','roof','roof-night'])){
+ const i=setup.design.levels.findIndex(l=>l.terrainMap.id===id),strategies=[];
+ for(let row=0;row<(process.argv.includes('--debug')?1:5);row++){
+  const s=model.createScene(i);assert.equal(s.economy.sun,500);assert.equal(s.economySunflowers.length,5);model.chooseDoctor(s,row);for(let n=0;n<60;n++)model.step(s,1);
+  assert.equal(s.status,'battle');const timeline=[],breaks={},initialSpent=s.economy.spent;let signature;
+  for(let n=0;n<300&&s.status==='battle';n++){
+   const before=s.doctor.hits;model.step(s,1);for(const f of s.fences)if(!f.hp&&breaks[f.row]==null)breaks[f.row]=s.time;if(s.doctor.hits<before)timeline.push({time:+s.time.toFixed(2),hits:s.doctor.hits});
+   if(n===14)signature=JSON.stringify({plants:s.plants.map(p=>[p.type,p.row,p.col,p.path]),sun:s.economy.sun,shots:s.nextShot});
+  }
+  strategies.push(signature);const fire=s.ai.fire||{},entry={map:id,tag:setup.design.levels[i].tag,hideout:row,status:s.status,time:+s.time.toFixed(2),hits:s.doctor.hits,firstDoctorHit:timeline[0]?.time??null,lastDoctorHit:timeline.at(-1)?.time??null,brokenRows:Object.keys(breaks).map(Number),breaks,initialSpent,sun:s.economy.sun,spent:s.economy.spent,launched:fire.launched||0,prevented:fire.prevented||0,barrierImpacts:fire.barrierImpacts||0,ridgeImpacts:fire.ridgeImpacts||0,fenceDamage:fire.fenceDamage||0,actualDoctorHits:fire.doctorHits||0,plants:s.plants.filter(p=>p.hp>0).map(p=>[p.type,+p.row.toFixed(2),+p.col.toFixed(2)])};result.push(entry);console.log(JSON.stringify(entry));if(process.argv.includes('--debug'))console.log(JSON.stringify({teams:s.teams.map(t=>[t.row,t.col,t.members.map(m=>m.hp)]),groups:s.ai.groups,plants:s.plants.map(p=>[p.row,p.col,p.path,p.lastMove]),fences:s.fences}));
+  assert.equal(10-s.doctor.hits,entry.actualDoctorHits,'actual projectile collision must account for each lost doctor count');assert.equal(entry.barrierImpacts+entry.ridgeImpacts,0,'AI fired into a known obstacle');assert.equal(s.economy.sun,500+s.economy.earned-s.economy.spent);assert(s.plants.filter(p=>p.hp>0).length<=setup.design.levels[i].budget.maxPlants);
+ }
+ assert(strategies.every(x=>x===strategies[0]),id+' AI changed with hidden row before any hit');assert(result.filter(r=>r.map===id).every(r=>r.actualDoctorHits>0),id+' not all five rows reached');console.log('PASS '+id+' 五个隐藏行均通过真实付费布防击穿栅栏并命中博士，未知位置时决策一致');
+}
+const out=null;const evidence={description:'Natural paid AI deployment. 500 initial sun, 5 free off-board producers, 60s preparation. Player leaves default squads idle, no doctor relocation, fence/hp tampering, manual plant placement or damage injection. Five selected hideout rows in each representative terrain. Effective fire is separated from actual doctor collisions.',cases:result};if(process.env.PVZ_AI_PROOF)fs.writeFileSync(process.env.PVZ_AI_PROOF,JSON.stringify(evidence,null,2));console.log('RESULT',JSON.stringify({cases:result.length,doctorReached:result.filter(r=>r.actualDoctorHits>0).length,doctorDefeated:result.filter(r=>r.hits===0).length,barrierImpacts:result.reduce((v,r)=>v+r.barrierImpacts,0),path:out}));

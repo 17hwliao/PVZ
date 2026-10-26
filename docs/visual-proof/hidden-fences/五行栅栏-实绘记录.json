@@ -1,0 +1,62 @@
+{
+  "revision": "hidden-fences-20261024h",
+  "source": "Production painter and actual model state, not browser screenshots",
+  "scenes": [
+    {
+      "name": "五行栅栏-等待指定",
+      "status": "planning",
+      "time": 0,
+      "hideout": null,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "doctorHits": 10
+    },
+    {
+      "name": "五行栅栏-藏身第1行",
+      "status": "planning",
+      "time": 0,
+      "hideout": 0,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "doctorHits": 10
+    },
+    {
+      "name": "五行栅栏-藏身第5行",
+      "status": "planning",
+      "time": 0,
+      "hideout": 4,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "doctorHits": 10
+    },
+    {
+      "name": "五行栅栏-独立消耗与空行击穿",
+      "status": "battle",
+      "time": 8.999999999999993,
+      "hideout": 4,
+      "fences": [
+        0,
+        480,
+        20,
+        480,
+        480
+      ],
+      "doctorHits": 10
+    }
+  ]
+}

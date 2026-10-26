@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-24",
+  "scope": "Three cultural appearance variants; classic giant mech retained unchanged. No new battle units or executable boss encounter.",
+  "entries": [
+    {
+      "id": "bronze",
+      "name": "青铜机关",
+      "file": "assets/almanac/boss-bronze.webp",
+      "culture": "中式青铜工艺",
+      "note": "青铜云纹、朱漆梁架与木制榫卯包住厚重关节。博士依旧坐在顶部驾驶舱，机甲的力量感来自机关结构。",
+      "tool": "image_gen.imagegen",
+      "generatedFile": "exec-3868d09a-a69d-4f32-aef4-d9c9d3254735.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE complete transparent PNG game character portrait. Input image is the classic Zomboss mech and identity/style reference. Make a cultural-theme costume variant of this SAME colossal bipedal zombie-head mech with the SAME olive grey-green big-brained Dr Zomboss scientist visibly piloting its open top cockpit using two red-knob control sticks. Preserve two massive articulated arms, two short heavy legs, huge rounded zombie face torso, large yellow eyes and jaw, scale with tiny pilot vs huge machine, facing left three-quarter, full uncut silhouette including fingers and feet. Match classic 2009 PVZ hand-painted 2D chibi, dark imperfect ink outlines, broad soft painted shadows, mild nostalgic softness, readable limited detail at game UI size. It is a civilized engineer's machine, expressive determined scientist, no gore. Composition: centered single character occupying middle 80%, 8% genuine empty alpha margin every edge, actual transparent background, no floor, no shadow outside character, no panel, no text/letters/watermark, no collage, no photorealism/3D or modern glossy vector. Retain recognizable jaw opening for ice/fire attacks, massive fists for slams, small deployment hatch integrated in the torso. Theme: Chinese bronze-and-timber mechanical craftsmanship: patinated jade-green bronze armor panels with simple cloud-scroll reliefs, deep red lacquer beams at shoulder joints, visible wooden mortise-and-tenon accents, restrained warm brass rivets. Zombie face remains machine-shaped and readable, not a dragon or human deity. Pilot remains the same lab-coated scientist, small dark red work apron. Elegant ancient workshop machinery, no flags, no calligraphy, no religious symbols.",
+      "reference": "assets/almanac/boss.png",
+      "sourceSha256": "db5189b5b8366f0d7a1bd05d5d075e262c826e456f31042426441558d9c2491c",
+      "sha256": "288633f303a51930f0325f9c724c98ca39f57072db78290d94998d14502ed979",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceBounds": {
+        "l": 167,
+        "t": 60,
+        "w": 1013,
+        "h": 1168
+      },
+      "edgeAlphaMax": 1,
+      "visualChecked": true
+    },
+    {
+      "id": "egypt",
+      "name": "砂金王朝",
+      "file": "assets/almanac/boss-egypt.webp",
+      "culture": "古埃及工艺",
+      "note": "砂岩装甲配青金与旧金镶边，宽厚的机械头巾勾出巨型僵尸脸。保留双臂砸击、下颌发射与腹部舱门。",
+      "tool": "image_gen.imagegen",
+      "generatedFile": "exec-e22aebc9-844a-4d66-9dfc-f41714c61c6f.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE complete transparent PNG game character portrait. Input image is the classic Zomboss mech and identity/style reference. Make a cultural-theme costume variant of this SAME colossal bipedal zombie-head mech with the SAME olive grey-green big-brained Dr Zomboss scientist visibly piloting its open top cockpit using two red-knob control sticks. Preserve two massive articulated arms, two short heavy legs, huge rounded zombie face torso, large yellow eyes and jaw, scale with tiny pilot vs huge machine, facing left three-quarter, full uncut silhouette including fingers and feet. Match classic 2009 PVZ hand-painted 2D chibi, dark imperfect ink outlines, broad soft painted shadows, mild nostalgic softness, readable limited detail at game UI size. It is a civilized engineer's machine, expressive determined scientist, no gore. Composition: centered single character occupying middle 80%, 8% genuine empty alpha margin every edge, actual transparent background, no floor, no shadow outside character, no panel, no text/letters/watermark, no collage, no photorealism/3D or modern glossy vector. Retain recognizable jaw opening for ice/fire attacks, massive fists for slams, small deployment hatch integrated in the torso. Theme: Ancient Egyptian craft-inspired machine: warm sandstone-colored armor blocks, restrained turquoise and old gold inlays, striped blue-gold mechanical forehead hood framing the giant zombie face, broad geometric collar armor. Blocky mechanical knuckles and feet, small scarab-shaped engineering badge, tiny pilot's face and giant brain unobstructed. It is an engineered robot with hinges and rivets, not an actual deity or mummy, no hieroglyphic writing or religious imagery.",
+      "reference": "assets/almanac/boss.png",
+      "sourceSha256": "c705914c8a1e3290da5de808596d8d9f9c37f65c1e90a42dcf4988df7c007cd6",
+      "sha256": "f82ef57507c9f4cab0ae9ffe529a55445a3b893e17b4959c261c6ac86b16c408",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceBounds": {
+        "l": 109,
+        "t": 34,
+        "w": 1053,
+        "h": 1202
+      },
+      "edgeAlphaMax": 0,
+      "visualChecked": true
+    },
+    {
+      "id": "steam",
+      "name": "蒸汽工坊",
+      "file": "assets/almanac/boss-steam.webp",
+      "culture": "维多利亚工坊",
+      "note": "黄铜、铸铁与铜管围着压力炉，活塞驱动沉重双臂。博士戴上工坊护目镜，继续驾驶熟悉的巨型机甲。",
+      "tool": "image_gen.imagegen",
+      "generatedFile": "exec-d76d2738-eda0-45e2-8c4b-ce3000262110.png",
+      "prompt": "Use case: stylized-concept. Asset type: ONE complete transparent PNG game character portrait. Input image is the classic Zomboss mech and identity/style reference. Make a cultural-theme costume variant of this SAME colossal bipedal zombie-head mech with the SAME olive grey-green big-brained Dr Zomboss scientist visibly piloting its open top cockpit using two red-knob control sticks. Preserve two massive articulated arms, two short heavy legs, huge rounded zombie face torso, large yellow eyes and jaw, scale with tiny pilot vs huge machine, facing left three-quarter, full uncut silhouette including fingers and feet. Match classic 2009 PVZ hand-painted 2D chibi, dark imperfect ink outlines, broad soft painted shadows, mild nostalgic softness, readable limited detail at game UI size. It is a civilized engineer's machine, expressive determined scientist, no gore. Composition: centered single character occupying middle 80%, 8% genuine empty alpha margin every edge, actual transparent background, no floor, no shadow outside character, no panel, no text/letters/watermark, no collage, no photorealism/3D or modern glossy vector. Retain recognizable jaw opening for ice/fire attacks, massive fists for slams, small deployment hatch integrated in the torso. Theme: Victorian British workshop steampunk: aged brass and charcoal iron armor, burgundy riveted trim, exposed robust piston cylinders at the elbows, small pressure gauge and copper boiler pipes behind shoulders, chimney with only a tiny painted steam wisp attached to it. Same scientist in white lab coat wearing simple round goggles pushed onto forehead, exposed brain visible. Retain giant zombie face torso, classic squat proportions. No fancy modern weapons, no flags or lettering.",
+      "reference": "assets/almanac/boss.png",
+      "sourceSha256": "2926f6c7af00b275691e74ddda6cd4b5d78734bbd4ee49a6dd728987c4e5e43a",
+      "sha256": "7aa4a96d677a98dd85bf603e024ff6f5e6d6d86d2bce4a8b5c1265d44a76846e",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceBounds": {
+        "l": 116,
+        "t": 23,
+        "w": 1054,
+        "h": 1209
+      },
+      "edgeAlphaMax": 1,
+      "visualChecked": true
+    }
+  ]
+}

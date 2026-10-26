@@ -1,0 +1,30 @@
+{
+  "revision": "hidden-fences-20261024h",
+  "stage": "rescue-combat-20261024",
+  "fullSuite": {
+    "scripts": 21,
+    "passed": 164,
+    "missingReferences": 0,
+    "syntaxFiles": 18,
+    "references": 436
+  },
+  "followupAfterDisplayClockRounding": {
+    "script": "tests/test-hidden-fences.cjs",
+    "passed": 11
+  },
+  "AIPrivacy": "Five hideout choices yield identical deployment, relocation and fire decisions under the same visible conditions. Empty broken lanes keep normal fire.",
+  "visual": "4 actual model/production-painter scenes inspected; not browser screenshots",
+  "browser": "Local browser use is disabled in Work settings",
+  "fullPageVisualAccepted": false,
+  "packaged": false,
+  "remoteActions": false,
+  "sourceFiles": {
+    "rescue-design-data.js": "3b169cf5d4169e3062f5009fff1ad1a1b90a9315c2e8c4db48f46a3ab8c61ede",
+    "rescue-design-model.js": "63e9e3c3c95b0f7de1f0e3e1551e3d5c2ff33d48b1fafdf74b56d0cf395d99e7",
+    "rescue-design-renderer.js": "04076b3e37629a96f96b9d28c284f7fbbd7cc8b0d1fd2f86ba46747ec1b273f7",
+    "rescue-design.js": "8858efd12517c93e422a61f78b2329b8b5b9ec72acb2336a8d017df6e0719fa9",
+    "rescue-design.html": "9b8b416a0f9f37328431273feb4178e937ae33b1968f5ea030422dcce934b6f4",
+    "rescue-design.css": "ff34969969e6552965f1b05e434826d5017d35f0b188dff1d41bc71d3cf00b62",
+    "README.md": "24afa24f24b3a46ba22fd6db01bea8bb712d8abc14b3ed35a65bf07e9e023b7c"
+  }
+}

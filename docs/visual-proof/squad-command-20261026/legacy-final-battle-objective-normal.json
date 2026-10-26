@@ -1,0 +1,366 @@
+{
+  "sourceHash": "7d1dcad595af3ff9793505f9cd2c656795789d3ec3c0aeb28e7f2e997610b1ac",
+  "scope": "default legacy factory index6, full preparation, legal public commands, AI untouched; no source/test edits",
+  "results": [
+    {
+      "strategy": "objective",
+      "composition": "normal",
+      "initial": [
+        [
+          "normal",
+          "normal",
+          "normal"
+        ],
+        [
+          "normal",
+          "normal",
+          "normal"
+        ],
+        [
+          "normal",
+          "normal",
+          "normal"
+        ]
+      ],
+      "status": "won",
+      "time": 37.85,
+      "result": "大家都回到了灯房。向日葵承认签过登记，也想把改过的那一页带出去。",
+      "doctor": 10,
+      "energy": 760,
+      "record": {
+        "casualties": 1,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "economy": {
+        "sun": 50,
+        "earned": 250,
+        "spent": 700,
+        "clock": 97.84999999999658,
+        "cooldowns": {
+          "pea": 7.5,
+          "sunflower": 0,
+          "wallnut": 0,
+          "snow": 0,
+          "chomper": 0,
+          "cactus": 0,
+          "squash": 0
+        },
+        "nextDeploy": 98.64999999999658,
+        "placements": [
+          {
+            "id": 5,
+            "type": "cactus",
+            "row": 3,
+            "col": 4,
+            "clock": 0.8000000000000002,
+            "phase": "planning",
+            "cost": 125
+          },
+          {
+            "id": 6,
+            "type": "pea",
+            "row": 1,
+            "col": 4,
+            "clock": 1.6000000000000008,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 7,
+            "type": "pea",
+            "row": 4,
+            "col": 6,
+            "clock": 2.4499999999999993,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 8,
+            "type": "pea",
+            "row": 2,
+            "col": 4,
+            "clock": 3.2999999999999963,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 9,
+            "type": "wallnut",
+            "row": 1,
+            "col": 3,
+            "clock": 4.149999999999993,
+            "phase": "planning",
+            "cost": 50
+          },
+          {
+            "id": 10,
+            "type": "cactus",
+            "row": 3,
+            "col": 2,
+            "clock": 73.19999999999798,
+            "phase": "battle",
+            "cost": 125
+          },
+          {
+            "id": 11,
+            "type": "pea",
+            "row": 2,
+            "col": 4,
+            "clock": 97.84999999999658,
+            "phase": "battle",
+            "cost": 100
+          }
+        ]
+      },
+      "goal": {
+        "row": 2,
+        "col": 1,
+        "name": "宣传所档案室",
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "id": "rescued",
+        "row": 2,
+        "col": 7.260999999999999,
+        "kind": "plant",
+        "type": "sunflower",
+        "name": "登记员",
+        "hp": 20,
+        "maxHp": 130,
+        "path": [
+          {
+            "row": 2,
+            "col": 8
+          }
+        ],
+        "escort": 0,
+        "moving": true,
+        "facing": 1,
+        "wounded": true,
+        "edgeStart": {
+          "row": 2,
+          "col": 7
+        }
+      },
+      "teams": [
+        {
+          "id": 0,
+          "row": 2,
+          "col": 8,
+          "members": [
+            {
+              "type": "normal",
+              "hp": 30
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "row": 2,
+          "col": 6.560000000000002,
+          "members": [
+            {
+              "type": "normal",
+              "hp": 0
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "row": 2,
+          "col": 6.560000000000002,
+          "members": [
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "relay",
+          "claimed": true,
+          "broken": true,
+          "hp": 0
+        },
+        {
+          "id": "food",
+          "claimed": true,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "repair",
+          "claimed": true,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "west",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "rear",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        }
+      ],
+      "rejects": 0,
+      "actions": [
+        {
+          "time": 0.1,
+          "target": {
+            "row": 1,
+            "col": 7
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 5.1,
+          "target": {
+            "row": 3,
+            "col": 6
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 10.1,
+          "target": {
+            "row": 3,
+            "col": 7
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 15.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 350,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 20.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 820,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 25.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 790,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 30.1,
+          "target": {
+            "row": 2,
+            "col": 8
+          },
+          "home": true,
+          "doctor": 10,
+          "energy": 790,
+          "goal": true,
+          "claimed": 2
+        },
+        {
+          "time": 35.1,
+          "target": {
+            "row": 2,
+            "col": 8
+          },
+          "home": true,
+          "doctor": 10,
+          "energy": 760,
+          "goal": true,
+          "claimed": 2
+        }
+      ],
+      "events": [
+        {
+          "time": 37.84999999999999,
+          "text": "大家都回到了灯房。向日葵承认签过登记，也想把改过的那一页带出去。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "接应队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 27.300000000000253,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 20.600000000000158,
+          "text": "接应队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 19.600000000000144,
+          "text": "接应队使用整备碑修补护具，消耗30物资。"
+        }
+      ]
+    }
+  ]
+}

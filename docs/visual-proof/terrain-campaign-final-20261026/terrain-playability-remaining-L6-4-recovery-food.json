@@ -1,0 +1,2832 @@
+{
+  "method": "normal 60s, independent five background economic sunflowers, paid AI and replenishment, no state removal; static geometry is not a win",
+  "sourceHashes": {
+    "rescue-design-model.js": "0de28503b26f58c8c95b37a5f8219419f38967964cba441150acc85a289b897c",
+    "terrain-campaign-data.js": "99375ecc0b2cefb5b2f7a67bd077c5ffe3709013a388390ab0c4c1cf65e04d35",
+    "terrain-unit-data.js": "c5d5823f2f008e4af2a460e30560f34d59fef52d856588c728aea6a256310fc2",
+    "terrain-rules.js": "d7c6da30591c0551230e7e79255b1ed08b51bb3cb07da51c747c857bcbf7052e",
+    "terrain-campaign-setup.js": "9d61bd1df893272543c6f54e9fd748304d0910807086b0e48e46576b55f19da4"
+  },
+  "results": [
+    {
+      "level": "L6-4",
+      "map": "canal",
+      "strategy": "food",
+      "status": "battle",
+      "time": 360,
+      "result": "",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 850,
+        "budget": 875,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "deploymentTrace": [
+        {
+          "time": 0,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "squash": 1,
+            "pea": 3,
+            "sunshroom": 1
+          },
+          "sun": 50,
+          "spent": 450,
+          "earned": 0,
+          "supports": 0,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 0.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "squash": 1,
+            "pea": 3,
+            "sunshroom": 1
+          },
+          "sun": 50,
+          "spent": 450,
+          "earned": 0,
+          "supports": 0,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 5.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "squash": 1,
+            "pea": 3,
+            "sunshroom": 1
+          },
+          "sun": 25,
+          "spent": 475,
+          "earned": 0,
+          "supports": 1,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 6.000000000000005,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 10.05,
+          "phase": "battle",
+          "plants": 4,
+          "cap": 5,
+          "types": {
+            "pea": 3,
+            "sunshroom": 1
+          },
+          "sun": 25,
+          "spent": 475,
+          "earned": 0,
+          "supports": 1,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 1.0000000000000187,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 15.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 3,
+            "wallnut": 1
+          },
+          "sun": 15,
+          "spent": 625,
+          "earned": 140,
+          "supports": 1,
+          "cooldowns": {
+            "pea": 5.650000000000007,
+            "sunflower": 0,
+            "wallnut": 28.999999999999986,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 20.05,
+          "phase": "battle",
+          "plants": 4,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 1
+          },
+          "sun": 15,
+          "spent": 625,
+          "earned": 140,
+          "supports": 1,
+          "cooldowns": {
+            "pea": 0.6500000000000183,
+            "sunflower": 0,
+            "wallnut": 23.999999999999915,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 25.05,
+          "phase": "battle",
+          "plants": 2,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 1
+          },
+          "sun": 40,
+          "spent": 625,
+          "earned": 165,
+          "supports": 1,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 18.999999999999844,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 30.05,
+          "phase": "battle",
+          "plants": 1,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1
+          },
+          "sun": 40,
+          "spent": 625,
+          "earned": 165,
+          "supports": 1,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 13.999999999999773,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 35.05,
+          "phase": "battle",
+          "plants": 1,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1
+          },
+          "sun": 40,
+          "spent": 625,
+          "earned": 165,
+          "supports": 1,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 8.999999999999702,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 40.05,
+          "phase": "battle",
+          "plants": 2,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "puff": 1
+          },
+          "sun": 55,
+          "spent": 750,
+          "earned": 305,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 5.300000000000008,
+            "sunflower": 0,
+            "wallnut": 3.9999999999997025,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 7.000000000000002,
+            "puff": 6.150000000000005,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 45.05,
+          "phase": "battle",
+          "plants": 2,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "squash": 1
+          },
+          "sun": 5,
+          "spent": 800,
+          "earned": 305,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 0.30000000000001825,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 26.199999999999946,
+            "flowerpot": 0,
+            "lily": 2.0000000000000195,
+            "puff": 1.1500000000000188,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 50.05,
+          "phase": "battle",
+          "plants": 2,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "squash": 1
+          },
+          "sun": 5,
+          "spent": 800,
+          "earned": 305,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 21.199999999999875,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 55.05,
+          "phase": "battle",
+          "plants": 1,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1
+          },
+          "sun": 30,
+          "spent": 800,
+          "earned": 330,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 16.199999999999804,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 60.05,
+          "phase": "battle",
+          "plants": 1,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1
+          },
+          "sun": 30,
+          "spent": 800,
+          "earned": 330,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 11.199999999999733,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 65.05,
+          "phase": "battle",
+          "plants": 3,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 1,
+            "wallnut": 1
+          },
+          "sun": 20,
+          "spent": 950,
+          "earned": 470,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 4.950000000000009,
+            "sunflower": 0,
+            "wallnut": 28.299999999999976,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 6.199999999999695,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 70.05,
+          "phase": "battle",
+          "plants": 3,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 1,
+            "wallnut": 1
+          },
+          "sun": 20,
+          "spent": 950,
+          "earned": 470,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 23.299999999999905,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 1.1999999999997086,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 75.05,
+          "phase": "battle",
+          "plants": 3,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 1,
+            "wallnut": 1
+          },
+          "sun": 20,
+          "spent": 950,
+          "earned": 470,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 18.299999999999834,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 80.05,
+          "phase": "battle",
+          "plants": 3,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 1,
+            "wallnut": 1
+          },
+          "sun": 45,
+          "spent": 950,
+          "earned": 495,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 13.299999999999763,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 85.05,
+          "phase": "battle",
+          "plants": 3,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 1,
+            "wallnut": 1
+          },
+          "sun": 45,
+          "spent": 950,
+          "earned": 495,
+          "supports": 2,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 8.299999999999692,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 90.05,
+          "phase": "battle",
+          "plants": 4,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 1
+          },
+          "sun": 60,
+          "spent": 1075,
+          "earned": 635,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 5.050000000000009,
+            "sunflower": 0,
+            "wallnut": 3.299999999999705,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 5.850000000000006,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 95.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 10,
+          "spent": 1125,
+          "earned": 635,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0.05000000000001828,
+            "sunflower": 0,
+            "wallnut": 28.949999999999985,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0.8500000000000185,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 100.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 10,
+          "spent": 1125,
+          "earned": 635,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 23.949999999999914,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 105.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 35,
+          "spent": 1125,
+          "earned": 660,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 18.949999999999843,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 110.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 35,
+          "spent": 1125,
+          "earned": 660,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 13.949999999999772,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 115.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 175,
+          "spent": 1125,
+          "earned": 800,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 8.9499999999997,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 120.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 175,
+          "spent": 1125,
+          "earned": 800,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 3.9499999999997026,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 125.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 175,
+          "spent": 1125,
+          "earned": 800,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 130.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 200,
+          "spent": 1125,
+          "earned": 825,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 135.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 200,
+          "spent": 1125,
+          "earned": 825,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 140.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 350,
+          "spent": 1125,
+          "earned": 975,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 145.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 350,
+          "spent": 1125,
+          "earned": 975,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 150.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 350,
+          "spent": 1125,
+          "earned": 975,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 155.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 375,
+          "spent": 1125,
+          "earned": 1000,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 160.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 375,
+          "spent": 1125,
+          "earned": 1000,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 165.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 525,
+          "spent": 1125,
+          "earned": 1150,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 170.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 525,
+          "spent": 1125,
+          "earned": 1150,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 175.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 525,
+          "spent": 1125,
+          "earned": 1150,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 180.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 550,
+          "spent": 1125,
+          "earned": 1175,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 185.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 550,
+          "spent": 1125,
+          "earned": 1175,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 190.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 700,
+          "spent": 1125,
+          "earned": 1325,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 195.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 700,
+          "spent": 1125,
+          "earned": 1325,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 200.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 700,
+          "spent": 1125,
+          "earned": 1325,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 205.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 725,
+          "spent": 1125,
+          "earned": 1350,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 210.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 725,
+          "spent": 1125,
+          "earned": 1350,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 215.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 875,
+          "spent": 1125,
+          "earned": 1500,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 220.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 875,
+          "spent": 1125,
+          "earned": 1500,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 225.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 875,
+          "spent": 1125,
+          "earned": 1500,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 230.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 900,
+          "spent": 1125,
+          "earned": 1525,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 235.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 900,
+          "spent": 1125,
+          "earned": 1525,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 240.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1050,
+          "spent": 1125,
+          "earned": 1675,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 245.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1050,
+          "spent": 1125,
+          "earned": 1675,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 250.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1050,
+          "spent": 1125,
+          "earned": 1675,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 255.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1075,
+          "spent": 1125,
+          "earned": 1700,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 260.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1075,
+          "spent": 1125,
+          "earned": 1700,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 265.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1225,
+          "spent": 1125,
+          "earned": 1850,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 270.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1225,
+          "spent": 1125,
+          "earned": 1850,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 275.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1225,
+          "spent": 1125,
+          "earned": 1850,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 280.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1250,
+          "spent": 1125,
+          "earned": 1875,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 285.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1250,
+          "spent": 1125,
+          "earned": 1875,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 290.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1400,
+          "spent": 1125,
+          "earned": 2025,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 295.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1400,
+          "spent": 1125,
+          "earned": 2025,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 300.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1400,
+          "spent": 1125,
+          "earned": 2025,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 305.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1425,
+          "spent": 1125,
+          "earned": 2050,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 310.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1425,
+          "spent": 1125,
+          "earned": 2050,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 315.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1575,
+          "spent": 1125,
+          "earned": 2200,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 320.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1575,
+          "spent": 1125,
+          "earned": 2200,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 325.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1575,
+          "spent": 1125,
+          "earned": 2200,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 330.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1600,
+          "spent": 1125,
+          "earned": 2225,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 335.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1600,
+          "spent": 1125,
+          "earned": 2225,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 340.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1750,
+          "spent": 1125,
+          "earned": 2375,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 345.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1750,
+          "spent": 1125,
+          "earned": 2375,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 350.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1750,
+          "spent": 1125,
+          "earned": 2375,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        },
+        {
+          "time": 355.05,
+          "phase": "battle",
+          "plants": 5,
+          "cap": 5,
+          "types": {
+            "sunshroom": 1,
+            "pea": 2,
+            "wallnut": 2
+          },
+          "sun": 1775,
+          "spent": 1125,
+          "earned": 2400,
+          "supports": 3,
+          "cooldowns": {
+            "pea": 0,
+            "sunflower": 0,
+            "wallnut": 0,
+            "snow": 0,
+            "chomper": 0,
+            "cactus": 0,
+            "squash": 0,
+            "flowerpot": 0,
+            "lily": 0,
+            "puff": 0,
+            "sunshroom": 0,
+            "fumeshroom": 0,
+            "plantern": 0,
+            "blover": 0,
+            "coffee": 0,
+            "cabbagepult": 0
+          }
+        }
+      ],
+      "placements": [
+        {
+          "id": 5,
+          "type": "squash",
+          "row": 3,
+          "col": 4,
+          "clock": 0.8000000000000002,
+          "phase": "planning",
+          "cost": 50
+        },
+        {
+          "id": 6,
+          "type": "pea",
+          "row": 3,
+          "col": 3,
+          "clock": 1.6000000000000008,
+          "phase": "planning",
+          "cost": 100
+        },
+        {
+          "id": 7,
+          "type": "sunshroom",
+          "row": 1,
+          "col": 4,
+          "clock": 2.4499999999999993,
+          "phase": "planning",
+          "cost": 25
+        },
+        {
+          "id": 8,
+          "type": "pea",
+          "row": 4,
+          "col": 4,
+          "clock": 3.2999999999999963,
+          "phase": "planning",
+          "cost": 100
+        },
+        {
+          "id": 9,
+          "type": "pea",
+          "row": 1,
+          "col": 3,
+          "clock": 4.149999999999993,
+          "phase": "planning",
+          "cost": 100
+        },
+        {
+          "id": 10,
+          "type": "pea",
+          "row": 3,
+          "col": 2,
+          "clock": 73.19999999999798,
+          "phase": "battle",
+          "cost": 100
+        },
+        {
+          "id": 11,
+          "type": "wallnut",
+          "row": 3,
+          "col": 6,
+          "clock": 74.04999999999794,
+          "phase": "battle",
+          "cost": 50
+        },
+        {
+          "id": 12,
+          "type": "pea",
+          "row": 3,
+          "col": 3,
+          "clock": 97.84999999999658,
+          "phase": "battle",
+          "cost": 100
+        },
+        {
+          "id": 13,
+          "type": "puff",
+          "row": 3,
+          "col": 2,
+          "clock": 98.69999999999654,
+          "phase": "battle",
+          "cost": 0
+        },
+        {
+          "id": 14,
+          "type": "squash",
+          "row": 3,
+          "col": 4,
+          "clock": 101.24999999999639,
+          "phase": "battle",
+          "cost": 50
+        },
+        {
+          "id": 15,
+          "type": "pea",
+          "row": 2,
+          "col": 4,
+          "clock": 122.49999999999518,
+          "phase": "battle",
+          "cost": 100
+        },
+        {
+          "id": 16,
+          "type": "wallnut",
+          "row": 2,
+          "col": 3,
+          "clock": 123.34999999999513,
+          "phase": "battle",
+          "cost": 50
+        },
+        {
+          "id": 17,
+          "type": "pea",
+          "row": 2,
+          "col": 4,
+          "clock": 147.5999999999993,
+          "phase": "battle",
+          "cost": 100
+        },
+        {
+          "id": 18,
+          "type": "wallnut",
+          "row": 2,
+          "col": 1,
+          "clock": 154.00000000000077,
+          "phase": "battle",
+          "cost": 50
+        }
+      ],
+      "violations": [],
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            3,
+            7
+          ],
+          "claimed": true,
+          "broken": true
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            0,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            2,
+            2
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          3,
+          3.029
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        0,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            2,
+            3
+          ],
+          "hp": 480,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            2,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            2,
+            1
+          ],
+          "hp": 480,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 12,
+        "swallowed": 0,
+        "crushed": 12,
+        "reinforcements": 12
+      },
+      "energy": 365,
+      "economy": {
+        "sun": 1775,
+        "spent": 1125,
+        "earned": 2400
+      },
+      "commands": 2156,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 7,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "2:2"
+        },
+        {
+          "time": 13.5,
+          "target": "3:2"
+        },
+        {
+          "time": 16,
+          "target": "2:2"
+        },
+        {
+          "time": 19.5,
+          "target": "3:3"
+        },
+        {
+          "time": 20.5,
+          "target": "2:2"
+        },
+        {
+          "time": 26.5,
+          "target": "3:7"
+        },
+        {
+          "time": 35.5,
+          "target": "3:1"
+        },
+        {
+          "time": 47,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 112.89999999999573,
+          "text": "第4行栅栏被击穿，后方失去这一段掩护。"
+        },
+        {
+          "time": 79.49999999999763,
+          "text": "后援队接到一名普通同胞，消耗50物资。"
+        },
+        {
+          "time": 79.49999999999763,
+          "text": "接应队接到一名普通同胞，消耗50物资。"
+        },
+        {
+          "time": 79.49999999999763,
+          "text": "开路队接到一名普通同胞，消耗50物资。"
+        },
+        {
+          "time": 79.24999999999764,
+          "text": "前进接应碑被打碎，封存的500应急物资交给了队伍。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+PASS 八种场地各有独立目标与三队分工，十二类玩法明确区分设计和现有实战
+PASS 水面只允许桥格通行，全部地图地标可经真实换列约束到达，不能绕出末列栅栏
+PASS 26个战役节点连续且无新增假实战，七关与六份旧设计准确映射
+PASS 十份原版场景资源哈希真实，环境绘制不改模型与五行脚点
+PASS 预览不会扩充实战卡组或改动原始七关，屋顶没有凭空多出的囚室
+PASS 八场地实际界面切换并送入生产绘制接口，路线与动画开关可用，不推进经济和胜负
+PASS 十二类玩法分开说明目标与先决条件，只有现有营救提供实战入口
+PASS 战役默认隐藏尾声与伏笔，显式展开后关闭会清空已显示的结局正文
+PASS 场地资源失败会给出重试入口，文字仍可浏览而不伪造已完成画面
+PASS 战役入口直达对应既有关卡并阅读来信，非法编号安全回到首关且不替玩家选择藏身行
+{"passed":10,"scope":"eight native-art environment previews, twelve mode designs, 26-node continuity, water-route accessibility, spoiler protection, no simulation/save mutation"}
+
+{"syntaxFiles":27,"localReferences":462,"levels":7,"letters":7,"comicPlacements":8,"prologueBeats":20,"durationSeconds":163,"missingReferences":0}

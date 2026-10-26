@@ -80,3 +80,32 @@
 
 .theme-choice .character-art-portrait{position:absolute;left:25%;top:0;width:50%;height:62px;object-fit:contain}
 @media(max-height:500px){.theme-choice .character-art-portrait{height:46px}}
+
+/* Native slab textures carry the choices, with warm lettering instead of web cards. */
+.route-options{gap:12px;align-items:stretch}
+.route-option{background:transparent url('assets/images/options_backtogamebutton0.png') center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none;padding:17px 20px;color:#312d40;font-family:PVZChinese,'Microsoft YaHei',sans-serif;text-shadow:0 1px #c7bfda}
+.route-option strong{font-weight:400;font-size:17px;line-height:1.3}
+.route-option span{color:inherit;font-size:13px;line-height:1.55;margin-top:7px}
+.route-option[aria-pressed=true]{background:transparent url('assets/images/options_backtogamebutton2.png') center/100% 100% no-repeat;border:0;box-shadow:none;color:#f0edac;text-shadow:1px 1px #363347}
+.route-option[aria-pressed=true] strong:after{content:' ✓';color:#dfe99b;font-size:.9em}
+.route-option:not(:disabled):hover,.route-option:focus-visible{color:#f0edac;text-shadow:1px 1px #363347}
+.route-option:disabled{opacity:.7;filter:grayscale(.6)}
+.damage-stage-note{background:#263923;color:#d5cda8;font-size:12px;line-height:1.5;padding:7px 10px}
+.chooser-sub{border-bottom-color:#9b79394d;color:#d7c58f}
+.chooser-tip,.preview-hint{line-height:1.6}
+@media(pointer:coarse){.route-option{padding:12px 15px}.route-option strong{font-size:15px}.route-option span{font-size:12px}.damage-stage-note{font-size:11px;padding:6px 8px}}
+
+/* Keep orders on one native wooden plaque, clear of the pale fence and the lawn. */
+.objective-note{left:45.4%;top:.7%;width:35.5%;height:16.2%;padding:.8cqw 1.3cqw;border:1cqw solid transparent;border-image:url('assets/ui/title-original.png') 15 17 15 17 fill/1cqw/0 stretch;background:none;grid-template-columns:auto 1fr;align-content:start;align-items:center;column-gap:.8cqw;row-gap:.2cqw;pointer-events:none}
+.objective-note #levelTag{font-size:1.15cqw;white-space:nowrap}
+.objective-note #levelName{font-size:1.75cqw;line-height:1.2;white-space:nowrap}
+.objective-note #objective{font-size:1.15cqw;line-height:1.4;white-space:nowrap}
+.mode-note{left:47.6%;top:10.6%;width:31.3%;max-width:none;font-size:1.15cqw;line-height:1.25;row-gap:0;column-gap:.65cqw;pointer-events:none}
+.mode-note strong{font-size:1.15cqw}
+.mode-note #fieldStatus{font-size:1.1cqw;line-height:1.35}
+
+/* A short ink stroke marks the focused letter; avoid the browser's blue web-panel ring. */
+.letter-dialog #dialogBody:focus{outline:none;box-shadow:none}
+.letter-dialog #dialogBody:focus-visible{background-image:linear-gradient(#8a6c40,#8a6c40);background-position:left 12px;background-size:2px 28px;background-repeat:no-repeat}
+.deployment-note{margin:10px 0;line-height:1.7}.deployment-note summary{cursor:pointer;min-height:32px;padding:5px 0;font-weight:bold;text-decoration:underline;text-underline-offset:4px}.deployment-note summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}.deployment-note p{font-size:13px;line-height:1.8;margin:7px 0}.camp-aftermath{margin:17px 0 10px;padding-top:10px;border-top:1px solid currentColor}.camp-aftermath h3{font-size:17px;margin:4px 0 9px}.camp-aftermath p{line-height:1.85}
+.route-option:focus-visible{outline:none;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}

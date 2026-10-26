@@ -1,0 +1,1369 @@
+{
+  "sourceHash": "7d1dcad595af3ff9793505f9cd2c656795789d3ec3c0aeb28e7f2e997610b1ac",
+  "scope": "default legacy factory index6, full preparation, legal public commands, AI untouched; no source/test edits",
+  "results": [
+    {
+      "strategy": "flank",
+      "composition": "normal",
+      "initial": [
+        [
+          "normal",
+          "normal",
+          "normal"
+        ],
+        [
+          "normal",
+          "normal",
+          "normal"
+        ],
+        [
+          "normal",
+          "normal",
+          "normal"
+        ]
+      ],
+      "status": "lost",
+      "time": 123.55,
+      "result": "博士承受了10次命中。撤回灯房，再想一条路。",
+      "doctor": 0,
+      "energy": 730,
+      "record": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "economy": {
+        "sun": 25,
+        "earned": 625,
+        "spent": 1100,
+        "clock": 183.5500000000075,
+        "cooldowns": {
+          "pea": 0,
+          "sunflower": 0,
+          "wallnut": 0,
+          "snow": 0,
+          "chomper": 0,
+          "cactus": 0,
+          "squash": 0
+        },
+        "nextDeploy": 183.60000000000733,
+        "placements": [
+          {
+            "id": 5,
+            "type": "cactus",
+            "row": 3,
+            "col": 4,
+            "clock": 0.8000000000000002,
+            "phase": "planning",
+            "cost": 125
+          },
+          {
+            "id": 6,
+            "type": "pea",
+            "row": 1,
+            "col": 4,
+            "clock": 1.6000000000000008,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 7,
+            "type": "pea",
+            "row": 4,
+            "col": 6,
+            "clock": 2.4499999999999993,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 8,
+            "type": "pea",
+            "row": 2,
+            "col": 4,
+            "clock": 3.2999999999999963,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 9,
+            "type": "wallnut",
+            "row": 1,
+            "col": 3,
+            "clock": 4.149999999999993,
+            "phase": "planning",
+            "cost": 50
+          },
+          {
+            "id": 10,
+            "type": "pea",
+            "row": 1,
+            "col": 2,
+            "clock": 73.19999999999798,
+            "phase": "battle",
+            "cost": 100
+          },
+          {
+            "id": 11,
+            "type": "wallnut",
+            "row": 1,
+            "col": 1,
+            "clock": 74.04999999999794,
+            "phase": "battle",
+            "cost": 50
+          },
+          {
+            "id": 12,
+            "type": "pea",
+            "row": 1,
+            "col": 4,
+            "clock": 97.84999999999658,
+            "phase": "battle",
+            "cost": 100
+          },
+          {
+            "id": 13,
+            "type": "pea",
+            "row": 1,
+            "col": 3,
+            "clock": 122.49999999999518,
+            "phase": "battle",
+            "cost": 100
+          },
+          {
+            "id": 14,
+            "type": "wallnut",
+            "row": 1,
+            "col": 2,
+            "clock": 123.34999999999513,
+            "phase": "battle",
+            "cost": 50
+          },
+          {
+            "id": 15,
+            "type": "pea",
+            "row": 2,
+            "col": 4,
+            "clock": 147.5999999999993,
+            "phase": "battle",
+            "cost": 100
+          },
+          {
+            "id": 16,
+            "type": "cactus",
+            "row": 3,
+            "col": 4,
+            "clock": 173.20000000000513,
+            "phase": "battle",
+            "cost": 125
+          }
+        ]
+      },
+      "goal": {
+        "row": 2,
+        "col": 1,
+        "name": "宣传所档案室",
+        "open": false,
+        "progress": 3.4499999999999957
+      },
+      "follower": null,
+      "teams": [
+        {
+          "id": 0,
+          "row": 1,
+          "col": 1,
+          "members": [
+            {
+              "type": "normal",
+              "hp": 50
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "row": 1,
+          "col": 1,
+          "members": [
+            {
+              "type": "normal",
+              "hp": 90
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "row": 1,
+          "col": 1,
+          "members": [
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "relay",
+          "claimed": true,
+          "broken": true,
+          "hp": 0
+        },
+        {
+          "id": "food",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "repair",
+          "claimed": true,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "west",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "rear",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        }
+      ],
+      "rejects": 0,
+      "actions": [
+        {
+          "time": 0.1,
+          "target": {
+            "row": 1,
+            "col": 7
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 5.1,
+          "target": {
+            "row": 1,
+            "col": 6
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 10.1,
+          "target": {
+            "row": 1,
+            "col": 6
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 15.1,
+          "target": {
+            "row": 1,
+            "col": 2
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 20.1,
+          "target": {
+            "row": 4,
+            "col": 4
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 25.1,
+          "target": {
+            "row": 4,
+            "col": 4
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 30.1,
+          "target": {
+            "row": 1,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 35.1,
+          "target": {
+            "row": 1,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 40.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 45.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 50.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 55.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 60.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 65.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 70.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 75.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 80.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 85.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 90.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 95.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 100.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 105.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 110.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 9,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 115.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 6,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 120.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 3,
+          "energy": 730,
+          "goal": false,
+          "claimed": 1
+        }
+      ],
+      "events": [
+        {
+          "time": 123.54999999999512,
+          "text": "博士承受了10次命中。撤回灯房，再想一条路。"
+        },
+        {
+          "time": 118.5999999999954,
+          "text": "第4行栅栏被击穿，后方失去这一段掩护。"
+        },
+        {
+          "time": 107.999999999996,
+          "text": "第3行栅栏被击穿，后方失去这一段掩护。"
+        },
+        {
+          "time": 65.19999999999844,
+          "text": "第2行栅栏被击穿，后方失去这一段掩护。"
+        },
+        {
+          "time": 42.59999999999972,
+          "text": "前进补给碑被打碎，封存的500应急物资交给了队伍。"
+        },
+        {
+          "time": 38.69999999999994,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "strategy": "objective",
+      "composition": "bucket",
+      "initial": [
+        [
+          "bucket",
+          "normal",
+          "normal"
+        ],
+        [
+          "bucket",
+          "normal",
+          "normal"
+        ],
+        [
+          "bucket",
+          "normal",
+          "normal"
+        ]
+      ],
+      "status": "won",
+      "time": 39.95,
+      "result": "大家都回到了灯房。向日葵承认签过登记，也想把改过的那一页带出去。",
+      "doctor": 10,
+      "energy": 610,
+      "record": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "economy": {
+        "sun": 25,
+        "earned": 250,
+        "spent": 725,
+        "clock": 99.94999999999646,
+        "cooldowns": {
+          "pea": 0,
+          "sunflower": 0,
+          "wallnut": 0,
+          "snow": 0,
+          "chomper": 0,
+          "cactus": 5.4000000000000075,
+          "squash": 0
+        },
+        "nextDeploy": 100.34999999999648,
+        "placements": [
+          {
+            "id": 5,
+            "type": "cactus",
+            "row": 3,
+            "col": 4,
+            "clock": 0.8000000000000002,
+            "phase": "planning",
+            "cost": 125
+          },
+          {
+            "id": 6,
+            "type": "pea",
+            "row": 1,
+            "col": 4,
+            "clock": 1.6000000000000008,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 7,
+            "type": "pea",
+            "row": 4,
+            "col": 6,
+            "clock": 2.4499999999999993,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 8,
+            "type": "pea",
+            "row": 2,
+            "col": 4,
+            "clock": 3.2999999999999963,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 9,
+            "type": "wallnut",
+            "row": 1,
+            "col": 3,
+            "clock": 4.149999999999993,
+            "phase": "planning",
+            "cost": 50
+          },
+          {
+            "id": 10,
+            "type": "cactus",
+            "row": 3,
+            "col": 2,
+            "clock": 73.19999999999798,
+            "phase": "battle",
+            "cost": 125
+          },
+          {
+            "id": 11,
+            "type": "cactus",
+            "row": 3,
+            "col": 4,
+            "clock": 97.84999999999658,
+            "phase": "battle",
+            "cost": 125
+          }
+        ]
+      },
+      "goal": {
+        "row": 2,
+        "col": 1,
+        "name": "宣传所档案室",
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "id": "rescued",
+        "row": 2,
+        "col": 7.260999999999999,
+        "kind": "plant",
+        "type": "sunflower",
+        "name": "登记员",
+        "hp": 20,
+        "maxHp": 130,
+        "path": [
+          {
+            "row": 2,
+            "col": 8
+          }
+        ],
+        "escort": 2,
+        "moving": true,
+        "facing": 1,
+        "wounded": true,
+        "edgeStart": {
+          "row": 2,
+          "col": 7
+        }
+      },
+      "teams": [
+        {
+          "id": 0,
+          "row": 2,
+          "col": 6.6007619047619315,
+          "members": [
+            {
+              "type": "bucket",
+              "hp": 650
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "row": 2,
+          "col": 6.6007619047619315,
+          "members": [
+            {
+              "type": "bucket",
+              "hp": 650
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "row": 2,
+          "col": 7.880380952380996,
+          "members": [
+            {
+              "type": "bucket",
+              "hp": 490
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "relay",
+          "claimed": true,
+          "broken": true,
+          "hp": 0
+        },
+        {
+          "id": "food",
+          "claimed": true,
+          "broken": false,
+          "hp": 140
+        },
+        {
+          "id": "repair",
+          "claimed": true,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "west",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "rear",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        }
+      ],
+      "rejects": 0,
+      "actions": [
+        {
+          "time": 0.1,
+          "target": {
+            "row": 1,
+            "col": 7
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 5.1,
+          "target": {
+            "row": 3,
+            "col": 6
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 10.1,
+          "target": {
+            "row": 3,
+            "col": 7
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 230,
+          "goal": false,
+          "claimed": 1
+        },
+        {
+          "time": 15.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 350,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 20.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 790,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 25.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 640,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 30.1,
+          "target": {
+            "row": 2,
+            "col": 8
+          },
+          "home": true,
+          "doctor": 10,
+          "energy": 640,
+          "goal": true,
+          "claimed": 2
+        },
+        {
+          "time": 35.1,
+          "target": {
+            "row": 2,
+            "col": 8
+          },
+          "home": true,
+          "doctor": 10,
+          "energy": 610,
+          "goal": true,
+          "claimed": 2
+        }
+      ],
+      "events": [
+        {
+          "time": 39.94999999999987,
+          "text": "大家都回到了灯房。向日葵承认签过登记，也想把改过的那一页带出去。"
+        },
+        {
+          "time": 38.69999999999994,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 32.100000000000314,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 28.50000000000027,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 23.6000000000002,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 22.10000000000018,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        }
+      ]
+    },
+    {
+      "strategy": "sweep",
+      "composition": "mixed",
+      "initial": [
+        [
+          "cone",
+          "normal",
+          "normal"
+        ],
+        [
+          "bucket",
+          "normal",
+          "normal"
+        ],
+        [
+          "digger",
+          "normal",
+          "normal"
+        ]
+      ],
+      "status": "won",
+      "time": 57.4,
+      "result": "大家都回到了灯房。向日葵承认签过登记，也想把改过的那一页带出去。",
+      "doctor": 10,
+      "energy": 350,
+      "record": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "economy": {
+        "sun": 25,
+        "earned": 250,
+        "spent": 725,
+        "clock": 117.39999999999547,
+        "cooldowns": {
+          "pea": 0,
+          "sunflower": 0,
+          "wallnut": 0,
+          "snow": 0,
+          "chomper": 0,
+          "cactus": 0,
+          "squash": 0
+        },
+        "nextDeploy": 118.19999999999547,
+        "placements": [
+          {
+            "id": 5,
+            "type": "cactus",
+            "row": 3,
+            "col": 4,
+            "clock": 0.8000000000000002,
+            "phase": "planning",
+            "cost": 125
+          },
+          {
+            "id": 6,
+            "type": "pea",
+            "row": 1,
+            "col": 4,
+            "clock": 1.6000000000000008,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 7,
+            "type": "pea",
+            "row": 4,
+            "col": 6,
+            "clock": 2.4499999999999993,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 8,
+            "type": "pea",
+            "row": 2,
+            "col": 4,
+            "clock": 3.2999999999999963,
+            "phase": "planning",
+            "cost": 100
+          },
+          {
+            "id": 9,
+            "type": "wallnut",
+            "row": 1,
+            "col": 3,
+            "clock": 4.149999999999993,
+            "phase": "planning",
+            "cost": 50
+          },
+          {
+            "id": 10,
+            "type": "pea",
+            "row": 2,
+            "col": 2,
+            "clock": 73.19999999999798,
+            "phase": "battle",
+            "cost": 100
+          },
+          {
+            "id": 11,
+            "type": "wallnut",
+            "row": 2,
+            "col": 6,
+            "clock": 74.04999999999794,
+            "phase": "battle",
+            "cost": 50
+          },
+          {
+            "id": 12,
+            "type": "pea",
+            "row": 2,
+            "col": 4,
+            "clock": 97.84999999999658,
+            "phase": "battle",
+            "cost": 100
+          }
+        ]
+      },
+      "goal": {
+        "row": 2,
+        "col": 1,
+        "name": "宣传所档案室",
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "id": "rescued",
+        "row": 2,
+        "col": 7.260999999999999,
+        "kind": "plant",
+        "type": "sunflower",
+        "name": "登记员",
+        "hp": 20,
+        "maxHp": 130,
+        "path": [
+          {
+            "row": 2,
+            "col": 8
+          }
+        ],
+        "escort": 0,
+        "moving": true,
+        "facing": 1,
+        "wounded": true,
+        "edgeStart": {
+          "row": 2,
+          "col": 7
+        }
+      },
+      "teams": [
+        {
+          "id": 0,
+          "row": 2,
+          "col": 7.964190476190499,
+          "members": [
+            {
+              "type": "cone",
+              "hp": 350
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "row": 2,
+          "col": 7.336380952380992,
+          "members": [
+            {
+              "type": "bucket",
+              "hp": 610
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "row": 2,
+          "col": 8,
+          "members": [
+            {
+              "type": "digger",
+              "hp": 160
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            },
+            {
+              "type": "normal",
+              "hp": 210
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "relay",
+          "claimed": true,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "food",
+          "claimed": true,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "repair",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "west",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        },
+        {
+          "id": "rear",
+          "claimed": false,
+          "broken": false,
+          "hp": 180
+        }
+      ],
+      "rejects": 0,
+      "actions": [
+        {
+          "time": 0.1,
+          "target": {
+            "row": 4,
+            "col": 6
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 5.1,
+          "target": {
+            "row": 3,
+            "col": 6
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 10.1,
+          "target": {
+            "row": 3,
+            "col": 4
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 15.1,
+          "target": {
+            "row": 1,
+            "col": 4
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 20.1,
+          "target": {
+            "row": 2,
+            "col": 6
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 25.1,
+          "target": {
+            "row": 2,
+            "col": 6
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 30.1,
+          "target": {
+            "row": 1,
+            "col": 7
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 150,
+          "goal": false,
+          "claimed": 0
+        },
+        {
+          "time": 35.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 350,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 40.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 350,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 45.1,
+          "target": {
+            "row": 2,
+            "col": 1
+          },
+          "home": false,
+          "doctor": 10,
+          "energy": 350,
+          "goal": false,
+          "claimed": 2
+        },
+        {
+          "time": 50.1,
+          "target": {
+            "row": 2,
+            "col": 8
+          },
+          "home": true,
+          "doctor": 10,
+          "energy": 350,
+          "goal": true,
+          "claimed": 2
+        },
+        {
+          "time": 55.1,
+          "target": {
+            "row": 2,
+            "col": 8
+          },
+          "home": true,
+          "doctor": 10,
+          "energy": 350,
+          "goal": true,
+          "claimed": 2
+        }
+      ],
+      "events": [
+        {
+          "time": 57.399999999998876,
+          "text": "大家都回到了灯房。向日葵承认签过登记，也想把改过的那一页带出去。"
+        },
+        {
+          "time": 46.74999999999948,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 34.1500000000002,
+          "text": "口粮补给碑已接通。获得120物资。"
+        },
+        {
+          "time": 30.7000000000003,
+          "text": "前进补给碑已接通。获得80物资。"
+        },
+        {
+          "time": 0,
+          "text": "行动开始。植物种植启用正常冷却，承接准备期剩余计时。"
+        },
+        {
+          "time": 0,
+          "text": "把原稿和写过它的人一起带回来。桌子旁还有位置。"
+        }
+      ]
+    }
+  ]
+}

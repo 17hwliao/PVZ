@@ -1,0 +1,30 @@
+{
+  "revision": "classic-attacks-20261024g",
+  "stage": "rescue-combat-20261024",
+  "scripts": 20,
+  "passed": 153,
+  "syntaxFiles": 18,
+  "localReferences": 436,
+  "missingReferences": 0,
+  "visualEvidence": "18 production-canvas frames plus one full field; model clock and production skeletal renderer",
+  "browserStatus": "Blocked: Local browser use is disabled in Work settings",
+  "browserFullPageAccepted": false,
+  "packaged": false,
+  "remoteActions": false,
+  "sourceFiles": {
+    "rescue-design-data.js": "2a69d9f4b04356b229d4ec84ae21482d8897513aeb56ea94a9d44360e536b36b",
+    "rescue-design-model.js": "eb253deca6259edb0c9783da04f1be58399a2e62c3e56238ad828fccad5b9755",
+    "rescue-design-renderer.js": "bd88c46017024d74907350e2ca6d7ffecf91924233418aeed3dbb6a2b1d86619",
+    "rescue-design.js": "4aa84eb250c1c6be519a8d674e9359bb1e4115ad0a4df8552447a4180856a895",
+    "rescue-design.html": "0bb99768b3bc5985f0dac51b82d01555b5eaab72a2cb1ea1a6e358838345fe87",
+    "rescue-plant-assets.js": "33157491a73164df069109e31d064089366a4a936ae6d6f291781f5d14461954",
+    "renderer.js": "768ff45d6a00c335523993fdf82320fba694e0734a1f9ed729bde1513023da1e",
+    "index.html": "f66c66a2f6ff17e877c18730f9fa20ec7f5afd377c9eedfc4d745640eba676dd",
+    "README.md": "8687811bbf5f0161de10d91b7804c60f4b18e8ee7d63df93fda9b2f6e68d17a2",
+    "assets/rescue-plants/provenance.json": "a892824e06261f919c86bb22b2f536f7c04ae2feabede93cc372a76ae6a3d1fb",
+    "assets/rescue-plants/Squash_body.png": "d890a454d2999dc0d31942cd3b99555c5ffbe0559d931d3e5dcc2606bbebd3c4",
+    "assets/rescue-plants/Squash_eyebrows.png": "67f7bbaafb673371c0d326ecfd0b453679a0807834a237ccb1dd9592909d1927",
+    "assets/rescue-plants/Squash_eyes.png": "b872d407fbac99a2cdbd011b54e8eaf7e0d9cff80878e7554bdf0ff601e3a122",
+    "assets/rescue-plants/Squash_stem.png": "ad08aafbd96f3528c5b1c1e831f18a2cc02f45d749dc8f32138621391fbb2324"
+  }
+}

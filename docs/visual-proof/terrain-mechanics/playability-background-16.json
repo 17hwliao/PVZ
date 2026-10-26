@@ -1,0 +1,8972 @@
+{
+  "method": "16 representative missions; first run 15/16, failed L5-1 water strategy retested with ordinary objective strategy; full 60s prep and unchanged paid AI; no full 40 rerun",
+  "sourceHashes": {
+    "rescue-design-model.js": "0de28503b26f58c8c95b37a5f8219419f38967964cba441150acc85a289b897c",
+    "terrain-campaign-data.js": "99375ecc0b2cefb5b2f7a67bd077c5ffe3709013a388390ab0c4c1cf65e04d35",
+    "terrain-unit-data.js": "c5d5823f2f008e4af2a460e30560f34d59fef52d856588c728aea6a256310fc2",
+    "terrain-rules.js": "d7c6da30591c0551230e7e79255b1ed08b51bb3cb07da51c747c857bcbf7052e",
+    "terrain-campaign-setup.js": "9d61bd1df893272543c6f54e9fd748304d0910807086b0e48e46576b55f19da4"
+  },
+  "initialAttempts": [
+    {
+      "level": "L1-1",
+      "map": "lawn",
+      "strategy": "objective",
+      "status": "won",
+      "time": 33.3,
+      "result": "大家都回到了灯房。逃出通道以后，乔治先找到一间能挡雨的小屋。",
+      "initial": {
+        "composition": [
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 450,
+        "budget": 450,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        580,
+        600,
+        220,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "pea",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 230,
+      "economy": {
+        "sun": 50,
+        "spent": 600,
+        "earned": 150
+      },
+      "commands": 201,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              70
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "0:7"
+        },
+        {
+          "time": 4,
+          "target": "0:1"
+        },
+        {
+          "time": 19.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 33.25000000000025,
+          "text": "大家都回到了灯房。逃出通道以后，乔治先找到一间能挡雨的小屋。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 19.25000000000014,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 10.600000000000016,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 3.699999999999995,
+          "text": "前进接应碑已接通。获得80物资。"
+        }
+      ]
+    },
+    {
+      "level": "L1-5",
+      "map": "lawn",
+      "strategy": "objective",
+      "status": "won",
+      "time": 34.3,
+      "result": "大家都回到了灯房。小楮照着分粮人数抄收据，送出去的版本却写成了大脑消耗。",
+      "initial": {
+        "composition": [
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 450,
+        "budget": 450,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        560,
+        240,
+        500,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "pea",
+          "pos": [
+            2,
+            6
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            3,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 270,
+      "economy": {
+        "sun": 0,
+        "spent": 650,
+        "earned": 150
+      },
+      "commands": 207,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              110
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "4:7"
+        },
+        {
+          "time": 3.5,
+          "target": "2:1"
+        },
+        {
+          "time": 14.5,
+          "target": "2:2"
+        },
+        {
+          "time": 15.5,
+          "target": "2:1"
+        },
+        {
+          "time": 20.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 34.25000000000019,
+          "text": "大家都回到了灯房。小楮照着分粮人数抄收据，送出去的版本却写成了大脑消耗。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 20.250000000000153,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 10.600000000000016,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 7.099999999999983,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 3.049999999999997,
+          "text": "前进接应碑已接通。获得100物资。"
+        }
+      ]
+    },
+    {
+      "level": "L2-1",
+      "map": "night",
+      "strategy": "objective",
+      "status": "won",
+      "time": 32.3,
+      "result": "大家都回到了灯房。草坪的登记棚接着一条夜路。",
+      "initial": {
+        "composition": [
+          [
+            "cone",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 500,
+        "budget": 535,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 245,
+      "economy": {
+        "sun": 590,
+        "spent": 50,
+        "earned": 140
+      },
+      "commands": 195,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.9,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "0:7"
+        },
+        {
+          "time": 4,
+          "target": "0:1"
+        },
+        {
+          "time": 18.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 32.3000000000003,
+          "text": "大家都回到了灯房。草坪的登记棚接着一条夜路。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 18.150000000000123,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 10.600000000000016,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 3.7499999999999947,
+          "text": "前进接应碑已接通。获得80物资。"
+        }
+      ]
+    },
+    {
+      "level": "L2-5",
+      "map": "night",
+      "strategy": "objective",
+      "status": "won",
+      "time": 32.6,
+      "result": "大家都回到了灯房。垣记不肯照新标题继续抄写。",
+      "initial": {
+        "composition": [
+          [
+            "screen",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 510,
+        "budget": 535,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        540,
+        280,
+        560,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            6
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "sunshroom",
+          "pos": [
+            3,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            2,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 285,
+      "economy": {
+        "sun": 515,
+        "spent": 125,
+        "earned": 140
+      },
+      "commands": 198,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "screen",
+              347
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "4:7"
+        },
+        {
+          "time": 3.5,
+          "target": "2:1"
+        },
+        {
+          "time": 18,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 32.55000000000029,
+          "text": "大家都回到了灯房。垣记不肯照新标题继续抄写。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 17.800000000000118,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 14.100000000000065,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 7.099999999999983,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L3-1",
+      "map": "underground",
+      "strategy": "objective",
+      "status": "won",
+      "time": 47.7,
+      "result": "大家都回到了灯房。值班稿里的编号对应地下材料间。",
+      "initial": {
+        "composition": [
+          [
+            "screen",
+            "normal",
+            "normal"
+          ],
+          [
+            "screen",
+            "normal",
+            "normal"
+          ],
+          [
+            "cone",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 620,
+        "budget": 620,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2783999999999995,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        280,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "squash",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 300,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            1,
+            1
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            1,
+            2
+          ],
+          "hp": 480,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 2,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 2
+      },
+      "energy": 260,
+      "economy": {
+        "sun": 0,
+        "spent": 750,
+        "earned": 250
+      },
+      "commands": 288,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.89,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "screen",
+              207
+            ],
+            [
+              "normal",
+              50
+            ],
+            [
+              "normal",
+              50
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            1.89,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "screen",
+              240
+            ],
+            [
+              "normal",
+              70
+            ],
+            [
+              "normal",
+              70
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "cone",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "0:7"
+        },
+        {
+          "time": 4,
+          "target": "1:4"
+        },
+        {
+          "time": 8.5,
+          "target": "3:4"
+        },
+        {
+          "time": 20,
+          "target": "1:4"
+        },
+        {
+          "time": 24,
+          "target": "4:3"
+        },
+        {
+          "time": 27.5,
+          "target": "0:1"
+        },
+        {
+          "time": 35.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 47.69999999999943,
+          "text": "大家都回到了灯房。值班稿里的编号对应地下材料间。"
+        },
+        {
+          "time": 43.99999999999964,
+          "text": "后援队接到一名普通同胞，消耗50物资。"
+        },
+        {
+          "time": 43.499999999999666,
+          "text": "后援队接到一名普通同胞，消耗50物资。"
+        },
+        {
+          "time": 35.40000000000013,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 28.100000000000264,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L3-5",
+      "map": "underground",
+      "strategy": "objective",
+      "status": "won",
+      "time": 33.5,
+      "result": "大家都回到了灯房。工坊重新烧起炉火，却需要泵站补水。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 600,
+        "budget": 620,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7215999999999987,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        540,
+        260,
+        560,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "squash",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 300,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            6
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            2.38,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 440,
+      "economy": {
+        "sun": 50,
+        "spent": 575,
+        "earned": 125
+      },
+      "commands": 201,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.13,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              590
+            ],
+            [
+              "cone",
+              370
+            ],
+            [
+              "normal",
+              150
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              110
+            ],
+            [
+              "normal",
+              110
+            ],
+            [
+              "normal",
+              110
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              150
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 3.5,
+          "target": "1:4"
+        },
+        {
+          "time": 4.5,
+          "target": "3:4"
+        },
+        {
+          "time": 5.5,
+          "target": "2:4"
+        },
+        {
+          "time": 6.5,
+          "target": "3:3"
+        },
+        {
+          "time": 10.5,
+          "target": "2:1"
+        },
+        {
+          "time": 15,
+          "target": "2:2"
+        },
+        {
+          "time": 16,
+          "target": "2:1"
+        },
+        {
+          "time": 20.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 33.45000000000024,
+          "text": "大家都回到了灯房。工坊重新烧起炉火，却需要泵站补水。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 20.500000000000156,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 14.100000000000065,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 10.350000000000012,
+          "text": "封存口粮碑已接通。获得140物资。"
+        }
+      ]
+    },
+    {
+      "level": "L4-1",
+      "map": "pool",
+      "strategy": "objective",
+      "status": "won",
+      "time": 56.7,
+      "result": "大家都回到了灯房。地下水管通向货场蓄水池。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 700,
+        "budget": 705,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        440
+      ],
+      "plantsAlive": [
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            1,
+            1
+          ],
+          "hp": 480,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            0.1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 375,
+      "economy": {
+        "sun": 5,
+        "spent": 825,
+        "earned": 330
+      },
+      "commands": 342,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              630
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.3,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              610
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              110
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 4,
+          "target": "4:4"
+        },
+        {
+          "time": 17,
+          "target": "4:3"
+        },
+        {
+          "time": 17.5,
+          "target": "4:2"
+        },
+        {
+          "time": 20.5,
+          "target": "1:4"
+        },
+        {
+          "time": 23,
+          "target": "3:2"
+        },
+        {
+          "time": 24,
+          "target": "4:3"
+        },
+        {
+          "time": 28,
+          "target": "0:1"
+        },
+        {
+          "time": 37.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 56.74999999999891,
+          "text": "大家都回到了灯房。地下水管通向货场蓄水池。"
+        },
+        {
+          "time": 56.44999999999893,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 49.34999999999933,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 44.5999999999996,
+          "text": "咖啡豆唤醒了小喷菇。"
+        },
+        {
+          "time": 37.50000000000001,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        }
+      ]
+    },
+    {
+      "level": "L4-5",
+      "map": "pool",
+      "strategy": "objective",
+      "status": "won",
+      "time": 50.3,
+      "result": "大家都回到了灯房。阿檐拒绝把居民用水断掉，被留在旧控制室。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 700,
+        "budget": 705,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        60,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            2,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            0.33,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 455,
+      "economy": {
+        "sun": 55,
+        "spent": 775,
+        "earned": 330
+      },
+      "commands": 303,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              570
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              570
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "4:7"
+        },
+        {
+          "time": 3.5,
+          "target": "3:4"
+        },
+        {
+          "time": 14,
+          "target": "4:3"
+        },
+        {
+          "time": 18,
+          "target": "3:3"
+        },
+        {
+          "time": 21.5,
+          "target": "0:1"
+        },
+        {
+          "time": 35,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 50.34999999999928,
+          "text": "大家都回到了灯房。阿檐拒绝把居民用水断掉，被留在旧控制室。"
+        },
+        {
+          "time": 49.34999999999933,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 37.79999999999999,
+          "text": "咖啡豆唤醒了小喷菇。"
+        },
+        {
+          "time": 35.15000000000014,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 34.700000000000166,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L5-1",
+      "map": "fog",
+      "strategy": "water",
+      "status": "battle",
+      "time": 360,
+      "result": "",
+      "initial": {
+        "composition": [
+          [
+            "ducky",
+            "ducky",
+            "ducky"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 760,
+        "budget": 790,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": false,
+        "progress": 0
+      },
+      "follower": null,
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        500,
+        560
+      ],
+      "plantsAlive": [
+        {
+          "type": "puff",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "plantern",
+          "pos": [
+            1,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 11,
+        "swallowed": 0,
+        "crushed": 6,
+        "reinforcements": 5
+      },
+      "energy": 40,
+      "economy": {
+        "sun": 1650,
+        "spent": 600,
+        "earned": 1750
+      },
+      "commands": 898,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            3,
+            3.97
+          ],
+          "path": 0,
+          "members": []
+        },
+        {
+          "id": 1,
+          "pos": [
+            1,
+            3.31
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              630
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            3,
+            3.94
+          ],
+          "path": 0,
+          "members": []
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 344.5,
+          "target": "3:4"
+        },
+        {
+          "time": 347,
+          "target": "2:4"
+        },
+        {
+          "time": 348.5,
+          "target": "3:4"
+        },
+        {
+          "time": 351,
+          "target": "2:4"
+        },
+        {
+          "time": 352.5,
+          "target": "3:4"
+        },
+        {
+          "time": 355,
+          "target": "2:4"
+        },
+        {
+          "time": 356.5,
+          "target": "3:4"
+        },
+        {
+          "time": 359,
+          "target": "2:4"
+        }
+      ],
+      "events": [
+        {
+          "time": 45.799999999999535,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 44.749999999999595,
+          "text": "后援队已倒下，仍可在补给位置补充队员。"
+        },
+        {
+          "time": 44.6999999999996,
+          "text": "开路队已倒下，仍可在补给位置补充队员。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 22.500000000000185,
+          "text": "开路队接到一名普通同胞，消耗50物资。"
+        },
+        {
+          "time": 22.000000000000178,
+          "text": "后援队接到一名普通同胞，消耗50物资。"
+        }
+      ]
+    },
+    {
+      "level": "L5-5",
+      "map": "fog",
+      "strategy": "water",
+      "status": "won",
+      "time": 50.5,
+      "result": "大家都回到了灯房。对照把普通口粮的原页与吃脑子的成稿放在一起，被指成故意挑拨住户。",
+      "initial": {
+        "composition": [
+          [
+            "ducky",
+            "ducky",
+            "ducky"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 760,
+        "budget": 790,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            3
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            4,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            2,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 470,
+      "economy": {
+        "sun": 0,
+        "spent": 750,
+        "earned": 250
+      },
+      "commands": 306,
+      "rejects": 8,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "ducky",
+              90
+            ],
+            [
+              "ducky",
+              230
+            ],
+            [
+              "ducky",
+              230
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.09,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              510
+            ],
+            [
+              "normal",
+              170
+            ],
+            [
+              "normal",
+              170
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 11,
+          "target": "1:3"
+        },
+        {
+          "time": 13.5,
+          "target": "3:4"
+        },
+        {
+          "time": 15,
+          "target": "1:3"
+        },
+        {
+          "time": 16.5,
+          "target": "3:4"
+        },
+        {
+          "time": 18,
+          "target": "1:3"
+        },
+        {
+          "time": 19.5,
+          "target": "3:3"
+        },
+        {
+          "time": 23,
+          "target": "3:1"
+        },
+        {
+          "time": 31.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 50.549999999999265,
+          "text": "大家都回到了灯房。对照把普通口粮的原页与吃脑子的成稿放在一起，被指成故意挑拨住户。"
+        },
+        {
+          "time": 49.34999999999933,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 42.24999999999974,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 38.69999999999994,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 31.450000000000312,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        }
+      ]
+    },
+    {
+      "level": "L6-1",
+      "map": "canal",
+      "strategy": "objective",
+      "status": "won",
+      "time": 70,
+      "result": "大家都回到了灯房。雾中邮路接着旧运河。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 850,
+        "budget": 875,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            2
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        480,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "wallnut",
+          "pos": [
+            3,
+            2
+          ],
+          "hp": 480,
+          "sleep": false
+        },
+        {
+          "type": "squash",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 300,
+          "sleep": false
+        },
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 130,
+          "sleep": true
+        },
+        {
+          "type": "puff",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": true
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            1,
+            2
+          ],
+          "hp": 480,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 9,
+        "swallowed": 0,
+        "crushed": 9,
+        "reinforcements": 8
+      },
+      "energy": 5,
+      "economy": {
+        "sun": 30,
+        "spent": 925,
+        "earned": 455
+      },
+      "commands": 417,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 13.5,
+          "target": "4:3"
+        },
+        {
+          "time": 14.5,
+          "target": "3:3"
+        },
+        {
+          "time": 17,
+          "target": "4:3"
+        },
+        {
+          "time": 20.5,
+          "target": "1:1"
+        },
+        {
+          "time": 38,
+          "target": "1:2"
+        },
+        {
+          "time": 44,
+          "target": "0:2"
+        },
+        {
+          "time": 45,
+          "target": "1:1"
+        },
+        {
+          "time": 54.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 69.99999999999817,
+          "text": "大家都回到了灯房。雾中邮路接着旧运河。"
+        },
+        {
+          "time": 63.549999999998526,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 59.99999999999873,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 54.34999999999905,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 42.24999999999974,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L6-5",
+      "map": "canal",
+      "strategy": "objective",
+      "status": "won",
+      "time": 49.2,
+      "result": "大家都回到了灯房。墩婆替住户搬过床架和药箱。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 850,
+        "budget": 875,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        520,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            4,
+            3
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            4,
+            2
+          ],
+          "hp": 130,
+          "sleep": true
+        },
+        {
+          "type": "squash",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 300,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 485,
+      "economy": {
+        "sun": 5,
+        "spent": 800,
+        "earned": 305
+      },
+      "commands": 297,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              570
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              510
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              630
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "4:7"
+        },
+        {
+          "time": 3.5,
+          "target": "4:3"
+        },
+        {
+          "time": 15.5,
+          "target": "3:2"
+        },
+        {
+          "time": 19.5,
+          "target": "3:3"
+        },
+        {
+          "time": 23,
+          "target": "3:1"
+        },
+        {
+          "time": 26,
+          "target": "4:1"
+        },
+        {
+          "time": 30,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 49.24999999999934,
+          "text": "大家都回到了灯房。墩婆替住户搬过床架和药箱。"
+        },
+        {
+          "time": 42.24999999999974,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 35.15000000000014,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 29.90000000000029,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 22.700000000000188,
+          "text": "封存口粮碑已接通。获得140物资。"
+        },
+        {
+          "time": 21.100000000000165,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L7-1",
+      "map": "roof",
+      "strategy": "objective",
+      "status": "won",
+      "time": 53.3,
+      "result": "大家都回到了灯房。墩婆的维修竖井通到旧街屋顶。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ]
+        ],
+        "cost": 900,
+        "budget": 960,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": true
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            2
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        80,
+        600,
+        600,
+        200,
+        0
+      ],
+      "plantsAlive": [
+        {
+          "type": "cabbagepult",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "cabbagepult",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "cabbagepult",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 480,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 800,
+      "economy": {
+        "sun": 0,
+        "spent": 800,
+        "earned": 300
+      },
+      "commands": 321,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "0:7"
+        },
+        {
+          "time": 4,
+          "target": "1:4"
+        },
+        {
+          "time": 10.5,
+          "target": "3:4"
+        },
+        {
+          "time": 18.5,
+          "target": "4:2"
+        },
+        {
+          "time": 22,
+          "target": "3:4"
+        },
+        {
+          "time": 22.5,
+          "target": "2:4"
+        },
+        {
+          "time": 26,
+          "target": "0:1"
+        },
+        {
+          "time": 38,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 53.349999999999106,
+          "text": "大家都回到了灯房。墩婆的维修竖井通到旧街屋顶。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 43.99999999999964,
+          "text": "第5行栅栏被击穿，后方失去这一段掩护。"
+        },
+        {
+          "time": 43.499999999999666,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 42.999999999999694,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 42.24999999999974,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L7-5",
+      "map": "roof",
+      "strategy": "objective",
+      "status": "won",
+      "time": 55.8,
+      "result": "大家都回到了灯房。肖笔测量过屋顶承重，守卫说那是在规划巨型武器。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ]
+        ],
+        "cost": 900,
+        "budget": 960,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": true
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        200,
+        360,
+        360,
+        360
+      ],
+      "plantsAlive": [],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 880,
+      "economy": {
+        "sun": 25,
+        "spent": 775,
+        "earned": 300
+      },
+      "commands": 336,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 14.5,
+          "target": "3:2"
+        },
+        {
+          "time": 15.5,
+          "target": "1:3"
+        },
+        {
+          "time": 17.5,
+          "target": "3:2"
+        },
+        {
+          "time": 21,
+          "target": "3:3"
+        },
+        {
+          "time": 24.5,
+          "target": "1:3"
+        },
+        {
+          "time": 29,
+          "target": "1:4"
+        },
+        {
+          "time": 33.5,
+          "target": "2:1"
+        },
+        {
+          "time": 40.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 55.849999999998964,
+          "text": "大家都回到了灯房。肖笔测量过屋顶承重，守卫说那是在规划巨型武器。"
+        },
+        {
+          "time": 45.799999999999535,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 43.499999999999666,
+          "text": "接应队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 40.29999999999985,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 38.69999999999994,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 33.500000000000234,
+          "text": "后援队使用整备碑修补护具，消耗30物资。"
+        }
+      ]
+    },
+    {
+      "level": "L8-1",
+      "map": "roof-night",
+      "strategy": "split",
+      "status": "won",
+      "time": 74.3,
+      "result": "大家都回到了灯房。白天的屋面图还缺夜间信号。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "ladder",
+            "normal"
+          ]
+        ],
+        "cost": 995,
+        "budget": 1045,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "puff",
+          "pos": [
+            2,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            0,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 305,
+      "economy": {
+        "sun": 280,
+        "spent": 625,
+        "earned": 405
+      },
+      "commands": 447,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              640
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            0.1,
+            6
+          ],
+          "path": 4,
+          "members": [
+            [
+              "bucket",
+              550
+            ],
+            [
+              "cone",
+              390
+            ],
+            [
+              "normal",
+              170
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            0,
+            4.98
+          ],
+          "path": 6,
+          "members": [
+            [
+              "bucket",
+              550
+            ],
+            [
+              "ladder",
+              380
+            ],
+            [
+              "normal",
+              110
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 13.5,
+          "target": "4:3"
+        },
+        {
+          "time": 15.5,
+          "target": "1:4"
+        },
+        {
+          "time": 17,
+          "target": "4:2"
+        },
+        {
+          "time": 17.5,
+          "target": "1:4"
+        },
+        {
+          "time": 26.5,
+          "target": "2:3"
+        },
+        {
+          "time": 46,
+          "target": "2:4"
+        },
+        {
+          "time": 50,
+          "target": "0:1"
+        },
+        {
+          "time": 59,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 74.34999999999792,
+          "text": "大家都回到了灯房。白天的屋面图还缺夜间信号。"
+        },
+        {
+          "time": 59.99999999999873,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 58.7499999999988,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 56.44999999999893,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 49.9999999999993,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 49.9999999999993,
+          "text": "回程整备碑已接通。可以在此整备。"
+        }
+      ]
+    },
+    {
+      "level": "L8-5",
+      "map": "roof-night",
+      "strategy": "split",
+      "status": "won",
+      "time": 71.2,
+      "result": "大家都回到了灯房。简程写下了驾驶保护、冰火冷却和支援舱的检查项。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "ladder",
+            "normal"
+          ]
+        ],
+        "cost": 995,
+        "budget": 1045,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            2
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2,
+          7.260999999999999
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "fumeshroom",
+          "pos": [
+            4,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "sunshroom",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            2,
+            6
+          ],
+          "hp": 43.39130434782609,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 225,
+      "economy": {
+        "sun": 5,
+        "spent": 900,
+        "earned": 405
+      },
+      "commands": 429,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            7.88
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "bucket",
+              510
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            5.55
+          ],
+          "path": 3,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "ladder",
+              480
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 9.5,
+          "target": "0:4"
+        },
+        {
+          "time": 19.5,
+          "target": "1:4"
+        },
+        {
+          "time": 23,
+          "target": "1:1"
+        },
+        {
+          "time": 32,
+          "target": "3:1"
+        },
+        {
+          "time": 40,
+          "target": "2:1"
+        },
+        {
+          "time": 44,
+          "target": "3:1"
+        },
+        {
+          "time": 48.5,
+          "target": "2:1"
+        },
+        {
+          "time": 49,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 71.1999999999981,
+          "text": "大家都回到了灯房。简程写下了驾驶保护、冰火冷却和支援舱的检查项。"
+        },
+        {
+          "time": 66.99999999999834,
+          "text": "后援队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 62.99999999999856,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 59.99999999999873,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 56.44999999999893,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    }
+  ],
+  "followupAttempts": [
+    {
+      "level": "L5-1",
+      "map": "fog",
+      "strategy": "objective",
+      "status": "won",
+      "time": 90.2,
+      "result": "大家都回到了灯房。泵站寄件签经过低洼排水地，雾把路灯散成一团。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 750,
+        "budget": 790,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "plantern",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "squash",
+          "pos": [
+            4,
+            2
+          ],
+          "hp": 300,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 390,
+      "economy": {
+        "sun": 550,
+        "spent": 450,
+        "earned": 500
+      },
+      "commands": 543,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              250
+            ],
+            [
+              "normal",
+              90
+            ],
+            [
+              "normal",
+              90
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              430
+            ],
+            [
+              "normal",
+              90
+            ],
+            [
+              "normal",
+              90
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              470
+            ],
+            [
+              "normal",
+              90
+            ],
+            [
+              "normal",
+              90
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 46,
+          "target": "1:4"
+        },
+        {
+          "time": 48,
+          "target": "4:4"
+        },
+        {
+          "time": 50,
+          "target": "1:4"
+        },
+        {
+          "time": 52,
+          "target": "4:4"
+        },
+        {
+          "time": 53.5,
+          "target": "1:4"
+        },
+        {
+          "time": 56,
+          "target": "4:3"
+        },
+        {
+          "time": 59.5,
+          "target": "0:1"
+        },
+        {
+          "time": 71,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 90.24999999999702,
+          "text": "大家都回到了灯房。泵站寄件签经过低洼排水地，雾把路灯散成一团。"
+        },
+        {
+          "time": 70.99999999999811,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 67.09999999999833,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 59.04999999999878,
+          "text": "封存口粮碑已接通。获得100物资。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "level": "L1-1",
+      "map": "lawn",
+      "strategy": "objective",
+      "status": "won",
+      "time": 33.3,
+      "result": "大家都回到了灯房。逃出通道以后，乔治先找到一间能挡雨的小屋。",
+      "initial": {
+        "composition": [
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 450,
+        "budget": 450,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        580,
+        600,
+        220,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "pea",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 230,
+      "economy": {
+        "sun": 50,
+        "spent": 600,
+        "earned": 150
+      },
+      "commands": 201,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              70
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "0:7"
+        },
+        {
+          "time": 4,
+          "target": "0:1"
+        },
+        {
+          "time": 19.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 33.25000000000025,
+          "text": "大家都回到了灯房。逃出通道以后，乔治先找到一间能挡雨的小屋。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 19.25000000000014,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 10.600000000000016,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 3.699999999999995,
+          "text": "前进接应碑已接通。获得80物资。"
+        }
+      ]
+    },
+    {
+      "level": "L1-5",
+      "map": "lawn",
+      "strategy": "objective",
+      "status": "won",
+      "time": 34.3,
+      "result": "大家都回到了灯房。小楮照着分粮人数抄收据，送出去的版本却写成了大脑消耗。",
+      "initial": {
+        "composition": [
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 450,
+        "budget": 450,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        560,
+        240,
+        500,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "pea",
+          "pos": [
+            2,
+            6
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            3,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 270,
+      "economy": {
+        "sun": 0,
+        "spent": 650,
+        "earned": 150
+      },
+      "commands": 207,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              110
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "4:7"
+        },
+        {
+          "time": 3.5,
+          "target": "2:1"
+        },
+        {
+          "time": 14.5,
+          "target": "2:2"
+        },
+        {
+          "time": 15.5,
+          "target": "2:1"
+        },
+        {
+          "time": 20.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 34.25000000000019,
+          "text": "大家都回到了灯房。小楮照着分粮人数抄收据，送出去的版本却写成了大脑消耗。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 20.250000000000153,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 10.600000000000016,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 7.099999999999983,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 3.049999999999997,
+          "text": "前进接应碑已接通。获得100物资。"
+        }
+      ]
+    },
+    {
+      "level": "L2-1",
+      "map": "night",
+      "strategy": "objective",
+      "status": "won",
+      "time": 32.3,
+      "result": "大家都回到了灯房。草坪的登记棚接着一条夜路。",
+      "initial": {
+        "composition": [
+          [
+            "cone",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 500,
+        "budget": 535,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 245,
+      "economy": {
+        "sun": 590,
+        "spent": 50,
+        "earned": 140
+      },
+      "commands": 195,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.9,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "0:7"
+        },
+        {
+          "time": 4,
+          "target": "0:1"
+        },
+        {
+          "time": 18.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 32.3000000000003,
+          "text": "大家都回到了灯房。草坪的登记棚接着一条夜路。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 18.150000000000123,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 10.600000000000016,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 3.7499999999999947,
+          "text": "前进接应碑已接通。获得80物资。"
+        }
+      ]
+    },
+    {
+      "level": "L2-5",
+      "map": "night",
+      "strategy": "objective",
+      "status": "won",
+      "time": 32.6,
+      "result": "大家都回到了灯房。垣记不肯照新标题继续抄写。",
+      "initial": {
+        "composition": [
+          [
+            "screen",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 510,
+        "budget": 535,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        540,
+        280,
+        560,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            6
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "sunshroom",
+          "pos": [
+            3,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            2,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 285,
+      "economy": {
+        "sun": 515,
+        "spent": 125,
+        "earned": 140
+      },
+      "commands": 198,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "screen",
+              347
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "4:7"
+        },
+        {
+          "time": 3.5,
+          "target": "2:1"
+        },
+        {
+          "time": 18,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 32.55000000000029,
+          "text": "大家都回到了灯房。垣记不肯照新标题继续抄写。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 17.800000000000118,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 14.100000000000065,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 7.099999999999983,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L3-1",
+      "map": "underground",
+      "strategy": "objective",
+      "status": "won",
+      "time": 47.7,
+      "result": "大家都回到了灯房。值班稿里的编号对应地下材料间。",
+      "initial": {
+        "composition": [
+          [
+            "screen",
+            "normal",
+            "normal"
+          ],
+          [
+            "screen",
+            "normal",
+            "normal"
+          ],
+          [
+            "cone",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 620,
+        "budget": 620,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2783999999999995,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        280,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "squash",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 300,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            1,
+            1
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            1,
+            2
+          ],
+          "hp": 480,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 2,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 2
+      },
+      "energy": 260,
+      "economy": {
+        "sun": 0,
+        "spent": 750,
+        "earned": 250
+      },
+      "commands": 288,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.89,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "screen",
+              207
+            ],
+            [
+              "normal",
+              50
+            ],
+            [
+              "normal",
+              50
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            1.89,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "screen",
+              240
+            ],
+            [
+              "normal",
+              70
+            ],
+            [
+              "normal",
+              70
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "cone",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "0:7"
+        },
+        {
+          "time": 4,
+          "target": "1:4"
+        },
+        {
+          "time": 8.5,
+          "target": "3:4"
+        },
+        {
+          "time": 20,
+          "target": "1:4"
+        },
+        {
+          "time": 24,
+          "target": "4:3"
+        },
+        {
+          "time": 27.5,
+          "target": "0:1"
+        },
+        {
+          "time": 35.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 47.69999999999943,
+          "text": "大家都回到了灯房。值班稿里的编号对应地下材料间。"
+        },
+        {
+          "time": 43.99999999999964,
+          "text": "后援队接到一名普通同胞，消耗50物资。"
+        },
+        {
+          "time": 43.499999999999666,
+          "text": "后援队接到一名普通同胞，消耗50物资。"
+        },
+        {
+          "time": 35.40000000000013,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 28.100000000000264,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L3-5",
+      "map": "underground",
+      "strategy": "objective",
+      "status": "won",
+      "time": 33.5,
+      "result": "大家都回到了灯房。工坊重新烧起炉火，却需要泵站补水。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 600,
+        "budget": 620,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7215999999999987,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        540,
+        260,
+        560,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "squash",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 300,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            6
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            2.38,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 440,
+      "economy": {
+        "sun": 50,
+        "spent": 575,
+        "earned": 125
+      },
+      "commands": 201,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.13,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              590
+            ],
+            [
+              "cone",
+              370
+            ],
+            [
+              "normal",
+              150
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              110
+            ],
+            [
+              "normal",
+              110
+            ],
+            [
+              "normal",
+              110
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              150
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 3.5,
+          "target": "1:4"
+        },
+        {
+          "time": 4.5,
+          "target": "3:4"
+        },
+        {
+          "time": 5.5,
+          "target": "2:4"
+        },
+        {
+          "time": 6.5,
+          "target": "3:3"
+        },
+        {
+          "time": 10.5,
+          "target": "2:1"
+        },
+        {
+          "time": 15,
+          "target": "2:2"
+        },
+        {
+          "time": 16,
+          "target": "2:1"
+        },
+        {
+          "time": 20.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 33.45000000000024,
+          "text": "大家都回到了灯房。工坊重新烧起炉火，却需要泵站补水。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 20.500000000000156,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 14.100000000000065,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 10.350000000000012,
+          "text": "封存口粮碑已接通。获得140物资。"
+        }
+      ]
+    },
+    {
+      "level": "L4-1",
+      "map": "pool",
+      "strategy": "objective",
+      "status": "won",
+      "time": 56.7,
+      "result": "大家都回到了灯房。地下水管通向货场蓄水池。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 700,
+        "budget": 705,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        440
+      ],
+      "plantsAlive": [
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            1,
+            1
+          ],
+          "hp": 480,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            0.1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 375,
+      "economy": {
+        "sun": 5,
+        "spent": 825,
+        "earned": 330
+      },
+      "commands": 342,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              630
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.3,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              610
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              110
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 4,
+          "target": "4:4"
+        },
+        {
+          "time": 17,
+          "target": "4:3"
+        },
+        {
+          "time": 17.5,
+          "target": "4:2"
+        },
+        {
+          "time": 20.5,
+          "target": "1:4"
+        },
+        {
+          "time": 23,
+          "target": "3:2"
+        },
+        {
+          "time": 24,
+          "target": "4:3"
+        },
+        {
+          "time": 28,
+          "target": "0:1"
+        },
+        {
+          "time": 37.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 56.74999999999891,
+          "text": "大家都回到了灯房。地下水管通向货场蓄水池。"
+        },
+        {
+          "time": 56.44999999999893,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 49.34999999999933,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 44.5999999999996,
+          "text": "咖啡豆唤醒了小喷菇。"
+        },
+        {
+          "time": 37.50000000000001,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        }
+      ]
+    },
+    {
+      "level": "L4-5",
+      "map": "pool",
+      "strategy": "objective",
+      "status": "won",
+      "time": 50.3,
+      "result": "大家都回到了灯房。阿檐拒绝把居民用水断掉，被留在旧控制室。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 700,
+        "budget": 705,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        60,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            2,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            0.33,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 455,
+      "economy": {
+        "sun": 55,
+        "spent": 775,
+        "earned": 330
+      },
+      "commands": 303,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              570
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              570
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "4:7"
+        },
+        {
+          "time": 3.5,
+          "target": "3:4"
+        },
+        {
+          "time": 14,
+          "target": "4:3"
+        },
+        {
+          "time": 18,
+          "target": "3:3"
+        },
+        {
+          "time": 21.5,
+          "target": "0:1"
+        },
+        {
+          "time": 35,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 50.34999999999928,
+          "text": "大家都回到了灯房。阿檐拒绝把居民用水断掉，被留在旧控制室。"
+        },
+        {
+          "time": 49.34999999999933,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 37.79999999999999,
+          "text": "咖啡豆唤醒了小喷菇。"
+        },
+        {
+          "time": 35.15000000000014,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 34.700000000000166,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L5-1",
+      "map": "fog",
+      "strategy": "objective",
+      "status": "won",
+      "time": 90.2,
+      "result": "大家都回到了灯房。泵站寄件签经过低洼排水地，雾把路灯散成一团。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 750,
+        "budget": 790,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "plantern",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "squash",
+          "pos": [
+            4,
+            2
+          ],
+          "hp": 300,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 390,
+      "economy": {
+        "sun": 550,
+        "spent": 450,
+        "earned": 500
+      },
+      "commands": 543,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              250
+            ],
+            [
+              "normal",
+              90
+            ],
+            [
+              "normal",
+              90
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              430
+            ],
+            [
+              "normal",
+              90
+            ],
+            [
+              "normal",
+              90
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              470
+            ],
+            [
+              "normal",
+              90
+            ],
+            [
+              "normal",
+              90
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 46,
+          "target": "1:4"
+        },
+        {
+          "time": 48,
+          "target": "4:4"
+        },
+        {
+          "time": 50,
+          "target": "1:4"
+        },
+        {
+          "time": 52,
+          "target": "4:4"
+        },
+        {
+          "time": 53.5,
+          "target": "1:4"
+        },
+        {
+          "time": 56,
+          "target": "4:3"
+        },
+        {
+          "time": 59.5,
+          "target": "0:1"
+        },
+        {
+          "time": 71,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 90.24999999999702,
+          "text": "大家都回到了灯房。泵站寄件签经过低洼排水地，雾把路灯散成一团。"
+        },
+        {
+          "time": 70.99999999999811,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 67.09999999999833,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 59.04999999999878,
+          "text": "封存口粮碑已接通。获得100物资。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 24.600000000000215,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L5-5",
+      "map": "fog",
+      "strategy": "water",
+      "status": "won",
+      "time": 50.5,
+      "result": "大家都回到了灯房。对照把普通口粮的原页与吃脑子的成稿放在一起，被指成故意挑拨住户。",
+      "initial": {
+        "composition": [
+          [
+            "ducky",
+            "ducky",
+            "ducky"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ],
+          [
+            "normal",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 760,
+        "budget": 790,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            3
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            4,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            2,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 470,
+      "economy": {
+        "sun": 0,
+        "spent": 750,
+        "earned": 250
+      },
+      "commands": 306,
+      "rejects": 8,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "ducky",
+              90
+            ],
+            [
+              "ducky",
+              230
+            ],
+            [
+              "ducky",
+              230
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.09,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              510
+            ],
+            [
+              "normal",
+              170
+            ],
+            [
+              "normal",
+              170
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              150
+            ],
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              190
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 11,
+          "target": "1:3"
+        },
+        {
+          "time": 13.5,
+          "target": "3:4"
+        },
+        {
+          "time": 15,
+          "target": "1:3"
+        },
+        {
+          "time": 16.5,
+          "target": "3:4"
+        },
+        {
+          "time": 18,
+          "target": "1:3"
+        },
+        {
+          "time": 19.5,
+          "target": "3:3"
+        },
+        {
+          "time": 23,
+          "target": "3:1"
+        },
+        {
+          "time": 31.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 50.549999999999265,
+          "text": "大家都回到了灯房。对照把普通口粮的原页与吃脑子的成稿放在一起，被指成故意挑拨住户。"
+        },
+        {
+          "time": 49.34999999999933,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 42.24999999999974,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 38.69999999999994,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 31.600000000000314,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 31.450000000000312,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        }
+      ]
+    },
+    {
+      "level": "L6-1",
+      "map": "canal",
+      "strategy": "objective",
+      "status": "won",
+      "time": 70,
+      "result": "大家都回到了灯房。雾中邮路接着旧运河。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 850,
+        "budget": 875,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            2
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        480,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "wallnut",
+          "pos": [
+            3,
+            2
+          ],
+          "hp": 480,
+          "sleep": false
+        },
+        {
+          "type": "squash",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 300,
+          "sleep": false
+        },
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 130,
+          "sleep": true
+        },
+        {
+          "type": "puff",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": true
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            1,
+            2
+          ],
+          "hp": 480,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 9,
+        "swallowed": 0,
+        "crushed": 9,
+        "reinforcements": 8
+      },
+      "energy": 5,
+      "economy": {
+        "sun": 30,
+        "spent": 925,
+        "earned": 455
+      },
+      "commands": 417,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "normal",
+              190
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 13.5,
+          "target": "4:3"
+        },
+        {
+          "time": 14.5,
+          "target": "3:3"
+        },
+        {
+          "time": 17,
+          "target": "4:3"
+        },
+        {
+          "time": 20.5,
+          "target": "1:1"
+        },
+        {
+          "time": 38,
+          "target": "1:2"
+        },
+        {
+          "time": 44,
+          "target": "0:2"
+        },
+        {
+          "time": 45,
+          "target": "1:1"
+        },
+        {
+          "time": 54.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 69.99999999999817,
+          "text": "大家都回到了灯房。雾中邮路接着旧运河。"
+        },
+        {
+          "time": 63.549999999998526,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 59.99999999999873,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 54.34999999999905,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 42.24999999999974,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L6-5",
+      "map": "canal",
+      "strategy": "objective",
+      "status": "won",
+      "time": 49.2,
+      "result": "大家都回到了灯房。墩婆替住户搬过床架和药箱。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "normal",
+            "normal"
+          ]
+        ],
+        "cost": 850,
+        "budget": 875,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": false,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        520,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "sunshroom",
+          "pos": [
+            1,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "pea",
+          "pos": [
+            4,
+            3
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            4,
+            2
+          ],
+          "hp": 130,
+          "sleep": true
+        },
+        {
+          "type": "squash",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 300,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 485,
+      "economy": {
+        "sun": 5,
+        "spent": 800,
+        "earned": 305
+      },
+      "commands": 297,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              570
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              510
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              630
+            ],
+            [
+              "normal",
+              210
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "4:7"
+        },
+        {
+          "time": 3.5,
+          "target": "4:3"
+        },
+        {
+          "time": 15.5,
+          "target": "3:2"
+        },
+        {
+          "time": 19.5,
+          "target": "3:3"
+        },
+        {
+          "time": 23,
+          "target": "3:1"
+        },
+        {
+          "time": 26,
+          "target": "4:1"
+        },
+        {
+          "time": 30,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 49.24999999999934,
+          "text": "大家都回到了灯房。墩婆替住户搬过床架和药箱。"
+        },
+        {
+          "time": 42.24999999999974,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 35.15000000000014,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 29.90000000000029,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 22.700000000000188,
+          "text": "封存口粮碑已接通。获得140物资。"
+        },
+        {
+          "time": 21.100000000000165,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L7-1",
+      "map": "roof",
+      "strategy": "objective",
+      "status": "won",
+      "time": 53.3,
+      "result": "大家都回到了灯房。墩婆的维修竖井通到旧街屋顶。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ]
+        ],
+        "cost": 900,
+        "budget": 960,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": true
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            2
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        80,
+        600,
+        600,
+        200,
+        0
+      ],
+      "plantsAlive": [
+        {
+          "type": "cabbagepult",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "cabbagepult",
+          "pos": [
+            1,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "cabbagepult",
+          "pos": [
+            4,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "wallnut",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 480,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 800,
+      "economy": {
+        "sun": 0,
+        "spent": 800,
+        "earned": 300
+      },
+      "commands": 321,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 0,
+          "target": "0:7"
+        },
+        {
+          "time": 4,
+          "target": "1:4"
+        },
+        {
+          "time": 10.5,
+          "target": "3:4"
+        },
+        {
+          "time": 18.5,
+          "target": "4:2"
+        },
+        {
+          "time": 22,
+          "target": "3:4"
+        },
+        {
+          "time": 22.5,
+          "target": "2:4"
+        },
+        {
+          "time": 26,
+          "target": "0:1"
+        },
+        {
+          "time": 38,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 53.349999999999106,
+          "text": "大家都回到了灯房。墩婆的维修竖井通到旧街屋顶。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 43.99999999999964,
+          "text": "第5行栅栏被击穿，后方失去这一段掩护。"
+        },
+        {
+          "time": 43.499999999999666,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 42.999999999999694,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 42.24999999999974,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    },
+    {
+      "level": "L7-5",
+      "map": "roof",
+      "strategy": "objective",
+      "status": "won",
+      "time": 55.8,
+      "result": "大家都回到了灯房。肖笔测量过屋顶承重，守卫说那是在规划巨型武器。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ]
+        ],
+        "cost": 900,
+        "budget": 960,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": true
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            3
+          ],
+          "claimed": true,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2.7390000000000008,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        200,
+        360,
+        360,
+        360
+      ],
+      "plantsAlive": [],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 880,
+      "economy": {
+        "sun": 25,
+        "spent": 775,
+        "earned": 300
+      },
+      "commands": 336,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2.12,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 14.5,
+          "target": "3:2"
+        },
+        {
+          "time": 15.5,
+          "target": "1:3"
+        },
+        {
+          "time": 17.5,
+          "target": "3:2"
+        },
+        {
+          "time": 21,
+          "target": "3:3"
+        },
+        {
+          "time": 24.5,
+          "target": "1:3"
+        },
+        {
+          "time": 29,
+          "target": "1:4"
+        },
+        {
+          "time": 33.5,
+          "target": "2:1"
+        },
+        {
+          "time": 40.5,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 55.849999999998964,
+          "text": "大家都回到了灯房。肖笔测量过屋顶承重，守卫说那是在规划巨型武器。"
+        },
+        {
+          "time": 45.799999999999535,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 43.499999999999666,
+          "text": "接应队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 40.29999999999985,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 38.69999999999994,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 33.500000000000234,
+          "text": "后援队使用整备碑修补护具，消耗30物资。"
+        }
+      ]
+    },
+    {
+      "level": "L8-1",
+      "map": "roof-night",
+      "strategy": "split",
+      "status": "won",
+      "time": 74.3,
+      "result": "大家都回到了灯房。白天的屋面图还缺夜间信号。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "ladder",
+            "normal"
+          ]
+        ],
+        "cost": 995,
+        "budget": 1045,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            0,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            2,
+            4
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            4,
+            3
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          1.2609999999999992,
+          8
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "puff",
+          "pos": [
+            2,
+            3
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            0,
+            2
+          ],
+          "hp": 130,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 305,
+      "economy": {
+        "sun": 280,
+        "spent": 625,
+        "earned": 405
+      },
+      "commands": 447,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            1.88,
+            8
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              640
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            0.1,
+            6
+          ],
+          "path": 4,
+          "members": [
+            [
+              "bucket",
+              550
+            ],
+            [
+              "cone",
+              390
+            ],
+            [
+              "normal",
+              170
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            0,
+            4.98
+          ],
+          "path": 6,
+          "members": [
+            [
+              "bucket",
+              550
+            ],
+            [
+              "ladder",
+              380
+            ],
+            [
+              "normal",
+              110
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 13.5,
+          "target": "4:3"
+        },
+        {
+          "time": 15.5,
+          "target": "1:4"
+        },
+        {
+          "time": 17,
+          "target": "4:2"
+        },
+        {
+          "time": 17.5,
+          "target": "1:4"
+        },
+        {
+          "time": 26.5,
+          "target": "2:3"
+        },
+        {
+          "time": 46,
+          "target": "2:4"
+        },
+        {
+          "time": 50,
+          "target": "0:1"
+        },
+        {
+          "time": 59,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 74.34999999999792,
+          "text": "大家都回到了灯房。白天的屋面图还缺夜间信号。"
+        },
+        {
+          "time": 59.99999999999873,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 58.7499999999988,
+          "text": "房门打开了。获救同胞跟随开门的小队，请将他们护送回营地。"
+        },
+        {
+          "time": 56.44999999999893,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 49.9999999999993,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 49.9999999999993,
+          "text": "回程整备碑已接通。可以在此整备。"
+        }
+      ]
+    },
+    {
+      "level": "L8-5",
+      "map": "roof-night",
+      "strategy": "split",
+      "status": "won",
+      "time": 71.2,
+      "result": "大家都回到了灯房。简程写下了驾驶保护、冰火冷却和支援舱的检查项。",
+      "initial": {
+        "composition": [
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "cone",
+            "normal"
+          ],
+          [
+            "bucket",
+            "ladder",
+            "normal"
+          ]
+        ],
+        "cost": 995,
+        "budget": 1045,
+        "economySunflowers": [
+          {
+            "id": "economy-0",
+            "row": 0,
+            "col": -1.15
+          },
+          {
+            "id": "economy-1",
+            "row": 1,
+            "col": -1.15
+          },
+          {
+            "id": "economy-2",
+            "row": 2,
+            "col": -1.15
+          },
+          {
+            "id": "economy-3",
+            "row": 3,
+            "col": -1.15
+          },
+          {
+            "id": "economy-4",
+            "row": 4,
+            "col": -1.15
+          }
+        ]
+      },
+      "claims": [
+        {
+          "kind": "relay",
+          "pos": [
+            4,
+            7
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "repair",
+          "pos": [
+            1,
+            4
+          ],
+          "claimed": true,
+          "broken": false
+        },
+        {
+          "kind": "food",
+          "pos": [
+            3,
+            2
+          ],
+          "claimed": false,
+          "broken": false
+        }
+      ],
+      "goal": {
+        "open": true,
+        "progress": 4.049999999999994
+      },
+      "follower": {
+        "position": [
+          2,
+          7.260999999999999
+        ],
+        "escort": 0
+      },
+      "doctor": 10,
+      "fences": [
+        600,
+        600,
+        600,
+        600,
+        600
+      ],
+      "plantsAlive": [
+        {
+          "type": "fumeshroom",
+          "pos": [
+            4,
+            2
+          ],
+          "hp": 180,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            3,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "sunshroom",
+          "pos": [
+            0,
+            4
+          ],
+          "hp": 130,
+          "sleep": false
+        },
+        {
+          "type": "puff",
+          "pos": [
+            2,
+            6
+          ],
+          "hp": 43.39130434782609,
+          "sleep": false
+        },
+        {
+          "type": "fumeshroom",
+          "pos": [
+            2,
+            4
+          ],
+          "hp": 180,
+          "sleep": false
+        }
+      ],
+      "casualties": {
+        "casualties": 0,
+        "swallowed": 0,
+        "crushed": 0,
+        "reinforcements": 0
+      },
+      "energy": 225,
+      "economy": {
+        "sun": 5,
+        "spent": 900,
+        "earned": 405
+      },
+      "commands": 429,
+      "rejects": 0,
+      "teams": [
+        {
+          "id": 0,
+          "pos": [
+            2,
+            7.88
+          ],
+          "path": 1,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 1,
+          "pos": [
+            2,
+            8
+          ],
+          "path": 0,
+          "members": [
+            [
+              "bucket",
+              510
+            ],
+            [
+              "cone",
+              430
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        },
+        {
+          "id": 2,
+          "pos": [
+            2,
+            5.55
+          ],
+          "path": 3,
+          "members": [
+            [
+              "bucket",
+              650
+            ],
+            [
+              "ladder",
+              480
+            ],
+            [
+              "normal",
+              210
+            ]
+          ]
+        }
+      ],
+      "targetHistory": [
+        {
+          "time": 9.5,
+          "target": "0:4"
+        },
+        {
+          "time": 19.5,
+          "target": "1:4"
+        },
+        {
+          "time": 23,
+          "target": "1:1"
+        },
+        {
+          "time": 32,
+          "target": "3:1"
+        },
+        {
+          "time": 40,
+          "target": "2:1"
+        },
+        {
+          "time": 44,
+          "target": "3:1"
+        },
+        {
+          "time": 48.5,
+          "target": "2:1"
+        },
+        {
+          "time": 49,
+          "target": "2:8"
+        }
+      ],
+      "events": [
+        {
+          "time": 71.1999999999981,
+          "text": "大家都回到了灯房。简程写下了驾驶保护、冰火冷却和支援舱的检查项。"
+        },
+        {
+          "time": 66.99999999999834,
+          "text": "后援队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 62.99999999999856,
+          "text": "开路队使用整备碑修补护具，消耗30物资。"
+        },
+        {
+          "time": 59.99999999999873,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 56.44999999999893,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        },
+        {
+          "time": 52.89999999999913,
+          "text": "看守观察到行间压力转向，调整种植与换行。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,625 @@
+[
+  {
+    "name": "night-prep60.png",
+    "levelIndex": 5,
+    "status": "battle",
+    "time": 0,
+    "sun": 475,
+    "plants": [
+      {
+        "type": "sunshroom",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [],
+    "shots": []
+  },
+  {
+    "name": "night-battle3.png",
+    "levelIndex": 5,
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "sun": 475,
+    "plants": [
+      {
+        "type": "sunshroom",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [],
+    "shots": []
+  },
+  {
+    "name": "pool-prep60.png",
+    "levelIndex": 15,
+    "status": "battle",
+    "time": 0,
+    "sun": 200,
+    "plants": [
+      {
+        "type": "sunshroom",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "pea",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "pea",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [],
+    "shots": []
+  },
+  {
+    "name": "pool-battle3.png",
+    "levelIndex": 15,
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "sun": 200,
+    "plants": [
+      {
+        "type": "sunshroom",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "pea",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "pea",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [],
+    "shots": [
+      {
+        "id": "shot-4",
+        "row": 4,
+        "lane": 4,
+        "col": 5.760000000000002,
+        "originCol": 4,
+        "dr": 0,
+        "dc": 1,
+        "damage": 20,
+        "type": "pea",
+        "airborne": false,
+        "lobbed": false,
+        "range": 12,
+        "life": 3.950000000000002
+      }
+    ]
+  },
+  {
+    "name": "fog-prep60.png",
+    "levelIndex": 20,
+    "status": "battle",
+    "time": 0,
+    "sun": 425,
+    "plants": [
+      {
+        "type": "plantern",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "squash",
+        "row": 4,
+        "col": 2,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 0,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [],
+    "shots": []
+  },
+  {
+    "name": "fog-battle3.png",
+    "levelIndex": 20,
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "sun": 425,
+    "plants": [
+      {
+        "type": "plantern",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "squash",
+        "row": 4,
+        "col": 2,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 0,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [],
+    "shots": []
+  },
+  {
+    "name": "roof-prep60.png",
+    "levelIndex": 30,
+    "status": "battle",
+    "time": 0,
+    "sun": 0,
+    "plants": [
+      {
+        "type": "pea",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 0,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [
+      {
+        "id": "support-0",
+        "type": "flowerpot",
+        "row": 1,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-1",
+        "type": "flowerpot",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-2",
+        "type": "flowerpot",
+        "row": 4,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-3",
+        "type": "flowerpot",
+        "row": 0,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      }
+    ],
+    "shots": []
+  },
+  {
+    "name": "roof-battle3.png",
+    "levelIndex": 30,
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "sun": 0,
+    "plants": [
+      {
+        "type": "pea",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 0,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [
+      {
+        "id": "support-0",
+        "type": "flowerpot",
+        "row": 1,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-1",
+        "type": "flowerpot",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-2",
+        "type": "flowerpot",
+        "row": 4,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-3",
+        "type": "flowerpot",
+        "row": 0,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot-5",
+        "row": 1,
+        "lane": 1,
+        "col": 5.760000000000002,
+        "originCol": 4,
+        "dr": 0,
+        "dc": 1,
+        "damage": 20,
+        "type": "pea",
+        "airborne": false,
+        "lobbed": false,
+        "range": 12,
+        "life": 3.950000000000002
+      }
+    ]
+  },
+  {
+    "name": "roof-night-prep60.png",
+    "levelIndex": 35,
+    "status": "battle",
+    "time": 0,
+    "sun": 250,
+    "plants": [
+      {
+        "type": "sunshroom",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "fumeshroom",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 0,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 1,
+        "col": 2,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 2,
+        "col": 3,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [
+      {
+        "id": "support-0",
+        "type": "flowerpot",
+        "row": 1,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-1",
+        "type": "flowerpot",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-2",
+        "type": "flowerpot",
+        "row": 4,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-3",
+        "type": "flowerpot",
+        "row": 0,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-4",
+        "type": "flowerpot",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-5",
+        "type": "flowerpot",
+        "row": 2,
+        "col": 3,
+        "hp": 180,
+        "maxHp": 180
+      }
+    ],
+    "shots": []
+  },
+  {
+    "name": "roof-night-battle3.png",
+    "levelIndex": 35,
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "sun": 250,
+    "plants": [
+      {
+        "type": "sunshroom",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "fumeshroom",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 0,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 1,
+        "col": 2,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 2,
+        "col": 3,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [
+      {
+        "id": "support-0",
+        "type": "flowerpot",
+        "row": 1,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-1",
+        "type": "flowerpot",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-2",
+        "type": "flowerpot",
+        "row": 4,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-3",
+        "type": "flowerpot",
+        "row": 0,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-4",
+        "type": "flowerpot",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-5",
+        "type": "flowerpot",
+        "row": 2,
+        "col": 3,
+        "hp": 180,
+        "maxHp": 180
+      }
+    ],
+    "shots": []
+  },
+  {
+    "name": "fog-blover-wind.png",
+    "fixture": "Actual model placement after authored fixture clears generated non-opening plants; AI paused; sun supplied for isolated visual check",
+    "plants": [
+      {
+        "id": 9,
+        "type": "blover",
+        "row": 1,
+        "col": 6,
+        "hp": 130,
+        "maxHp": 130,
+        "path": [],
+        "moving": false,
+        "attack": 0,
+        "hit": 0,
+        "cooldown": 0.39999999999999963,
+        "lastMove": -10,
+        "squad": "守门组",
+        "order": "警戒",
+        "facing": 1,
+        "opening": false,
+        "sunTimer": 12.5,
+        "ability": {
+          "state": "idle",
+          "elapsed": 0
+        },
+        "cactusHeight": 0,
+        "sleeping": false,
+        "createdAt": 59.99999999999873,
+        "growth": 0.6,
+        "coffee": 0,
+        "windStarted": 0.05
+      }
+    ],
+    "supports": [],
+    "shots": []
+  }
+]

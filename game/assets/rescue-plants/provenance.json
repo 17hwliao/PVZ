@@ -1,0 +1,29 @@
+{
+  "description": "Native Squash animation and original image parts from the locally supplied classic game. No generated replacement artwork.",
+  "animation": {
+    "source": "reanim/Squash.reanim",
+    "sha256": "9449c49d1e811466bec09e843364c3ef6ecd04dd30cfe298b202f273a17ec046"
+  },
+  "entries": [
+    {
+      "file": "assets/rescue-plants/Squash_stem.png",
+      "source": "reanim/Squash_stem.png",
+      "sha256": "ad08aafbd96f3528c5b1c1e831f18a2cc02f45d749dc8f32138621391fbb2324"
+    },
+    {
+      "file": "assets/rescue-plants/Squash_body.png",
+      "source": "reanim/Squash_body.png",
+      "sha256": "d890a454d2999dc0d31942cd3b99555c5ffbe0559d931d3e5dcc2606bbebd3c4"
+    },
+    {
+      "file": "assets/rescue-plants/Squash_eyes.png",
+      "source": "reanim/Squash_eyes.png",
+      "sha256": "b872d407fbac99a2cdbd011b54e8eaf7e0d9cff80878e7554bdf0ff601e3a122"
+    },
+    {
+      "file": "assets/rescue-plants/Squash_eyebrows.png",
+      "source": "reanim/Squash_eyebrows.png",
+      "sha256": "67f7bbaafb673371c0d326ecfd0b453679a0807834a237ccb1dd9592909d1927"
+    }
+  ]
+}

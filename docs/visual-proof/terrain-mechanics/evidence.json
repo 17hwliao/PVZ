@@ -1,0 +1,58 @@
+{
+  "revision": "terrain-mechanics-20261026b",
+  "capture": "production model + native renderer on offscreen canvas; not a browser page screenshot",
+  "normalFrames": [
+    "roof-battle3.png",
+    "pool-battle3.png",
+    "night-battle3.png",
+    "fog-battle3.png",
+    "roof-night-battle3.png"
+  ],
+  "isolatedVisualFixtures": [
+    "roof-sleep-supported.png",
+    "fog-blover-wind.png"
+  ],
+  "fixturesNote": "Authored placement with supplied sun and generated defenders removed, used only to inspect sleep and wind artwork. Not playability evidence.",
+  "browserVerification": "Local browser disabled in Work settings; current full page layout and real interactions not verified.",
+  "automatedSuite": {
+    "scripts": 24,
+    "checks": 205,
+    "syntaxFiles": 33,
+    "references": 544,
+    "missing": 0
+  },
+  "followup": "After the complete suite, atlas copy/entry link changed; its 10 checks passed again.",
+  "sourceHashes": {
+    "rescue-design-model.js": "0de28503b26f58c8c95b37a5f8219419f38967964cba441150acc85a289b897c",
+    "terrain-campaign-data.js": "99375ecc0b2cefb5b2f7a67bd077c5ffe3709013a388390ab0c4c1cf65e04d35",
+    "terrain-unit-data.js": "c5d5823f2f008e4af2a460e30560f34d59fef52d856588c728aea6a256310fc2",
+    "terrain-rules.js": "d7c6da30591c0551230e7e79255b1ed08b51bb3cb07da51c747c857bcbf7052e",
+    "terrain-campaign-setup.js": "9d61bd1df893272543c6f54e9fd748304d0910807086b0e48e46576b55f19da4",
+    "rescue-design-renderer.js": "c32d666b9da358105665b3b937579da4282c4616bf25eebc9836705da7fc2245",
+    "renderer.js": "dd269527898aeb76969ebd9d018ba4a8e3627e3fbdd5632666b24b5d719e56a8",
+    "rescue-design.js": "91a29feca67e1a5cdb03888713ea65599f7fcbf0ddb064555c8729a27bcd4860",
+    "battle-atlas.js": "4093866935b48dcd0c99682d60fbee69463714f8ac5a007e4c93337112b07a7a",
+    "terrain-plant-assets.js": "5fb860a1e362a5cfe3e6a926bb8edb2a3807f64405b4c7745c5a3b9262b9aeac"
+  },
+  "imageHashes": {
+    "classic-seven-opening.png": "f8125bb98717634ba08f841ec72536ca973a2a4201787a60abd6274dc2ac6fb2",
+    "fog-battle3.png": "fe6331fea8fc951e35ad884fff70cda263055c9885cfad30d69dc87f0774b9d3",
+    "fog-blover-wind.png": "ea2891f2477f125369fe3595b2faffdfb90e33b87f7349615a2d85b81925a37f",
+    "night-battle3.png": "e78be6bf572fd25cf12663e0f31f52aab700093045c26a7ae991bfbe3cb70ea2",
+    "pool-battle3.png": "ab1f3f8a88024c7cd7a887b896a2b7ffc3910c0632e7abcc1c986529f1a8fa5d",
+    "roof-battle3.png": "63701feb3d63cb8c6f82c78098deafae6410735ca69c8642dd4f5f93cef41549",
+    "roof-night-battle3.png": "00b0cbcb2515c41eace915d303e3cd05cf5eaa463c1eb40a69122541da836813",
+    "roof-sleep-supported.png": "5a81cda5a47758d6529a9ca3e73c5125960e071174a2f3a7a9c6538fa843baea"
+  },
+  "latestAssetCheck": {
+    "syntaxFiles": 33,
+    "references": 539,
+    "missing": 0,
+    "note": "cache-revision normalization reduced duplicate URL references from544; same local resources"
+  },
+  "sourceMirror": {
+    "files": 548,
+    "allHashesMatch": true,
+    "httpVerifiedEntriesAndScripts": 24
+  }
+}

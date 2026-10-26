@@ -1,0 +1,12 @@
+PASS 现有七关都有独立来信、门后对话、回营与下一行动因果，新增设计不冒充可玩关卡
+PASS 六张拟定路线保留五行十列与五栅栏，初始路线不依赖尚未获救的巨人
+PASS 吞食与压砸的战损累积不随尸体淡出或补员被抹掉，回信不会修改战斗与物资
+PASS 未完成接应时不预写团聚，不因开信或浏览设计解锁巨人和小鬼
+PASS 登记员以低耐久友好向日葵护送，不再画成僵尸或进入敌方植物列表
+PASS 来信在准备前自动展示，翻阅暂停资源、冷却与60秒计时；关闭后保持原手动暂停状态
+PASS 六份后续设计可翻阅，草图50格且清楚标注未开放，浏览不会切换或改写对局
+PASS 实际开门触发交谈并暂停，护送返回后读回信，收好信件才接续下一关
+PASS 现有末关接到后续设计册，不自动循环第一章，不提前写正式冒险存档
+{"passed":9,"scope":"seven rescue letters/dialogues/camp responses, six distinct proposed encounters, pause-safe narrative, actual casualty ledger and friendly witness"}
+
+{"syntaxFiles":20,"localReferences":438,"levels":7,"letters":7,"comicPlacements":8,"prologueBeats":20,"durationSeconds":163,"missingReferences":0}

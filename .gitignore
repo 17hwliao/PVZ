@@ -12,3 +12,5 @@ private-keys/
 *.log
 .env*
 .DS_Store
+
+/tools/visual-qa/ui-cases.html

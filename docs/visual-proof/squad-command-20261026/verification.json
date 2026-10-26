@@ -1,0 +1,181 @@
+{
+  "revision": "squad-command-20261026a",
+  "suite": {
+    "checks": 238,
+    "scripts": 27,
+    "rootSyntaxFiles": 33,
+    "localReferences": 539,
+    "missing": 0,
+    "sourceStableDuringExecution": true
+  },
+  "aiPressure": {
+    "cases": 40,
+    "realDoctorHits": 400,
+    "allDoctorCountsZero": true,
+    "knownBarrierImpacts": 0,
+    "firstHitRangeSeconds": [
+      44,
+      221
+    ],
+    "conditions": "Default player squads idle, full 60 second preparation; real paid AI; five hidden rows per map. No doctor relocation, fence/hp edits or damage injection."
+  },
+  "sourceHashes": {
+    "rescue-design-model.js": "7d1dcad595af3ff9793505f9cd2c656795789d3ec3c0aeb28e7f2e997610b1ac",
+    "terrain-campaign-setup.js": "0169557cffaccbc683351e917f011e326f89c186056048833361ba2c18b1e6df",
+    "rescue-design.js": "539054171613e038af55a43cd67e2551eaa8949e0e94a0389486c00850581a4d",
+    "rescue-design-renderer.js": "4f82d945c596b725779066e01972950eea861465ef76d25679bcbf7da272ced9",
+    "rescue-design.css": "8cdd224ff03b6869d616cc405785ed3a5ed8dee2a3bcb7ec79d395913cd02ade",
+    "terrain-campaign.html": "993fb83a0ec14a929ee26a760e086e4a6734c9277b66c06ef66feadd247b736b",
+    "rescue-design.html": "36c6a31e7a7306a961afb8190b48c6f041820fa899baf597559eba5099615354"
+  },
+  "mirror": {
+    "files": 548,
+    "copied": [
+      "battle-atlas.html",
+      "index.html",
+      "README.md",
+      "rescue-design-model.js",
+      "rescue-design-renderer.js",
+      "rescue-design.css",
+      "rescue-design.html",
+      "rescue-design.js",
+      "terrain-campaign-setup.js",
+      "terrain-campaign.html"
+    ],
+    "allHashesMatch": true
+  },
+  "http": [
+    {
+      "ref": "index.html",
+      "status": 200,
+      "sha256": "8e577e5a7ab474337a4058619447a4c330f2cd9c10a19a3f974148c30a21d81c"
+    },
+    {
+      "ref": "terrain-campaign.html",
+      "status": 200,
+      "sha256": "993fb83a0ec14a929ee26a760e086e4a6734c9277b66c06ef66feadd247b736b"
+    },
+    {
+      "ref": "rescue-design.html",
+      "status": 200,
+      "sha256": "36c6a31e7a7306a961afb8190b48c6f041820fa899baf597559eba5099615354"
+    },
+    {
+      "ref": "battle-atlas.html",
+      "status": 200,
+      "sha256": "f83aaaf5b68bc810adfcb7b038b5176da1e9d38e5351f996758d51244accb258"
+    },
+    {
+      "ref": "rescue-design.css",
+      "status": 200,
+      "sha256": "8cdd224ff03b6869d616cc405785ed3a5ed8dee2a3bcb7ec79d395913cd02ade"
+    },
+    {
+      "ref": "assets-data.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "294233fa7c51af3c49b1d73c5cdd5192a73a67b69bc8d755f0c48c4e7975168d"
+    },
+    {
+      "ref": "engine.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "d66d13190172b41d96a6ba3e0fe6ab9a373ed66bd2b253f2a2988db2ffc7ea60"
+    },
+    {
+      "ref": "renderer.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "dd269527898aeb76969ebd9d018ba4a8e3627e3fbdd5632666b24b5d719e56a8"
+    },
+    {
+      "ref": "rescue-plant-assets.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "33157491a73164df069109e31d064089366a4a936ae6d6f291781f5d14461954"
+    },
+    {
+      "ref": "rescue-design-data.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "1bf13379196af72b8264d6283d50aec1ae1249313b2f45a34bba930c4bc6e72f"
+    },
+    {
+      "ref": "rescue-story-data.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "f9e84843dd82e955b31d138a6901d556acaed7c5dbd2b74c1e8e203b8669f053"
+    },
+    {
+      "ref": "battle-map-land.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "1a03bedad580703961864e6b0c0ff8ad69e1cc21400b615854438c5b96cf5ac8"
+    },
+    {
+      "ref": "battle-map-water-roof.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "ff91051c57768b9a5fa7e8794f7be6f38791cd516bae871947b71bd5cc2bd397"
+    },
+    {
+      "ref": "battle-map-data.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "d76b15f59840c8f7574b534cb2482c952027d3f3a1a654673a0df0167b252976"
+    },
+    {
+      "ref": "terrain-unit-data.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "3d41e0cf00555c116393552715d606869fd10a2461dc8f33afbda2a6a67a2fc0"
+    },
+    {
+      "ref": "terrain-campaign-data.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "99375ecc0b2cefb5b2f7a67bd077c5ffe3709013a388390ab0c4c1cf65e04d35"
+    },
+    {
+      "ref": "terrain-plant-assets.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "5fb860a1e362a5cfe3e6a926bb8edb2a3807f64405b4c7745c5a3b9262b9aeac"
+    },
+    {
+      "ref": "terrain-rules.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "d7c6da30591c0551230e7e79255b1ed08b51bb3cb07da51c747c857bcbf7052e"
+    },
+    {
+      "ref": "terrain-campaign-setup.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "0169557cffaccbc683351e917f011e326f89c186056048833361ba2c18b1e6df"
+    },
+    {
+      "ref": "terrain-progress.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "35b37036937a1f6d566a0cb36143226412fe8140c5d9142f1439acca3a232590"
+    },
+    {
+      "ref": "rescue-story-ui.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "69a99c415548a362e21296069882bca0329d6fb51482da8ad2b22e2e60d30d39"
+    },
+    {
+      "ref": "rescue-design-model.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "7d1dcad595af3ff9793505f9cd2c656795789d3ec3c0aeb28e7f2e997610b1ac"
+    },
+    {
+      "ref": "battle-environment.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "64ffed10f3a01c6966066eb6a1257e8420e36dc0e8687f6fc30b93c405ce08c8"
+    },
+    {
+      "ref": "rescue-design-renderer.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "4f82d945c596b725779066e01972950eea861465ef76d25679bcbf7da272ced9"
+    },
+    {
+      "ref": "rescue-design.js?v=squad-command-20261026a",
+      "status": 200,
+      "sha256": "539054171613e038af55a43cd67e2551eaa8949e0e94a0389486c00850581a4d"
+    }
+  ],
+  "visual": "Production offscreen canvas only. HTML controls verified with DOM and geometry tests; no actual browser page visual acceptance, browser is disabled in Work settings.",
+  "images": {
+    "linked-squads-canvas.png": "35c1700f2b7977aecaf12cffab17ef5c4b3a0ab317bcb178fae00bb02ec95dae",
+    "actual-first-doctor-hit.png": "4c8317f99a9355afcc4f0636228483df7c54a303f36562173a1dcd98689be6ae"
+  },
+  "packaged": false,
+  "remotePublished": false
+}

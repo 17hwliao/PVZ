@@ -1,0 +1,2782 @@
+{
+  "version": "0.7.0",
+  "build": 700,
+  "gameFileCount": 551,
+  "pcAndApkAllGameFilesIdentical": true,
+  "desktopNativeModulesIncluded": true,
+  "windowsArchitecture": "AMD64",
+  "androidPackage": "cn.zombossrise.game",
+  "androidVersionName": "0.7.0",
+  "androidVersionCode": 700,
+  "androidMinSdk": 26,
+  "androidTargetSdk": 36,
+  "androidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "androidCertificateSha256": "d7db1462e5c567df47dd97c85ebb80bc83c4cc4f0b71f2599fcbb3acbfb786f0",
+  "sameSignerAs060": true,
+  "v2AndV3SignatureVerified": true,
+  "zipAlignmentVerified": true,
+  "windowsAuthenticodeSigned": false,
+  "realDesktopWindowTest": false,
+  "realAndroidDeviceTest": false,
+  "installedUpgradeTest": false,
+  "blockedValidation": "Policy rejected launching an Electron background native network probe. No attempt was made to bypass that restriction.",
+  "gameFiles": [
+    {
+      "path": "almanac-data.js",
+      "size": 24757,
+      "sha256": "db41afae3b4788d428eecf87cb331bbe98696e850a9c4dc5a63848d8ac196cc9"
+    },
+    {
+      "path": "almanac-ui.js",
+      "size": 7603,
+      "sha256": "c7e00e1aa76f00bfd8fb752617306fe9761bd522ceabae1d1a9cb57cfdf7b099"
+    },
+    {
+      "path": "almanac.css",
+      "size": 8622,
+      "sha256": "64fdd6831c0c71ed2285b0496d4f88a1d911e053fbd8902e66037df7396ea917"
+    },
+    {
+      "path": "almanac.html",
+      "size": 1016,
+      "sha256": "4f24f8d9607dcc375c945b902aca1e8366246505fd78e09e337b1517aa94058f"
+    },
+    {
+      "path": "assets/almanac/asset-manifest.json",
+      "size": 42932,
+      "sha256": "697bd9d03d92883cefb19c73d9f7c804f123ef04b4a1d8d421e9fe49e4d20193"
+    },
+    {
+      "path": "assets/almanac/backup.webp",
+      "size": 35992,
+      "sha256": "77ccb266fae6204ff2c5faab11fc6d0d5a76c8b456a56901fdf7a2fcdccf222b"
+    },
+    {
+      "path": "assets/almanac/balloon.webp",
+      "size": 26422,
+      "sha256": "bf8b0a416c64f1ab8a1b9f9948aa6474e6d8e6be6121cfa1357631fdf8871fc8"
+    },
+    {
+      "path": "assets/almanac/blover.webp",
+      "size": 34138,
+      "sha256": "002cd83e32f2f4510afd3350c6aa3c992471d7c2e68539d03b125f6bea292cdc"
+    },
+    {
+      "path": "assets/almanac/bobsled.webp",
+      "size": 44886,
+      "sha256": "ea78c84c93663a215a3e42122107a50103e4631c6beedd8788e3edc52128a6e7"
+    },
+    {
+      "path": "assets/almanac/boss-bronze.webp",
+      "size": 63570,
+      "sha256": "288633f303a51930f0325f9c724c98ca39f57072db78290d94998d14502ed979"
+    },
+    {
+      "path": "assets/almanac/boss-egypt.webp",
+      "size": 64874,
+      "sha256": "f82ef57507c9f4cab0ae9ffe529a55445a3b893e17b4959c261c6ac86b16c408"
+    },
+    {
+      "path": "assets/almanac/boss-steam.webp",
+      "size": 63884,
+      "sha256": "7aa4a96d677a98dd85bf603e024ff6f5e6d6d86d2bce4a8b5c1265d44a76846e"
+    },
+    {
+      "path": "assets/almanac/boss-styles-provenance.json",
+      "size": 8031,
+      "sha256": "01f8ff51b65672f69b48e6e66791ec60f213d4d51cb46fb84900e24b7400f0ef"
+    },
+    {
+      "path": "assets/almanac/boss.webp",
+      "size": 47184,
+      "sha256": "267f5f8486a2a525fd8821be8f7bfdfbe174d08d4226fe068ad44307568a314c"
+    },
+    {
+      "path": "assets/almanac/bucket.webp",
+      "size": 18842,
+      "sha256": "f782cfc10b9268921c23a3b7c6dded4c521a71517c09b40cbee76d77aa661d31"
+    },
+    {
+      "path": "assets/almanac/bungee.webp",
+      "size": 33056,
+      "sha256": "8ffb44e44c01fe7b0d375f1c0b72cd2980806342d7381666d5f96c5a44cb632c"
+    },
+    {
+      "path": "assets/almanac/cabbage.webp",
+      "size": 33838,
+      "sha256": "4125f5d9091a44fdfc34fdc282dc6338160b554ba700317a13f7870bfa35f3db"
+    },
+    {
+      "path": "assets/almanac/cactus.webp",
+      "size": 25472,
+      "sha256": "3ed51d407af7a05e5f84f748e661f88f944c79ae217cd0c490d38ad4bebfc628"
+    },
+    {
+      "path": "assets/almanac/catapult.webp",
+      "size": 44526,
+      "sha256": "0f3d6ca4284b80dd2503fd81af98dcde1e31ea1352a2b7c7eb390dcada9b73a4"
+    },
+    {
+      "path": "assets/almanac/cattail.webp",
+      "size": 32658,
+      "sha256": "7f9c4271b5fec5fbd70dfefd5cb20802537bcbda4f9924e1cdfdc093ac4d139e"
+    },
+    {
+      "path": "assets/almanac/cherry.webp",
+      "size": 34560,
+      "sha256": "c43becb76c9c22689e10ed7d77dc37d8ca9a2741855a9bb4a3c38c0783d5a428"
+    },
+    {
+      "path": "assets/almanac/chomper.webp",
+      "size": 40342,
+      "sha256": "23dc04b374d287cc392da0758f9a0cda539d03afbeec9d98889acc2415262c95"
+    },
+    {
+      "path": "assets/almanac/cobcannon.webp",
+      "size": 41942,
+      "sha256": "cc758ec7c98ae7baf975c3ccbae6d7762a34f64637f1697837aeaf2d219efb08"
+    },
+    {
+      "path": "assets/almanac/coffee.webp",
+      "size": 28748,
+      "sha256": "63f086bda1ad63b75f656a20d95991cf24712943aaa975cfd6ff268dec922763"
+    },
+    {
+      "path": "assets/almanac/cone.webp",
+      "size": 19160,
+      "sha256": "885d097065d57687fd6f302b1aa466831b567c6a3d9755616b85823e5c611a24"
+    },
+    {
+      "path": "assets/almanac/dancer.webp",
+      "size": 34964,
+      "sha256": "7efb8f2ead0984e1f4fc2bdb63bf2cb2d8c13fb39d583063a51f12aa23f35505"
+    },
+    {
+      "path": "assets/almanac/digger.webp",
+      "size": 27026,
+      "sha256": "43ecc92e31ccf1e433aac42c38d45ae401ee03d485d5c6679218b442dbfa60cc"
+    },
+    {
+      "path": "assets/almanac/dolphin.webp",
+      "size": 31164,
+      "sha256": "c1144f2fce88c86eac683f67f07ead535b5c2d328161d9f470897d93770b1ce8"
+    },
+    {
+      "path": "assets/almanac/doom.webp",
+      "size": 24816,
+      "sha256": "ecf7111c34b47f72e8ace01b740dfbf4798d914e999da4cd1a17e5b6c6f67e34"
+    },
+    {
+      "path": "assets/almanac/ducky.webp",
+      "size": 35946,
+      "sha256": "82385d7d216129f0187c6dd845d3f6f1b244283ee30d77ddfcb727e691bfd489"
+    },
+    {
+      "path": "assets/almanac/flag.webp",
+      "size": 31314,
+      "sha256": "b656599135b54ef9c6d03cd0448122571c4205032e23efb1f3bf614f2329c752"
+    },
+    {
+      "path": "assets/almanac/football.webp",
+      "size": 42062,
+      "sha256": "7df039fcc292e1a2972efcac606ce8f467756e2f0b5217dc2c448d7675d8aa70"
+    },
+    {
+      "path": "assets/almanac/fume.webp",
+      "size": 33806,
+      "sha256": "3ccfb54cf025b40736f14e1a1b9dac22cf51c6d95b06af40cfd788afafffde02"
+    },
+    {
+      "path": "assets/almanac/gargantuar.webp",
+      "size": 46676,
+      "sha256": "07fa59516d811a41e652e528431fc4f041b1ec270c1d3cb150b644b12d7789c9"
+    },
+    {
+      "path": "assets/almanac/garlic.webp",
+      "size": 30926,
+      "sha256": "448b0c137e6c6a5db7c744bae6b748123f76c6442c64fafa6753ca382e7f2b42"
+    },
+    {
+      "path": "assets/almanac/gatling.webp",
+      "size": 36066,
+      "sha256": "4768c91824d650e2248f23f37a8bbc42b1163cfd59a50826e3a16bdde975d244"
+    },
+    {
+      "path": "assets/almanac/gloom.webp",
+      "size": 36240,
+      "sha256": "4c38f864f99d53cb9893e8c93b06bf4b341f6e64f528105a56d5d44f8ae4e14b"
+    },
+    {
+      "path": "assets/almanac/goldmagnet.webp",
+      "size": 33488,
+      "sha256": "d239dcaa581993193a73ff7aa9e8b5051ee3851f783012d0a16a03b88b760c04"
+    },
+    {
+      "path": "assets/almanac/gravebuster.webp",
+      "size": 36358,
+      "sha256": "c9a3be87ec7f4183aa1a323e54baa7eb40d65bc32403700ffc916191c1e8fb83"
+    },
+    {
+      "path": "assets/almanac/hypno.webp",
+      "size": 35454,
+      "sha256": "e6bbf9b1163913a837b0852241035bffbba15f8775ca1044f14b0925f6fc3d3b"
+    },
+    {
+      "path": "assets/almanac/ice.webp",
+      "size": 34478,
+      "sha256": "d5d2fa929f646df752a6e4a0cd00986f16a115ee60334f552dc6d2d643d3d027"
+    },
+    {
+      "path": "assets/almanac/imitater.webp",
+      "size": 22112,
+      "sha256": "e453f136c46303726912bb81911228114ff17022ddbe26aaad189d06db9a7334"
+    },
+    {
+      "path": "assets/almanac/imp.webp",
+      "size": 33328,
+      "sha256": "712dc076ffc30e015c4794bf023c22aae6341fa9239ceeef691ae2f3f72c0f80"
+    },
+    {
+      "path": "assets/almanac/jack.webp",
+      "size": 31568,
+      "sha256": "b6acf145fb310aa7f0c31be19e500ea39982b144d67b76f1b6d1c38517786d45"
+    },
+    {
+      "path": "assets/almanac/jalapeno.webp",
+      "size": 19386,
+      "sha256": "44b29691b2515652fbfdf9b49c2d4fb7700709e1d0f4ed3c3687d594fd5d3e8b"
+    },
+    {
+      "path": "assets/almanac/kelp.webp",
+      "size": 42578,
+      "sha256": "f0449148dc46d03d82941e02fd890a10c9a67f277208c9f171543ff2316584f3"
+    },
+    {
+      "path": "assets/almanac/kernel.webp",
+      "size": 40086,
+      "sha256": "445bb825743652a96aac61942991f1a03dd236ca22e5dedd531a8e1bed1c7c2f"
+    },
+    {
+      "path": "assets/almanac/ladder.webp",
+      "size": 43402,
+      "sha256": "e3f532590fd1bdae5f1d626bf6542046f8aa3a89a4453fd839fca8fb3371b255"
+    },
+    {
+      "path": "assets/almanac/lily.webp",
+      "size": 28686,
+      "sha256": "753e5235ac5fb1447a0051a60da04755892a375cc560bf0246a9d95e1a4cb306"
+    },
+    {
+      "path": "assets/almanac/magnet.webp",
+      "size": 27356,
+      "sha256": "82a6545d9eba792c73cb818d39610d2b6a6c28167f8041837369fd58e0bc3a88"
+    },
+    {
+      "path": "assets/almanac/marigold.webp",
+      "size": 41034,
+      "sha256": "3e837d3f2919a607504cb45d71f875b26fcd665425aff712c9ab2366c8526d4a"
+    },
+    {
+      "path": "assets/almanac/melon.webp",
+      "size": 35258,
+      "sha256": "ee55a1357672eae369dac4605f31e21d92039f9d020f0e1464a87e48eb735df5"
+    },
+    {
+      "path": "assets/almanac/newspaper.webp",
+      "size": 37304,
+      "sha256": "5b7d54907677b6f36b7077bd95895d5f71169bbfdc09784ba6bb646cb77fa9e5"
+    },
+    {
+      "path": "assets/almanac/normal.webp",
+      "size": 20404,
+      "sha256": "a9ac224ce4e1550a43112421e9dc25607db036084e45fbf985e4d32d076fc3f1"
+    },
+    {
+      "path": "assets/almanac/pea.webp",
+      "size": 27246,
+      "sha256": "77ca4b9c46e835f16e7db4a2efd503878d12729af2fdfffccded592e35082de8"
+    },
+    {
+      "path": "assets/almanac/plantern.webp",
+      "size": 32782,
+      "sha256": "198235931c5502bfec0687295d8133bf1f2e5abb6685dae24235079640c45881"
+    },
+    {
+      "path": "assets/almanac/pogo.webp",
+      "size": 28092,
+      "sha256": "307495410fd07ac76c9dd29895d01c0cc9b500a76d5409f390bc54a17f11cc69"
+    },
+    {
+      "path": "assets/almanac/pole.webp",
+      "size": 29980,
+      "sha256": "4b9df9b5bf7d806a71f8ad86289258eb982a9627d5f696a86126a2328f8d53ad"
+    },
+    {
+      "path": "assets/almanac/pot.webp",
+      "size": 29928,
+      "sha256": "817ee6fac44ae1accaaaca24652d1bb5c087b89f44885fc8d28867148d06007f"
+    },
+    {
+      "path": "assets/almanac/potato.webp",
+      "size": 24642,
+      "sha256": "54108385fa5e6c07df1071a8e4df4dcd60fcf0d593e2b3ddecdca91c1f01d6f6"
+    },
+    {
+      "path": "assets/almanac/provenance.json",
+      "size": 208853,
+      "sha256": "42c5241e0ad07bc36e4688b967ace77e83537630e72bce4b27714f17499deef6"
+    },
+    {
+      "path": "assets/almanac/puff.webp",
+      "size": 27394,
+      "sha256": "3f1b2c5a681495393d73528adf9b0266c8ce219c40235a171ecd38373a07e232"
+    },
+    {
+      "path": "assets/almanac/pumpkin.webp",
+      "size": 28156,
+      "sha256": "9e71d1dc3991f3aa3bc2c967ddcf6363dab96624f3e3bc256c3af128d0bf1e07"
+    },
+    {
+      "path": "assets/almanac/repeater.webp",
+      "size": 33960,
+      "sha256": "d6c6aa3aa87e4286c0d858caa68c6d9ece6fa6996f6d515809505196318eb224"
+    },
+    {
+      "path": "assets/almanac/scaredy.webp",
+      "size": 28060,
+      "sha256": "90f76ddb0a5f25ba306a7227924eb17893186fd82ffbcba38c836e8824e934fc"
+    },
+    {
+      "path": "assets/almanac/screen.webp",
+      "size": 39546,
+      "sha256": "f4f63f25c77979b12d22df6a7f1a33f7cc1fa98f8ae0e43dce7c71eab2e8e4f6"
+    },
+    {
+      "path": "assets/almanac/sea.webp",
+      "size": 31502,
+      "sha256": "6573a3d1f32cd8bd1ca0f36d002c116b9146458d62dfcf8e50e4e475049db272"
+    },
+    {
+      "path": "assets/almanac/snorkel.webp",
+      "size": 40228,
+      "sha256": "4fec172fc006e5641f87dee6696f87e38a7b1d04359969fc27c6198d3821ab33"
+    },
+    {
+      "path": "assets/almanac/snow.webp",
+      "size": 31282,
+      "sha256": "b9d37d7cd13753cdf11935261d9669b85c3fc962f35de85aa3ec583752fbe677"
+    },
+    {
+      "path": "assets/almanac/spikerock.webp",
+      "size": 19300,
+      "sha256": "a49a7653366191a7ed472af78f1e4465e1ce803b3f0b43d58c10274307560285"
+    },
+    {
+      "path": "assets/almanac/spikeweed.webp",
+      "size": 29746,
+      "sha256": "8820e42abe81748d9e14ec5bb76e22d99cdf00ec9a92fb37f0f217526589d057"
+    },
+    {
+      "path": "assets/almanac/splitpea.webp",
+      "size": 35160,
+      "sha256": "76b9ab29b5644107718fb654cb1cd62353671d1d91b99cdfb6982e8d45d984f5"
+    },
+    {
+      "path": "assets/almanac/squash.webp",
+      "size": 26096,
+      "sha256": "2b10a32e7d8d816383aa3c92b4754684c5dde7d0233ae449f7d48d0faf05e239"
+    },
+    {
+      "path": "assets/almanac/starfruit.webp",
+      "size": 31112,
+      "sha256": "6925995284344d460308934caa02d7d2850a3a4cdbd2828f01d310a3218588c0"
+    },
+    {
+      "path": "assets/almanac/sunflower.webp",
+      "size": 34816,
+      "sha256": "20e7992286794cd6b521be570fd64e62dcd1366e29d250254837bc9e82729afb"
+    },
+    {
+      "path": "assets/almanac/sunshroom.webp",
+      "size": 29096,
+      "sha256": "7eaa4b62be038216cf93baf0fcb3f1e7e94fc5dcf5d57157e720d0fc5363d623"
+    },
+    {
+      "path": "assets/almanac/tallnut.webp",
+      "size": 24292,
+      "sha256": "615fe946b828b7312ac7931644a493f7f6a8d8826f7783f10ff1d963c1a89537"
+    },
+    {
+      "path": "assets/almanac/threepeater.webp",
+      "size": 39448,
+      "sha256": "f86326e014d9d311dfb2e985bd1f52b92c88162b3f9e0b44684725a866857df6"
+    },
+    {
+      "path": "assets/almanac/torchwood.webp",
+      "size": 30948,
+      "sha256": "7f9bbf248b2ac370ca17eb8885fa549f99574d676aeb38f77bd07b79fa35fcb9"
+    },
+    {
+      "path": "assets/almanac/twinsunflower.webp",
+      "size": 47264,
+      "sha256": "a401c86ce78d40740d30cc446ede6bb127da51a07868357f89e64914be459a81"
+    },
+    {
+      "path": "assets/almanac/umbrella.webp",
+      "size": 35936,
+      "sha256": "82872c950d646568b1f13a9048f3a187521201411eb20e5194bd051b0c578c57"
+    },
+    {
+      "path": "assets/almanac/wallnut.webp",
+      "size": 34346,
+      "sha256": "3c7f11f049f488cdd1edf787130da00fcf9cbe315bee6b29f17c884d503c7fb1"
+    },
+    {
+      "path": "assets/almanac/wintermelon.webp",
+      "size": 41196,
+      "sha256": "b89541c12171246b58a967a0ac50f0774b12a57d7dbd0ca06b6d3f6d16649ef1"
+    },
+    {
+      "path": "assets/almanac/yeti.webp",
+      "size": 43132,
+      "sha256": "feadbe6f1612a00a5d7742bf4a558939e2ebafd3993efb780f46b474c5f79f8f"
+    },
+    {
+      "path": "assets/almanac/zamboni.webp",
+      "size": 34980,
+      "sha256": "85a8e64af5050f8b1b4bb39764a49c8843eaf52c169913cec6055b6222db3ea4"
+    },
+    {
+      "path": "assets/environments/background1unsodded.jpg",
+      "size": 114292,
+      "sha256": "a2b6433be7e2b62f152d7413f05ea58d67fe8d182c0015a824754e9b63d8d286"
+    },
+    {
+      "path": "assets/environments/background3.jpg",
+      "size": 207780,
+      "sha256": "0548a126e25426889bd2ffcc7ffe5e2d0bf5e275fc65e57814e02e3cf83b9a27"
+    },
+    {
+      "path": "assets/environments/background4.jpg",
+      "size": 199263,
+      "sha256": "856edc0843c58b2d62fd6bbb7ae79145b8aea999fe1ad1a41e2619de3009d3cd"
+    },
+    {
+      "path": "assets/environments/background5.jpg",
+      "size": 169536,
+      "sha256": "5769edf7b52077600ace6a90591babd22219f0ae9ca9cea7f554b367927a43b4"
+    },
+    {
+      "path": "assets/environments/background6boss.jpg",
+      "size": 188356,
+      "sha256": "90726dfd15ab7ca1917e110b3909574a29d6a7b71323d6a94c9b0f1e1f5df61f"
+    },
+    {
+      "path": "assets/environments/Background_MushroomGarden.jpg",
+      "size": 122229,
+      "sha256": "694def2aa89f658de5c36971eaea0ce1bbdc6393ddd035faa4e76f845f77d147"
+    },
+    {
+      "path": "assets/environments/fog_software.png",
+      "size": 33476,
+      "sha256": "5b4b4bf53ed8bc80f5b133f26206094b6acfd3bfda51a1ca3ebf580893aba618"
+    },
+    {
+      "path": "assets/environments/pool.jpg",
+      "size": 44527,
+      "sha256": "a2752e90ac9f7c81291c6a61725d7eb56bf413abc2348c475d79382dc0f60cbf"
+    },
+    {
+      "path": "assets/environments/pool_night.jpg",
+      "size": 36964,
+      "sha256": "6e6db61d7f7cc7be535981fcd96eb00a6b7f6aa63eea6634e086cad5bccf8087"
+    },
+    {
+      "path": "assets/environments/provenance.json",
+      "size": 2301,
+      "sha256": "ef9960f9e65c452880e1e8a6bbb4592b7d36d17dbe1c3d108e81061f9cef199d"
+    },
+    {
+      "path": "assets/environments/Zombie_ladder_1.png",
+      "size": 8207,
+      "sha256": "349de391af1d5f483d5e7b1c4252e372512194ec2c2f75b87e0f97e53c0c51fe"
+    },
+    {
+      "path": "assets/fonts/cartoon.png",
+      "size": 527331,
+      "sha256": "a6e6b2ac64638a6ebf06e2a741018e584b2fdde257bb15c99bbf007deec533b7"
+    },
+    {
+      "path": "assets/fonts/cutpaper.png",
+      "size": 910275,
+      "sha256": "2895c9ea7e0982fab918d3544ec91a7c0d60e63cbc3be5c1c10b3eae20727483"
+    },
+    {
+      "path": "assets/fonts/ink.png",
+      "size": 985318,
+      "sha256": "1f675553ef90ca2dbdea989d33c13554e6d1b488a32bbb87ad1b5a571eb80339"
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "size": 4398,
+      "sha256": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d"
+    },
+    {
+      "path": "assets/fonts/provenance.json",
+      "size": 1336,
+      "sha256": "5293652e8560cfacb1538e746642c49a7b912b63d9b93b5be82f5ac5c4f82b8b"
+    },
+    {
+      "path": "assets/fonts/ZCOOLKuaiLe-Regular.ttf",
+      "size": 1514968,
+      "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d"
+    },
+    {
+      "path": "assets/images/Almanac_GroundNight.jpg",
+      "size": 5335,
+      "sha256": "e20df9f8cd625b601f46a8ff6bc1bbbf9c72c2141988c5d00fcd8c08c8301acc"
+    },
+    {
+      "path": "assets/images/Almanac_ZombieBack.jpg",
+      "size": 40490,
+      "sha256": "70a31b7ada4c80e0eeb3f23272b3eb74e041358bd3746e490f39608c5ffdb802"
+    },
+    {
+      "path": "assets/images/Almanac_ZombieCard.png",
+      "size": 51049,
+      "sha256": "e79ad6b49f2c1f59a9894956177639ee4ebc6cf358bf0285074660b6d4a19647"
+    },
+    {
+      "path": "assets/images/Almanac_ZombieWindow.png",
+      "size": 2524,
+      "sha256": "eb3cc73b63b0f3ccf47376a38e3b72db49e0aed5012d11bdd128244935b125e4"
+    },
+    {
+      "path": "assets/images/Almanac_ZombieWindow2.png",
+      "size": 4889,
+      "sha256": "22a87a199950f87d765961b5df1d4bf86e851f248f1151ef6246aea259cf03ff"
+    },
+    {
+      "path": "assets/images/background1.jpg",
+      "size": 171907,
+      "sha256": "ad2100045025a71343277d9ab13bbdb69126132f8482e14987ab2c4f4729dbbc"
+    },
+    {
+      "path": "assets/images/background2.jpg",
+      "size": 113678,
+      "sha256": "eefca4c5e08823c4feff453efd1089d1226f3ebe8c0b3705057bde880db0f26e"
+    },
+    {
+      "path": "assets/images/button_down_left.png",
+      "size": 1866,
+      "sha256": "dc2b4151a73b0637e1929876043678564c589b0bceb5963c3b03de109c154950"
+    },
+    {
+      "path": "assets/images/button_down_middle.png",
+      "size": 1327,
+      "sha256": "d845b42f1c57a36df7e91cbfbe4b3b4d3d478e559ad896896d7d766009f9d368"
+    },
+    {
+      "path": "assets/images/button_down_right.png",
+      "size": 1718,
+      "sha256": "567184bdc3064188c10b9e12d8a9bce7b1b1458944645f4c4c0299742b604788"
+    },
+    {
+      "path": "assets/images/button_left.png",
+      "size": 1896,
+      "sha256": "4bbc52c480ad97c8a611c5e76f93898ed567f7c603965f389fb69a40b6f3490c"
+    },
+    {
+      "path": "assets/images/button_middle.png",
+      "size": 1342,
+      "sha256": "4a78caf163579cf9baac8db6581dde177a0a635002c852efedbbe17ce81d89c3"
+    },
+    {
+      "path": "assets/images/button_right.png",
+      "size": 1710,
+      "sha256": "18f7690e01f84c4e543b4b7a20fcfea9dac80df1c4833d621a345eb55d77d26b"
+    },
+    {
+      "path": "assets/images/dialog_bottomleft.png",
+      "size": 6043,
+      "sha256": "d92dfe7c3e8467e589232c10c05239abdcaf0e553a5477f4f95286f8f0d1976e"
+    },
+    {
+      "path": "assets/images/dialog_bottommiddle.png",
+      "size": 3127,
+      "sha256": "4139a4d023a3c39427be4f3ce72061f047253285c5354bce343348306af7c92c"
+    },
+    {
+      "path": "assets/images/dialog_bottomright.png",
+      "size": 6380,
+      "sha256": "7561df9f0fb80e423bdac347bf165309af0a780b48412b786531356119cbc8ba"
+    },
+    {
+      "path": "assets/images/dialog_centerleft.png",
+      "size": 1959,
+      "sha256": "15ef3b9badc0cbb6b6ef0ecc9ddb6f5a3a540543f785a53b57cd5698c7fe0e88"
+    },
+    {
+      "path": "assets/images/dialog_centermiddle.png",
+      "size": 367,
+      "sha256": "5e339ba4b104f1c9660351668ed5cfb11176e18671f11536f624ecf93d95b7d3"
+    },
+    {
+      "path": "assets/images/dialog_centerright.png",
+      "size": 2148,
+      "sha256": "ef5fdc74936870b1460cd89f5a048cfedd7ca5dffe73f578b7822e794c05eadc"
+    },
+    {
+      "path": "assets/images/dialog_topleft.png",
+      "size": 5704,
+      "sha256": "4860437be14e2d87686b117ae8c925754696e179a176dff4ac0f20b480a9f7aa"
+    },
+    {
+      "path": "assets/images/dialog_topmiddle.png",
+      "size": 2760,
+      "sha256": "530e9288724ca72bd2fb4ec628fbebea35c388b2da0380a8656daeb2c5ca8ab5"
+    },
+    {
+      "path": "assets/images/dialog_topright.png",
+      "size": 6384,
+      "sha256": "fc69f02366520f5e77576593cf5dc1f037c2853d331c53ba88c47ce255ec1685"
+    },
+    {
+      "path": "assets/images/FlagMeter.png",
+      "size": 1262,
+      "sha256": "ec31f8608d02e0c4046f3a7531f00134d65a2f5ead1ffb50f58a96987e85ebd9"
+    },
+    {
+      "path": "assets/images/FlagMeterLevelProgress.png",
+      "size": 3339,
+      "sha256": "6b7abc362caedd23a7355f0a9206ba28f8bcabcbee74146fbeaf118c8537edcc"
+    },
+    {
+      "path": "assets/images/FlagMeterParts.png",
+      "size": 2415,
+      "sha256": "b81c516e311bd859b02e71d3e1b18596c7f19908e4ed521d3802ed2da6bda2f4"
+    },
+    {
+      "path": "assets/images/options_backtogamebutton0.png",
+      "size": 33361,
+      "sha256": "f4644e9156765cdb23c722512d57afd6dc2a30bf0139c56462d35dd912b5a7d5"
+    },
+    {
+      "path": "assets/images/options_backtogamebutton2.png",
+      "size": 32439,
+      "sha256": "daca9762c745db8c460934e56bb872fe2c34a2ca97f778e33df53abf71b138e9"
+    },
+    {
+      "path": "assets/images/options_checkbox0.png",
+      "size": 2505,
+      "sha256": "caceb06c29dec0df5fb9f7350c9044f91b4fe4b0fb00512bab62397f18bdb039"
+    },
+    {
+      "path": "assets/images/options_checkbox1.png",
+      "size": 2962,
+      "sha256": "5302dc3d512921daaab473687157cda4ec5c7633d1271e8cb357f6d6842429d3"
+    },
+    {
+      "path": "assets/images/options_menuback.jpg",
+      "size": 72768,
+      "sha256": "f3acf6611ea0cf12c2980d0922587371c4b29f038feb6b2186926fd7c3f65e02"
+    },
+    {
+      "path": "assets/images/options_menuback_.png",
+      "size": 11019,
+      "sha256": "c5cee9bb56420d087fb17fb3ffaf10ed246faa6fb5302cd3745beb4825dbd1ad"
+    },
+    {
+      "path": "assets/images/SeedBank.png",
+      "size": 12610,
+      "sha256": "6313852cc2b66226a3f112f3077639a75b3714a4f6a6da9c2d4c45a4b55e7fdc"
+    },
+    {
+      "path": "assets/images/SeedChooser_Background.png",
+      "size": 14910,
+      "sha256": "283b1ca0a6d7e3fe28b2d9aa0a60ea6c2440a28abd60e525f54410022a57f464"
+    },
+    {
+      "path": "assets/images/SeedChooser_Button.png",
+      "size": 1510,
+      "sha256": "405ebdff1da56fff0ced699e150e4ea9e97ca9652fc2e8ed6872e7453cfdaa73"
+    },
+    {
+      "path": "assets/images/SeedChooser_Button_Disabled.png",
+      "size": 1359,
+      "sha256": "c797dd32850ca8fbba069b28eb976a0bfdae2b9643e5183ce0dde6035f427e53"
+    },
+    {
+      "path": "assets/images/SeedChooser_Button_Glow.png",
+      "size": 3223,
+      "sha256": "d89342f46f104613d64e79973b2259547eea8bfbd62ffe016cc030785fbcfc11"
+    },
+    {
+      "path": "assets/images/SeedPacket_Larger.png",
+      "size": 16676,
+      "sha256": "b7363c278458446477fe2cd68e6da8aec5fc79daac0d99db0053b028cf68675c"
+    },
+    {
+      "path": "assets/images/SeedPacketSilhouette.png",
+      "size": 225,
+      "sha256": "c5b47c05019a43c9f209ed20c74f6da8b135f44f0953d58d06bfb8829b2be31a"
+    },
+    {
+      "path": "assets/images/SelectorScreen_Options1.png",
+      "size": 5444,
+      "sha256": "143632518431b3c18def8e4ec0871017807ce12aff01a9510845af3a765cbee4"
+    },
+    {
+      "path": "assets/images/SunBank.png",
+      "size": 9847,
+      "sha256": "70583cea48ee223c6846944327cfea22332ecb340990452e837bd9398817000b"
+    },
+    {
+      "path": "assets/images/Tombstones.jpg",
+      "size": 24997,
+      "sha256": "4e47b3de008702bd68481f38ea65f308e6cd17daed6adfa55e92c68b0e613b8e"
+    },
+    {
+      "path": "assets/images/Tombstones_.png",
+      "size": 17326,
+      "sha256": "c95ea2908ea3fbb349879cff51c4223ab6a09be31aa6669cefda02a1b3586105"
+    },
+    {
+      "path": "assets/images/ZombieNote.jpg",
+      "size": 10759,
+      "sha256": "37b61172cd83e582e5d9d77f47bbf1dd3e43ed500b7b7785927091638175424e"
+    },
+    {
+      "path": "assets/portraits/balloon.png",
+      "size": 23013,
+      "sha256": "903490aa09b499da5353ccc116d4bbc9ecdb61f70c1424275065f2d0da704933"
+    },
+    {
+      "path": "assets/portraits/bucket.png",
+      "size": 21613,
+      "sha256": "5ca3203b87e6c6119bdb4158674acdf28c0d0063323eb21448a20e1d50aae33b"
+    },
+    {
+      "path": "assets/portraits/cone.png",
+      "size": 21106,
+      "sha256": "a15b34e741bc926a68e60e1d38b8897d12c713e95fcdef55838f7e4d21f2932c"
+    },
+    {
+      "path": "assets/portraits/digger.png",
+      "size": 22297,
+      "sha256": "6ef0483be79635dea5e25a87e8a45f590b0d64afa20223cd7b50d4e9d22bd6e5"
+    },
+    {
+      "path": "assets/portraits/normal.png",
+      "size": 19208,
+      "sha256": "f81f8bb26dc973cec4762e1df65b9da9e18113beaa6e32b53ccd81a76745bf1b"
+    },
+    {
+      "path": "assets/portraits/zomboss-head.png",
+      "size": 14897,
+      "sha256": "5d4443173f5c22ec0aa84c5f8b21c4fe1703efe490d66268817e81213e76a93e"
+    },
+    {
+      "path": "assets/reanim/Cactus_arm1_1.png",
+      "size": 3087,
+      "sha256": "41bbbd382524009db2deb55659ca89ac677b9e41bc2c6dd45ca7a38eb9be2881"
+    },
+    {
+      "path": "assets/reanim/Cactus_arm1_2.png",
+      "size": 1264,
+      "sha256": "b6e9a299cba14fc788ecb9c286d20483c5d1d66b9608ae34cdcf1761385102f0"
+    },
+    {
+      "path": "assets/reanim/Cactus_arm2_1.png",
+      "size": 1948,
+      "sha256": "47baa0d17599d339eeed42f7f9e2c35c6d10b71524c26b053009e1658fe054e6"
+    },
+    {
+      "path": "assets/reanim/Cactus_arm2_2.png",
+      "size": 1236,
+      "sha256": "482a6260dc05aed11be0b3e272813d78813750c4c5f5457dc2cb1e6539bd905e"
+    },
+    {
+      "path": "assets/reanim/Cactus_blink1.png",
+      "size": 1014,
+      "sha256": "006dfff53109d82924231bc2f9aa315f6031eb6f8bf6699662434f2c8d628d33"
+    },
+    {
+      "path": "assets/reanim/Cactus_blink2.png",
+      "size": 957,
+      "sha256": "f053bd197adaef3ee5a83e8e62c6d429f82bc4af5909fbf66f850eb0c8ed50e9"
+    },
+    {
+      "path": "assets/reanim/Cactus_body1.png",
+      "size": 6392,
+      "sha256": "40f6b615d770a069a947bde55eb8ed6e13af97484100f2bb781daee4e1614423"
+    },
+    {
+      "path": "assets/reanim/Cactus_body2.png",
+      "size": 2608,
+      "sha256": "7bd736ec27f3aaeb87a33f2968080ed28b3e6f07c383d10414de001eb8ddd9af"
+    },
+    {
+      "path": "assets/reanim/Cactus_body3.png",
+      "size": 4262,
+      "sha256": "7e7f681b4afec07d0645a09a3642b96ae060387bc7783b832b509078ed623019"
+    },
+    {
+      "path": "assets/reanim/Cactus_body_overlay.png",
+      "size": 1500,
+      "sha256": "9434cd335fb65a57861b56cb8dee902e0dda0a661fed3e118849f1d58ae6cf50"
+    },
+    {
+      "path": "assets/reanim/Cactus_body_overlay2.png",
+      "size": 1326,
+      "sha256": "2074b3e9e96d7cc88bf5478b4d4354f429bdbf9fc852db8d2d748c9d18087b9f"
+    },
+    {
+      "path": "assets/reanim/Cactus_flower.png",
+      "size": 3202,
+      "sha256": "9c64b8f25b978225a794d8f190c25952b46c0ad07ca6fc0b504faf0c95216164"
+    },
+    {
+      "path": "assets/reanim/Cactus_flower_top.png",
+      "size": 241,
+      "sha256": "ebc426b7bdd90e8b63ad92b10dcdf3f7a1d29bddb30d8888079afcf0e4357876"
+    },
+    {
+      "path": "assets/reanim/Cactus_lips.png",
+      "size": 1147,
+      "sha256": "d1f5bb892b60b5f08164f7145cad520b347ada5a213484a8da3a76bcd0f8643b"
+    },
+    {
+      "path": "assets/reanim/Cactus_mouth.png",
+      "size": 248,
+      "sha256": "8374777d7eeac6f25697bfe11fc1b4f909cb3fbfdfce5ceab974f04e4df6cdaf"
+    },
+    {
+      "path": "assets/reanim/Chomper_bottomlip.png",
+      "size": 7688,
+      "sha256": "faad0850f1b7ec73b3ba1192290922d8b90042a145bca310cfa0424b234a2ac1"
+    },
+    {
+      "path": "assets/reanim/Chomper_groundleaf1.png",
+      "size": 2339,
+      "sha256": "ad533d3b9a4e8ef65445a409048e0e281359ff8b6e92681ff414ce2253fb2fdd"
+    },
+    {
+      "path": "assets/reanim/Chomper_groundleaf1tip.png",
+      "size": 1313,
+      "sha256": "2c383e9c2cf298760a9815482c2ce227e02ab09f7dc4e029876ec64b4fdf6476"
+    },
+    {
+      "path": "assets/reanim/Chomper_groundleaf2.png",
+      "size": 2116,
+      "sha256": "c96bf9dd8d6b2fa6814ca0742bf51127f428cb38bfc9154f000f30c0064bffff"
+    },
+    {
+      "path": "assets/reanim/Chomper_groundleaf2tip.png",
+      "size": 749,
+      "sha256": "cfa7517ded6393f4dcd884dcc7c22a0292e4acd0e3b56cbf3570ad1f254d0c14"
+    },
+    {
+      "path": "assets/reanim/Chomper_groundleaf3.png",
+      "size": 1719,
+      "sha256": "dbbafacfbc600597ef302e0d48f0e9a20b3062f0db09a3054c22c8dfc7cdd952"
+    },
+    {
+      "path": "assets/reanim/Chomper_groundleaf4.png",
+      "size": 1684,
+      "sha256": "46ddd173e36c3b1e7581c26628ffea74d88befef6e7e6e5949e6bbc85ed17161"
+    },
+    {
+      "path": "assets/reanim/Chomper_Headleaf1.png",
+      "size": 1025,
+      "sha256": "411edb25cfaee41ddcd7f8628f64a283bac1bb5e430f9032045340e516e7efff"
+    },
+    {
+      "path": "assets/reanim/Chomper_Headleaf2.png",
+      "size": 1045,
+      "sha256": "09d1c4d770ea2234c48b43d151c383a5c2c6ef9055a67ed4c177e490619bacd7"
+    },
+    {
+      "path": "assets/reanim/Chomper_Headleaf3.png",
+      "size": 693,
+      "sha256": "6c1d1671aeb8d22fadd3aac087fbc7d4ce73a98af03e7e38658297f2ecf1082b"
+    },
+    {
+      "path": "assets/reanim/Chomper_Headleaf4.png",
+      "size": 748,
+      "sha256": "c78940e12ec192b378c1681ab237f771bcff65a179498cb5bf31bc4e7641db3f"
+    },
+    {
+      "path": "assets/reanim/Chomper_insidemouth.png",
+      "size": 4383,
+      "sha256": "685e642dd827e94663740d4588bbef6b73af2ce46bce5224f4c963ff23b08ffe"
+    },
+    {
+      "path": "assets/reanim/Chomper_spike.png",
+      "size": 836,
+      "sha256": "fcb3c8ef582fc28f2e93ac0947079d38c50a6464f854c346760ef19ce836bd82"
+    },
+    {
+      "path": "assets/reanim/Chomper_stem1.png",
+      "size": 603,
+      "sha256": "96f15f283c5474ee9b8b5d45e4450c3d63d4b13a9f7c4f200de792fc49d39a21"
+    },
+    {
+      "path": "assets/reanim/Chomper_stem2.png",
+      "size": 1769,
+      "sha256": "08782fe6ae235ae1fa1d760093f202677d862fe22fb7a434b16afe2b2493825d"
+    },
+    {
+      "path": "assets/reanim/Chomper_stem3.png",
+      "size": 432,
+      "sha256": "e50e3ddca82865ddfdea606179d3dd5d843efbe8c6d1d005f56dd4e321ca10f0"
+    },
+    {
+      "path": "assets/reanim/Chomper_stomach.png",
+      "size": 2849,
+      "sha256": "d772ee6bf6da399a93c45bcafbc0987e6784dd8ee71eb539daaf7cddc65678ae"
+    },
+    {
+      "path": "assets/reanim/Chomper_tongue.png",
+      "size": 1210,
+      "sha256": "6f0229bba9184cdaf6e83bbdc466d2d39cb4c874ed0822f829e328d3c9bc7f5b"
+    },
+    {
+      "path": "assets/reanim/Chomper_topjaw.png",
+      "size": 6236,
+      "sha256": "2f7c70e54a3a20b82b812410402126fa2a164884443d232ac5f504a22e5e11ae"
+    },
+    {
+      "path": "assets/reanim/Chomper_underjaw.png",
+      "size": 10981,
+      "sha256": "0737be18f5fbbf5ccc6e63f12e08a53e71a4e3658745ad5f006703c90a331d9f"
+    },
+    {
+      "path": "assets/reanim/CrazyDave_head.png",
+      "size": 46297,
+      "sha256": "ebed6a2da2162172b1e905436b36c3bf1b6f8a2dcf264d744f7809bde800b178"
+    },
+    {
+      "path": "assets/reanim/LawnMower_body.png",
+      "size": 10998,
+      "sha256": "8ac44a2afb35d58c4cf1f5d240f8e47e9676bd289dfad1887e6cb44283d73332"
+    },
+    {
+      "path": "assets/reanim/LawnMower_body_tricked.png",
+      "size": 10141,
+      "sha256": "0561d908238353940dd58919c0780f2d9f2b66dabeb7a24d98ea0a8d253292a0"
+    },
+    {
+      "path": "assets/reanim/LawnMower_dice_tricked.png",
+      "size": 1558,
+      "sha256": "54f374f0e54e48d6cbf23a4f46fa6fc236f86f7d8b546266c32772eea62dfea2"
+    },
+    {
+      "path": "assets/reanim/LawnMower_engine.png",
+      "size": 2779,
+      "sha256": "868a02451776e2ecb18c0ae04d4364b9a3bdc1f90d778f2a2c2cb49c065b8e5a"
+    },
+    {
+      "path": "assets/reanim/LawnMower_engine_tricked.png",
+      "size": 7533,
+      "sha256": "f7a3666adb0909817fd18ba3f03d8217dedc4e8d45522111838b2064f6c0ad4f"
+    },
+    {
+      "path": "assets/reanim/LawnMower_exhaust.png",
+      "size": 570,
+      "sha256": "885543e20abd159a07bdcabdd9ebf90337ffa6e385725e05573b9c5686289964"
+    },
+    {
+      "path": "assets/reanim/LawnMower_exhaust_tricked.png",
+      "size": 1505,
+      "sha256": "7d33f5bb343f8fdcfdc79a3fae1d97cf5e83183301b938a92635051f6d4e8498"
+    },
+    {
+      "path": "assets/reanim/LawnMower_pull.png",
+      "size": 1019,
+      "sha256": "2ac519824cc608e5aade98c4b3ab8281b401ff02e6f277805239368913373fa2"
+    },
+    {
+      "path": "assets/reanim/LawnMower_wheel1.png",
+      "size": 1476,
+      "sha256": "bd9bd07e29e9974ec9af43bf80e3ada3a598dbf34ea2fb9aa68069fe8f53255b"
+    },
+    {
+      "path": "assets/reanim/LawnMower_wheel2.png",
+      "size": 1402,
+      "sha256": "164826c660f053fa631e78e57a44ec042ec3adfa335241ea1cd3ceb2e4469d72"
+    },
+    {
+      "path": "assets/reanim/LawnMower_wheelpiece.png",
+      "size": 1373,
+      "sha256": "6d88370ac1a74ca9dc66cf1de1aafccf1072f4b903dd6ee74b2a821b2eb9f489"
+    },
+    {
+      "path": "assets/reanim/LawnMower_wheelshine.png",
+      "size": 351,
+      "sha256": "1594511e5db16cf4d4d5641b32b17415552b6dcd11c56818a955d05047de6254"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_backleaf.png",
+      "size": 1789,
+      "sha256": "db925b5ce54fec6324cde2a635d160353fa06511948429636601011f25a0dab3"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_backleaf_lefttip.png",
+      "size": 728,
+      "sha256": "feb34aa6cc279ca31156f924c54a53861b9a79cb70c35aa7aeea3c6e79cb77f2"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_backleaf_righttip.png",
+      "size": 519,
+      "sha256": "60419cd6e7b7619077078ddd35aada8fc4fc9fbc2ea5fb4917e8c777ce49bf03"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_blink1.png",
+      "size": 1555,
+      "sha256": "9fa628d069b8aa2e5665c04d405fa8ab29b649ffc98653d6c1c255cf047ecbcc"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_blink2.png",
+      "size": 1460,
+      "sha256": "9bb5ec4e28f16a415ef4a86363ad7cf8fa2b110c3a5adc579464610478e17bb2"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_eyebrow.png",
+      "size": 642,
+      "sha256": "49b144848621df2526c5d79be9204f8f988cac80fb660dc1ba98141f7e6daf25"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_frontleaf.png",
+      "size": 3315,
+      "sha256": "26ce3afa0788a624d8a1747dab2ba51223489a04aed61f08a453c0d073bfbddd"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_frontleaf_lefttip.png",
+      "size": 1332,
+      "sha256": "fac7ced98626e9a9f91aa9746025e3713496cde453c1999ab89bdad6ed966f4d"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_frontleaf_righttip.png",
+      "size": 1085,
+      "sha256": "a5a5245bd884c6cc90ff13666f147b9ece85c6e6453dbeb56857c5d50caf785d"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_Head.png",
+      "size": 6753,
+      "sha256": "89489d1df066b4c89541455525447220437c5913f0f1e3e850a7a6116f241882"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_headleaf_2rdfarthest.png",
+      "size": 1031,
+      "sha256": "a5943425a31980190c2d8fb4b150d79e99270aa0fdfa49f8822e8ac51e089295"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_headleaf_3rdfarthest.png",
+      "size": 943,
+      "sha256": "a7d8ee1136c917d34eb73ef117fae5cce0cc325ced80e997329f08107326bb8e"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_headleaf_farthest.png",
+      "size": 804,
+      "sha256": "a51d3dea2026071ad331522ddaede52f47357510b7da7ebda7893131d864b75d"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_headleaf_nearest.png",
+      "size": 1174,
+      "sha256": "27a085af419f1d8552fe8a134d47c0f3dc3084bb3aa9292479985e6d78455e08"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_headleaf_tip_bottom.png",
+      "size": 846,
+      "sha256": "0e650fb81440ccfed9c3f552e543d8525f03a45bb4174a8c9565bb86c2187e58"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_headleaf_tip_top.png",
+      "size": 669,
+      "sha256": "b20fd4f08810a1cba23f476e5fb4eafe66190b0e9d1a5183fb377ada4482ce06"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_mouth.png",
+      "size": 3324,
+      "sha256": "3d2b62a308274279990e696f7b248dd8e0b06a5fa1191b24fe15ae0eed877ca7"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_stalk_bottom.png",
+      "size": 1179,
+      "sha256": "79de9bd29cb7297fc218e564676a36ea0cbb3738e16b47da16b3dbc1ec5cfbd4"
+    },
+    {
+      "path": "assets/reanim/PeaShooter_stalk_top.png",
+      "size": 821,
+      "sha256": "0628a9cf3676bc78a8532ac97266091aff348611f162318a069e13db46b37f67"
+    },
+    {
+      "path": "assets/reanim/SnowPea_blink1.png",
+      "size": 1599,
+      "sha256": "df3b8407320325ad5a859886649a2b77825c883b7cb8d06409e90b1054dfcd8b"
+    },
+    {
+      "path": "assets/reanim/SnowPea_blink2.png",
+      "size": 1489,
+      "sha256": "fa3897cb324af602f013b7b9869cc55fff3567a184a5c1e61c6160b68583e430"
+    },
+    {
+      "path": "assets/reanim/SnowPea_crystals1.png",
+      "size": 3196,
+      "sha256": "9223cc55b9b02bf608f480685667d16bc4b9a338a0a7db1a6c18d7f32a2c1410"
+    },
+    {
+      "path": "assets/reanim/SnowPea_crystals2.png",
+      "size": 2313,
+      "sha256": "a4343a8010e40b024a9a374280e23b2ca592b7a32182a07ef221b575ac500ff5"
+    },
+    {
+      "path": "assets/reanim/SnowPea_crystals3.png",
+      "size": 3022,
+      "sha256": "c408aabe0514221e9a915ff33218999ac2c1825c1042657eff6b8c1bedb152af"
+    },
+    {
+      "path": "assets/reanim/SnowPea_head.png",
+      "size": 5569,
+      "sha256": "916541a3d4281a3a70df8873ceea77cee2b3a85ff520f2a4a2aebcaa53ef7e99"
+    },
+    {
+      "path": "assets/reanim/SnowPea_mouth.png",
+      "size": 2900,
+      "sha256": "83741c72fef5f04c8c3ef6c08203d4cbef7ddb2ed8d4b4d68e1c350d581c29eb"
+    },
+    {
+      "path": "assets/reanim/SunFlower_blink1.png",
+      "size": 872,
+      "sha256": "5a6238d1ecc8a59f47fdc66fdbd6b83823d1c9fd00d7a4707cb1111dc129fefa"
+    },
+    {
+      "path": "assets/reanim/SunFlower_blink2.png",
+      "size": 901,
+      "sha256": "f97ab43d6e40185411c4e3bbd197dfa8c82572329b8830b54b82e8ee3aa4083c"
+    },
+    {
+      "path": "assets/reanim/SunFlower_bottompetals.png",
+      "size": 1010,
+      "sha256": "034ce4342f4c972ecf9e5df758164ac35e1e7b96972fcce022ba992c6e5256fe"
+    },
+    {
+      "path": "assets/reanim/SunFlower_head.png",
+      "size": 4227,
+      "sha256": "3813ea881b25465dec25e75b7fa2a20fde4b421e7dd7c3b1ffabf4eb1fd61fb3"
+    },
+    {
+      "path": "assets/reanim/SunFlower_leftpetal1.png",
+      "size": 565,
+      "sha256": "6f7ca11e8e6b07e84cef6d1214ae636a76a6b310792db908629eb3fe5ba44950"
+    },
+    {
+      "path": "assets/reanim/SunFlower_leftpetal2.png",
+      "size": 563,
+      "sha256": "cb3386e65f41b18c1ff1d270cda34466aad2b8c0b0a6ac5c4a1f205ddd7450d6"
+    },
+    {
+      "path": "assets/reanim/SunFlower_leftpetal3.png",
+      "size": 836,
+      "sha256": "93bad940e7841f7758768b036e1cd89d068727e4cffdfacce231754b1bf03ec8"
+    },
+    {
+      "path": "assets/reanim/SunFlower_leftpetal4.png",
+      "size": 853,
+      "sha256": "346abc1f138aac79eb7d0ec2aeb2e655a7cbd8473592854f2e0c3a9a2c23993c"
+    },
+    {
+      "path": "assets/reanim/SunFlower_leftpetal5.png",
+      "size": 735,
+      "sha256": "921ffdce2cd20d59a6ef15cddd57852989f83a763319f09a4c824f6a7a9d6934"
+    },
+    {
+      "path": "assets/reanim/SunFlower_leftpetal6.png",
+      "size": 806,
+      "sha256": "a42310823b2267dfa44555293c7b56ce33589bddeafe5851c3e9c3a6cc0949bf"
+    },
+    {
+      "path": "assets/reanim/SunFlower_leftpetal7.png",
+      "size": 679,
+      "sha256": "c1aef61cd41969edc70eba8be9fc1e7fb33709b90acebd8193f1c3c0756664c7"
+    },
+    {
+      "path": "assets/reanim/SunFlower_leftpetal8.png",
+      "size": 737,
+      "sha256": "b48cc79a0ff7cffe936bfe1d8192d3a472d69530b750950d4a1e8bf37b58e9df"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal1.png",
+      "size": 526,
+      "sha256": "90d8db88d9f0ba1c56ea3b84633eb64fd2ce58ff16956e0fbd196d6ed8c4c70f"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal2.png",
+      "size": 554,
+      "sha256": "5c16bdf35a589c2f075f92d081a243315e7895423fc34deba73a11d82e97d66a"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal3.png",
+      "size": 434,
+      "sha256": "6e67f9c7ce4644046cf0a6d00f78970bd4e8274dd0c9c4231c9cbde966a7c8c5"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal4.png",
+      "size": 561,
+      "sha256": "b1fbc3b2a7cf7ad3e246f827684035f5be92440de82564cbbc41ce3418897128"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal5.png",
+      "size": 509,
+      "sha256": "baf73cbbf6ffe5fed811890064c370bbb777da8f7eca00b0dc521d6ed888bd41"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal6.png",
+      "size": 508,
+      "sha256": "09efb86a4897e588b55879c83b8e0169661ab58142ee8c511134e15eb4ba4e7a"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal7.png",
+      "size": 620,
+      "sha256": "6b431aebcbc47522315163ee9c939a8a7917f9796b93eea331b7cedb9f9daf60"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal8.png",
+      "size": 537,
+      "sha256": "9addf1e7d0488b6be9ef52c36cd82ea03be230bfd73259c471b29b1d14c8a43b"
+    },
+    {
+      "path": "assets/reanim/SunFlower_rightpetal9.png",
+      "size": 557,
+      "sha256": "78d81708d09274ec1ca2efb7331a701f33a3989e8ffc1bb5a64ecf029efe2f38"
+    },
+    {
+      "path": "assets/reanim/SunFlower_toppetals.png",
+      "size": 639,
+      "sha256": "dadbd5ed1f98867e35a29164f83e735c14554adbe1e62a41c8588e07017c1b07"
+    },
+    {
+      "path": "assets/reanim/Wallnut_blink1.png",
+      "size": 3635,
+      "sha256": "fdf71f5fe8f563f579b5d165bbb0dd13931a940ffca9cfd4379211a43712ad78"
+    },
+    {
+      "path": "assets/reanim/Wallnut_blink2.png",
+      "size": 3272,
+      "sha256": "ab0e2e90bb8b06fa66bfa295c287e5c5980e674da6990875d1e2971712cab6ba"
+    },
+    {
+      "path": "assets/reanim/Wallnut_body.png",
+      "size": 13592,
+      "sha256": "5b38dc3365f2d1ba44af43a979e328973c2b1ae9e1a4371857a00310518911ba"
+    },
+    {
+      "path": "assets/reanim/Wallnut_cracked1.png",
+      "size": 13947,
+      "sha256": "13c3533479147545823144ac5816fba137f5900e6065e38b7c4a4caa64a4dacd"
+    },
+    {
+      "path": "assets/reanim/Wallnut_cracked2.png",
+      "size": 13927,
+      "sha256": "a7f68de19400558089b6d1aeed2696c56bff8ccb51965776fb93c46588d9666c"
+    },
+    {
+      "path": "assets/reanim/Wallnut_twitch.png",
+      "size": 898,
+      "sha256": "20037b221c027fbf512a336752ab174afae16b61a34b871b6b36180d6d419f40"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_body1.png",
+      "size": 4566,
+      "sha256": "b2623209957bc50e4902c5c44f038bf5a393a5a1fb11df9fc181852fdf6d81da"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_body2.png",
+      "size": 2072,
+      "sha256": "8b248163ad3df7035b671ba9764cd9d01d73fe013ed0e3ed3d136ad4b5e015cc"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_bottom.png",
+      "size": 449,
+      "sha256": "c8f32b6ee2ba38fbf50413ac0a4567b801c0769d725234cb84132c67b60d1c1a"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_hat.png",
+      "size": 1358,
+      "sha256": "318151559951455a4aaf949981c4fd0393fa329bf87a00aa9c717684583ec8e9"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_head.png",
+      "size": 5597,
+      "sha256": "8e25d225fdad86558dba7802e8fef64ca98790dcd1a9ddcaba1dd4eb97456591"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_innerarm_lower.png",
+      "size": 1071,
+      "sha256": "bcae1dc5ee0fe02b4bd22f8df47684f36c2d67e73ceccf5303dc2bdcd51d1917"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_innerarm_upper.png",
+      "size": 1135,
+      "sha256": "30eabeaa8c9da09dd873ce04cbd6bda0a5c88ff042594c014df1ff8241086445"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_innerleg_foot.png",
+      "size": 1506,
+      "sha256": "3c062dc397ab48aa991cb0601075d6fbcc23e4cf0f985cd575c7f2dde4497134"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_innerleg_lower.png",
+      "size": 1413,
+      "sha256": "89457eccab416be68512542881bc26dba6ecf2a746cf8e08f642661644b54515"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_innerleg_upper.png",
+      "size": 1151,
+      "sha256": "16a5652fd1f2931e7163ceb76ace3ddda05d9517610927b432953c6f48b5f6c7"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_jaw.png",
+      "size": 1232,
+      "sha256": "9948d887d8ca3ac20338ad4ddba2026c75dcd4e02afeb4e39ead8ffe7e3e62d1"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_outerarm_lower.png",
+      "size": 1288,
+      "sha256": "a69739f1adfe9ee8c7e709c2740686cbe8bb3bccb9040ee230a69907e6cdbdd9"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_outerarm_upper.png",
+      "size": 1471,
+      "sha256": "1ede0c9f0e18a3d7e469b095f55725df2d9220c992f0facaa343b49a96c82d9c"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_outerarm_upper2.png",
+      "size": 1780,
+      "sha256": "64c62eb87c28d7666d643bfef357fa6330a6fd21c81e5c8c00395b35eb052295"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_outerleg_FOOT.png",
+      "size": 2049,
+      "sha256": "8aa31ab6672656e477b2cf10ec5599eec3f8ab0ec1d9a0cd267a7a0d538f2f9d"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_outerleg_lower.png",
+      "size": 1328,
+      "sha256": "89725b1d7c9f6980b04a8311cc816792aa8bd00e63a9d52935d2d9317c55aed9"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_outerleg_upper.png",
+      "size": 1335,
+      "sha256": "3e96837885f40009487f073292edb5c88b032bbf5a268172402dd7c63b6b4573"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_pop1.png",
+      "size": 6443,
+      "sha256": "8d5e910e80c52637912515a68b5dc2cf94db3423bdc99ea2fa58fe7863bccddd"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_pop2.png",
+      "size": 2905,
+      "sha256": "ce84d9eb8289eb4033950cfc063c2175e46a56c5a8c92b93d7acd1a5a7024c24"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_propeller.png",
+      "size": 1345,
+      "sha256": "f5f5caa7c63660c90aee1d3dc92bb4bc546bb787e204c2409e5ea0662a8ff1f0"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_propeller2.png",
+      "size": 1082,
+      "sha256": "eccb649a65cdf7a51e880d10eae796934bd437e5576bb905b45c66838163eedb"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_string.png",
+      "size": 408,
+      "sha256": "0b716ca316dced766a2764b38e7ab17885df6719a62595281633733c7c570aec"
+    },
+    {
+      "path": "assets/reanim/Zombie_balloon_top.png",
+      "size": 7220,
+      "sha256": "03425d72ef6c10697577319357d67910eb42d50f106c1829609134bd4ebc9148"
+    },
+    {
+      "path": "assets/reanim/Zombie_body.png",
+      "size": 4885,
+      "sha256": "7a455d5aa3bc3dfcfbd5c8d7e16c01948bb3ee3ab210894b446d8add04ce194d"
+    },
+    {
+      "path": "assets/reanim/Zombie_boss_flag.png",
+      "size": 5355,
+      "sha256": "5c5bdd6cd9edb763bcda0234efa77169f4f5287b07a49ad1c538db9d88ca30cf"
+    },
+    {
+      "path": "assets/reanim/Zombie_boss_flagpole.png",
+      "size": 2943,
+      "sha256": "92491246e2e44881c377f62563afd42b01dfdd0895077846820732e1a740d772"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_body.png",
+      "size": 4925,
+      "sha256": "de37688babfc6aefd2fdac8cd1720d82e64fd5aa9b359f033da93fbb632fba09"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_brain.png",
+      "size": 6091,
+      "sha256": "b91aead1d7a00d7b43a4ab0dd2214785eb41ab52740c15da2442e4a6af1cb641"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_face.png",
+      "size": 5005,
+      "sha256": "b845f622896162c9de3da4bb8045bdca606dd974cabe02ce73c2f01e8e3a1dd7"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_face2.png",
+      "size": 4980,
+      "sha256": "9ce000712938b0b6dabd5cd6a8e8c5d8d4b8b2c7a147e46411260a55dd704e2f"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_innerhand.png",
+      "size": 2556,
+      "sha256": "69c893c46194eec05ca6e7c41f1f7d97edf22436935c7e7ceafeb6a337898c6c"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_jaw.png",
+      "size": 2525,
+      "sha256": "066bca8c108a6db8de5e5d65827f7c6baf41a72b451cd022ee2e500f8c11f714"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_jaw2.png",
+      "size": 2534,
+      "sha256": "825a7efd8e3fb6720d415bc4e0b9e315beb3e3a5ceacd3601329d3be50aec020"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_lowerarm.png",
+      "size": 3085,
+      "sha256": "cb1e2dc7721809e521f404de2a15b944c7491774efbd5e4eafe245447e55e994"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_lowerarm2.png",
+      "size": 1374,
+      "sha256": "c3e651195bf02e242d632c2c397800db9295fc0e247e0a08995f5c1303e59d09"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_outerhand.png",
+      "size": 2203,
+      "sha256": "9266ae799f6edbdf2af1ce6204ee6aff19d56bfd1f7c4189daa7bca0cfab1ac2"
+    },
+    {
+      "path": "assets/reanim/Zombie_bossdriver_upperarm.png",
+      "size": 2217,
+      "sha256": "0676b1ac2bae73e46822b013d4e64aaa9372be3e0334a9068016a00495eae743"
+    },
+    {
+      "path": "assets/reanim/Zombie_bucket1.png",
+      "size": 6094,
+      "sha256": "65faa9d4db65a52a0e127d86b4326aeb6f82e9ecda2018be7e955ced11f11232"
+    },
+    {
+      "path": "assets/reanim/Zombie_bucket2.png",
+      "size": 6145,
+      "sha256": "3b7d5673493c541b097ccc041e22e16783715fdce826478542ef2f80b022448c"
+    },
+    {
+      "path": "assets/reanim/Zombie_bucket3.png",
+      "size": 5685,
+      "sha256": "da1c6e2c87addd4154e7f513f1cc3a85190e8c41a3cf70bfc9b35efbcda0c826"
+    },
+    {
+      "path": "assets/reanim/Zombie_cone1.png",
+      "size": 3809,
+      "sha256": "f534854721cdc25fe57dcb4862cc5fb583f3f6f282192a9e8378bd4960988b79"
+    },
+    {
+      "path": "assets/reanim/Zombie_cone2.png",
+      "size": 4609,
+      "sha256": "2d2d522bfcf885b9eb07a5e015f627cb71d863dc88f4d7dd0908e9bba1a38c26"
+    },
+    {
+      "path": "assets/reanim/Zombie_cone3.png",
+      "size": 5028,
+      "sha256": "51fb258e0974447418ae845a2284de55957dd8199d18ab7d1df3f3caa36fa30c"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_body.png",
+      "size": 11651,
+      "sha256": "352e4a26f13490fbb1ae228897841afe07128ef1ba97ca015589b99b41e5bf96"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_dig0.png",
+      "size": 2886,
+      "sha256": "ed4eaffb2e0f4a75498cc646858a68ce8dccd4233a6ea10b8c90284c39a715d5"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_dig1.png",
+      "size": 3683,
+      "sha256": "6a683414106384554d77fea9f89c7e228bc54302f2059889958876c321b5184a"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_dig2.png",
+      "size": 3890,
+      "sha256": "a47729047c7ce1809a6e012813cadbccdd70c0119f48f9c3dabd436b2bead4bf"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_dig3.png",
+      "size": 3644,
+      "sha256": "bf77825ed1ed463009ac5e6c805a53ada6f64ecbf2a87f01a077bb290ca47fbb"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_dig4.png",
+      "size": 3407,
+      "sha256": "a58b7b8c82f2925540a1739124c85bd6717e08f3cb86163dacf7567746933185"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_dig5.png",
+      "size": 2873,
+      "sha256": "ce144175befef5fc483a733887701caf5f925f73fe3def757a7f76e5aee21370"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_dirt.png",
+      "size": 1034,
+      "sha256": "2a066fa46acbaa1a7ef7c72c335430e2003a8fc96c815cebf9faef2361a8755c"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_hardhat.png",
+      "size": 5311,
+      "sha256": "061aec2ba8a06afc901626d19005902c66ff5445100a87cfb71c57dd071a13bb"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_head.png",
+      "size": 6736,
+      "sha256": "5128de15a22c43ea8cb16e3cc971d526cc32cd101ffb10b5cb413b51de7488f2"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_head2.png",
+      "size": 6706,
+      "sha256": "a84558387742bd65fc9e5b7104298b7c011143362a124d5c0735bb79575fd4a5"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_head_eye.png",
+      "size": 134,
+      "sha256": "b89f7ffe3e45f7c385a696f2ad71e0d62977eb6dd749109b441a765f77dcf72c"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_innerarm_hand.png",
+      "size": 1426,
+      "sha256": "96d2ea7955b7e4116fd0abe04293ca140346efd41875e375a876654d5fc2610a"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_innerarm_lower.png",
+      "size": 1825,
+      "sha256": "066d5869bf735ea48ec927e3acd5ced2d1968334efc8a2c052772dc6e63ea8d5"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_innerarm_upper.png",
+      "size": 1836,
+      "sha256": "69d5bfd6cda10e30b81c4c1051163e132953fde26a2652d48ad732cf568d1e5a"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_innerleg_foot.png",
+      "size": 2221,
+      "sha256": "f72aeb623433aebbd70791fd19765a8c580878410db0b0fd8e7beeb6549ee197"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_innerleg_lower.png",
+      "size": 1799,
+      "sha256": "9ffb62bdbc70f0e6c7c3ae69fd1adf0bd1b72c035d7a034485cb5b85c2b8891c"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_innerleg_upper.png",
+      "size": 1483,
+      "sha256": "13751895cfa3aadfb13851fcd683529d7bb66e9ce2f104fd3eed4b9488813398"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_jaw.png",
+      "size": 1069,
+      "sha256": "9a8705572449b0a20482356c5c87b98a8af07daee8857193b84d02ee18ee683a"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_outerarm_hand.png",
+      "size": 1281,
+      "sha256": "3bf4cb6e1ff14e78f396d075eca34e97a61f1bdaa4d7443db07b024ee3fea98d"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_outerarm_lower.png",
+      "size": 2918,
+      "sha256": "e127c6d0ffba2c9b95d17444e06b68c903707144bc68e2dfb3f6cb59e5f36f31"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_outerarm_upper.png",
+      "size": 4159,
+      "sha256": "c187f7b4b256045d94ab6dcbc3aa1a2303d1afc9ee173e78fe8d136455a687c5"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_outerarm_upper2.png",
+      "size": 4458,
+      "sha256": "8f631b5b201181b6123de9f1c917f6e3dcafd433d80d5230d45538547ebd4d60"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_outerleg_fool.png",
+      "size": 1842,
+      "sha256": "d84c9dbc85c8242a0060ad55a9bea03e5de37b8301cfd51f7a9e0ae4b276402b"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_outerleg_lower.png",
+      "size": 1570,
+      "sha256": "248ee5c3cc8cb0567e1909b684370a9aea52480e3731746120d9724efdffea9e"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_outerleg_upper.png",
+      "size": 1855,
+      "sha256": "5a25da9ad190c0fabde16b31d859cab916244aac588902f633adfdeaa9ccccb7"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_pickaxe.png",
+      "size": 3893,
+      "sha256": "d112d75e7a8293d92fc142a7319d25288cf81df7821e24b26549750010e61f0b"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_rise2.png",
+      "size": 31947,
+      "sha256": "31af1657fbf8e2075d6efc037932ff47bf9fbe1a6fefe97dee0dcfc066c739bf"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_rise3.png",
+      "size": 27298,
+      "sha256": "24416ed31ffe8f9e9c445c3e18e1a1b1e1dc1438006e1b8e5fe237ff6d11482d"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_rise4.png",
+      "size": 28137,
+      "sha256": "7a7e289963e46ee148331b9a3ca5ce8e87b9639854b2a6b7234bac90cad6b89c"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_rise5.png",
+      "size": 27892,
+      "sha256": "02fb0ef43fb345125a301e4fea9a01b745151e95c2767f44669681499e58f52a"
+    },
+    {
+      "path": "assets/reanim/Zombie_digger_rise6.png",
+      "size": 27100,
+      "sha256": "b8130ed199a6de131fe8d3232e23c3ed01f428e50732313985b5a2e98509537e"
+    },
+    {
+      "path": "assets/reanim/Zombie_duckytube.png",
+      "size": 8790,
+      "sha256": "c09d37901b3e06e67d4ff83c20b039cf41b30e09b8ff588a2c9f84553ae840c5"
+    },
+    {
+      "path": "assets/reanim/Zombie_duckytube_inwater.png",
+      "size": 9481,
+      "sha256": "4f39047b11d848a97c95477ab94465bd1aaac405d8062e22a8f325535935690d"
+    },
+    {
+      "path": "assets/reanim/Zombie_flaghand.png",
+      "size": 1408,
+      "sha256": "c8edc4c0cdefa8243a4fa19d947b0b3bd90f26cec0cf0758cef5af32716b449c"
+    },
+    {
+      "path": "assets/reanim/Zombie_hair.png",
+      "size": 3295,
+      "sha256": "bb8224b333f247faa69cee1b45169da3bc152e1997427c0bd31760dd1ad687bf"
+    },
+    {
+      "path": "assets/reanim/Zombie_head.png",
+      "size": 7873,
+      "sha256": "d08d4303556dffbbf4212912f3c905889ff04a9e1b311cf8b1c33903a8462fdf"
+    },
+    {
+      "path": "assets/reanim/Zombie_innerarm_hand.png",
+      "size": 1289,
+      "sha256": "95f6e1a9d8cfdcaaa01ba02e05d735bff52fc9f33b53c35a1a76026e5326e293"
+    },
+    {
+      "path": "assets/reanim/Zombie_innerarm_lower.png",
+      "size": 1351,
+      "sha256": "be386c18a81f455857e76eca4386a65dfcd535fe70e257aada724f93d526f44e"
+    },
+    {
+      "path": "assets/reanim/Zombie_innerarm_screendoor.png",
+      "size": 1778,
+      "sha256": "082a00d2c67c409feaacb9d31450011c6fc68e732423e1a096a9f116a24a1cd5"
+    },
+    {
+      "path": "assets/reanim/Zombie_innerarm_screendoor_hand.png",
+      "size": 902,
+      "sha256": "dcdadfa10e99251c497241e58c85a843678730aa62e9fc7e6e675aeb9e842f4d"
+    },
+    {
+      "path": "assets/reanim/Zombie_innerarm_upper.png",
+      "size": 1103,
+      "sha256": "343ca5d76242394b329f49f3fa82c2ac1ef478504cf5b59b54090e9f7324dfb6"
+    },
+    {
+      "path": "assets/reanim/Zombie_innerleg_foot.png",
+      "size": 1127,
+      "sha256": "74655485c53723f661c2986603f547ab89eb9fb67e451fb61d5b9feaa02bf460"
+    },
+    {
+      "path": "assets/reanim/Zombie_innerleg_lower.png",
+      "size": 2024,
+      "sha256": "84cd77e3969b134c8e51b06b8bc7f68c1d8e92e06206afe9b34cde6950f01e99"
+    },
+    {
+      "path": "assets/reanim/Zombie_innerleg_upper.png",
+      "size": 973,
+      "sha256": "1a514ebd1714bdccf4613ba540a816b4de08382470401bf72c8aeef5c6161777"
+    },
+    {
+      "path": "assets/reanim/Zombie_jaw.png",
+      "size": 1322,
+      "sha256": "e4407b91697b8b90347eab1e124f4147c3fc6459722ae1dc74d77b491e4be931"
+    },
+    {
+      "path": "assets/reanim/Zombie_mustache1.png",
+      "size": 1267,
+      "sha256": "fdee550d13eb55f23b08b0aa1f7391514c59bc81f7f99009199d3042d04a8e7f"
+    },
+    {
+      "path": "assets/reanim/Zombie_neck.png",
+      "size": 881,
+      "sha256": "9c5ea6452e882aabc2a778a304ddaa2f2a0df452d718d066a69af0142c011ed6"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerarm_hand.png",
+      "size": 1771,
+      "sha256": "8fbcf285b446adc52e970c4cf84bb60450e97baef92b7ad1e3313a146438f239"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerarm_hand2.png",
+      "size": 1852,
+      "sha256": "fd1482c170cf75ecbf6bda740348c2794a517bb8d5b4d2bb427c5049d452764a"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerarm_lower.png",
+      "size": 1302,
+      "sha256": "6819041cf0a9964133d9168b766a9f840a41bf9b3a3d7f2f77c1004741396c7d"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerarm_screendoor.png",
+      "size": 3903,
+      "sha256": "9c0d080622338f1ad02481112e0a6cae9dead69391cf525e9bb87eab9dd6ec5d"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerarm_upper.png",
+      "size": 1055,
+      "sha256": "27b13fb81c6835f66f90cc51712f1622a6d955eac91301fac15a7e7bc2d8634b"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerarm_upper2.png",
+      "size": 1239,
+      "sha256": "5d1363d989a5f988acfe50c49188971d786ffa506ccf43bf30120187a1a72adc"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerleg_foot.png",
+      "size": 1730,
+      "sha256": "868ff1e057c5c8e81cb11a9a4c231670b44db58f0d865519398bb1b55cd42954"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerleg_lower.png",
+      "size": 1641,
+      "sha256": "1a0e6e38f8d4799d330c7c77e245c48fc0a61a231478b35e04249796b130e20b"
+    },
+    {
+      "path": "assets/reanim/Zombie_outerleg_upper.png",
+      "size": 1499,
+      "sha256": "f8eb4b8deaaf8ac06d433d7dd89a69fe73bad77a79cebe25b0aa5c196bf36f1d"
+    },
+    {
+      "path": "assets/reanim/Zombie_screendoor1.png",
+      "size": 17251,
+      "sha256": "11f5654042c1c39f9b5182f6c9d84ee5d1b54321cc3ecd25219daf6147ec0941"
+    },
+    {
+      "path": "assets/reanim/Zombie_snorkle_whitewater1.png",
+      "size": 1069,
+      "sha256": "115e15275af187313c58e049f87fc5949e6fcde3f66417a120f7917eb484d670"
+    },
+    {
+      "path": "assets/reanim/Zombie_snorkle_whitewater2.png",
+      "size": 1460,
+      "sha256": "b2d79c8897fd31ba761e4f34e45358e377e427535117ad2bdb139666cc9a31e8"
+    },
+    {
+      "path": "assets/reanim/Zombie_snorkle_whitewater3.png",
+      "size": 1451,
+      "sha256": "364279ae20bd2fde7bb92f2b36626b1a82aaedb7cb3932490eb3398844696743"
+    },
+    {
+      "path": "assets/reanim/Zombie_tie.png",
+      "size": 1327,
+      "sha256": "d13b8b2e6803e80b1c4169e8d0918d3839c6d990fd1ce9e501de5ee0eadef82d"
+    },
+    {
+      "path": "assets/reanim/Zombie_tongue.png",
+      "size": 726,
+      "sha256": "9d0a286c698213558fc58feecb8712fae5599978bacdb906df014ae12686c099"
+    },
+    {
+      "path": "assets/reanim/Zombie_whitewater1.png",
+      "size": 1529,
+      "sha256": "f555ecc0a5414be74537a6d55a85e3ef6560957540839f08dc2b32509ddf44a7"
+    },
+    {
+      "path": "assets/reanim/Zombie_whitewater2.png",
+      "size": 1514,
+      "sha256": "1c25b268f76f43365cf599a295d6ca4ce6ed8b8cfba60f6918e9c2a4ca0398a6"
+    },
+    {
+      "path": "assets/reanim/Zombie_whitewater3.png",
+      "size": 1510,
+      "sha256": "bb2e1f34c0dded1e776c354a9b00cd153c16c6075725768e2f77ffb51c5e7962"
+    },
+    {
+      "path": "assets/rescue-design/doctor-command.webp",
+      "size": 45160,
+      "sha256": "d518e6ea611a4f036a23a2da71acf1bf8cad1f98be4a527eb9c33326dd429e80"
+    },
+    {
+      "path": "assets/rescue-design/doctor-walk.webp",
+      "size": 41142,
+      "sha256": "120b0c3326f29bb222b137ee1fa2d33697bc1b67361d57b443c6bb1b1f7ada27"
+    },
+    {
+      "path": "assets/rescue-design/provenance.json",
+      "size": 8469,
+      "sha256": "bcd63d110152d1e0cc282c08e35d7fdd79ff5de3fc4017337694eafe5778f71c"
+    },
+    {
+      "path": "assets/rescue-design/refuge-fence.webp",
+      "size": 49788,
+      "sha256": "10e00e6549980b6a3b1026716cda93ae0145d850cd97d4cee7c4f39f50b0965d"
+    },
+    {
+      "path": "assets/rescue-design/route-cache.webp",
+      "size": 50332,
+      "sha256": "89e6dea072ff85e2b3a52249bb39b9d73509d100a5d59b8e2f1e0d018356f8a9"
+    },
+    {
+      "path": "assets/rescue-design/route-hedge.webp",
+      "size": 75518,
+      "sha256": "f257a99737d80766c748f8328d9f90424e08f401b0e66eee8957329bc0704fa4"
+    },
+    {
+      "path": "assets/rescue-plants/provenance.json",
+      "size": 1082,
+      "sha256": "a892824e06261f919c86bb22b2f536f7c04ae2feabede93cc372a76ae6a3d1fb"
+    },
+    {
+      "path": "assets/rescue-plants/Squash_body.png",
+      "size": 13308,
+      "sha256": "d890a454d2999dc0d31942cd3b99555c5ffbe0559d931d3e5dcc2606bbebd3c4"
+    },
+    {
+      "path": "assets/rescue-plants/Squash_eyebrows.png",
+      "size": 2047,
+      "sha256": "67f7bbaafb673371c0d326ecfd0b453679a0807834a237ccb1dd9592909d1927"
+    },
+    {
+      "path": "assets/rescue-plants/Squash_eyes.png",
+      "size": 127,
+      "sha256": "b872d407fbac99a2cdbd011b54e8eaf7e0d9cff80878e7554bdf0ff601e3a122"
+    },
+    {
+      "path": "assets/rescue-plants/Squash_stem.png",
+      "size": 1147,
+      "sha256": "ad08aafbd96f3528c5b1c1e831f18a2cc02f45d749dc8f32138621391fbb2324"
+    },
+    {
+      "path": "assets/sounds/buttonclick.ogg",
+      "size": 16360,
+      "sha256": "f1778732c9e2658818b200d1b200aec7abf8cb9381d6254760fc2590ec4ba38a"
+    },
+    {
+      "path": "assets/sounds/gravestone_rumble.ogg",
+      "size": 20721,
+      "sha256": "92f39b33dfe54ad1f7e913e4abd92ac2bc82fe184071e03515d93a979c66a632"
+    },
+    {
+      "path": "assets/sounds/lawnmower.ogg",
+      "size": 56925,
+      "sha256": "6ebe3285d8d44e0b7b7309803876224abe2b8ee2c9daa870224b31fe27fe67e7"
+    },
+    {
+      "path": "assets/sounds/plant.ogg",
+      "size": 12675,
+      "sha256": "1a2067fb16914b6bded36be4c014b3f1e097aaddf2a48803d3cd68319316e5f9"
+    },
+    {
+      "path": "assets/sounds/readysetplant.ogg",
+      "size": 90706,
+      "sha256": "dac6cfad7094adf6671a1eaf3d89a96646ba2653e4b12b2d91567bf10e2ea481"
+    },
+    {
+      "path": "assets/sounds/seedlift.ogg",
+      "size": 13641,
+      "sha256": "3629106bbd039ddbe83747b6f9ffe50fef242fb2305e2d8755ad8a57388855fe"
+    },
+    {
+      "path": "assets/story-art/balloon-head-v2.png",
+      "size": 1341419,
+      "sha256": "407837836aad9ef9efa34c74e342550092a19c6aba8dd11112f6012fb6de1837"
+    },
+    {
+      "path": "assets/story-art/cactus-face-v2.png",
+      "size": 1034283,
+      "sha256": "1d386965d2808952ecd39c8c6a9895e20118ef174609feffcdc77f625b5eb9ba"
+    },
+    {
+      "path": "assets/story-art/chomper-interior-v2.png",
+      "size": 593093,
+      "sha256": "4d1aa8d28573ef130bc8b3d15418a79d04de6c7538b9142a8a6bf2ae427f95ed"
+    },
+    {
+      "path": "assets/story-art/chomper-jaws-v2.png",
+      "size": 614924,
+      "sha256": "2eb0d9ac88fca8cbfebd70afe57c0aa951bc0d68b8ccdcfc50308af05d48941d"
+    },
+    {
+      "path": "assets/story-art/civilian-head-v1.png",
+      "size": 1295442,
+      "sha256": "ecacd3dfa61e51b81a1102d32ce2b5e2cf6ab1d40d8c0a0d884e6137e47fe61d"
+    },
+    {
+      "path": "assets/story-art/civilian-head-v2.png",
+      "size": 1181526,
+      "sha256": "df6fac839ffaf214f5e507d54e1987f6dc95a3adbcd918e968b1578e3e3ee68b"
+    },
+    {
+      "path": "assets/story-art/digger-head-v2.png",
+      "size": 1188757,
+      "sha256": "28fc6d32c5d251b0d7d1de3bf0bf55e206db6c8d72a0dcd0d1e283b089b094b9"
+    },
+    {
+      "path": "assets/story-art/guard-heads-v1.png",
+      "size": 1123582,
+      "sha256": "9959c8625e7ec44e0f59bd5fd980c297cd6e20b946b460282251cefd001e84a0"
+    },
+    {
+      "path": "assets/story-art/guard-wallnut-v1.png",
+      "size": 1315894,
+      "sha256": "197cad4b5e8c2e84462716a27400f55f67edcbae3b9e2b292b7f8c675e490fed"
+    },
+    {
+      "path": "assets/story-art/pea-head-v2.png",
+      "size": 950431,
+      "sha256": "1d092d9382e5835d16d05a6d9efb4e32cfef54d6de81e79ef699dc4d3fe0a72e"
+    },
+    {
+      "path": "assets/story-art/provenance.json",
+      "size": 19599,
+      "sha256": "0c0a389575b2c667b72569bf4a654a232270c59d07733f9e2b9c8d2febf53a50"
+    },
+    {
+      "path": "assets/story-art/refuge-strip-v1.png",
+      "size": 1835027,
+      "sha256": "ff600798049897ef5de73fd38242d1cd16d58545be981ae7b56146bf3f06264a"
+    },
+    {
+      "path": "assets/story-art/snow-head-v2.png",
+      "size": 1137251,
+      "sha256": "4c2c1d966bed67ef0e9487ba9700932785edd43aaed19cce7f3b1b6a61a48a37"
+    },
+    {
+      "path": "assets/story-art/story-props-v1.png",
+      "size": 1474918,
+      "sha256": "3bc444a18a31410cf76e0be260ec11312d544809be9c5ff86fe8346cb8abb82f"
+    },
+    {
+      "path": "assets/story-art/sunflower-face-v2.png",
+      "size": 1013377,
+      "sha256": "f94bfb388c14cd667e37f591534ffd0d647acfb6a262aadd1a917992aa7ed061"
+    },
+    {
+      "path": "assets/terrain-plants/Blover_dirt_back.png",
+      "size": 301,
+      "sha256": "34e8b344b4ab5133d1e8fce862c45534a7c7c97de86bc3551cd47db04035b159"
+    },
+    {
+      "path": "assets/terrain-plants/Blover_dirt_front.png",
+      "size": 325,
+      "sha256": "f58458da1f2b6b60bcafed46a5045899e768d3c91f05fc7c0e9678f723217e89"
+    },
+    {
+      "path": "assets/terrain-plants/Blover_head.png",
+      "size": 2935,
+      "sha256": "87ab938b8ba00944f94ca207a8a094728e3952c42e6b49f073e84725efbf9de9"
+    },
+    {
+      "path": "assets/terrain-plants/Blover_head2.png",
+      "size": 2954,
+      "sha256": "01f039787503847975dc7e495f9314beaaa27bc16acd373e3a57d40d6e96e9f8"
+    },
+    {
+      "path": "assets/terrain-plants/Blover_petal.png",
+      "size": 1790,
+      "sha256": "3fe020328888b35feaca7f85a02765ff7563805241d671b6f1e015b10607ad24"
+    },
+    {
+      "path": "assets/terrain-plants/Blover_stem1.png",
+      "size": 983,
+      "sha256": "07e0db604e761f04c4e9c30e54ba2ecc73e88b82fb40e4f5bed73df293887f09"
+    },
+    {
+      "path": "assets/terrain-plants/Blover_stem2.png",
+      "size": 616,
+      "sha256": "63dc77ec9b6c378de7c05138bb7c936a50d484a09d32b0f00dbd2da6521476f1"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_basket.png",
+      "size": 4770,
+      "sha256": "810c88635e5437bfee09c900c1ce5762813ceb67ee1bd223866d8fdb32cab9d4"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_basket_overlay.png",
+      "size": 3742,
+      "sha256": "c0388259b9e8bca88d0d287d3d3ec766233c2eb27e9935aded62fc42a462248c"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_blink1.png",
+      "size": 681,
+      "sha256": "751c2fbc610bdd54701ec8696d21f06029a1a44bf640e4a7ab1274cd1ca20682"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_blink2.png",
+      "size": 613,
+      "sha256": "7b362f35b31b8b189c1e8e540f463025a61ab0d5edaa95bfd9971f775e2aed30"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_cabbage.png",
+      "size": 2058,
+      "sha256": "00c52b18f2f7d9673ed586792ba7cc9f89afe881957116a2b234ff3aec49f06b"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_eyebrow.png",
+      "size": 420,
+      "sha256": "fa5d4c9964b8c883edb14dea96f202386621ea8bbcb1692bafcacd84ca75ef22"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_head.png",
+      "size": 4883,
+      "sha256": "64d86754d625e74377b0521babe6ca75276bb87eb539476c40f43c2e63943b8f"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_leaf.png",
+      "size": 985,
+      "sha256": "75401aba102a9bae8764ec2fa523a6a3e90fb84c187155768bcaf4bb5ab24ff5"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_stalk1.png",
+      "size": 616,
+      "sha256": "424b063f86ae766386c37729e095e9f65385109cb417004a851695d5707e52eb"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_stalk2.png",
+      "size": 597,
+      "sha256": "501b573ac445bf216b07563cff0886985d05f2ac2a7812bc476a3ac99d956ab0"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_stalk3.png",
+      "size": 614,
+      "sha256": "046cf21a4a3a23bf6c68f21291798ec1ec9034bdfbcbd89b5d8727d6dcbccea3"
+    },
+    {
+      "path": "assets/terrain-plants/Cabbagepult_stalk4.png",
+      "size": 555,
+      "sha256": "afabf0dd3771bd7d464a977e5e29ef935d5fa387970b7230e32838cf05f457e9"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head1.png",
+      "size": 6865,
+      "sha256": "6f34701e7eba7c9d0207d1fff08e5c85bb1bf0b26a9e786c06aa73e68da83f6f"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head10.png",
+      "size": 3565,
+      "sha256": "99a6644c9add2b6b943ca95538a9d1bae7375eae6e120aa33f91cbc632d1ec0d"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head11.png",
+      "size": 2609,
+      "sha256": "7ef6cfdb802d7319533e14522ce53698b3ec8790f572cd69c8284fb650d0799e"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head12.png",
+      "size": 1670,
+      "sha256": "93d1bb7f253b28179a54fe6bafdb202786fa752e390a924beab8a51a5097fcae"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head2.png",
+      "size": 6071,
+      "sha256": "190df3ba7b75fdd6bc75eba4713db9eb749a5f3757019bfe212849bd9c8e95b4"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head3.png",
+      "size": 5303,
+      "sha256": "0608e6365edaea39b1fe7055e3210fb51873548064dd06454144412097645ee8"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head4.png",
+      "size": 1328,
+      "sha256": "07f4cde8b264adde8505fa70afb1e0a5e76e8fd76bfef39b6a6ece12de2a8de4"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head5.png",
+      "size": 2484,
+      "sha256": "27f2c61ce36aba3ec2a84d742bc4bafa5b2b71326b260953bcfb9a7874026ace"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head6.png",
+      "size": 3208,
+      "sha256": "8af8a439237d7b13e2c3d044d8002b6a4857b98a1abf4255914f2a1f47d293c4"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head7.png",
+      "size": 4339,
+      "sha256": "b2bab6aab8c2218624d4ae7fdb958fd5f77cc1ab163af5b6c3ca1526e9145787"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head8.png",
+      "size": 5420,
+      "sha256": "0219cfa633a4d60bac930febe358e0d371a964fde23f2cce76f8cb9dca27ebec"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_head9.png",
+      "size": 4131,
+      "sha256": "ebdc1a3b66a4c1fa9dea1a708ad110acaf8ed54404ac8456682bf3d52df8be81"
+    },
+    {
+      "path": "assets/terrain-plants/Coffeebean_leaf.png",
+      "size": 1866,
+      "sha256": "b47227bf0fc1b7d334f87868f9e83f2b797e2aefd23f246c898f69003bf4f55a"
+    },
+    {
+      "path": "assets/terrain-plants/FumeShroom_blink1.png",
+      "size": 1079,
+      "sha256": "5050248cef859247386255875346b3a80eb5ca2b3ccc1aa4960dfded680c968b"
+    },
+    {
+      "path": "assets/terrain-plants/FumeShroom_blink2.png",
+      "size": 1294,
+      "sha256": "2a7ee2643d1070038e93d199f22a7a5c3e89d8999afe21d5a891d743e750287d"
+    },
+    {
+      "path": "assets/terrain-plants/FumeShroom_body.png",
+      "size": 5274,
+      "sha256": "37f431bbc886b20d383b610a1fdb9f4260fabc93f5fc93a8eb8e9dfac5351452"
+    },
+    {
+      "path": "assets/terrain-plants/FumeShroom_head.png",
+      "size": 9427,
+      "sha256": "9221cbdbe7e5713cefdba58e5a09e39f13a3d893272263c81b38c5e853ef197e"
+    },
+    {
+      "path": "assets/terrain-plants/FumeShroom_spout.png",
+      "size": 815,
+      "sha256": "5cc410b11f4cb8ff8e6315cd7695abe47525b2b3a04b3b70213921891c80f62e"
+    },
+    {
+      "path": "assets/terrain-plants/FumeShroom_tip.png",
+      "size": 1314,
+      "sha256": "7100d5fc8f1eaac123b326a01f6f65b8c5c4ef5408ef56a1357b5d7bdae47c61"
+    },
+    {
+      "path": "assets/terrain-plants/LilyPad_blink1.png",
+      "size": 1421,
+      "sha256": "4b09857348cb686dde64d68a7916db0f44b56de2f9c19403059537ec9275976e"
+    },
+    {
+      "path": "assets/terrain-plants/LilyPad_blink2.png",
+      "size": 1351,
+      "sha256": "454794c4dd051a7e3e8d0cf054a1ef208a2b8bd6273c95acfd29dcce1c6dfa3e"
+    },
+    {
+      "path": "assets/terrain-plants/LilyPad_body.png",
+      "size": 10035,
+      "sha256": "f1f5a0542828e8e02babced913958a003fe6161ea713b5804b7eff6f6a710af6"
+    },
+    {
+      "path": "assets/terrain-plants/PeaShooter_frontleaf.png",
+      "size": 3315,
+      "sha256": "26ce3afa0788a624d8a1747dab2ba51223489a04aed61f08a453c0d073bfbddd"
+    },
+    {
+      "path": "assets/terrain-plants/PeaShooter_frontleaf_lefttip.png",
+      "size": 1332,
+      "sha256": "fac7ced98626e9a9f91aa9746025e3713496cde453c1999ab89bdad6ed966f4d"
+    },
+    {
+      "path": "assets/terrain-plants/PeaShooter_frontleaf_righttip.png",
+      "size": 1085,
+      "sha256": "a5a5245bd884c6cc90ff13666f147b9ece85c6e6453dbeb56857c5d50caf785d"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_body.png",
+      "size": 9925,
+      "sha256": "824c1ff06edf4b78726282a327e8616d42138f94068e6afd859d5321fe3376c4"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_eyes.png",
+      "size": 949,
+      "sha256": "1785bb008bf659ff0b7bf347a6e94163d75d015046308fb542d236172c25e09e"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_eyes2.png",
+      "size": 1279,
+      "sha256": "454c9800caafafa99077ebf1ed141f9075c627421e9612e3a08fb1a4ddc1e6d4"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_leaf1.png",
+      "size": 626,
+      "sha256": "7e274df3116d7a6ae20e33d0a67c49e43732b1b86716fd93c36955341433d0ba"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_leaf2.png",
+      "size": 1218,
+      "sha256": "2845949da6a8d78ce750db16fd12648ea90a50676f00d366fe1ff3d1b8dc2e1c"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_leaf3.png",
+      "size": 757,
+      "sha256": "2cdbfdd34c0444d1bce77e029494ca6dc8b8f99e7fd8921e687a94ef54d2fd41"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_leaf4.png",
+      "size": 680,
+      "sha256": "6ece1672088b879a859cc5247040c2b2cdde593c815c16a0e3eaffc96f77e42f"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_leaf5.png",
+      "size": 1040,
+      "sha256": "cedccafde1b555323716b2dc78fa50411fa982057385045e3e8e4175633ba50b"
+    },
+    {
+      "path": "assets/terrain-plants/Plantern_stem.png",
+      "size": 2260,
+      "sha256": "b20db47f37db3bc12e5bc748afe6199fa675b017f113a5f4a3c7cf85f9ed2c46"
+    },
+    {
+      "path": "assets/terrain-plants/Pot_bottom.png",
+      "size": 1974,
+      "sha256": "6c7917ad4b6f696a239bb19c2bdcc7bfd1fa800951bc1ff7ffb2ed89aed2353b"
+    },
+    {
+      "path": "assets/terrain-plants/Pot_bottom2.png",
+      "size": 1517,
+      "sha256": "7b5739158ff4fb71e4eded0701edd2b0e0f7ffa801e41b1d8eac8637b22908f0"
+    },
+    {
+      "path": "assets/terrain-plants/Pot_leaf1.png",
+      "size": 530,
+      "sha256": "f12e300aa333b848a444cf7e77cfc21074a1982a60a3029e8fd6b44767e84703"
+    },
+    {
+      "path": "assets/terrain-plants/Pot_leaf2.png",
+      "size": 430,
+      "sha256": "33fb823da398a4c3e0f82610b5e8f6abdb94c878a90b31095e814cad20e088e0"
+    },
+    {
+      "path": "assets/terrain-plants/Pot_stem.png",
+      "size": 373,
+      "sha256": "76c325e90cf2f5dc595408caf7a5d982b534a0a608c3be423714917521a00770"
+    },
+    {
+      "path": "assets/terrain-plants/Pot_top.png",
+      "size": 12505,
+      "sha256": "342cf3f1e2d0543128f201f5637bf1449cbe89c50f18c8e536cb01e6e7a91c84"
+    },
+    {
+      "path": "assets/terrain-plants/Pot_water_base.png",
+      "size": 3047,
+      "sha256": "dd524bb6be9c4b5c8af734a997fcea82225d8201d44418dd97ebed4a122f8147"
+    },
+    {
+      "path": "assets/terrain-plants/Pot_water_top.png",
+      "size": 15761,
+      "sha256": "42ff31078eb868c6e027df7c5e56f26f3f28bad9576d920259a4e40ce39b933b"
+    },
+    {
+      "path": "assets/terrain-plants/provenance.json",
+      "size": 20803,
+      "sha256": "82ee766453dc8ff632ec7d9fe7a68b8f1b3f7d47f061fb5ba51cdfce48cd753a"
+    },
+    {
+      "path": "assets/terrain-plants/PuffShroom_blink1.png",
+      "size": 764,
+      "sha256": "3664f03a04398c8de3f06f8a84464309e812b139f50409b36123be5f5814e48d"
+    },
+    {
+      "path": "assets/terrain-plants/PuffShroom_blink2.png",
+      "size": 633,
+      "sha256": "f083ee0b688e9b257ddc47286dd2b3894f791e78c50d46485a53417a9659b705"
+    },
+    {
+      "path": "assets/terrain-plants/PuffShroom_body.png",
+      "size": 2592,
+      "sha256": "245a9a9e8d3ac3bae7d5bab08fcc99f883cd93bb658f23e08f6847689353c584"
+    },
+    {
+      "path": "assets/terrain-plants/PuffShroom_head.png",
+      "size": 6527,
+      "sha256": "5f8071f541bd510fb2e2e7ab4e364dd597ac6b107981317f5609f6d7453fcf46"
+    },
+    {
+      "path": "assets/terrain-plants/PuffShroom_stem.png",
+      "size": 262,
+      "sha256": "83ee68c7f7562ff20ffdf7d488f8f4955a7a4b78ad3fb6b2221ff0d885eaeb5c"
+    },
+    {
+      "path": "assets/terrain-plants/PuffShroom_tip.png",
+      "size": 1071,
+      "sha256": "0f7e69daaec03f8af85fcd173708aa453a5af4d7d550827eab8cc292e301475b"
+    },
+    {
+      "path": "assets/terrain-plants/SunShroom_blink1.png",
+      "size": 1256,
+      "sha256": "9070e173df813368e2d7a3446a3f48fcf50e5fac892dbe4071987cf7382fc445"
+    },
+    {
+      "path": "assets/terrain-plants/SunShroom_blink2.png",
+      "size": 1179,
+      "sha256": "ee47e9d6c5858ff5129c4ef5c548c4723358488aec27e6a8b517f6082dbdd70f"
+    },
+    {
+      "path": "assets/terrain-plants/SunShroom_body.png",
+      "size": 4316,
+      "sha256": "ea006e755ddcddc0bae1f0ee6eabe3a085c345b5853f0af1bf655cfb2687db78"
+    },
+    {
+      "path": "assets/terrain-plants/SunShroom_head.png",
+      "size": 8008,
+      "sha256": "551dfc5e509961f1eac1bb79b35da7827a1544034ed90a96d6d539c9425b7e64"
+    },
+    {
+      "path": "assets/terrain-plants/SunShroom_sleep.png",
+      "size": 1155,
+      "sha256": "1baf74670050a894bee1d0f95ca965b0b4c9d7fd5908454006779380dfa7afe3"
+    },
+    {
+      "path": "assets/tombstones-alpha.png",
+      "size": 157933,
+      "sha256": "b4394d553b4530ec6b0d7b56b1368beb465fab21a973e16b27349ccea592cc81"
+    },
+    {
+      "path": "assets/ui/adventure-highlight.png",
+      "size": 43823,
+      "sha256": "2ca70f580ffff1993486b45176f1bd5377b00da1c516aa3d53c81c7b4647168a"
+    },
+    {
+      "path": "assets/ui/adventure-original.png",
+      "size": 42211,
+      "sha256": "7f5231369975f0a1d80051b1ea8f0756f984b5eb2f6faa89ecfb099325df7d44"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_CloseButton.png",
+      "size": 2122,
+      "sha256": "f053a1a4e8a3706653a8a242d5b78c581cca4a442486c0988bdb3af0f406b141"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_CloseButtonHighlight.png",
+      "size": 2134,
+      "sha256": "c0d4f0176c9565875886256594e8c874bbdd516fe5fef566685d18e991cf798a"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_GroundDay.jpg",
+      "size": 9827,
+      "sha256": "ed97430465c2a5646617adec85925dd3bd05586981e16256b9ca843132544952"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_GroundNight.jpg",
+      "size": 5335,
+      "sha256": "e20df9f8cd625b601f46a8ff6bc1bbbf9c72c2141988c5d00fcd8c08c8301acc"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_GroundPool.jpg",
+      "size": 9821,
+      "sha256": "b896faa4b4bc406d62fea1618ee350c8ca57acc00532d5655ac5cba668461b8e"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_GroundRoof.jpg",
+      "size": 7124,
+      "sha256": "d0d1f4f550ba943ef541dd567d86eb036ba8bcd3b8a5f3ebc0cde03a7cbfa211"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_IndexButton.png",
+      "size": 2248,
+      "sha256": "cfc7b75bd38320ed6cfa3bdf8df44afacde2b9eab11f48d76c804e0367e263ee"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_PlantBack.jpg",
+      "size": 71700,
+      "sha256": "beb9a3a6542e3cad596505b3a47632711daf95b29a0f278c14877a01bfb6d755"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_PlantCard.png",
+      "size": 29887,
+      "sha256": "8d978f12aefbee0963b4b18a2189c882bd63799f05404de8f028aa418b6831d6"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_ZombieBack.jpg",
+      "size": 40490,
+      "sha256": "70a31b7ada4c80e0eeb3f23272b3eb74e041358bd3746e490f39608c5ffdb802"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_ZombieCard.png",
+      "size": 51049,
+      "sha256": "e79ad6b49f2c1f59a9894956177639ee4ebc6cf358bf0285074660b6d4a19647"
+    },
+    {
+      "path": "assets/ui/almanac/Almanac_ZombieWindow2.png",
+      "size": 4889,
+      "sha256": "22a87a199950f87d765961b5df1d4bf86e851f248f1151ef6246aea259cf03ff"
+    },
+    {
+      "path": "assets/ui/almanac-highlight.png",
+      "size": 15211,
+      "sha256": "55faee5f4b4455aa626838166e16e51726b95550f108c50926c675d5d707f9dd"
+    },
+    {
+      "path": "assets/ui/almanac-original.png",
+      "size": 14850,
+      "sha256": "3bffac5b985ac985a9eef502c9f59fbdd6993f8d5d60ec827cb65bec1b442790"
+    },
+    {
+      "path": "assets/ui/award-original.jpg",
+      "size": 159592,
+      "sha256": "ed2d37f88601b9968e870d518f22f69b14639937a5b497313fe26e35ee2ca8cf"
+    },
+    {
+      "path": "assets/ui/chapters-original.jpg",
+      "size": 143129,
+      "sha256": "a45a64f87df3bb41be5cd8da4d838c6e0b83ab6161d5bca1acca9c57b25913bb"
+    },
+    {
+      "path": "assets/ui/dialog-original.png",
+      "size": 39723,
+      "sha256": "fd5c3179f58e6baf07e751a738350fe7f8a2e4f4c5b223802ac8f008d927aa1a"
+    },
+    {
+      "path": "assets/ui/dossier-original.png",
+      "size": 88588,
+      "sha256": "cfa36e3dfd1beaa4184b217e409c4d6746f3991cf75acf844d7ea21362d667ad"
+    },
+    {
+      "path": "assets/ui/home-scene.jpg",
+      "size": 127259,
+      "sha256": "8bb6eed27b335cd7ad4284f78ac89877f42d7cbfc87d1c745a034e230cb91652"
+    },
+    {
+      "path": "assets/ui/options-label-highlight.png",
+      "size": 5255,
+      "sha256": "5495d2b701b0efe55a44dbee62b6babb03870bf20c62077b51d85d706fc5a65e"
+    },
+    {
+      "path": "assets/ui/options-label.png",
+      "size": 5444,
+      "sha256": "143632518431b3c18def8e4ec0871017807ce12aff01a9510845af3a765cbee4"
+    },
+    {
+      "path": "assets/ui/options-original.png",
+      "size": 115975,
+      "sha256": "1056edbc00cb4143bdaf28a5218681bd3dbfc9fe2ac41746d37d959ed234afdf"
+    },
+    {
+      "path": "assets/ui/original-provenance.json",
+      "size": 8197,
+      "sha256": "506ff5d5e734bcdad8af8960f7a505f4dc253fb56219f565e922b886dbbf0bc8"
+    },
+    {
+      "path": "assets/ui/record-note-mask.png",
+      "size": 9454,
+      "sha256": "de1d63e5574ddb257902d9bc21b016c47ee8425f8891d33e72fc0e3c8505198f"
+    },
+    {
+      "path": "assets/ui/record-note.jpg",
+      "size": 10759,
+      "sha256": "37b61172cd83e582e5d9d77f47bbf1dd3e43ed500b7b7785927091638175424e"
+    },
+    {
+      "path": "assets/ui/rescue-door.png",
+      "size": 17251,
+      "sha256": "11f5654042c1c39f9b5182f6c9d84ee5d1b54321cc3ecd25219daf6147ec0941"
+    },
+    {
+      "path": "assets/ui/title-original.png",
+      "size": 14326,
+      "sha256": "312dc963e382b0e4ed37b43397111e8f1df1889c870b2786ac188256b96c9320"
+    },
+    {
+      "path": "assets/ui/welcome-original.png",
+      "size": 34751,
+      "sha256": "1d4cb9800ca72c68630f5f45368f593ef39a1e09d1ddc755098b9a781678d5db"
+    },
+    {
+      "path": "assets/ui/zombie-packet.png",
+      "size": 14783,
+      "sha256": "ccb62b01f59ad55aa05852cec409aec60fa24265d014df6fbf2247c7048ccbab"
+    },
+    {
+      "path": "assets-data.js",
+      "size": 3718383,
+      "sha256": "294233fa7c51af3c49b1d73c5cdd5192a73a67b69bc8d755f0c48c4e7975168d"
+    },
+    {
+      "path": "battle-atlas-model.js",
+      "size": 3360,
+      "sha256": "17fd698f60a7188ae772e1441893680e0001431cb92f03b88c62f3c28b2e938f"
+    },
+    {
+      "path": "battle-atlas.css",
+      "size": 4059,
+      "sha256": "32567a6f70065a1afc996447fb5d4e291e9efdddefd2111a32d1689ad6074ec4"
+    },
+    {
+      "path": "battle-atlas.html",
+      "size": 3727,
+      "sha256": "f83aaaf5b68bc810adfcb7b038b5176da1e9d38e5351f996758d51244accb258"
+    },
+    {
+      "path": "battle-atlas.js",
+      "size": 10218,
+      "sha256": "4093866935b48dcd0c99682d60fbee69463714f8ac5a007e4c93337112b07a7a"
+    },
+    {
+      "path": "battle-campaign-data.js",
+      "size": 26530,
+      "sha256": "e7246535ba5ccf94c435b3584af466eac1ae8533a372748daef1cb750f7741c2"
+    },
+    {
+      "path": "battle-environment.js",
+      "size": 5362,
+      "sha256": "64ffed10f3a01c6966066eb6a1257e8420e36dc0e8687f6fc30b93c405ce08c8"
+    },
+    {
+      "path": "battle-map-data.js",
+      "size": 5342,
+      "sha256": "d76b15f59840c8f7574b534cb2482c952027d3f3a1a654673a0df0167b252976"
+    },
+    {
+      "path": "battle-map-land.js",
+      "size": 8808,
+      "sha256": "1a03bedad580703961864e6b0c0ff8ad69e1cc21400b615854438c5b96cf5ac8"
+    },
+    {
+      "path": "battle-map-water-roof.js",
+      "size": 11688,
+      "sha256": "ff91051c57768b9a5fa7e8794f7be6f38791cd516bae871947b71bd5cc2bd397"
+    },
+    {
+      "path": "build-info.js",
+      "size": 277,
+      "sha256": "e840950ced429b1ff4f863b05289a674597a40ebe236922c5e226205e9c3e631"
+    },
+    {
+      "path": "campaign.js",
+      "size": 2366,
+      "sha256": "bc0f5fe92ffaa882134928547912a1bf2c4e6305ca3372d8d4624f8a0f8ab06a"
+    },
+    {
+      "path": "classic-flow.css",
+      "size": 17852,
+      "sha256": "868af6d506d4645b3d7336e48bd9538bbb27ef58d482c0cc4f38517aa16adbc3"
+    },
+    {
+      "path": "comics/act1.png",
+      "size": 2731394,
+      "sha256": "3af8b8bc1f88b8bbfc06e32a1a9dae820fd975430bc6e3398b3be499835d34ef"
+    },
+    {
+      "path": "comics/act2.png",
+      "size": 2992509,
+      "sha256": "2f0226a2adbcf1564c734c39573c84ee48a6d0ab2de9d33a366241623e6cc9af"
+    },
+    {
+      "path": "comics.html",
+      "size": 1781,
+      "sha256": "8942df530af6b5625e2ac97548b0447f76ab7c3bd683476a01969c05193e1564"
+    },
+    {
+      "path": "comics.js",
+      "size": 530,
+      "sha256": "bb647375b5c732ae7375fbc2b2f22cb134500c5c087524df7bb4cc04fa7f548f"
+    },
+    {
+      "path": "engine.js",
+      "size": 17693,
+      "sha256": "d66d13190172b41d96a6ba3e0fe6ab9a373ed66bd2b253f2a2988db2ffc7ea60"
+    },
+    {
+      "path": "game.js",
+      "size": 51317,
+      "sha256": "88aff3426db3961bb568dd8649d59bbc7363ea0341cc820b14c1e4cd76dfec81"
+    },
+    {
+      "path": "index.html",
+      "size": 10387,
+      "sha256": "abcbacf2a3fc24212f34e945c3c4e8daf5f62e480ea0b30a7fa8cceedb8a7a14"
+    },
+    {
+      "path": "original-ui.css",
+      "size": 22838,
+      "sha256": "dacd362976a8ea0d4bd1534a1cecbb3c4156cf47552bdc3390cdb76096dd3c84"
+    },
+    {
+      "path": "prologue/escape-c.png",
+      "size": 3141272,
+      "sha256": "452a9ec6b863a4d4dcbbbfb5707027ecbcea610c8e7275cc57e375a87fea675c"
+    },
+    {
+      "path": "prologue/prison-a.png",
+      "size": 2776352,
+      "sha256": "054e11ad43744aa79b9829fb13cd2e22b45185f5bc03a68ddd69f6438aef275c"
+    },
+    {
+      "path": "prologue/shock-b.png",
+      "size": 2994761,
+      "sha256": "d9280a7fabd3048918eae4dfe284138c611600497cf6904999fbfc0fec68e644"
+    },
+    {
+      "path": "prologue-data.js",
+      "size": 5610,
+      "sha256": "4ba9d8736c22724616f9adc614c9a520ea729992d6a704d6581d3b9f5b519479"
+    },
+    {
+      "path": "prologue.js",
+      "size": 3631,
+      "sha256": "1f214ac620ee00450a77aa9d42e2e2249bcb3de0d9ed1b08ce89e7167c873564"
+    },
+    {
+      "path": "README.md",
+      "size": 18870,
+      "sha256": "09403d4fa0d33f794ac604dc76738ffa630b9b865d267c7a30a920af474f0de3"
+    },
+    {
+      "path": "renderer.js",
+      "size": 32495,
+      "sha256": "dd269527898aeb76969ebd9d018ba4a8e3627e3fbdd5632666b24b5d719e56a8"
+    },
+    {
+      "path": "rescue-design-data.js",
+      "size": 9580,
+      "sha256": "4e996fcdc4eefbda3569f16791a64c5b4ea028be9b2d5ada2374f9ed15f78977"
+    },
+    {
+      "path": "rescue-design-model.js",
+      "size": 48622,
+      "sha256": "c5bd0b17678f37f69d799bc06532fdbab8add385d798d92707fc70c320d92911"
+    },
+    {
+      "path": "rescue-design-renderer.js",
+      "size": 16794,
+      "sha256": "4f82d945c596b725779066e01972950eea861465ef76d25679bcbf7da272ced9"
+    },
+    {
+      "path": "rescue-design.css",
+      "size": 15314,
+      "sha256": "91e8ad99102df2adc4cea314b2aac5a32b5d936f89dc6fe9fa148ad7040f4267"
+    },
+    {
+      "path": "rescue-design.html",
+      "size": 8149,
+      "sha256": "339aa99effcf25932cba606d8da635c2e4ba57f8f6465b48af5e05765770dd82"
+    },
+    {
+      "path": "rescue-design.js",
+      "size": 34981,
+      "sha256": "9d71d71845048886240211ca96e64c5bd5ef63e0661116caf23c43f274afcaa0"
+    },
+    {
+      "path": "rescue-plant-assets.js",
+      "size": 29032,
+      "sha256": "33157491a73164df069109e31d064089366a4a936ae6d6f291781f5d14461954"
+    },
+    {
+      "path": "rescue-story-data.js",
+      "size": 22978,
+      "sha256": "f9e84843dd82e955b31d138a6901d556acaed7c5dbd2b74c1e8e203b8669f053"
+    },
+    {
+      "path": "rescue-story-ui.js",
+      "size": 6616,
+      "sha256": "69a99c415548a362e21296069882bca0329d6fb51482da8ad2b22e2e60d30d39"
+    },
+    {
+      "path": "Start-Slice.cmd",
+      "size": 39,
+      "sha256": "0edbd8f5b22789c3f11971244871f1b36e23f9e710fdc8b25ca6429165ec81be"
+    },
+    {
+      "path": "story-data.js",
+      "size": 37679,
+      "sha256": "bd17c3e8f2997783947d1cff4e385f194c431f3f2a1ea86cf2b2d73610331d79"
+    },
+    {
+      "path": "style.css",
+      "size": 23993,
+      "sha256": "d740de679e256f9f61069a35faa9c70df6acb4ed0fe0d185398d6a90ab19431d"
+    },
+    {
+      "path": "terrain-campaign-data.js",
+      "size": 27784,
+      "sha256": "99375ecc0b2cefb5b2f7a67bd077c5ffe3709013a388390ab0c4c1cf65e04d35"
+    },
+    {
+      "path": "terrain-campaign-setup.js",
+      "size": 3929,
+      "sha256": "110e7752a11d8869912110d500d04b811fec5717c71cc7f317a9c435d11a57c6"
+    },
+    {
+      "path": "terrain-campaign.html",
+      "size": 9119,
+      "sha256": "d57c820c8bfbba6f8fce15ecfd591deed771ebeb9c8f2858d85359c01b91ee64"
+    },
+    {
+      "path": "terrain-plant-assets.js",
+      "size": 349160,
+      "sha256": "5fb860a1e362a5cfe3e6a926bb8edb2a3807f64405b4c7745c5a3b9262b9aeac"
+    },
+    {
+      "path": "terrain-progress.js",
+      "size": 1311,
+      "sha256": "35b37036937a1f6d566a0cb36143226412fe8140c5d9142f1439acca3a232590"
+    },
+    {
+      "path": "terrain-rules.js",
+      "size": 2542,
+      "sha256": "d7c6da30591c0551230e7e79255b1ed08b51bb3cb07da51c747c857bcbf7052e"
+    },
+    {
+      "path": "terrain-unit-data.js",
+      "size": 3425,
+      "sha256": "3d41e0cf00555c116393552715d606869fd10a2461dc8f33afbda2a6a67a2fc0"
+    },
+    {
+      "path": "ui-font-data.js",
+      "size": 134668,
+      "sha256": "400104f6eb6d249e75d05716d7fc944c5dbf508889b62ff1fc09ae77bdd0853d"
+    },
+    {
+      "path": "ui-themes.css",
+      "size": 7647,
+      "sha256": "d203491fd31a7c9f47afb9e59ddefc1255e690ddff32b416d56c4fb762fcd5da"
+    },
+    {
+      "path": "ui-themes.js",
+      "size": 5345,
+      "sha256": "205737daa44b0718967deb8d1cd717e77c5964402a6714eb3daccbcc96650b21"
+    },
+    {
+      "path": "update-ui.css",
+      "size": 3582,
+      "sha256": "03cb9acabb1a6420240d804a193abc7276aac6decd3b19b91a1f8a7a6247d2c9"
+    },
+    {
+      "path": "update-ui.js",
+      "size": 9309,
+      "sha256": "50e321904aa0f8ae9f336f55b54b9982cb517eaeaee4db4ecdd97ab4310a4083"
+    }
+  ]
+}

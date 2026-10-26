@@ -1,0 +1,226 @@
+[
+  {
+    "name": "roof-night-battle3.png",
+    "levelIndex": 35,
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "sun": 0,
+    "plants": [
+      {
+        "type": "cabbagepult",
+        "row": 1,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 3,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "sunshroom",
+        "row": 4,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "cactus",
+        "row": 0,
+        "col": 4,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 4,
+        "col": 6,
+        "sleeping": false,
+        "attack": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 6,
+        "sleeping": false,
+        "attack": 0
+      }
+    ],
+    "supports": [
+      {
+        "id": "support-0",
+        "type": "flowerpot",
+        "row": 1,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-1",
+        "type": "flowerpot",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-2",
+        "type": "flowerpot",
+        "row": 4,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-3",
+        "type": "flowerpot",
+        "row": 0,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-4",
+        "type": "flowerpot",
+        "row": 4,
+        "col": 6,
+        "hp": 180,
+        "maxHp": 180
+      },
+      {
+        "id": "support-5",
+        "type": "flowerpot",
+        "row": 3,
+        "col": 6,
+        "hp": 180,
+        "maxHp": 180
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot-6",
+        "row": 0,
+        "lane": 0,
+        "col": 5.760000000000002,
+        "originCol": 4,
+        "dr": 0,
+        "dc": 1,
+        "damage": 20,
+        "type": "cactus",
+        "airborne": false,
+        "lobbed": false,
+        "range": 12,
+        "life": 3.950000000000002
+      }
+    ]
+  },
+  {
+    "name": "waiting-for-handoff-fixture.png",
+    "fixture": "Isolated renderer fixture: natural prep60 scene plus authored open door and injured follower on a legal empty row2 col2 cell with escort=null; AI paused for one .05-second model tick. Does not claim natural rescue playthrough.",
+    "plants": [
+      {
+        "id": 5,
+        "type": "pea",
+        "row": 1,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180,
+        "path": [],
+        "moving": false,
+        "attack": 0,
+        "hit": 0,
+        "cooldown": 0.95,
+        "lastMove": -10,
+        "squad": "守门组",
+        "order": "警戒",
+        "facing": 1,
+        "opening": false,
+        "sunTimer": 12.5,
+        "ability": {
+          "state": "idle",
+          "elapsed": 0
+        },
+        "cactusHeight": 0,
+        "sleeping": false,
+        "createdAt": 0.8000000000000002,
+        "growth": 0.05,
+        "coffee": 0
+      },
+      {
+        "id": 6,
+        "type": "pea",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "maxHp": 180,
+        "path": [],
+        "moving": false,
+        "attack": 0,
+        "hit": 0,
+        "cooldown": 0.95,
+        "lastMove": -10,
+        "squad": "守门组",
+        "order": "警戒",
+        "facing": 1,
+        "opening": false,
+        "sunTimer": 12.5,
+        "ability": {
+          "state": "idle",
+          "elapsed": 0
+        },
+        "cactusHeight": 0,
+        "sleeping": false,
+        "createdAt": 1.6000000000000008,
+        "growth": 0.05,
+        "coffee": 0
+      },
+      {
+        "id": 7,
+        "type": "pea",
+        "row": 4,
+        "col": 6,
+        "hp": 180,
+        "maxHp": 180,
+        "path": [],
+        "moving": false,
+        "attack": 0,
+        "hit": 0,
+        "cooldown": 0.95,
+        "lastMove": -10,
+        "squad": "守门组",
+        "order": "警戒",
+        "facing": 1,
+        "opening": false,
+        "sunTimer": 12.5,
+        "ability": {
+          "state": "idle",
+          "elapsed": 0
+        },
+        "cactusHeight": 0,
+        "sleeping": false,
+        "createdAt": 2.4499999999999993,
+        "growth": 0.05,
+        "coffee": 0
+      }
+    ],
+    "shots": [],
+    "follower": {
+      "id": "rescued-wait-fixture",
+      "type": "normal",
+      "kind": "zombie",
+      "name": "等待接应的同胞",
+      "row": 2,
+      "col": 2,
+      "hp": 35,
+      "maxHp": 210,
+      "path": [],
+      "escort": null,
+      "moving": false,
+      "facing": 1,
+      "wounded": true
+    }
+  }
+]
