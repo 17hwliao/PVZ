@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-27",
+  "scope": "Real browser visual spot checks: lawn horizontal fire, fog balloon pop and mushrooms, pool bridge alignment, roof planted actors and squad controls; no claim of all forty levels played.",
+  "narrow": {
+    "bankTop": 609.4500122070312,
+    "buttonSizes": [
+      {
+        "height": 44,
+        "width": 82.6500015258789
+      },
+      {
+        "height": 44,
+        "width": 82.6500015258789
+      },
+      {
+        "height": 44,
+        "width": 82.6500015258789
+      },
+      {
+        "height": 44,
+        "width": 82.6500015258789
+      }
+    ],
+    "canvasBottom": 527.0500183105469,
+    "overflow": false,
+    "panelBottom": 609.4499893188477,
+    "panelTop": 527.0499877929688,
+    "width": 390
+  },
+  "wide": {
+    "overflow": false,
+    "panelTexture": "125% 100%",
+    "width": 1280
+  },
+  "consoleWarningsOrErrors": [],
+  "fix": "Cropped the left sun-icon compartment from the shared SeedBank texture behind squad controls.",
+  "deviceLimit": "390px viewport emulation, not Android hardware.",
+  "sourceVerification": [
+    {
+      "path": "rescue-design.css",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "5125ecc5b008559d63432933d69e6b50b302ff4f25c47d1cc2529670a6d8ceb4"
+    },
+    {
+      "path": "rescue-design.html",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "390d2b51df49f6ade2a433a50aa82eec73be8159080396a57e48dc447f3f713f"
+    },
+    {
+      "path": "terrain-campaign.html",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "4cf446eb1cae281d49f971039d998d6633144bdb6b26e4da19892adec45db575"
+    }
+  ],
+  "targetedTests": {
+    "squadControlsPassed": 12,
+    "syntaxFiles": 36,
+    "localReferences": 550,
+    "missingReferences": 0
+  },
+  "packaged": false,
+  "pushed": false
+}

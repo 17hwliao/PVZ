@@ -1,0 +1,1232 @@
+[
+  {
+    "name": "first-row-tall-air.png",
+    "note": "Authored legal first-row balloon and fully raised cactus pose for display bounds; no difficulty/playthrough claim.",
+    "status": "battle",
+    "time": 0,
+    "teams": [
+      {
+        "id": 0,
+        "row": 0,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 9,
+            "type": "balloon",
+            "hp": 180,
+            "maxHp": 180,
+            "visualType": "balloon",
+            "hit": 0,
+            "airborne": true,
+            "pop": 0,
+            "slot": 0
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": []
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": []
+      }
+    ],
+    "plants": [
+      {
+        "type": "cactus",
+        "row": 0,
+        "col": 6,
+        "hp": 180,
+        "cactusHeight": 1
+      }
+    ],
+    "plantsCount": 1
+  },
+  {
+    "name": "natural-attack-a.png",
+    "note": "Natural 60s paid preparation, legal team command and real stationary combat.",
+    "status": "battle",
+    "time": 4.94999999999999,
+    "teams": [
+      {
+        "id": 0,
+        "row": 1,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 0,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 1,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 2,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "col": 4.831999999999997,
+        "attack": 0.5,
+        "moving": true,
+        "members": [
+          {
+            "id": 3,
+            "type": "normal",
+            "hp": 150,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 4,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 5,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 6,
+            "type": "normal",
+            "hp": 150,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 7,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 8,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      }
+    ],
+    "plants": [
+      {
+        "type": "pea",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "pea",
+        "row": 3,
+        "col": 4,
+        "hp": 108,
+        "cactusHeight": 0
+      },
+      {
+        "type": "pea",
+        "row": 4,
+        "col": 6,
+        "hp": 180,
+        "cactusHeight": 0
+      }
+    ],
+    "plantsCount": 3
+  },
+  {
+    "name": "natural-attack-b.png",
+    "note": "Same actual stationary fight 0.12 seconds later; native bite animation advances.",
+    "status": "battle",
+    "time": 5.06999999999999,
+    "teams": [
+      {
+        "id": 0,
+        "row": 1,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 0,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 1,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 2,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "col": 4.755199999999997,
+        "attack": 0.38,
+        "moving": true,
+        "members": [
+          {
+            "id": 3,
+            "type": "normal",
+            "hp": 150,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 4,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 5,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 6,
+            "type": "normal",
+            "hp": 150,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 7,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 8,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      }
+    ],
+    "plants": [
+      {
+        "type": "pea",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "pea",
+        "row": 3,
+        "col": 4,
+        "hp": 108,
+        "cactusHeight": 0
+      },
+      {
+        "type": "pea",
+        "row": 4,
+        "col": 6,
+        "hp": 180,
+        "cactusHeight": 0
+      }
+    ],
+    "plantsCount": 3
+  },
+  {
+    "name": "night-actual-battle.png",
+    "note": "Natural paid AI and default squads, 60s preparation +3s battle; production canvas without HTML cards.",
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "teams": [
+      {
+        "id": 0,
+        "row": 1,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 0,
+            "type": "normal",
+            "hp": 190,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.030000000000000054,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 1,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 2,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 3,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 4,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 5,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 6,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 7,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 8,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      }
+    ],
+    "plants": [
+      {
+        "type": "pea",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 6,
+        "hp": 130,
+        "cactusHeight": 0
+      },
+      {
+        "type": "puff",
+        "row": 4,
+        "col": 6,
+        "hp": 130,
+        "cactusHeight": 0
+      },
+      {
+        "type": "pea",
+        "row": 0,
+        "col": 6,
+        "hp": 180,
+        "cactusHeight": 0
+      }
+    ],
+    "plantsCount": 4
+  },
+  {
+    "name": "pool-actual-battle.png",
+    "note": "Natural paid AI and default squads, 60s preparation +3s battle; production canvas without HTML cards.",
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "teams": [
+      {
+        "id": 0,
+        "row": 1,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 0,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 1,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 2,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 3,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 4,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 5,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 6,
+            "type": "normal",
+            "hp": 190,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 7,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 8,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      }
+    ],
+    "plants": [
+      {
+        "type": "snow",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "pea",
+        "row": 3,
+        "col": 6,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "pea",
+        "row": 4,
+        "col": 4,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "squash",
+        "row": 4,
+        "col": 2,
+        "hp": 300,
+        "cactusHeight": 0
+      },
+      {
+        "type": "wallnut",
+        "row": 1,
+        "col": 4,
+        "hp": 480,
+        "cactusHeight": 0
+      }
+    ],
+    "plantsCount": 5
+  },
+  {
+    "name": "fog-actual-battle.png",
+    "note": "Natural paid AI and default squads, 60s preparation +3s battle; production canvas without HTML cards.",
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "teams": [
+      {
+        "id": 0,
+        "row": 1,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 0,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 1,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 2,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 3,
+            "type": "normal",
+            "hp": 150,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 4,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 5,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 6,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 7,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 8,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      }
+    ],
+    "plants": [
+      {
+        "type": "pea",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "pea",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "puff",
+        "row": 4,
+        "col": 6,
+        "hp": 130,
+        "cactusHeight": 0
+      },
+      {
+        "type": "plantern",
+        "row": 0,
+        "col": 4,
+        "hp": 130,
+        "cactusHeight": 0
+      },
+      {
+        "type": "puff",
+        "row": 1,
+        "col": 6,
+        "hp": 130,
+        "cactusHeight": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 6,
+        "hp": 130,
+        "cactusHeight": 0
+      }
+    ],
+    "plantsCount": 6
+  },
+  {
+    "name": "roof-actual-battle.png",
+    "note": "Natural paid AI and default squads, 60s preparation +3s battle; production canvas without HTML cards.",
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "teams": [
+      {
+        "id": 0,
+        "row": 1,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 0,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.030000000000000054,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 1,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 2,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 3,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 4,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 5,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 6,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 7,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 8,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      }
+    ],
+    "plants": [
+      {
+        "type": "cabbagepult",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 4,
+        "col": 4,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 0,
+        "col": 4,
+        "hp": 180,
+        "cactusHeight": 0
+      }
+    ],
+    "plantsCount": 4
+  },
+  {
+    "name": "roof-night-actual-battle.png",
+    "note": "Natural paid AI and default squads, 60s preparation +3s battle; production canvas without HTML cards.",
+    "status": "battle",
+    "time": 2.9999999999999973,
+    "teams": [
+      {
+        "id": 0,
+        "row": 1,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 0,
+            "type": "normal",
+            "hp": 130,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 1,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 2,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "row": 3,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 3,
+            "type": "normal",
+            "hp": 130,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 4,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 5,
+            "type": "normal",
+            "hp": 210,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "row": 4,
+        "col": 8,
+        "attack": 0,
+        "moving": false,
+        "members": [
+          {
+            "id": 6,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 0
+          },
+          {
+            "id": 7,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 1
+          },
+          {
+            "id": 8,
+            "type": "normal",
+            "hp": 170,
+            "maxHp": 210,
+            "visualType": "normal",
+            "hit": 0.28,
+            "airborne": false,
+            "pop": 0,
+            "slot": 2
+          }
+        ]
+      }
+    ],
+    "plants": [
+      {
+        "type": "cabbagepult",
+        "row": 1,
+        "col": 2,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "cabbagepult",
+        "row": 3,
+        "col": 4,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "fumeshroom",
+        "row": 4,
+        "col": 6,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "puff",
+        "row": 3,
+        "col": 6,
+        "hp": 130,
+        "cactusHeight": 0
+      },
+      {
+        "type": "fumeshroom",
+        "row": 0,
+        "col": 6,
+        "hp": 180,
+        "cactusHeight": 0
+      },
+      {
+        "type": "puff",
+        "row": 1,
+        "col": 6,
+        "hp": 130,
+        "cactusHeight": 0
+      }
+    ],
+    "plantsCount": 6
+  }
+]

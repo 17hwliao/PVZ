@@ -45,6 +45,6 @@ check('新头部沿原动画变换绘制，坚果按伤势换图，切回原版�
  for(const key of ['classic','story']){const button=t.$('dialogBody').querySelector(`[data-character-art=${key}]`);button.click();for(let i=0;i<10;i++)t.frame();assert.equal(t.$('energy').textContent,energy);assert.equal(t.stored().characterArt,key);assert.equal(button.getAttribute('aria-pressed'),'true');}
  passed++;console.log('PASS 战前说明展示真实行动，角色画风可保存且切换期间实战保持暂停');
  assert.equal(t.$('arena').dataset.mechanics,'true');assert(t.$('fieldStatus').textContent.includes('取回饭盒'));
- t.d.window.close();t=await boot({failStoryArt:true,autoStart:false});assert(t.$('loading').hidden);t.$('homeSettings').click();assert(t.$('dialogBody').textContent.includes('部分角色素材未载入'));t.click('返回');t.$('homeContinue').click();t.$('prologueSkip').click();enter(t);assert.equal(t.$('arena').dataset.phase,'battle');passed++;console.log('PASS 试绘资源失败明确提示并回退，仍能完成选卡和开战');
+ t.d.window.close();t=await boot({failStoryArt:true,autoStart:false});assert(t.$('loading').hidden);t.$('homeSettings').click();assert(t.$('dialogBody').textContent.includes('部分角色素材未载入'));t.click('返回');t.$('homeLegacy').click();t.$('prologueSkip').click();enter(t);assert.equal(t.$('arena').dataset.phase,'battle');passed++;console.log('PASS 试绘资源失败明确提示并回退，仍能完成选卡和开战');
  console.log(JSON.stringify({passed}));
 }finally{t?.d.window.close();}})();

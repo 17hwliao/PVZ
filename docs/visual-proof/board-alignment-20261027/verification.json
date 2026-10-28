@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-27",
+  "scope": "Current tactical rescue maps: ground art / actor anchors / picking / death positions / larger actors / full-width layout",
+  "tests": {
+    "scripts": 35,
+    "passes": 333,
+    "sourceUnchangedDuringRun": true
+  },
+  "modelSha256": "4adf03396ad892b6f7ae3d2b99e1db35720155afbd295ca5cea5097e714fd651",
+  "servedFiles": [
+    {
+      "file": "rescue-design.html",
+      "sha256": "0ae63c556a4c68ac5c74d68ebeeab84def397192d40f62cd812a134dbd6199dc",
+      "httpMatchesSource": true
+    },
+    {
+      "file": "terrain-campaign.html",
+      "sha256": "8f4a7ea1dde38f48724c16119ebd5136c15d0d5d52957263878291797488add0",
+      "httpMatchesSource": true
+    },
+    {
+      "file": "rescue-design.css",
+      "sha256": "c0d9c532c626afce9fc539f17b74dbe9ddeb3e3d84468dc3cb770ba43ba98c3d",
+      "httpMatchesSource": true
+    },
+    {
+      "file": "rescue-design-renderer.js",
+      "sha256": "68a0b5cc9c09124a5ed0e2185644c9b1532e1b1567a04b0cb38a00a4c6f74c4d",
+      "httpMatchesSource": true
+    },
+    {
+      "file": "rescue-design.js",
+      "sha256": "5b2a9237f212550268d584054b9f947c72b2222034fb7f402ea254c661aeac45",
+      "httpMatchesSource": true
+    },
+    {
+      "file": "battle-environment.js",
+      "sha256": "47a5465428b07914d1c4df2f9b011233cbaf41c1f74ed77516b5c253ea3e8341",
+      "httpMatchesSource": true
+    }
+  ],
+  "productionVisuals": [
+    "lawn",
+    "night",
+    "underground",
+    "pool",
+    "fog",
+    "canal",
+    "roof",
+    "roof-night"
+  ],
+  "actualBrowser": [
+    "night roof natural combat at 1280px; actual overlapping head click selected squad 3",
+    "other browser checks recorded in associated screenshots"
+  ],
+  "limits": [
+    "not all forty levels played manually",
+    "not every almanac animation frame",
+    "no Android hardware test"
+  ],
+  "packaged": false,
+  "pushed": false,
+  "sourceStillMatchesTestExecution": true,
+  "browserFinal": {
+    "sameScenario": "same-scenario-board.jpg",
+    "layout": "same-scenario-layout.jpg",
+    "narrow": "narrow-browser-final.jpg",
+    "details": "browser-layout.json",
+    "state": "Paused trial level 39; two squads in first row, doctor at row 4; no campaign save written."
+  }
+}

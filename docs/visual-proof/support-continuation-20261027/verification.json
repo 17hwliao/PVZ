@@ -1,0 +1,58 @@
+{
+  "scope": "Targeted continuation: roof Squash support/landing, roof projectile display elevation, planning pause feedback. No combat-model changes.",
+  "checks": [
+    {
+      "path": "rescue-design-renderer.js",
+      "status": 200,
+      "matchesSource": true,
+      "sha256": "4e992a94a9295ba5d95311d9c3fa24b54bdac4994e103a5a2f8a1caad579b9d2"
+    },
+    {
+      "path": "plant-economy-ui.js",
+      "status": 200,
+      "matchesSource": true,
+      "sha256": "684c916bca17adba0ba1eeeb11ed9f38ea33a6635d640f2f8e22caa9cc87e532"
+    },
+    {
+      "path": "rescue-design.html",
+      "status": 200,
+      "matchesSource": true,
+      "sha256": "ccb3b741ec50a8351afe872437745a105f02ddcf666e6f90fdd2cd4b8c10b03e"
+    },
+    {
+      "path": "terrain-campaign.html",
+      "status": 200,
+      "matchesSource": true,
+      "sha256": "44a4ab9c48eda5b75182b7bd291f699e596d023c147599200bbe4d83dbf4c984"
+    }
+  ],
+  "tests": [
+    {
+      "script": "tests/test-battle-balance-review.cjs",
+      "exitCode": 0,
+      "passes": 10
+    },
+    {
+      "script": "tests/test-plant-economy-ui.cjs",
+      "exitCode": 0,
+      "passes": 10
+    },
+    {
+      "script": "tests/test-classic-plant-attacks.cjs",
+      "exitCode": 0,
+      "passes": 13
+    },
+    {
+      "script": "tests/check-slice-assets.cjs",
+      "exitCode": 0,
+      "syntaxFiles": 36,
+      "localReferences": 550,
+      "missingReferences": 0
+    }
+  ],
+  "modelSha256": "4adf03396ad892b6f7ae3d2b99e1db35720155afbd295ca5cea5097e714fd651",
+  "canvasProof": "7 authored roof squash poses plus 1 real model firing fixture inspected in part; not a human playthrough or HTML layout screenshot.",
+  "browserStatus": "Local browser use is disabled in Work settings. No final browser-page visual acceptance claimed.",
+  "packaged": false,
+  "pushed": false
+}

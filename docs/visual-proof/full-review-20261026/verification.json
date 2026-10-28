@@ -1,0 +1,65 @@
+{
+  "url": "http://127.0.0.1:8792/pvz-slice/rescue-design.html?v=review-balance-20261026c",
+  "httpSourceChecks": [
+    {
+      "path": "rescue-design.html",
+      "status": 200,
+      "bytes": 8858,
+      "sha256": "b58fb51993cdb67137c9282fcd3d5795570af81ec6c82d81422270eac20f28f0",
+      "matchesSource": true
+    },
+    {
+      "path": "terrain-campaign.html",
+      "status": 200,
+      "bytes": 9828,
+      "sha256": "fe5849d92c0e0c992356f276b568280f1fc03287a2530e0d61799c82d3ec403c",
+      "matchesSource": true
+    },
+    {
+      "path": "rescue-design-model.js",
+      "status": 200,
+      "bytes": 51258,
+      "sha256": "4adf03396ad892b6f7ae3d2b99e1db35720155afbd295ca5cea5097e714fd651",
+      "matchesSource": true
+    },
+    {
+      "path": "rescue-design-renderer.js",
+      "status": 200,
+      "bytes": 16795,
+      "sha256": "25ca957b0ad0795ab99e6bb70db57c7a5d5ed669d3c65bc11bde9015721350ee",
+      "matchesSource": true
+    },
+    {
+      "path": "rescue-design.js",
+      "status": 200,
+      "bytes": 35179,
+      "sha256": "401394af3254b22b1630cb234d5558cfd23a0f8b919f461567468469b96c4328",
+      "matchesSource": true
+    },
+    {
+      "path": "plant-economy-ui.js",
+      "status": 200,
+      "bytes": 5042,
+      "sha256": "7011717f90e2b8d47cc1ce19ff40266e4322f41f59953530130b5647368ea758",
+      "matchesSource": true
+    },
+    {
+      "path": "terrain-campaign-data.js",
+      "status": 200,
+      "bytes": 28377,
+      "sha256": "9c1d101518fa83946b510de12c4f36a6aab816fea530169a6ec686ccee97e6a7",
+      "matchesSource": true
+    },
+    {
+      "path": "terrain-campaign-setup.js",
+      "status": 200,
+      "bytes": 3938,
+      "sha256": "83a8c5171912e278eeba20a53df1de6779ffac4811b3c715adb5d0490b3965a4",
+      "matchesSource": true
+    }
+  ],
+  "modelSha256": "4adf03396ad892b6f7ae3d2b99e1db35720155afbd295ca5cea5097e714fd651",
+  "browserVisualVerification": "Unavailable: local browser use disabled in Work settings. Production canvas inspected separately; DOM tests do not prove browser layout.",
+  "packaged": false,
+  "pushed": false
+}

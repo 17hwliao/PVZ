@@ -191,11 +191,11 @@ function createRenderer(assets,pictures,tombImage){
   if(p.type==='chomper'&&p.windup>0){label(ctx,'!',0,-82*scale,20,'#ffda8c');}
   ctx.restore();
  }
- function drawZombie(ctx,z,{x=z.x,foot=ROW_FOOT(z.row),time=z.age,reducedMotion=false,scale=FIELD_VIEW.zombieScale[z.type]||.8,dead=false}={}){
+ function drawZombie(ctx,z,{x=z.x,foot=ROW_FOOT(z.row),time=z.age,reducedMotion=false,scale=FIELD_VIEW.zombieScale[z.type]||.8,dead=false,stationary=false}={}){
   const state=zombieState(z),isDead=dead||z.hp<=0;
   const lastPose=isDead?zombiePoses.get(z.poseSource||z):null;
   const pop=z.type==='balloon'&&z.pop>0&&!isDead,emerge=z.emerging>0&&!isDead;
-  const clip=isDead?'death':pop?'pop':emerge?'landing':z.airborne?'idle':z.attacking?'eat':'walk';
+  const clip=isDead?'death':pop?'pop':emerge?'landing':z.airborne?'idle':z.attacking?'eat':stationary?'idle':'walk';
   const popRange=assets.actors[state.key].clips.pop;
   const clipTime=isDead?time*(z.source==='mower'?6:1):pop?(reducedMotion?.6:.72-z.pop)/.72*(popRange.end-popRange.start)/assets.actors[state.key].fps:emerge?1.2-z.emerging:reducedMotion?0:time;
   const hit=reducedMotion?0:Math.max(0,(z.hit||0)-(isDead?time:0))/.18;

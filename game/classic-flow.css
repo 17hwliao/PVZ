@@ -109,3 +109,5 @@
 .letter-dialog #dialogBody:focus-visible{background-image:linear-gradient(#8a6c40,#8a6c40);background-position:left 12px;background-size:2px 28px;background-repeat:no-repeat}
 .deployment-note{margin:10px 0;line-height:1.7}.deployment-note summary{cursor:pointer;min-height:32px;padding:5px 0;font-weight:bold;text-decoration:underline;text-underline-offset:4px}.deployment-note summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}.deployment-note p{font-size:13px;line-height:1.8;margin:7px 0}.camp-aftermath{margin:17px 0 10px;padding-top:10px;border-top:1px solid currentColor}.camp-aftermath h3{font-size:17px;margin:4px 0 9px}.camp-aftermath p{line-height:1.85}
 .route-option:focus-visible{outline:none;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+
+.home-legacy-entry{position:absolute;left:2.5%;top:68%;z-index:2;max-width:30%;font-size:clamp(12px,1.25cqw,16px);min-height:38px;padding:.6cqw 1.2cqw}

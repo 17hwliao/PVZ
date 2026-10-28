@@ -11,6 +11,6 @@ const initial={version:2,unlocked:['normal'],completed:[],highest:0,currentLevel
 
  const damaged=await open({raw:'{',autoStart:false});damaged.$('homeSettings').click();damaged.$('dialogBody').querySelector('[data-theme=paper]').click();assert.equal(damaged.w.localStorage.getItem('pvz-rise-slice-progress-v1'),'{');assert.equal(damaged.w.document.body.dataset.uiTheme,'paper');assert(damaged.$('themeSettingsStatus').textContent.includes('未保存'));damaged.click('返回');assert(!damaged.$('homeStatus').hidden);assert(damaged.$('homeStatus').classList.contains('save-error'));pass('损坏存档保持原文，切换只在本窗口生效并明确提示未保存');
 
- const fallback=await open({saved:{...initial,uiTheme:'stone'},autoStart:false,failThemeFonts:true});assert(!fallback.$('home').hidden);assert(!fallback.$('uiFontNotice').hidden);assert.equal(fallback.errors.length,0);fallback.$('homeContinue').click();assert(!fallback.$('preparation').hidden);enter(fallback);assert.equal(fallback.$('arena').dataset.phase,'battle');pass('原版字体图片读取失败时保留备用文字与提示，选卡和开战仍可完成');
+ const fallback=await open({saved:{...initial,uiTheme:'stone'},autoStart:false,failThemeFonts:true});assert(!fallback.$('home').hidden);assert(!fallback.$('uiFontNotice').hidden);assert.equal(fallback.errors.length,0);fallback.$('homeLegacy').click();assert(!fallback.$('preparation').hidden);enter(fallback);assert.equal(fallback.$('arena').dataset.phase,'battle');pass('原版字体图片读取失败时保留备用文字与提示，选卡和开战仍可完成');
  console.log(JSON.stringify({passed}));
 }finally{for(const t of sessions)t.d.window.close();}})();

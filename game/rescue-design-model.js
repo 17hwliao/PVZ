@@ -35,10 +35,14 @@ function createScene(levelIndex=0){
 // Initial composition is free within unlocked types; reinforcements still consume supplies in battle.
 function configure(s,id,slot,type){
  if(s.status!=='planning'||!Number.isInteger(slot)||slot<0||slot>2||!s.teams[id]||(type!==''&&!data.levels[s.levelIndex].units.includes(type)))return false;
- const t=s.teams[id],old=t.members.find(m=>m.slot===slot);if(type&&compositionCost(s)-(old?stats.UNITS[old.type].cost:0)+stats.UNITS[type].cost>(data.levels[s.levelIndex].compositionBudget??Infinity))return false;t.members=t.members.filter(m=>m.slot!==slot);
- if(type)t.members.push({...member(type,old?.id??s.nextMember++),slot});t.members.sort((a,b)=>a.slot-b.slot);if(!alive(t)){t.path=[];t.moving=false;}return true;
+ const t=s.teams[id],old=t.members.find(m=>m.slot===slot);if(type&&compositionCost(s)-(old?stats.UNITS[old.type].cost:0)+stats.UNITS[type].cost>(data.levels[s.levelIndex].compositionBudget??Infinity))return false;
+ const members=t.members.filter(m=>m.slot!==slot);if(type)members.push({...member(type,old?.id??s.nextMember),slot});
+ const linked=[{...t,members},...party(s,t).filter(a=>a!==t)],traveler=partyTraveler(s,linked);
+ if(members.some(m=>m.hp>0)&&linked.some(a=>!walkable(cell(a),s.levelIndex,s,traveler)))return false;
+ t.members=members.sort((a,b)=>a.slot-b.slot);if(type&&!old)s.nextMember++;
+ if(!alive(t)){t.group=null;stopActor(t,true);}else if(linked.some(a=>a.path.some(q=>!walkable(q,s.levelIndex,s,traveler)))){for(const a of linked){const actual=s.teams.find(x=>x.id===a.id);stopActor(actual,true);}event(s,'编组已变更，原路线不适合新队员，联队留在接应格重新待命。');}return true;
 }
-function deployTeam(s,id,target){if(s.status!=='planning'||!s.teams[id]||!walkable(target,s.levelIndex,s,s.teams[id])||target.col!==data.camp.col)return false;Object.assign(s.teams[id],target,{path:[],moving:false,order:'驻守',interaction:null});return true;}
+function deployTeam(s,id,target){const t=s.teams[id];if(s.status!=='planning'||!t||target.col!==data.camp.col)return false;const linked=party(s,t),traveler=partyTraveler(s,linked);if(!walkable(target,s.levelIndex,s,traveler))return false;for(const a of linked)Object.assign(a,target,{path:[],moving:false,order:'驻守',interaction:null});return true;}
 function canJoin(s,t,m){
  if(!rules)return true;const members=[...t.members.filter(a=>a.hp>0),m],linked=[{...t,members},...party(s,t).filter(a=>a!==t)],traveler=partyTraveler(s,linked);
  return linked.every(a=>[cell(a),...(a.path.length?[a.edgeStart||cell(a),...a.path]:[])].every(q=>walkable(q,s.levelIndex,s,traveler)));
@@ -63,7 +67,15 @@ function placeSupport(s,type,target){
  s.economy.sun-=card.cost;s.economy.spent+=card.cost;s.economy.cooldowns[type]=card.recharge;const support={id:'support-'+s.nextSupport++,type,row:target.row,col:target.col,hp:180,maxHp:180};s.supports.push(support);return support;
 }
 function useCoffee(s,id){const p=s.plants.find(p=>p.id===id&&p.hp>0&&p.sleeping);const card=data.plantCards.coffee;if(!rules||!['planning','battle'].includes(s.status)||!p||!card||s.economy.sun<card.cost||(s.status==='battle'&&s.economy.cooldowns.coffee>0))return false;s.economy.sun-=card.cost;s.economy.spent+=card.cost;s.economy.cooldowns.coffee=card.recharge;p.sleeping=false;p.awakened=true;p.coffee=.9;event(s,'咖啡豆唤醒了'+data.plantCombat[p.type].name+'。');return true;}
-function landTeam(s,id){const t=s.teams.find(t=>t.id===id);if(!rules||s.status!=='battle'||!t||!t.members.some(m=>m.hp>0&&m.type==='balloon'&&m.airborne)||!rules.canWalk(s,t,null,stats.UNITS))return false;for(const m of t.members)if(m.type==='balloon'&&m.airborne){m.airborne=false;m.pop=.72;}t.path=[];t.moving=false;return true;}
+function mobilityPlans(s,teams,traveler){return teams.map(t=>{
+ const anchors=[cell(t),t.edgeStart,t.path[0]].filter(q=>q&&walkable(q,s.levelIndex,s,traveler));
+ return anchors.map(q=>planPath(s,t,q,traveler)).filter(Boolean).sort((a,b)=>a.cost-b.cost)[0]||null;
+});}
+function settleMobility(s,t,traveler=partyTraveler(s,party(s,t))){const teams=party(s,t),plans=mobilityPlans(s,teams,traveler);if(plans.some(p=>!p))return false;teams.forEach((a,i)=>{a.path=plans[i].path;a.edgeStart=plans[i].edgeStart;a.moving=!!a.path.length;a.order='驻守';a.interaction=null;});return true;}
+function landTeam(s,id){const t=s.teams.find(t=>t.id===id);if(!rules||s.status!=='battle'||!t||!t.members.some(m=>m.hp>0&&m.type==='balloon'&&m.airborne)||!rules.canWalk(s,t,null,stats.UNITS))return false;
+ const traveler=partyTraveler(s,party(s,t));traveler.members=traveler.members.map(m=>t.members.includes(m)&&m.type==='balloon'?{...m,airborne:false}:m);
+ if(!settleMobility(s,t,traveler))return false;for(const m of t.members)if(m.type==='balloon'&&m.airborne){m.airborne=false;m.pop=.72;}return true;
+}
 function placePlant(s,type,target){
  if(!canPlant(s,type,target))return false;const card=data.plantCards[type];s.economy.sun-=card.cost;s.economy.spent+=card.cost;s.economy.cooldowns[type]=card.recharge;
  const p=plant(type,s.nextPlant++,target.row,target.col);p.createdAt=s.economy.clock;if(rules){p.sleeping=rules.asleep(s,type);p.growth=0;}s.plants.push(p);s.economy.placements.push({id:p.id,type,row:p.row,col:p.col,clock:s.economy.clock,phase:s.status,cost:card.cost});return p;
@@ -94,7 +106,7 @@ function updateTactics(s,visible){
   if(t.hp>p.hp||visible.teams.some(a=>distance(a,p)<2&&sameLane(a,p)))t.responseAt=s.time;
   t.hp=p.hp;if(t.key!==key||t.row!==Math.round(p.row)){t.key=key;t.row=Math.round(p.row);t.since=s.time;t.responseAt=s.time;t.redirect=false;}
   const blocked=target&&fireBlocker(s,p,target.actor.col),staticTarget=target&&['cache','fence'].includes(target.kind),age=s.time-t.since;
-  const exposed=target?.kind==='exit'&&age>=18,stalled=(!target||blocked)&&age>=7,ignored=staticTarget&&age>=10.5&&s.time-t.responseAt>=10.5;
+  const exposed=target?.kind==='exit'&&age>=18,stalled=(!target||blocked)&&age>=7,ignored=staticTarget&&age>=10.5&&s.time-t.responseAt>=10.5&&(target.kind!=='fence'||target.actor.hp>data.backline.fenceHp*.35);
   t.redirect=!p.moving&&!p.sleeping&&(exposed||stalled||ignored);t.reason=blocked?'射线被地形阻挡':exposed?'破口压制后轮换':ignored?'诱饵线路无人回应':'原射位没有有效目标';
  }
 }
@@ -103,7 +115,7 @@ function redeployAI(s,visible){
  const level=data.levels[s.levelIndex],standing=s.plants.filter(p=>p.hp>0),long=p=>rangedTypes.has(p.type)&&(data.plantCombat[p.type].range??12)>=12;
  const exposed=visible.fences.filter(f=>!standing.some(p=>long(p)&&!p.sleeping&&sameLane(p,f)&&!fireBlocker(s,p,f.col))).sort((a,b)=>(a.hp>0?0:1)-(b.hp>0?0:1)||(a.hp>0?a.hp-b.hp:(s.ai.redeployRows?.[a.row]||0)-(s.ai.redeployRows?.[b.row]||0))||a.row-b.row);
  for(const f of exposed)for(const old of standing){
-  if(old.moving||old.path.length||old.sleeping||!rangedTypes.has(old.type)&&old.type!=='sunshroom'||s.economy.clock-old.createdAt<10.5||visible.teams.some(t=>distance(old,t)<2))continue;
+  if(old.roomGuard&&!visible.goal.open||old.moving||old.path.length||old.sleeping||!rangedTypes.has(old.type)&&old.type!=='sunshroom'||s.economy.clock-old.createdAt<10.5||visible.teams.some(t=>distance(old,t)<2))continue;
   const current=publicFireTarget(s,old),completed=s.fences[Math.round(old.row)].hp<=0&&s.time-(s.fences[Math.round(old.row)].breachedAt??s.time)>=18;
   if(long(old)&&current&&!fireBlocker(s,old,current.actor.col)&&!completed&&!old.tactic?.redirect)continue;
   const without={...s,plants:s.plants.filter(p=>p!==old)};
@@ -132,8 +144,16 @@ function deployAI(s){
    if(s.economy.sun<totalCost||(s.status==='battle'&&s.economy.cooldowns[type]>1e-6))continue;if(missing){if(!plantCell(s,q)||(s.status==='battle'&&s.economy.cooldowns[need]>0))continue;}else if(!canPlant(s,type,q))continue;
    const templated=level.plants.some(([kind,r])=>kind===type&&r===row);
    const count=s.plants.filter(p=>p.hp>0&&p.type===type).length,utility=['sunshroom','plantern','blover'].includes(type);if(utility&&count>=(type==='sunshroom'?2:1))continue;if(rules&&['puff','fumeshroom'].includes(type)&&s.plants.some(p=>p.hp>0&&p.type===type&&Math.round(p.row)===row))continue;if(type==='blover'&&!air&&(s.time<15||s.time<s.weather.clearUntil))continue;
-   const line=firingPosition(s,visible,type,q);if(rangedTypes.has(type)&&line===-4)continue;
-   candidates.push({type,q,score:threat-rank*.3+(templated?.4:0)-(col===6?.8:0)-(type==='wallnut'&&!guns?3:0)-(s.plants.filter(p=>p.hp>0&&Math.round(p.row)===row).length-1)*1.5+(rules?.supportAt(s,q)?2:0)+(type==='plantern'&&!count?4:0)+(type==='sunshroom'&&!count?2:0)+(longDeficit&&longTypes.includes(type)?2.2:0)+(rules&&air&&type==='cactus'?3:0)+line});
+   const line=firingPosition(s,visible,type,q);
+   const target=rangedTypes.has(type)?publicFireTarget(s,{...q,type},air&&type==='cactus',visible):null;
+   // Reserve a room guard; the other guns intercept observed squads before
+   // they pass their muzzles. A three-cell mushroom needs a front firing tile.
+   const room=distance(q,visible.goal),roomGuard=!visible.plants.some(p=>!['sunflower','sunshroom','plantern','blover'].includes(p.type)&&distance(p,visible.goal)<2.1),guard=roomGuard&&room<2.1&&!utility?2.4:0;
+   if(rangedTypes.has(type)&&line===-4&&!guard)continue;
+   const intercept=target?.kind==='team'?2.4:0,short=rangedTypes.has(type)&&(data.plantCombat[type].range??12)<12;
+   if(short&&!target)continue;
+   const blocker=type==='wallnut'&&guns&&visible.plants.some(p=>rangedTypes.has(p.type)&&Math.round(p.row)===row&&p.col<col)?2.6:0;
+   candidates.push({type,q,guard:guard>0,score:threat-rank*.3+(templated?.4:0)-(type==='wallnut'&&!guns?3:0)-(s.plants.filter(p=>p.hp>0&&Math.round(p.row)===row).length-1)*1.5+(rules?.supportAt(s,q)?2:0)+(type==='plantern'&&!count?4:0)+(type==='sunshroom'&&!count?2:0)+(longDeficit&&longTypes.includes(type)?2.2:0)+(rules&&air&&type==='cactus'?3:0)+(guard&&line<0?.5:line)+guard+intercept+blocker});
   }
  }
  // A planted ambush is paid for and uses the same seed cooldown as other cards.
@@ -141,7 +161,7 @@ function deployAI(s){
  if(level.plantDeck.includes('squash')&&!s.plants.some(p=>p.hp>0&&p.type==='squash'))for(const [type,row,col]of level.plants.filter(([type])=>type==='squash')){
   const q={row,col};if(canPlant(s,type,q))candidates.push({type,q,score:6+pressure[row]});
  }
- candidates.sort((a,b)=>b.score-a.score||a.q.row-b.q.row);if(candidates[0]){const {type,q}=candidates[0],need=rules?.supportType(s,q);if(need&&!rules.supportAt(s,q))placeSupport(s,need,q);else placePlant(s,type,q);}
+ candidates.sort((a,b)=>b.score-a.score||a.q.row-b.q.row);if(candidates[0]){const {type,q,guard}=candidates[0],need=rules?.supportType(s,q);if(need&&!rules.supportAt(s,q))placeSupport(s,need,q);else{const p=placePlant(s,type,q);if(p)p.roomGuard=!!guard;}}
 }
 function economyStep(s,dt){
  const e=s.economy;e.clock+=dt;for(const p of s.economySunflowers)p.attack=Math.max(0,p.attack-dt);for(const type of Object.keys(e.cooldowns))e.cooldowns[type]=Math.max(0,e.cooldowns[type]-dt);
@@ -208,7 +228,7 @@ function observeAI(s){return{teams:s.teams.filter(t=>alive(t)&&(!rules||rules.vi
 // on that lane is broken. No AI scoring, deployment or aiming reads it.
 function collisionTargets(s){const targets=targetList(s);if(Number.isInteger(s.doctor.row)&&s.fences[s.doctor.row].hp<=0)targets.push({kind:'doctor',actor:s.doctor});return targets;}
 function fireRecord(s,kind,shot,amount=0){const log=s.ai.fire||(s.ai.fire={launched:0,prevented:0,barrierImpacts:0,ridgeImpacts:0,fenceHits:0,fenceDamage:0,doctorHits:0,events:[]});if(kind==='fence'){log.fenceHits++;log.fenceDamage+=amount;}else if(kind==='doctor')log.doctorHits++;else log[kind]++;log.events.push({time:s.time,kind,id:shot.id??shot.sourceId,row:Math.round(shot.row),type:shot.type,col:shot.col,amount});if(log.events.length>80)log.events.shift();}
-function projectile(s,p,high=false){const shot={id:'shot-'+s.nextShot++,sourceId:p.id,row:p.row,lane:Math.round(p.row),col:p.col,originCol:p.col,dr:0,dc:1,damage:data.plantCombat[p.type].damage,type:p.type,airborne:high,lobbed:p.type==='cabbagepult',range:data.plantCombat[p.type].range??12,life:4.5};s.projectiles.push(shot);fireRecord(s,'launched',shot);p.attack=.45;}
+function projectile(s,p,high=false){const lane=Math.round(p.row),shot={id:'shot-'+s.nextShot++,sourceId:p.id,row:lane,lane,col:p.col,originCol:p.col,dr:0,dc:1,damage:data.plantCombat[p.type].damage,type:p.type,airborne:high,lobbed:p.type==='cabbagepult',range:data.plantCombat[p.type].range??12,life:4.5};s.projectiles.push(shot);fireRecord(s,'launched',shot);p.attack=.45;}
 const sameLane=(a,b)=>Math.round(a.row)===Math.round(b.row);
 const guards=(s,objective,team,radius)=>s.plants.some(p=>p.hp>0&&distance(p,objective)<radius&&(!rules||(!p.sleeping&&sameLane(p,team)&&!['sunflower','sunshroom','plantern','blover'].includes(p.type))));
 const elapsed=(a,seconds)=>a.elapsed+1e-8>=seconds;
@@ -257,12 +277,13 @@ function decide(s){
  a.previous=focus;a.previousPressure=pressure[focus];a.focus='第'+(focus+1)+'行压力较高';a.groups=[];
  const defenders=s.plants.filter(p=>p.hp>0&&!['sunflower','sunshroom','plantern','blover'].includes(p.type));
  defenders.forEach((p,i)=>{
+  if(p.roomGuard&&!visible.goal.open&&distance(p,visible.goal)<2.1){p.squad='守门组';a.groups.push({id:p.id,squad:p.squad,target:'守住囚室与返程口'});return;}
   if(rangedTypes.has(p.type)){
    p.squad=i===0?'守门组':i%2?'机动组':'分遣组';
    if(p.sleeping||p.moving||s.time-p.lastMove<3.5)return;
    const current=cell(p),long=(data.plantCombat[p.type].range??12)>=12;
    const tactic=p.tactic;if(tactic?.destinationRow===current.row){if(tactic.holdUntil==null)tactic.holdUntil=s.time+7;if(s.time<tactic.holdUntil&&firingPosition(s,visible,p.type,current)>=0){a.groups.push({id:p.id,squad:p.squad,target:'第'+(current.row+1)+'行换线后持续压制'});return;}delete tactic.destinationRow;delete tactic.holdUntil;}
-   const value=q=>{const line=firingPosition(s,visible,p.type,q);if(line<0)return line*3;const row=Math.round(q.row),f=visible.fences[row],working=f?.hp>0?1.3:s.time-(s.fences[row].breachedAt??-Infinity)<18?1.5:-.8,overlap=defenders.filter(o=>o!==p&&!o.sleeping&&Math.round(o.path.at(-1)?.row??o.row)===row&&rangedTypes.has(o.type)&&(data.plantCombat[o.type].range??12)>=12).length;return line+pressure[row]*.6+(visible.goal.row===row?.6:0)+(visible.follower&&Math.round(visible.follower.row)===row?1:0)+(long?working-overlap*2.7:0)-(p.tactic?.redirect&&row===current.row?5:0);};
+   const value=q=>{const line=firingPosition(s,visible,p.type,q);if(line<0)return line*3;const row=Math.round(q.row),f=visible.fences[row],working=f?.hp>0?1.3:s.time-(s.fences[row].breachedAt??-Infinity)<18?1.5:-.8,overlap=defenders.filter(o=>o!==p&&!o.sleeping&&Math.round(o.path.at(-1)?.row??o.row)===row&&rangedTypes.has(o.type)&&(data.plantCombat[o.type].range??12)>=12&&!fireBlocker(s,{...o,row},data.backline.fenceColumn)).length;return line+pressure[row]*.6+(visible.goal.row===row?.6:0)+(visible.follower&&Math.round(visible.follower.row)===row?1:0)+(long?working-overlap*2.7:0)-(p.tactic?.redirect&&row===current.row?5:0);};
    let best={q:current,score:value(current),path:[]};
    for(let row=0;row<5;row++){const q={row,col:current.col};if(!plantCell(s,q))continue;const path=firingRoute(s,p,q);if(path.length<2)continue;const score=value(q)-(path.length-1)*.17;if(score>best.score+1.1)best={q,score,path};}
    if(tactic?.destinationRow!=null){const q={row:tactic.destinationRow,col:current.col},path=firingRoute(s,p,q);if(path.length>1&&firingPosition(s,visible,p.type,q)>=0)best={q,path,score:value(q)};else{delete tactic.destinationRow;delete tactic.holdUntil;}}
@@ -289,7 +310,7 @@ function tick(s,dt){
  s.time+=dt;s.doctor.hit=Math.max(0,s.doctor.hit-dt);for(const d of s.dead)d.age+=dt;s.dead=s.dead.filter(d=>d.age<.9);
  for(const t of s.teams)if(t.group!=null){const linked=party(s,t);if(!alive(t))t.group=null;else if(linked.length<2)linked.forEach(a=>a.group=null);}
  const movement=new Map(s.teams.filter(alive).map(t=>{const members=party(s,t),traveler=partyTraveler(s,members),engaged=members.some(a=>groundMembers(a).length&&s.plants.some(p=>plantBlocking(p)&&distance(a,p)<.72)),waiting=members.some(a=>s.follower?.escort===a.id&&distance(a,s.follower)>1.5),speed=.64*Math.min(...traveler.members.map(m=>stats.UNITS[m.type].speed))/21*(members.some(a=>a.slow>0)?.65:1)*(rules?rules.speed(s,{...traveler,row:t.row,col:t.col},stats.UNITS):1);return[t.id,{engaged,waiting,speed}];}));
- for(const t of s.teams){t.attack=Math.max(0,t.attack-dt);t.attackTimer=Math.max(0,t.attackTimer-dt);t.members.forEach(m=>{m.hit=Math.max(0,m.hit-dt);m.pop=Math.max(0,(m.pop||0)-dt);});t.slow=Math.max(0,(t.slow||0)-dt);const motion=movement.get(t.id);if(motion&&!motion.waiting){if(!motion.engaged||t.order==='撤回')move(s,t,dt,motion.speed);else t.moving=false;}}
+ for(const t of s.teams){t.attack=Math.max(0,t.attack-dt);t.attackTimer=Math.max(0,t.attackTimer-dt);t.members.forEach(m=>{m.hit=Math.max(0,m.hit-dt);m.pop=Math.max(0,(m.pop||0)-dt);});t.slow=Math.max(0,(t.slow||0)-dt);const motion=movement.get(t.id);if(motion){if(motion.waiting)t.moving=false;else if(!motion.engaged||t.order==='撤回')move(s,t,dt,motion.speed);else t.moving=false;}}
  for(const f of s.fences)f.hit=Math.max(0,f.hit-dt);
  for(const p of s.plants){if(p.hp<=0)continue;if(rules&&!rules.hasSurface(s,p)){p.hp=0;s.dead.push({actor:p,kind:'plant',type:p.type,row:p.row,col:p.col,id:p.id,age:0});continue;}p.hit=Math.max(0,p.hit-dt);p.attack=Math.max(0,p.attack-dt);p.coffee=Math.max(0,(p.coffee||0)-dt);if(!p.sleeping)p.growth=(p.growth||0)+dt;if(!p.sleeping){const wasMoving=p.moving;move(s,p,dt,1/3);if(wasMoving&&!p.moving&&p.tactic?.destinationRow===Math.round(p.row))p.tactic.holdUntil=s.time+7;}p.cooldown-=dt;}
  if(s.time>=s.ai.next){decide(s);s.ai.next=s.time+3.5;}
@@ -322,7 +343,7 @@ function tick(s,dt){
    else if(target.kind==='fence'){const f=target.actor,before=f.hp;f.hp=Math.max(0,f.hp-shot.damage);f.hit=.25;fireRecord(s,'fence',shot,before-f.hp);if(f.hp===0){f.breachedAt=s.time;event(s,'第'+(f.row+1)+'行栅栏被击穿，后方失去这一段掩护。');}}
    else if(target.kind==='barrier')fireRecord(s,'barrierImpacts',shot);
    else if(target.kind==='cache')target.actor.hp=Math.max(0,target.actor.hp-shot.damage);
-   else if(target.kind==='team'){const m=target.actor.members.find(m=>m.hp>0&&airborne(m)===high);if(shot.type==='fumeshroom'){for(const member of [...groundMembers(target.actor)])damageTeam(s,target.actor,shot.damage,member);}else damageTeam(s,target.actor,shot.damage*(rules?rules.reduction(s,target.actor,m,shot,stats.UNITS):1),m);if(high&&m&&m.hp>0){m.airborne=false;m.pop=.72;if(rules&&rules.water(s,target.actor)&&!rules.bridge(s,target.actor)){damageTeam(s,target.actor,m.hp,m);event(s,'气球在无桥水域破裂，落水的同胞未能回来。');}event(s,'仙人掌刺破了气球，同胞落地后会受到地面火力。');}if(shot.type==='snow')target.actor.slow=2.5;}
+   else if(target.kind==='team'){const m=target.actor.members.find(m=>m.hp>0&&airborne(m)===high);if(shot.type==='fumeshroom'){for(const member of [...groundMembers(target.actor)])damageTeam(s,target.actor,shot.damage,member);}else damageTeam(s,target.actor,shot.damage*(rules?rules.reduction(s,target.actor,m,shot,stats.UNITS):1),m);if(high&&m&&m.hp>0){m.airborne=false;m.pop=.72;if(rules&&rules.water(s,target.actor)&&!rules.bridge(s,target.actor)){damageTeam(s,target.actor,m.hp,m);event(s,'气球在无桥水域破裂，落水的同胞未能回来。');}if(rules&&alive(target.actor))settleMobility(s,target.actor);event(s,'仙人掌刺破了气球，同胞落地后会受到地面火力。');}if(shot.type==='snow')target.actor.slow=2.5;}
    if(shot.type==='fumeshroom'&&target.kind==='team'){shot.hitIds=shot.hitIds||[];shot.hitIds.push(target.kind+':'+(target.actor.id??target.actor.row));}else shot.life=0;
   }
  }

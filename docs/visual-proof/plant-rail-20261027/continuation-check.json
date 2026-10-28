@@ -1,0 +1,15 @@
+{
+  "scope": "Left plant rail scrolling across level changes and round restarts",
+  "fix": "Reset rail scroll only when the scene object changes; preserve scrolling during model refresh and pause.",
+  "regression": "Before fix: scrollTop remained 180 after changing level. After fix: level change and same-level restart reset to zero.",
+  "checks": {
+    "plantEconomy": 12,
+    "squadControls": 13,
+    "syntaxFiles": 36,
+    "localReferences": 550,
+    "missingReferences": 0
+  },
+  "visualVerification": "Not repeated in this continuation: browser tool unavailable and Windows Computer Use native pipe unavailable after recovery retry. Existing desktop.jpg and narrow.jpg belong to the preceding rail layout inspection.",
+  "packaged": false,
+  "pushed": false
+}

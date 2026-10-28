@@ -272,7 +272,7 @@ function flyEnergy(r,amount=500){const e=$('energyFlight');e.textContent='+'+amo
 $('energyFlight').addEventListener('animationend',()=>{$('energyFlight').hidden=true;});
 function goHome(){
  stopEffects();$('battle').tabIndex=-1;hide();phase='home';manualPause=false;armed=false;closeDossier(false);$('preparation').hidden=true;$('home').hidden=false;
- $('homeActionCaption').textContent=progress.pendingAfter?'继续战后故事':progress.prologue?'继续营救':'开始营救';$('homeProgress').textContent=`${PVZ.LEVELS[progress.currentLevel].tag} · ${PVZ.LEVELS[progress.currentLevel].name}　已解救 ${progress.unlocked.length} / 5`;
+ $('homeActionCaption').textContent='三队协同 · 八境四十关';$('homeProgress').textContent=`经典对线记录：${PVZ.LEVELS[progress.currentLevel].tag} · ${PVZ.LEVELS[progress.currentLevel].name}　已解救 ${progress.unlocked.length} / 5`;
  window.PVZ_UI?.updateRecord(PVZ.LEVELS[progress.currentLevel].tag.split('·')[1].trim(),progress.unlocked.length,$('homeProgress').textContent);if(saveWarning)homeMessage(saveWarning,true);applyPause();sync();$('homeContinue').focus();
 }
 function continueAdventure(){if(!ready)return;$('home').hidden=true;if(progress.pendingAfter)resumeAfter();else if(progress.prologue?.version===PVZ_PROLOGUE.version)prepare(progress.currentLevel);else startCinema(true);}
@@ -295,7 +295,7 @@ function settings(back=returnToGame){
  window.PVZ_UI?.setTheme(progress.uiTheme);
 }
 for(const el of document.querySelectorAll('.home-record'))el.onclick=chapters;
-$('homeContinue').onclick=continueAdventure;$('homeChapters').onclick=chapters;$('homeArchives').onclick=archives;$('homeSettings').onclick=()=>settings(goHome);
+$('homeContinue').onclick=()=>{if(ready)location.href='terrain-campaign.html?adventure=1';};$('homeLegacy').onclick=continueAdventure;$('homeChapters').onclick=chapters;$('homeArchives').onclick=archives;$('homeSettings').onclick=()=>settings(goHome);
 function attachRewardScene(body,unit){
  const c=document.createElement('canvas');c.width=300;c.height=220;c.className='reward-canvas';c.setAttribute('aria-label',unit?'囚门打开，同胞走出':'同胞通过已打开的通道');body.prepend(c);rewardPreview={canvas:c,unit,time:0};
  if(unit){const reveal=card(unit,'unit-card reward-card');reveal.disabled=true;reveal.setAttribute('aria-label',PVZ.UNITS[unit].name+'已永久解救');body.append(reveal);}

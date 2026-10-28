@@ -1,0 +1,14 @@
+{
+  "baselineRepresentative40": {
+    "firstHitMedian": 110.5,
+    "endMedian": 127.6
+  },
+  "currentRepresentative40": {
+    "firstHitMedian": 96.0,
+    "endMedian": 110.75
+  },
+  "fullCampaignIdleCases": 200,
+  "doctorHitCases": 200,
+  "doctorDefeatedCases": 200,
+  "note": "Unattended default squads, normal paid AI and 60s preparation; not a human difficulty guarantee."
+}

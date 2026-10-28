@@ -90,7 +90,10 @@ const levels=seeds.map((s,i)=>{
  const stage=i+1,section=Math.floor(i/5),variant=i%5,mapId=mapOrder[section],map=maps.find(m=>m.id===mapId),id='L'+(section+1)+'-'+(variant+1),unlock=recruits.find(r=>r.at===id)?.id||null;
  const [title,name,unitId,mission,opening,request,atDoor,camp,onward]=s,availableUnits=recruits.filter(r=>r.stage<stage).map(r=>r.id);
  const deckByMap={lawn:['sunflower','pea','wallnut','squash'],night:['sunflower','pea','puff','sunshroom','fumeshroom','wallnut'],underground:['sunflower','pea','snow','fumeshroom','chomper','wallnut','squash'],pool:['sunflower','pea','snow','cactus','wallnut','chomper'],fog:['sunflower','pea','puff','fumeshroom','plantern','blover','cactus','squash'],canal:['sunflower','pea','snow','cactus','wallnut','chomper','squash'],roof:['sunflower','pea','snow','cactus','wallnut','coffee','fumeshroom','squash'], 'roof-night':['sunflower','pea','snow','puff','sunshroom','fumeshroom','cactus','chomper','squash']};
- const plantDeck=deckByMap[mapId].filter(type=>!(section===0&&variant===0&&['wallnut','squash'].includes(type))&&!(section===0&&variant<2&&type==='squash'));
+ // Introduce one role at a time: pea -> protection -> slow -> bite,
+ // then night mushrooms, water ambushes, fog counters and roof lobbers.
+ const plantDeck=(mapId==='lawn'?['sunflower','pea',...(variant>=1?['wallnut']:[]),...(variant>=3?['snow']:[]),...(variant>=4?['chomper']:[])]:deckByMap[mapId]).filter(type=>!(mapId==='night'&&variant===0&&['sunshroom','fumeshroom'].includes(type))&&!(mapId==='night'&&variant<2&&type==='fumeshroom')&&!(mapId==='pool'&&type==='cactus')&&!(mapId==='fog'&&variant===0&&type==='cactus')&&!(mapId==='fog'&&variant<2&&type==='blover'));
+ if(mapId==='pool'&&!plantDeck.includes('squash'))plantDeck.push('squash');
  return{id,title,mapId,stage,mission,letter:[opening,tacticNotes[variant],request],rescueDialogue:[[name,atDoor],['乔治','先把你接回去。有人在回程等着，不会只带走你手里的东西。']],camp:[camp,onward],next:onward,nextId:stage<40?'L'+(Math.floor(stage/5)+1)+'-'+(stage%5+1):null,mode:'escort',unlock,captive:{name,unitId},availableUnits,plantDeck,...geometry(map,variant),budget:{sun:500,energy:150+section*15+variant*5,maxPlants:Math.min(12,6+Math.floor(i/6))},pressureTier:section+1};
 });
 const api={version:1,levels,recruits};if(node)module.exports=api;else root.PVZ_TERRAIN_CAMPAIGN=api;

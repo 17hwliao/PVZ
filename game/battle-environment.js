@@ -3,6 +3,15 @@
 // The caller paints actors, their foot rings and HP after this module returns.
 const resources={lawn:'assets/images/background1.jpg',night:'assets/images/background2.jpg',pool:'assets/environments/background3.jpg',fog:'assets/environments/background4.jpg',roof:'assets/environments/background5.jpg','roof-night':'assets/environments/background6boss.jpg',dirt:'assets/environments/background1unsodded.jpg',underground:'assets/environments/Background_MushroomGarden.jpg',water:'assets/environments/pool.jpg','water-night':'assets/environments/pool_night.jpg',mist:'assets/environments/fog_software.png'};
 const field={left:180,top:172,width:800,height:480,cellWidth:80,cellHeight:96};
+// Native roof art curves upward and uses wider columns than the tactical grid.
+// Unwarp its original tile material into the same ten columns / five rows used
+// by actors, input, supports and collisions, rather than moving actors by eye.
+const roofColumns=[235,335,430,525,620,715,810,905,1000,1095,1190],roofTop=[220,189,158,130,102,86,84,90,102,123,148],roofCache=new WeakMap();
+function roofTiles(c,bg){
+ function paint(ctx,left,top){for(let col=0;col<13;col++)for(let dx=0;dx<(col===12?60:80);dx+=2){const tile=col<10?col:6,u=dx/80,v=(dx+2)/80,sx=roofColumns[tile]+(roofColumns[tile+1]-roofColumns[tile])*u,sw=(roofColumns[tile+1]-roofColumns[tile])*(v-u),sy=roofTop[tile]+(roofTop[tile+1]-roofTop[tile])*u,sh=Math.min(430,bg.height-1-sy);ctx.drawImage(bg,sx,sy,sw,sh,left+col*80+dx,top,2,480);}}
+ let surface=roofCache.get(bg);if(!surface&&c.canvas?.ownerDocument){surface=c.canvas.ownerDocument.createElement('canvas');surface.width=1020;surface.height=480;paint(surface.getContext('2d'),0,0);roofCache.set(bg,surface);}
+ if(surface)c.drawImage(surface,180,172);else paint(c,180,172);
+}
 function image(images,id){return images['env:'+id];}
 function draw(c,map,images,time=0){
  if(!map)return;
@@ -14,6 +23,10 @@ function draw(c,map,images,time=0){
  // A whole-scene stretch would leave its right pavement underneath column nine.
  if(theme==='underground')c.drawImage(bg,0,0,bg.width,bg.height,0,0,1200,720);
  else for(const[sy,sh,dy,dh]of(roof?[[0,230,0,172],[230,325,172,480],[555,45,652,68]]:[[0,100,0,172],[100,472,172,480],[572,28,652,68]]))for(const[sx,sw,dx,dw]of[[100,160,0,180],[260,720,180,800],[980,320,980,220]])c.drawImage(bg,sx,sy,sw,sh,dx,dy,dw,dh);
+ // The protected commander also needs ground behind the fence, not a house
+ // facade or a floating mushroom from the scenery outside the playing area.
+ if(roof)roofTiles(c,bg);
+ else if(water||theme==='underground'){const rear=image(images,theme==='underground'?'dirt':night?'night':'lawn');if(rear)c.drawImage(rear,theme==='underground'?820:998,100,theme==='underground'?80:48,472,980,172,220,480);}
  c.beginPath();c.rect(field.left,field.top,field.width,field.height);c.clip();
  function featherGround(paint,width=18){
   // Blend only the art join. Logical cells and actor foot positions never move.
@@ -21,8 +34,8 @@ function draw(c,map,images,time=0){
   for(let n=0;n<width;n+=2){c.save();c.globalAlpha=(n+1)/width;c.beginPath();c.rect(180+n,172+n,800-n*2,2);c.rect(180+n,650-n,800-n*2,2);c.rect(180+n,174+n,2,476-n*2);c.rect(978-n,174+n,2,476-n*2);c.clip();paint();c.restore();}
  }
  if(roof){
-  // Crop below the ridge so all five logical rows stand on tiles, never on sky.
-  // The ridge-to-floor mapping above already joins continuously to the margins.
+  // Mark the existing ridge rule at the actual logical threshold (col 3.5).
+  c.strokeStyle=night?'#362c5377':'#65381f66';c.lineWidth=3;c.beginPath();c.moveTo(500,172);c.lineTo(500,652);c.stroke();
  }else{
   const ground=theme==='underground'?image(images,'dirt'):image(images,night?'night':'lawn');
   if(ground){const paint=()=>{

@@ -1,6 +1,6 @@
 {
-  "version": "0.7.0",
-  "build": 700,
+  "version": "0.8.0",
+  "build": 800,
   "channel": "stable",
   "repository": "17hwliao/PVZ"
 }

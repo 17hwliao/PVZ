@@ -12,7 +12,7 @@ if(!app.requestSingleInstanceLock()){app.quit();}else{
   session.defaultSession.webRequest.onBeforeRequest({urls:['http://*/*','https://*/*','ws://*/*','wss://*/*','ftp://*/*']},(_details,callback)=>callback({cancel:true}));
   const updateSession=session.fromPartition('pvz-updater-v1',{cache:false}),installed=require('./package.json');
   const updater=createUpdater({fetch:(url,options)=>updateSession.fetch(url,options),openExternal:url=>shell.openExternal(url),installedVersion:app.getVersion(),installedBuild:installed.build});
-  win=new BrowserWindow({title:'僵王崛起 · 前两章',width:1280,height:850,minWidth:880,minHeight:570,backgroundColor:'#18251b',icon:path.join(root,'assets/portraits/zomboss-head.png'),autoHideMenuBar:true,webPreferences:{nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true,devTools:false,preload:path.join(__dirname,'preload.cjs')}});
+  win=new BrowserWindow({title:'僵王崛起 · 八境营救',width:1280,height:850,minWidth:880,minHeight:570,backgroundColor:'#18251b',icon:path.join(root,'assets/portraits/zomboss-head.png'),autoHideMenuBar:true,webPreferences:{nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true,devTools:false,preload:path.join(__dirname,'preload.cjs')}});
   const removeUpdateIPC=registerUpdateIPC({ipcMain,window:win,updater});
   win.removeMenu();win.webContents.setWindowOpenHandler(()=>({action:'deny'}));
   win.webContents.on('will-navigate',(event,url)=>{if(!url.startsWith('pvz://game/'))event.preventDefault();});

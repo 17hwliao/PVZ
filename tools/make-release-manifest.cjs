@@ -5,7 +5,7 @@ for(const [platform,suffix]of [['windows-x64','windows-x64.zip'],['android','and
  const name='ZombossRise-'+v.version+'-'+suffix,file=path.join(dir,name),stat=fs.statSync(file);
  assert(stat.isFile()&&stat.size>0);platforms[platform]={url:'https://github.com/'+v.repository+'/releases/download/v'+v.version+'/'+name,size:stat.size,sha256:crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')};
 }
-const manifest={schemaVersion:1,...v,releaseUrl,notes:'八地图四十关营救、植物换路与部署、墓碑回血补员、结算修复及跨端版本检查。',platforms};
+const manifest={schemaVersion:1,...v,releaseUrl,notes:'冒险漫画与六页游玩指南、四十关行动路线、放大站位与左侧植物情报牌、战斗平衡和阅读暂停修复。',platforms};
 fs.writeFileSync(path.join(dir,'update-manifest.json'),JSON.stringify(manifest,null,2)+'\n',{flag:'wx'});
 const rows=fs.readdirSync(dir).filter(n=>/\.(?:zip|apk|json)$/.test(n)).sort().map(n=>crypto.createHash('sha256').update(fs.readFileSync(path.join(dir,n))).digest('hex')+'  '+n);
 fs.writeFileSync(path.join(dir,'SHA256SUMS.txt'),rows.join('\n')+'\n',{flag:'wx'});

@@ -20,8 +20,9 @@ function createBook(doc,onSelect){
   figure.append(grid,element('figcaption','路线草图 · 暂避屋／账柜／会合点为拟定位置；正式对局尚未开放。'));body.append(figure);
  }
  function render(scene,mode='letter',index=scene.levelIndex){
-  const future=mode==='future',mission=data.missions[scene.levelIndex],item=future?data.plans[index]||data.plans[0]:mission,navFocus=nav.contains(doc.activeElement),navLeft=nav.scrollLeft,navTop=nav.scrollTop;nav.replaceChildren();body.replaceChildren();
+  const future=mode==='future',mission=data.missions[scene.levelIndex],item=future?data.plans[index]||data.plans[0]:mission,navFocus=nav.contains(doc.activeElement),navLeft=nav.scrollLeft,navTop=nav.scrollTop;nav.replaceChildren();body.replaceChildren();body.classList.remove('play-guide');body.scrollTop=0;const scrollBox=doc.querySelector('.book-layout');if(scrollBox)scrollBox.scrollTop=0;
   for(const tab of doc.querySelectorAll('#bookTabs [data-story-page]')){tab.setAttribute('aria-pressed',String(tab.dataset.storyPage===mode));tab.hidden=tab.dataset.storyPage==='rescue'&&!scene.goal.open;}
+  if(mode==='guide'&&root.PVZ_PLAY_GUIDE){root.PVZ_PLAY_GUIDE.render(doc,scene,index,onSelect);if(navFocus)nav.querySelector('[aria-pressed="true"]')?.focus({preventScroll:true});return;}
   if(future){
    let selected;for(const [i,plan]of data.plans.entries()){const button=element('button',plan.tag+' · '+plan.title);button.type='button';button.setAttribute('aria-pressed',String(plan===item));button.onclick=()=>onSelect('future',i);nav.append(button);if(plan===item)selected=button;}
    nav.scrollLeft=navLeft;nav.scrollTop=navTop;if(navFocus&&selected){selected.focus({preventScroll:true});if(typeof selected.scrollIntoView==='function')selected.scrollIntoView({block:'nearest',inline:'nearest'});}

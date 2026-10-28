@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-27",
+  "narrow": {
+    "bankTop": 652.25,
+    "buttonHeights": [
+      44,
+      44,
+      44,
+      44
+    ],
+    "canvasBottom": 569.8500061035156,
+    "pageOverflow": false,
+    "panelBottom": 652.2500381469727,
+    "panelTop": 569.8500366210938,
+    "viewport": 390
+  },
+  "console": [],
+  "notes": "Actual paused trial scene 39 with two squads in first row, doctor behind row 4 fence; viewport emulation is not Android hardware."
+}

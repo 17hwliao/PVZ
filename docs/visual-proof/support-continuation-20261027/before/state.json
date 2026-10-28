@@ -1,0 +1,190 @@
+[
+  {
+    "name": "roof-squash-idle",
+    "ability": {
+      "state": "idle",
+      "elapsed": 0
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-look-0.3",
+    "ability": {
+      "state": "look",
+      "elapsed": 0.3,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-crouch-0.3",
+    "ability": {
+      "state": "crouch",
+      "elapsed": 0.3,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-rising-0.15",
+    "ability": {
+      "state": "rising",
+      "elapsed": 0.15,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-rising-0.3",
+    "ability": {
+      "state": "rising",
+      "elapsed": 0.3,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-falling-0.05",
+    "ability": {
+      "state": "falling",
+      "elapsed": 0.05,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-spent-0.1",
+    "ability": {
+      "state": "spent",
+      "elapsed": 0.1,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  }
+]

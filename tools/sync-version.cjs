@@ -10,4 +10,7 @@ for(const file of ['package.json','desktop/package.json','package-lock.json']){
 }
 const manifest=path.join(root,'android/AndroidManifest.xml');fs.writeFileSync(manifest,fs.readFileSync(manifest,'utf8').replace(/android:versionName="[^"]+"/,'android:versionName="'+v.version+'"').replace(/android:versionCode="\d+"/,'android:versionCode="'+v.build+'"'));
 fs.writeFileSync(path.join(root,'game/build-info.js'),'(function(root){\'use strict\';const info='+JSON.stringify(v)+';if(typeof module!==\'undefined\'&&module.exports)module.exports=info;else root.PVZ_BUILD=Object.freeze(info);})(typeof window!==\'undefined\'?window:globalThis);\n');
+for(const file of ['index.html','rescue-design.html','terrain-campaign.html']){
+ const p=path.join(root,'game',file);fs.writeFileSync(p,fs.readFileSync(p,'utf8').replace(/(build-info\.js|update-ui\.js|update-ui\.css)\?v=\d+/g,'$1?v='+v.build));
+}
 console.log('Version synchronized: '+v.version+' / '+v.build);

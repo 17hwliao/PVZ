@@ -1,0 +1,31 @@
+{
+  "scope": "Compact read-only plant cards moved from bottom strip to left rail in both tactical entries",
+  "desktop": {
+    "cardCount": 11,
+    "gap": 8.000001907348633,
+    "hintsHidden": true,
+    "overflow": false,
+    "overlap": false,
+    "railWidth": 138,
+    "viewport": 1280
+  },
+  "narrow": {
+    "gap": 8.00000286102295,
+    "overflow": false,
+    "overlap": false,
+    "railScrolls": true,
+    "railWidth": 78,
+    "viewport": 390
+  },
+  "browserErrors": [],
+  "checks": {
+    "plantEconomy": 11,
+    "squadControls": 13,
+    "syntaxFiles": 36,
+    "localReferences": 550,
+    "missingReferences": 0
+  },
+  "visibleContent": "Plant portraits, names, prices, sun total, field count and actual numeric cooldown; detailed hints retained only in hover/accessibility data.",
+  "packaged": false,
+  "pushed": false
+}

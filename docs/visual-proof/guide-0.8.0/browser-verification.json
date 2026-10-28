@@ -1,0 +1,10 @@
+{
+  "version": "0.8.0",
+  "surfaces": ["main menu", "prologue comic", "letter to first guide", "six guide pages", "forty level directory", "actual squad command"],
+  "narrowViewport": {"width": 390, "height": 844, "documentWidth": 375, "dialogWidth": 337.2, "horizontalOverflow": false, "guideScrolls": true},
+  "liveCommand": {"goal": "接通补给 · 0/1", "order": "开路队：推进至第3行第8列。", "pausedAfterCommand": true},
+  "nativeQueuedCloseReproducedAndFixed": true,
+  "visibleVersion": "0.8.0",
+  "consoleErrors": [],
+  "scope": "Real browser rendering and interactions; not packaged Windows execution or Android installation"
+}

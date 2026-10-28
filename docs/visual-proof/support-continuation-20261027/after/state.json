@@ -1,0 +1,243 @@
+[
+  {
+    "name": "roof-squash-idle",
+    "ability": {
+      "state": "idle",
+      "elapsed": 0
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-look-0.3",
+    "ability": {
+      "state": "look",
+      "elapsed": 0.3,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-crouch-0.3",
+    "ability": {
+      "state": "crouch",
+      "elapsed": 0.3,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-rising-0.15",
+    "ability": {
+      "state": "rising",
+      "elapsed": 0.15,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-rising-0.3",
+    "ability": {
+      "state": "rising",
+      "elapsed": 0.3,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-falling-0.05",
+    "ability": {
+      "state": "falling",
+      "elapsed": 0.05,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-squash-spent-0.1",
+    "ability": {
+      "state": "spent",
+      "elapsed": 0.1,
+      "origin": {
+        "row": 1,
+        "col": 4
+      },
+      "target": {
+        "row": 1,
+        "col": 5.3
+      }
+    },
+    "support": {
+      "id": "support-0",
+      "type": "flowerpot",
+      "row": 1,
+      "col": 4,
+      "hp": 180,
+      "maxHp": 180
+    },
+    "plant": {
+      "row": 1,
+      "col": 4
+    },
+    "note": "Legal roof placement, authored ability poses to inspect support and jumping offsets; not a playthrough."
+  },
+  {
+    "name": "roof-real-muzzle",
+    "note": "Real paid roof pea and pot, actual model shot; subsequent AI deployment disabled for isolated muzzle check.",
+    "plants": [
+      {
+        "id": 5,
+        "type": "pea",
+        "row": 1,
+        "col": 6,
+        "hp": 180,
+        "maxHp": 180,
+        "path": [],
+        "moving": false,
+        "attack": 0.45,
+        "hit": 0,
+        "cooldown": 1.5,
+        "lastMove": -10,
+        "squad": "守门组",
+        "order": "警戒",
+        "facing": 1,
+        "opening": false,
+        "sunTimer": 12.5,
+        "ability": {
+          "state": "idle",
+          "elapsed": 0
+        },
+        "cactusHeight": 0,
+        "createdAt": 0,
+        "sleeping": false,
+        "growth": 0.05,
+        "coffee": 0,
+        "blockedBy": null
+      }
+    ],
+    "shots": [
+      {
+        "id": "shot-1",
+        "sourceId": 5,
+        "row": 1,
+        "lane": 1,
+        "col": 6.16,
+        "originCol": 6,
+        "dr": 0,
+        "dc": 1,
+        "damage": 20,
+        "type": "pea",
+        "airborne": false,
+        "lobbed": false,
+        "range": 12,
+        "life": 4.45
+      }
+    ]
+  }
+]

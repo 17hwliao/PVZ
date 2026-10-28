@@ -1,13 +1,13 @@
 {
   "name": "zomboss-rise",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": true,
   "description": "Classic-asset reverse tower defense, chapters 1 and 2",
   "engines": {
     "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
   },
   "scripts": {
-    "test": "node tests/test-classic-engine.cjs && node tests/test-campaign-engine.cjs && node tests/test-campaign-ui.cjs && node tests/test-damage-effects.cjs && node tests/test-tools-ui.cjs && node tests/test-encounters.cjs && node tests/test-plant-gallery.cjs && node tests/test-review-regressions.cjs && node tests/test-art-restoration.cjs && node tests/test-classic-flow.cjs && node tests/test-ui-themes.cjs && node tests/test-story-actions.cjs && node tests/test-animation-layers.cjs && node tests/test-field-layout.cjs && node tests/test-visual-qa.cjs && node tests/test-almanac-ui.cjs && node tests/test-story-deployment.cjs && node tests/test-rescue-design.cjs && node tests/test-classic-plant-attacks.cjs && node tests/test-hidden-fences.cjs && node tests/test-rescue-story.cjs && node tests/test-battle-atlas.cjs && node tests/test-terrain-mechanics.cjs && node tests/test-tactical-movement.cjs && node tests/test-squad-controls.cjs && node tests/test-plant-ai-pressure.cjs && node tests/test-supply-controls.cjs && node tests/test-rescue-endgame-supplies.cjs && node tests/test-ai-route-response.cjs && node tests/test-native-updates.cjs && node tests/test-update-ui.cjs && node tests/check-slice-assets.cjs",
+    "test": "node tests/test-classic-engine.cjs && node tests/test-campaign-engine.cjs && node tests/test-campaign-ui.cjs && node tests/test-damage-effects.cjs && node tests/test-tools-ui.cjs && node tests/test-encounters.cjs && node tests/test-plant-gallery.cjs && node tests/test-review-regressions.cjs && node tests/test-art-restoration.cjs && node tests/test-classic-flow.cjs && node tests/test-ui-themes.cjs && node tests/test-story-actions.cjs && node tests/test-animation-layers.cjs && node tests/test-field-layout.cjs && node tests/test-visual-qa.cjs && node tests/test-almanac-ui.cjs && node tests/test-story-deployment.cjs && node tests/test-rescue-design.cjs && node tests/test-classic-plant-attacks.cjs && node tests/test-hidden-fences.cjs && node tests/test-rescue-story.cjs && node tests/test-battle-atlas.cjs && node tests/test-terrain-mechanics.cjs && node tests/test-tactical-movement.cjs && node tests/test-squad-controls.cjs && node tests/test-plant-ai-pressure.cjs && node tests/test-supply-controls.cjs && node tests/test-rescue-endgame-supplies.cjs && node tests/test-ai-route-response.cjs && node tests/test-native-updates.cjs && node tests/test-update-ui.cjs && node tests/test-mobility-review.cjs && node tests/test-battle-balance-review.cjs && node tests/test-plant-economy-ui.cjs && node tests/test-play-guide.cjs && node tests/check-slice-assets.cjs",
     "test:android-updater": "node tests/test-android-updater.cjs",
     "version:sync": "node tools/sync-version.cjs"
   },
