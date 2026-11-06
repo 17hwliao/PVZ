@@ -1,0 +1,148 @@
+/* Shared classic popup materials. Native corners are sliced, never stretched as a flat panel. */
+:root{--popup-stone:url('assets/ui/dialog-original.png');--popup-wood:url('assets/ui/title-original.png');--popup-slab:url('assets/images/options_backtogamebutton0.png');--popup-slab-down:url('assets/images/options_backtogamebutton2.png');--popup-paper:url('assets/images/ZombieNote.jpg');--popup-ink:#493621;--popup-type:PVZChinese,'KaiTi','STKaiti','Microsoft YaHei',serif}
+:is(#dialog,.story-book,.pvz-update-dialog,.adventure-intro)::backdrop{background:#0a100fbd;backdrop-filter:none}
+:is(.story-book,.pvz-update-dialog,.adventure-intro){box-sizing:border-box;inset:0;transform:none;margin:auto;border:34px solid transparent;border-image:var(--popup-stone) 97 120 114 107 fill/34px/0 stretch;background:none;border-radius:0;box-shadow:0 12px 18px #0008;max-width:calc(100vw - 20px);max-height:94dvh;padding:0;font-family:var(--popup-type);color:#e7d9aa;color-scheme:dark;scrollbar-color:#9591a1 #292a3c;scrollbar-width:thin}
+:is(.story-book,.pvz-update-dialog,.adventure-intro) button,:is(.story-book,.pvz-update-dialog) a.classic-button{box-sizing:border-box;background:var(--popup-slab) center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none;color:#302b42;text-shadow:0 1px #c7c1d7;font:16px/1.4 var(--popup-type);min-height:46px;padding:11px 22px;cursor:pointer;white-space:normal;text-decoration:none;filter:none;transition:none;outline:none}
+:is(.story-book,.pvz-update-dialog,.adventure-intro) button:is(:hover,:focus-visible):not(:disabled){color:#f1edac;text-shadow:1px 2px #29263d;filter:brightness(1.08)}
+:is(.story-book,.pvz-update-dialog,.adventure-intro) button:is([aria-pressed=true],:active):not(:disabled){background-image:var(--popup-slab-down);color:#e7ec9c;text-shadow:1px 2px #29263d;box-shadow:none}
+:is(.story-book,.pvz-update-dialog,.adventure-intro) button:focus-visible{outline:2px dotted #f5e1a0;outline-offset:-5px;text-decoration:underline;text-underline-offset:4px}
+:is(.story-book,.pvz-update-dialog,.adventure-intro) button:disabled{opacity:.5;filter:grayscale(.8);cursor:default}
+:is(.book-head>div,.pvz-update-paper>header,.adventure-intro>h2){background:none;border:9px solid transparent;border-image:var(--popup-wood) 15 17 15 17 fill/9px/0 stretch;color:#f7e3ae;text-shadow:1px 2px #392417;text-align:center}
+.story-book{width:1080px;overflow:visible}
+.story-book[open]{display:flex;flex-direction:column;gap:0}
+.story-book .book-head{padding:0 65px 9px;gap:0;border:0;flex-shrink:0;position:relative;min-height:86px;align-items:center}
+.story-book .book-head::before{content:'';position:absolute;left:2px;bottom:4px;width:68px;height:92px;background:url('assets/portraits/zomboss-head.png') bottom/contain no-repeat;filter:drop-shadow(2px 3px #141722)}
+.story-book .book-head>div{padding:8px 24px;width:100%;min-width:0}
+.story-book .book-head p{font-size:12px;color:#d7c090;margin:0 0 3px;line-height:1.5}
+.story-book .book-head h2{font:26px/1.35 var(--popup-type);margin:0;overflow-wrap:anywhere;color:#ffedbc}
+.story-book .book-tabs{padding:0 4px 8px;gap:5px;justify-content:center;flex-shrink:0}
+.story-book .book-tabs button{font-size:14px;min-height:42px;flex:1 1 115px;max-width:190px;padding:8px 13px}
+.story-book .book-layout{display:grid;grid-template-columns:190px minmax(0,1fr);border:0;gap:12px;min-height:0;flex:1;max-height:none;overflow:hidden}
+.story-book #bookNav{border:0;max-height:none;padding:8px 0 0;display:block;overflow:auto}
+.story-book #bookNav button{width:100%;margin:0 0 9px;min-height:54px;font-size:16px;padding:12px 18px}
+.story-book #bookBody{box-sizing:border-box;border:12px solid transparent;border-image:none;background:#222434 var(--popup-paper) center/108% 116% no-repeat;background-blend-mode:screen;color:var(--popup-ink);font:17px/1.9 var(--popup-type);text-shadow:none;padding:12px 23px 24px;overflow:auto;max-height:none;min-height:180px;color-scheme:light;scrollbar-color:#9c835c #d9c797}
+.story-book #bookBody p{margin:12px 0 19px}.story-book #bookBody h3{font-size:22px;margin:17px 0 10px;color:#5b3e24}
+.story-book #bookBody :is(.story-signature,.story-signature p){color:#766044;margin-top:25px}.story-book .story-next{font-size:15px;color:#6b5134}
+.book-footer{display:flex;align-items:center;justify-content:center;gap:18px;flex-shrink:0;padding:13px 4px 0;min-height:64px}
+.story-book .book-footer .book-pause{font:12px/1.6 var(--popup-type);color:#c1b798;margin:0;flex:1}
+.story-book #bookClose{flex:0 1 245px;min-height:50px;font-size:17px}
+.story-book[data-page=letter],.story-book[data-page=rescue],.story-book[data-page=camp]{width:900px}
+.story-book[data-page=letter] .book-layout,.story-book[data-page=rescue] .book-layout,.story-book[data-page=camp] .book-layout{display:block;overflow:auto;scrollbar-color:#9c835c #d9c797}
+.story-book[data-page=letter] #bookNav,.story-book[data-page=rescue] #bookNav,.story-book[data-page=camp] #bookNav{display:none}
+.story-book[data-page=letter] #bookBody,.story-book[data-page=rescue] #bookBody,.story-book[data-page=camp] #bookBody{padding:30px 66px 38px;font-size:19px;line-height:2;min-height:265px;overflow:visible}
+.story-book .play-guide figure{float:right;width:32%;margin:0 0 15px 24px;transform:rotate(2deg)}
+.story-book .play-guide figure img{max-height:185px;border:7px solid transparent;border-image:url('assets/images/Almanac_ZombieWindow2.png') 9 fill/7px/0 stretch;object-fit:cover}
+.story-book .play-guide figcaption{font-size:12px;line-height:1.5}.story-book .play-guide>h3{clear:both}
+.story-book #bookBody details{border:0;border-bottom:2px solid #a58c624d;padding:10px 0}
+.story-book #bookBody summary{font-size:17px;color:#614325;cursor:pointer;min-height:42px;padding:5px 2px;line-height:1.7}
+.story-book #bookBody details[open]>summary{color:#485f31}
+.story-book #bookBody .guide-pages button{min-width:125px}
+.story-book #bookBody .guide-foot{color:#766044;border-color:#a58c6277;font-size:13px}
+.story-book .plan-map{border:5px ridge #876b43}.story-book .design-stamp{color:#813f29}
+/* Native updater: a stone announcement plaque, not a web settings card. */
+.pvz-update-dialog{width:600px;overflow:visible}
+.pvz-update-dialog[open]{display:block}
+.pvz-update-dialog .pvz-update-paper{padding:0;max-height:calc(94dvh - 68px);overflow:auto;display:flex;flex-direction:column;gap:0}
+.pvz-update-dialog .pvz-update-paper>header{position:relative;display:block;padding:14px 20px;margin:0 0 16px}
+.pvz-update-dialog .pvz-update-paper h2{font:28px/1.4 var(--popup-type);color:#ffeabd;margin:0}
+.pvz-update-dialog .pvz-update-paper .pvz-update-close{position:static;display:flex;width:150px;margin:12px auto 0;min-height:38px;padding:6px 16px;font-size:13px}
+.pvz-update-dialog .pvz-update-paper p{font-family:var(--popup-type);line-height:1.8;overflow-wrap:anywhere}
+.pvz-update-dialog .pvz-update-installed{border:0;color:#3c3424;background:var(--popup-paper) center/400% 400%;padding:12px 16px;text-align:center;font-size:16px;margin:0 8px 12px;transform:rotate(-1deg)}
+.pvz-update-dialog .pvz-update-status{font-size:19px;text-align:center;color:#e4d69d;margin:12px 20px}
+.pvz-update-dialog .pvz-update-release{color:#c7d58b;text-align:center;font-size:17px;margin:9px 16px}
+.pvz-update-dialog .pvz-update-notes{color:#c0b89e;font-size:13px;padding:0 14px;margin:12px 0}
+.pvz-update-dialog .pvz-update-actions{justify-content:center;padding:8px 6px 0;margin:0;gap:10px}
+.pvz-update-dialog .pvz-update-actions :is(button,a){background:var(--popup-slab) center/100% 100% no-repeat;color:#302b42;text-shadow:0 1px #c7c1d7;font:16px/1.5 var(--popup-type);min-height:50px;max-width:270px;padding:10px 24px}
+/* Comic windows share the stone surround while artwork retains the full viewport. */
+.adventure-intro{width:1060px;overflow:auto}
+.adventure-intro>h2{font:25px/1.4 var(--popup-type);margin:0 35px 12px;padding:9px 15px}
+.adventure-intro .intro-view{height:min(38vw,calc(94dvh - 330px),410px);min-height:160px;border:7px solid transparent;border-image:url('assets/images/Almanac_ZombieWindow2.png') 9/7px/0 stretch;box-shadow:none}
+.adventure-intro .intro-caption{padding:13px 16px;background:none;min-height:100px}
+.adventure-intro .intro-caption strong{color:#d6cf8d}.adventure-intro .intro-caption p{font:18px/1.75 var(--popup-type);margin:7px 0;color:#eee0bb}
+.adventure-intro .intro-progress{height:4px;background:#171a23;margin:0 12px}.adventure-intro .intro-progress i{background:#a6b66b}
+.adventure-intro .intro-controls{padding:12px 0 0;gap:7px}.adventure-intro .intro-controls button{font-size:14px;padding:8px 15px;min-height:43px}.adventure-intro .intro-controls>span{color:#bdb59c;font-size:14px}
+/* Existing classic mode: unify generic, confirmation, settings and story frames. */
+#dialog:not(.menu-dialog):not(.chapter-dialog):not(.award-dialog):not(.almanac-dialog){inset:0;transform:none;margin:auto;max-height:94dvh;max-width:calc(100vw - 24px);border:32px solid transparent;border-image:var(--popup-stone) 97 120 114 107 fill/32px/0 stretch;background:none;color:#e7d9aa;overflow:visible;mask:none}
+#dialog:not(.menu-dialog):not(.chapter-dialog):not(.award-dialog):not(.almanac-dialog) .dialog-paper{display:flex;flex-direction:column;padding:0 9px 5px;background:none;max-height:calc(94dvh - 64px)}
+#dialog:not(.menu-dialog):not(.chapter-dialog):not(.award-dialog):not(.almanac-dialog) .dialog-paper>h2{background:none;border:8px solid transparent;border-image:var(--popup-wood) 15 17 15 17 fill/8px/0 stretch;color:#ffe7af;text-shadow:1px 2px #392417;text-align:center;font:26px/1.4 var(--popup-type);padding:10px 16px;margin:0 8px 15px;flex-shrink:0;letter-spacing:1px}
+#dialog .dialog-kicker{display:block;text-align:center;font-size:12px;line-height:1.5;color:#bbb49c;margin:0 0 7px;letter-spacing:1px}
+#dialog:not(.award-dialog):not(.almanac-dialog) #dialogBody{min-height:0;flex:1;max-height:none;overflow:auto;scrollbar-color:#9591a1 #292a3c;font-size:16px}
+#dialog:not(.award-dialog):not(.almanac-dialog) .dialog-actions{padding-top:13px;margin-top:8px;flex-shrink:0;justify-content:center;gap:9px}
+#dialog:not(.award-dialog):not(.almanac-dialog) .dialog-actions button{font:16px/1.4 var(--popup-type);min-height:48px;min-width:130px;padding:10px 20px;color:#e6e0aa;text-shadow:1px 2px #302d40}
+#dialog:not(.award-dialog):not(.almanac-dialog) .dialog-actions button:hover{color:#f3efad}
+#dialog.letter-dialog #dialogBody{color:var(--popup-ink);border:12px solid transparent;border-image:none;background:#222434 var(--popup-paper) center/108% 116% no-repeat;background-blend-mode:screen;padding:25px 54px 34px;text-shadow:none;color-scheme:light;scrollbar-color:#9c835c #d9c797}
+#dialog.letter-dialog #dialogBody>p{font-size:18px;line-height:1.9}
+#dialog.letter-dialog .encounter-brief{border:0;border-top:2px solid #a18a6177;background:none}.letter-dialog .plant-intel :is(strong,span){color:#615037}
+#dialog .dialog-actions .secondary{background-image:var(--popup-slab)}
+#dialog .theme-setting-status,#dialog .aside{color:#c3bba0}
+#dialog .theme-settings legend{color:#dfd097;font-size:19px}.theme-choice{min-height:100px}
+#dialog.menu-dialog{max-height:94dvh;max-width:calc(100vw - 20px)}
+#dialog.chapter-dialog .dialog-actions{padding-top:0}
+#dialog .story-panel-copy p{color:#e7d9aa}
+#dialog .damage-stage-note{background:#212534;color:#c6be9e}
+#dialog .comic-caption>div{background:#323446;color:#dcd2b4;border:0}#dialog .comic-caption b{color:#c6d28e}
+#preparation .chooser-window,#unitDossier{filter:drop-shadow(3px 6px 3px #10101477)}
+@media(max-width:720px){
+ :is(.story-book,.pvz-update-dialog,.adventure-intro){border-width:22px;border-image-width:22px;max-width:calc(100vw - 12px);max-height:95dvh}
+ .story-book .book-head{padding:0 0 9px 23px;min-height:70px}.story-book .book-head::before{width:48px;height:69px;left:-10px;bottom:5px}.story-book .book-head>div{padding:6px 12px}.story-book .book-head h2{font-size:21px}.story-book .book-head p{font-size:11px}
+ .story-book .book-tabs{gap:4px;padding:0 0 8px}.story-book .book-tabs button{font-size:12px;min-height:40px;flex:1 1 90px;max-width:none;padding:7px 10px}
+ .story-book .book-layout{display:flex;flex-direction:column;gap:0;overflow:auto;scrollbar-color:#9591a1 #292a3c}
+ .story-book #bookNav{display:flex;gap:5px;flex-shrink:0;overflow:auto;padding:0 0 8px;max-height:none}.story-book #bookNav button{flex:0 0 132px;width:132px;min-height:46px;margin:0;font-size:13px;padding:8px 12px}
+ .story-book #bookBody{font-size:16px;padding:12px 15px 20px;max-height:none;overflow:visible;flex-shrink:0;min-height:150px}
+ .story-book[data-page=letter] #bookBody,.story-book[data-page=rescue] #bookBody,.story-book[data-page=camp] #bookBody{font-size:17px;padding:22px 25px 30px;line-height:1.85;min-height:220px}
+ .story-book #bookBody h3{font-size:19px}.story-book #bookBody summary{font-size:16px}
+ .book-footer{padding-top:10px;gap:8px;flex-wrap:wrap;min-height:60px}.story-book .book-footer .book-pause{flex:1 1 100%;text-align:center;font-size:11px}.story-book #bookClose{min-height:46px;font-size:15px;flex-basis:240px}
+ .story-book .play-guide figure{float:none;width:100%;margin:0 0 13px;transform:none}.story-book .play-guide figure img{max-height:150px}
+ .pvz-update-dialog .pvz-update-paper{max-height:calc(95dvh - 44px)}.pvz-update-dialog .pvz-update-paper>header{padding:9px 10px;margin-bottom:12px}.pvz-update-dialog .pvz-update-paper h2{font-size:23px}.pvz-update-dialog .pvz-update-status{font-size:17px;margin:10px 8px}.pvz-update-dialog .pvz-update-installed{font-size:14px;margin:0 0 6px}.pvz-update-dialog .pvz-update-notes{font-size:12px;padding:0 5px}
+ .adventure-intro>h2{font-size:20px;margin:0 0 9px;padding:6px}.adventure-intro .intro-view{height:min(52vw,340px)}.adventure-intro .intro-caption{padding:10px 4px;min-height:120px}.adventure-intro .intro-caption p{font-size:16px;line-height:1.7}.adventure-intro .intro-controls button{font-size:13px;min-height:44px;flex:1;padding:8px 12px}.adventure-intro .intro-controls span{flex-basis:100%}
+ #dialog:not(.menu-dialog):not(.chapter-dialog):not(.award-dialog):not(.almanac-dialog){border-width:20px;border-image-width:20px;max-height:95dvh}
+ #dialog:not(.menu-dialog):not(.chapter-dialog):not(.award-dialog):not(.almanac-dialog) .dialog-paper{padding:0 2px 4px;max-height:calc(95dvh - 40px)}
+ #dialog:not(.menu-dialog):not(.chapter-dialog):not(.award-dialog):not(.almanac-dialog) .dialog-paper>h2{font-size:21px;margin:0 0 10px;padding:6px 10px}
+ #dialog:not(.award-dialog):not(.almanac-dialog) .dialog-actions button{min-width:105px;min-height:44px;font-size:14px;padding:8px 13px}
+ #dialog.letter-dialog #dialogBody{padding:9px 13px 17px}#dialog.letter-dialog #dialogBody>p{font-size:16px}
+}
+@media(max-height:520px) and (min-width:721px){
+ :is(.story-book,.pvz-update-dialog,.adventure-intro){border-width:20px;border-image-width:20px;max-height:97dvh}
+ .story-book .book-head{min-height:0;padding-bottom:5px}.story-book .book-head>div{padding:3px 12px}.story-book .book-head h2{font-size:21px}.story-book .book-head p{font-size:10px}.story-book .book-tabs{padding-bottom:5px}.story-book .book-tabs button{min-height:35px;padding:5px 10px;font-size:12px}.book-footer{padding-top:6px;min-height:42px}.story-book #bookClose{min-height:40px;font-size:14px}.story-book #bookBody{min-height:0}.story-book[data-page=letter] #bookBody,.story-book[data-page=rescue] #bookBody,.story-book[data-page=camp] #bookBody{min-height:0;padding:10px 25px;font-size:17px}
+ .adventure-intro .intro-view{height:35dvh;min-height:0}.adventure-intro>h2{margin-bottom:6px;padding:2px;font-size:20px}.adventure-intro .intro-caption{min-height:0;padding:6px 12px}.adventure-intro .intro-caption p{font-size:15px;margin:3px 0}.adventure-intro .intro-controls{padding-top:6px}.adventure-intro .intro-controls button{min-height:36px;padding:6px 12px}
+ .pvz-update-dialog .pvz-update-paper{max-height:calc(97dvh - 40px)}
+}
+
+.pvz-update-dialog .pvz-update-paper>.pvz-update-close{align-self:center;width:210px;min-height:46px;margin:12px 0 0;font-size:16px}
+.story-book[data-page=guide] #bookBody,.story-book[data-page=future] #bookBody{background-size:400% 400%;border:8px solid transparent;border-image:url('assets/images/Almanac_ZombieWindow2.png') 9/8px/0 stretch;padding:14px 23px 24px}
+@media(max-width:720px){.story-book[data-page=guide] #bookBody,.story-book[data-page=future] #bookBody{padding:12px 14px 20px}}
+
+#dialog:is(.chapter-dialog,.award-dialog,.almanac-dialog){inset:0;transform:none;margin:auto;max-height:94dvh}
+#dialog:is(.chapter-dialog,.award-dialog,.menu-dialog) .dialog-kicker{display:none}
+#dialog.menu-dialog{inset:0;transform:none;margin:auto;width:min(500px,calc(100vw - 20px),79.9dvh);height:auto;aspect-ratio:500/588;max-height:94dvh}
+#dialog.letter-dialog :is(.aside,.speaker,.letter-signature){color:#756044}
+#dialog.letter-dialog .dialog-paper .line{color:#493621;border-color:#a59068}
+#dialog.story-dialog .story-frame{border:8px solid transparent;border-image:url('assets/images/Almanac_ZombieWindow2.png') 9/8px/0 stretch}
+@media(max-width:560px){#dialog.menu-dialog .dialog-actions button{width:90%;min-height:42px;font-size:15px}#dialog.menu-dialog .dialog-actions button:first-child{min-height:50px;font-size:19px}#dialog.menu-dialog .pause-level{font-size:16px}#dialog.menu-dialog .aside{font-size:13px}}
+
+@media(max-width:720px){#dialog.letter-dialog #dialogBody{padding:18px 24px 28px}}
+
+@media(max-width:560px){.adventure-intro .intro-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.adventure-intro .intro-controls>span{grid-column:1/-1}.adventure-intro .intro-controls button{width:100%;min-width:0;padding:8px 9px;line-height:1.5}.story-book .book-tabs button{min-height:44px}}
+
+/* The comic is a 1672x941 four-panel sheet; each crop keeps that same aspect. */
+.adventure-intro .intro-view{width:min(100%,calc((94dvh - 330px)*1.776833),728px);height:auto;min-height:0;aspect-ratio:1672/941;margin:0 auto}
+@media(max-width:720px){.adventure-intro .intro-view{width:100%;height:auto;aspect-ratio:1672/941}}
+@media(max-height:520px) and (min-width:721px){.adventure-intro .intro-view{width:min(100%,62.2dvh);height:auto;min-height:0}}
+
+#dialog:not(.award-dialog):not(.almanac-dialog):not(.chapter-dialog):not(.menu-dialog) #dialogBody{padding:10px 16px;outline:none}
+#dialog:not(.award-dialog):not(.almanac-dialog) #dialogBody:focus-visible{outline:2px dotted #a5a08e;outline-offset:-4px}
+#dialog:not(.letter-dialog):not(.award-dialog) .dialog-paper .line{padding:8px 12px;border-left:3px solid #68677b;margin:10px 0 15px}
+#dialog.letter-dialog #dialogBody{padding:25px 54px 34px}
+#dialog.award-dialog .aside{color:#715335;text-shadow:none}
+@media(max-width:720px){#dialog.letter-dialog #dialogBody{padding:18px 24px 28px}}
+
+@media(max-height:520px) and (min-width:721px){
+ .adventure-intro[open]{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(250px,1fr);gap:6px 14px}
+ .adventure-intro>h2{grid-column:1/-1;margin:0 25px 2px}
+ .adventure-intro .intro-view{grid-column:1;grid-row:2/5;width:100%;height:auto;aspect-ratio:1672/941;align-self:center}
+ .adventure-intro .intro-caption{grid-column:2;grid-row:2;padding:0 5px;min-height:0}
+ .adventure-intro .intro-progress{grid-column:2;grid-row:3;margin:0}
+ .adventure-intro .intro-controls{grid-column:2;grid-row:4;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;padding:0}
+ .adventure-intro .intro-controls>span{grid-column:1/-1;font-size:11px}
+ .adventure-intro .intro-controls button{min-width:0;min-height:36px;padding:6px 8px;font-size:12px;width:100%}
+}

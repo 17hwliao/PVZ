@@ -25,7 +25,7 @@ function createPainter(renderer,images,design=data,units=geo.UNITS){
  function label(c,value,px,py,size=15,color='#fff2c9',align='center'){c.save();c.font=size+'px PVZChinese,"Microsoft YaHei",sans-serif';c.textAlign=align;c.lineJoin='round';c.strokeStyle='#28351e';c.lineWidth=3;c.strokeText(value,px,py);c.fillStyle=color;c.fillText(value,px,py);c.restore();}
  function asset(c,key,px,foot,w,h,flip=false){const image=images[key];if(!image)return;c.save();if(flip){c.translate(px*2,0);c.scale(-1,1);}c.drawImage(image,px-w/2,foot-h,w,h);c.restore();}
  function ring(c,px,foot,selected,r=30){c.save();c.strokeStyle=selected?'#ffe9a2':'#23391b70';c.lineWidth=selected?3:1;c.fillStyle='#1d301d35';c.beginPath();c.ellipse(px,foot+3,r,9,0,0,Math.PI*2);c.fill();c.stroke();c.restore();}
- function paint(c,s,{reducedMotion=false,cursor=null,environment=null}={}){
+ function paint(c,s,{reducedMotion=false,cursor=null,environment=null,cleanUI=false,target=null}={}){
   environment=environment||s.terrain;const level=s.previewLevel||data.levels[s.levelIndex],t=s.economy?.clock??s.time;c.clearRect(0,0,1200,720);renderer.drawBackground(c,false);if(environment&&environmentArt)environmentArt.draw(c,environment,images,t);
   // Intersections and hard map borders use the same coordinates as movement and collision.
   c.save();c.fillStyle='#b7ad7e45';
@@ -40,6 +40,7 @@ function createPainter(renderer,images,design=data,units=geo.UNITS){
    const px=x(Number.isFinite(p.col)?p.col:-1.15),foot=y(p.row),pulse=Math.max(0,p.attack||p.sunFlash||0);
    renderer.drawPlant(c,view(plantViews,p,{...p,type:'sunflower',hp:130,maxHp:130,x:px,attack:pulse,shot:2,hit:0}),{x:px,foot,time:reducedMotion?0:t+p.row*.36,scale:.94,reducedMotion,dead:false});
   }
+  if(!cleanUI){
   for(let row=0;row<5;row++)label(c,String(row+1),164,y(row)-20,16,'#d9e0aa');
   for(let col=0;col<10;col++)label(c,String(col+1),x(col),162,12,'#d9e0aa');
   const bank=images['ui:SeedBank.png'];if(bank){c.drawImage(bank,180,12,800,76);c.drawImage(bank,bank.width*.65,10,bank.width*.12,bank.height*.6,204,19,85,56);}asset(c,'energyHead',246,73,60,60);
@@ -47,10 +48,13 @@ function createPainter(renderer,images,design=data,units=geo.UNITS){
   label(c,String(s.energy),246,78,19);label(c,'植物阳光 '+s.economy.sun,594,75,14,'#f1dda0');label(c,s.preview?'场地视觉试演':s.status==='planning'?'准备 '+Math.ceil(Math.max(0,s.planning-1e-8))+'秒':s.status==='won'?'接应成功':s.status==='lost'?'行动结束':'行动 '+Math.floor(s.time+1e-8)+'秒',594,48,15);
   label(c,'博士 · 剩余命中 '+s.doctor.hits+'/10',787,45,16);
   for(let i=0;i<10;i++){c.fillStyle=i<s.doctor.hits?'#b6c977':'#45513b';c.strokeStyle='#26391b';c.lineWidth=2;c.beginPath();c.arc(705+i*19,70,6,0,Math.PI*2);c.fill();c.stroke();}
+  }
   const selected=s.selected==='doctor'?s.doctor:s.teams.find(a=>a.id===s.selected);
-  if(selected?.path.length){c.save();c.strokeStyle='#ffedaa';c.lineWidth=3;c.setLineDash([6,7]);c.beginPath();c.moveTo(x(selected.col),y(selected.row));for(const p of selected.path)c.lineTo(x(p.col),y(p.row));c.stroke();c.restore();}
-  if(cursor){c.save();c.strokeStyle=level.blocked.some(b=>b.row===cursor.row&&b.col===cursor.col)?'#dd856b':'#fff0a4';c.lineWidth=2;c.setLineDash([4,4]);c.strokeRect(x(cursor.col)-37,y(cursor.row)-76,74,88);c.restore();}
+  if(!cleanUI&&selected?.path.length){c.save();c.strokeStyle='#ffedaa';c.lineWidth=3;c.setLineDash([6,7]);c.beginPath();c.moveTo(x(selected.col),y(selected.row));for(const p of selected.path)c.lineTo(x(p.col),y(p.row));c.stroke();c.restore();}
+  if(!cleanUI&&cursor){c.save();c.strokeStyle=level.blocked.some(b=>b.row===cursor.row&&b.col===cursor.col)?'#dd856b':'#fff0a4';c.lineWidth=2;c.setLineDash([4,4]);c.strokeRect(x(cursor.col)-37,y(cursor.row)-76,74,88);c.restore();}
   const objects=[];
+  if(cleanUI&&cursor)objects.push({foot:-2,draw(){const left=x(cursor.col)-37,top=y(cursor.row)-79,w=74,h=86;c.save();c.strokeStyle='#fff0b5';c.fillStyle='#fff2be16';c.lineWidth=2;c.fillRect(left,top,w,h);for(const [px,py,sx,sy]of [[left,top,1,1],[left+w,top,-1,1],[left,top+h,1,-1],[left+w,top+h,-1,-1]]){c.beginPath();c.moveTo(px+sx*12,py);c.lineTo(px,py);c.lineTo(px,py+sy*12);c.stroke();}c.restore();}});
+  if(cleanUI&&target&&!target.fences)objects.push({foot:-1,draw(){c.save();c.fillStyle='#ffe7a61f';c.strokeStyle='#ffeb95';c.lineWidth=2;c.setLineDash([5,6]);c.fillRect(x(target.col)-35,y(target.row)-77,70,82);c.strokeRect(x(target.col)-35,y(target.row)-77,70,82);c.restore();}});
   if(s.terrain?.id==='fog'&&s.status!=='planning'&&s.time>=s.weather.clearUntil){c.save();c.beginPath();for(let row=0;row<5;row++)for(let col=0;col<8;col++)if(!terrainRules.visible(s,{row,col},'player'))c.rect(x(col)-40,y(row)-80,80,96);c.clip();c.fillStyle='#142735c0';c.fillRect(180,172,640,480);const mist=images['env:mist'];if(mist){c.globalAlpha=.3;c.drawImage(mist,160,172,740,480);}c.restore();}
   for(const b of s.supports||[])if(b.hp>0&&(!s.terrain||terrainRules.visible(s,b,'player'))){objects.push({foot:y(b.row)-2,draw(){asset(c,'support:'+b.type,x(b.col),y(b.row)+11,b.type==='lily'?76:62,b.type==='lily'?29:39);}});if(b.type==='flowerpot')objects.push({foot:y(b.row)+.5,draw(){const image=images['support:flowerpot'];if(image){c.save();c.beginPath();c.rect(x(b.col)-31,y(b.row)-9,62,20);c.clip();asset(c,'support:flowerpot',x(b.col),y(b.row)+11,62,39);c.restore();}}});}
   for(const p of s.previewLandmarks||[])objects.push({foot:y(p.row)-3,draw(){if(p.kind==='door')asset(c,'door',x(p.col),y(p.row)+3,66,90);else{ring(c,x(p.col),y(p.row),true,25);}label(c,p.label,x(p.col),y(p.row)-38,12,'#ffe7a6');}});
@@ -58,7 +62,7 @@ function createPainter(renderer,images,design=data,units=geo.UNITS){
    if(!n.broken){c.fillStyle='#26371d';c.fillRect(px-22,foot+9,44,6);c.fillStyle=n.claimed?'#bcd66c':'#93a16a';c.fillRect(px-21,foot+10,42*n.hp/n.maxHp,4);
     if(!n.claimed&&n.progress>0){c.strokeStyle='#ffde86';c.lineWidth=3;c.beginPath();c.arc(px,foot-30,25,-Math.PI/2,-Math.PI/2+Math.PI*2*n.progress/3);c.stroke();}}
    label(c,n.kind==='relay'?'援':n.kind==='repair'?'修':'粮',px,foot-21,13,n.claimed?'#ffe599':'#e0d4b0');}});}
-  if(!s.preview||s.previewHasDoor)objects.push({foot:y(s.goal.row)-2,draw(){asset(c,'door',x(s.goal.col),y(s.goal.row)+3,66,90);label(c,s.goal.open?'已开':'房门',x(s.goal.col),y(s.goal.row)-34,13,'#ffe4a0');if(!s.goal.open&&s.goal.progress>0){c.fillStyle='#26371d';c.fillRect(x(s.goal.col)-24,y(s.goal.row)+9,48,5);c.fillStyle='#e6c472';c.fillRect(x(s.goal.col)-24,y(s.goal.row)+9,48*s.goal.progress/4,5);}}});
+  if(!s.preview||s.previewHasDoor)objects.push({foot:y(s.goal.row)-2,draw(){asset(c,'door',x(s.goal.col),y(s.goal.row)+3,66,90);label(c,s.goal.open?'已开':cleanUI&&s.caches.filter(n=>n.claimed&&!n.broken).length<level.requiredCaches?'锁 '+s.caches.filter(n=>n.claimed&&!n.broken).length+'/'+level.requiredCaches:'房门',x(s.goal.col),y(s.goal.row)-34,13,'#ffe4a0');if(!s.goal.open&&s.goal.progress>0){c.fillStyle='#26371d';c.fillRect(x(s.goal.col)-24,y(s.goal.row)+9,48,5);c.fillStyle='#e6c472';c.fillRect(x(s.goal.col)-24,y(s.goal.row)+9,48*s.goal.progress/4,5);}}});
   function plant(p,dead=false){
    const support=s.supports?.find(b=>b.hp>0&&b.row===Math.round(p.row)&&b.col===Math.round(p.col)),foot=y(p.row)-(support?.type==='flowerpot'?22:0);
    if(p.type==='squash'){
@@ -84,16 +88,21 @@ function createPainter(renderer,images,design=data,units=geo.UNITS){
   }
   if(s.follower){const f=s.follower,px=x(f.col)-16,foot=y(f.row)+8;if(f.kind==='plant')objects.push({foot,draw(){renderer.drawPlant(c,view(plantViews,f,{...f,x:px,attack:0,shot:2,hit:0}),{x:px,foot,time:t,scale:1.18,reducedMotion});}});else zombie(f,{x:px,foot,row:f.row},{moving:f.moving,flip:f.facing>0,grounded:true});objects.push({foot:foot+16,draw(){c.save();c.strokeStyle='#ffe28b';c.lineWidth=3;c.setLineDash([4,3]);c.beginPath();c.ellipse(px,foot+2,22,8,0,0,Math.PI*2);c.stroke();c.restore();const tag=images['ui:SeedChooser_Button.png'];if(tag)c.drawImage(tag,px-27,foot-135,54,22);label(c,f.escort==null?'接应':'护送',px,foot-120,13,'#ffe296');}});}
   for(const d of s.dead){if(d.kind==='plant')plant(d,true);else{let origin=deathOrigins.get(d);if(!origin){origin=footprints.get(d.actor)||{x:x(d.col),foot:y(d.row),row:d.row};deathOrigins.set(d,origin);}zombie({...d,hp:0},origin,{dead:true,flip:origin.flip});}}
-  if(Number.isInteger(s.doctor.row))objects.push({foot:y(s.doctor.row),draw(){const d=s.doctor;ring(c,x(d.col),y(d.row),s.selected==='doctor',26);c.save();if(d.hit>0)c.globalAlpha=.6;asset(c,'command',x(d.col),y(d.row),122,122);c.restore();label(c,'博士 · 己方可见',x(d.col),y(d.row)-133,15,'#ffe5a0');}});
+  if(Number.isInteger(s.doctor.row))objects.push({foot:y(s.doctor.row),draw(){const d=s.doctor;ring(c,x(d.col),y(d.row),s.selected==='doctor',26);c.save();if(d.hit>0)c.globalAlpha=.6;asset(c,'command',x(d.col),y(d.row),122,122);c.restore();label(c,cleanUI?'博士':'博士 · 己方可见',x(d.col),y(d.row)-133,15,'#ffe5a0');}});
   for(const f of s.fences)objects.push({foot:y(f.row)+9,draw(){const px=x(f.col),foot=y(f.row),chosen=s.doctor.row===f.row;
    c.save();if(s.status==='planning'&&chosen){c.strokeStyle='#e3c77a';c.lineWidth=3;c.setLineDash([5,5]);c.strokeRect(px-37,foot-80,74,84);}if(f.hp===0){c.beginPath();c.rect(px-40,foot-23,80,31);c.clip();c.globalAlpha=.65;}if(f.hit>0)c.filter='brightness(1.45)';asset(c,'fence',px,foot+6,76,90);c.restore();
-   c.fillStyle='#28371e';c.fillRect(px-26,foot+3,52,6);c.fillStyle=f.hp>200?'#bdd17a':'#d7a063';c.fillRect(px-25,foot+4,50*f.hp/f.maxHp,4);label(c,f.hp>0?Math.ceil(f.hp)+'/600':'已破损',px+45,foot+8,11,f.hp>0?'#e9deb2':'#dfb38a','left');
+   c.fillStyle='#28371e';c.fillRect(px-26,foot+3,52,6);c.fillStyle=f.hp>200?'#bdd17a':'#d7a063';c.fillRect(px-25,foot+4,50*f.hp/f.maxHp,4);if(!cleanUI)label(c,f.hp>0?Math.ceil(f.hp)+'/600':'已破损',px+45,foot+8,11,f.hp>0?'#e9deb2':'#dfb38a','left');
   }});
   objects.sort((a,b)=>a.foot-b.foot);for(const item of objects)item.draw();
   for(const p of s.projectiles){if(s.terrain&&!terrainRules.visible(s,p,'player'))continue;c.save();const launchLift=s.terrain?.theme==='roof'?22:0,px=x(p.col),py=y(p.row)-launchLift-(p.airborne?117:p.lobbed?57+Math.sin(Math.min(1,(p.col-p.originCol)/7)*Math.PI)*70:57),cabbage=images.IMAGE_REANIM_CABBAGEPULT_CABBAGE;
    if(p.lobbed&&cabbage){c.translate(px,py);c.rotate((p.col-p.originCol)*1.5);c.drawImage(cabbage,-10,-10,20,20);}else{c.shadowColor='#22330b';c.shadowBlur=3;c.fillStyle=p.type==='snow'?'#b7e7f1':['puff','fumeshroom'].includes(p.type)?'#c9b2e2':p.type==='cactus'?'#e8d38c':'#93d33d';c.strokeStyle='#375a23';c.lineWidth=2;c.beginPath();c.ellipse(px,py,p.type==='cactus'?9:p.type==='fumeshroom'?13:6,p.type==='cactus'?2:p.type==='fumeshroom'?7:6,0,0,Math.PI*2);c.fill();c.stroke();}c.restore();}
+  if(!cleanUI){
   label(c,s.preview?'← 目标与地标':s.economySunflowers?.length?'场外供阳 · 无敌':'← 房门与目标',s.economySunflowers?.length?102:92,s.economySunflowers?.length?173:205,s.economySunflowers?.length?12:15);if(!Number.isInteger(s.doctor.row)){label(c,'选择藏身栅栏',1084,355,16,'#ffe5a0');label(c,'点击最右侧任一行',1084,382,13,'#e6d7b2');}label(c,'第9列 · 接应点',x(data.camp.col),677,13);if(environment?.theme==='roof')label(c,'屋脊 · 左侧直射受阻',460,677,12,'#e9d4ad');
   label(c,s.preview?'原版场景素材与现有角色实绘 · 场地机制仍在设计中':s.status==='planning'?'先点最右侧栅栏选择博士藏身处；小队在栅栏前一列布阵。':'接通'+level.requiredCaches+'座补给碑 → 开门 → 护送同胞回到右侧灯房',600,702,16,'#e9dfb1');
+  }else{
+   if(s.follower)label(c,'营地',x(data.camp.col),y(data.camp.row)+32,14);
+   if(target?.fences){c.save();c.strokeStyle='#ffeb95';c.lineWidth=3;for(const f of s.fences)c.strokeRect(x(f.col)-35,y(f.row)-80,70,82);c.restore();}
+  }
  }
  return{paint,point:(row,col)=>({x:x(col),y:y(row)} )};
 }

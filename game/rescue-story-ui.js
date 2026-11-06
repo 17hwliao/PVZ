@@ -20,6 +20,7 @@ function createBook(doc,onSelect){
   figure.append(grid,element('figcaption','路线草图 · 暂避屋／账柜／会合点为拟定位置；正式对局尚未开放。'));body.append(figure);
  }
  function render(scene,mode='letter',index=scene.levelIndex){
+  doc.getElementById('storyBook').dataset.page=mode;
   const future=mode==='future',mission=data.missions[scene.levelIndex],item=future?data.plans[index]||data.plans[0]:mission,navFocus=nav.contains(doc.activeElement),navLeft=nav.scrollLeft,navTop=nav.scrollTop;nav.replaceChildren();body.replaceChildren();body.classList.remove('play-guide');body.scrollTop=0;const scrollBox=doc.querySelector('.book-layout');if(scrollBox)scrollBox.scrollTop=0;
   for(const tab of doc.querySelectorAll('#bookTabs [data-story-page]')){tab.setAttribute('aria-pressed',String(tab.dataset.storyPage===mode));tab.hidden=tab.dataset.storyPage==='rescue'&&!scene.goal.open;}
   if(mode==='guide'&&root.PVZ_PLAY_GUIDE){root.PVZ_PLAY_GUIDE.render(doc,scene,index,onSelect);if(navFocus)nav.querySelector('[aria-pressed="true"]')?.focus({preventScroll:true});return;}
@@ -29,8 +30,8 @@ function createBook(doc,onSelect){
    eyebrow.textContent=item.chapter+' · '+item.kind;title.textContent=item.tag+' · '+item.title;body.append(element('p','设计中 · 尚不可进入战斗','design-stamp'));const atlas=element('a','查看八种场地与完整战役路线','classic-button');atlas.href='battle-atlas.html';body.append(atlas);routeMap(item);paragraph(item.letter);section('为什么要去',item.beats);section('对局目标',[item.objective]);section('路线与分工',item.rows);section('三队各做什么',item.teams);section('这一关的新难题',[item.challenge]);section('植物会怎样应对',[item.ai,item.telegraph]);section('受挫后如何接应',[item.recovery]);section('沿用的规则',data.common);section('体验重点',[item.focus]);paragraph('故事接续：'+item.next);return;
   }
   for(const [value,label]of [['letter','战前来信'],['rescue','门后的交谈'],['camp','灯房回信']]){if(value==='rescue'&&!scene.goal.open)continue;const b=element('button',label);b.type='button';b.setAttribute('aria-pressed',String(mode===value));b.onclick=()=>onSelect(value);nav.append(b);}
-  if(mode==='rescue'&&scene.goal.open){eyebrow.textContent=mission.tag+' · 门已经打开';title.textContent='门后的人';for(const [speaker,line]of mission.rescued){const p=element('p',null,'story-dialogue');p.append(element('strong',speaker+'：'),doc.createTextNode(line));body.append(p);}paragraph('接下来：带着护送标识的同胞返回第9列营地。护送队会等候较慢的同胞；原护送队倒下后，附近另一队可以接手。');}
-  else if(mode==='camp'){eyebrow.textContent=mission.tag+' · 灯房';title.textContent=scene.status==='won'?'回来以后':'还没有写完的回信';for(const line of aftermath(scene))paragraph(line);if(scene.status==='won'){for(const line of mission.camp)paragraph(line);body.append(element('p',mission.next,'story-next'));}}
+  if(mode==='rescue'&&scene.goal.open){eyebrow.textContent=mission.tag+' · 门已经打开';title.textContent='门后的人';for(const [speaker,line]of mission.rescued){const p=element('p',null,'story-dialogue');p.append(element('strong',speaker+'：'),doc.createTextNode(line));body.append(p);}paragraph('他扶住接应同胞的肩膀，准备一同回营。');}
+  else if(mode==='camp'){eyebrow.textContent=mission.tag+' · 灯房';title.textContent=scene.status==='won'?'回来以后':'还没有写完的回信';for(const line of aftermath(scene))paragraph(line);if(scene.status==='won'){for(const line of mission.camp)paragraph(line);if(!mission.camp.includes(mission.next))body.append(element('p',mission.next,'story-next'));}}
   else{eyebrow.textContent=mission.tag+' · '+mission.place;title.textContent=mission.title;for(const line of mission.letter)paragraph(line);body.append(element('p','—— '+mission.sender,'story-signature'));}
  }
  return{render};

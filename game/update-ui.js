@@ -7,10 +7,10 @@ function mount(host){
  let serial=0,downloadSerial=0,pending=null,result=null,phase='idle',message='',downloadBusy=false,downloadTimer=null,lastDownloadId=null,disposed=false;
  const make=(tag,text,cls)=>{const e=doc.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;};
  const trigger=make('button','版本 '+version+' · 检查更新','pvz-update-trigger');trigger.type='button';
- const dialog=make('dialog',null,'pvz-update-dialog'),paper=make('div',null,'pvz-update-paper'),head=make('header'),title=make('h2','版本与更新'),close=make('button','收好木牌');close.type='button';close.className='pvz-update-close';head.append(title,close);
+ const dialog=make('dialog',null,'pvz-update-dialog'),paper=make('div',null,'pvz-update-paper'),head=make('header'),title=make('h2','版本与更新'),close=make('button','收好木牌');close.type='button';close.className='pvz-update-close';head.append(title);
  const installed=make('p','当前版本 '+version+' · 构建 '+installedBuild,'pvz-update-installed'),status=make('p','','pvz-update-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const release=make('p','','pvz-update-release'),notes=make('p','','pvz-update-notes'),actions=make('div',null,'pvz-update-actions'),check=make('button','检查更新'),download=make('button',platform==='android'?'下载安卓新版':'下载PC新版'),webLink=make('a','浏览器版：前往官方仓库下载');
- check.type=download.type='button';download.hidden=true;webLink.href=RELEASES;webLink.target='_blank';webLink.rel='noopener noreferrer';webLink.hidden=!!bridge;actions.append(check,download,webLink);paper.append(head,installed,status,release,notes,actions);dialog.append(paper);host.replaceChildren(trigger,dialog);
+ check.type=download.type='button';download.hidden=true;webLink.href=RELEASES;webLink.target='_blank';webLink.rel='noopener noreferrer';webLink.hidden=!!bridge;actions.append(check,download,webLink);paper.append(head,installed,status,release,notes,actions,close);dialog.append(paper);host.replaceChildren(trigger,dialog);
  const dialogId='pvz-update-'+(doc.querySelectorAll('[data-pvz-update]').length===1?'dialog':Math.random().toString(36).slice(2));dialog.id=dialogId;title.id=dialogId+'-title';dialog.setAttribute('aria-labelledby',title.id);trigger.setAttribute('aria-haspopup','dialog');trigger.setAttribute('aria-controls',dialogId);
  function render(){
   if(disposed)return;const checking=!!pending;trigger.disabled=checking;check.disabled=checking||downloadBusy;check.hidden=!bridge;check.textContent=checking?'正在检查……':phase==='error'?'重新检查':'检查更新';
